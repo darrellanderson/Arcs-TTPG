@@ -1,0 +1,10 @@
+{
+  "name": "Arcs-TTPG",
+  "slug": "arcs-ttpg",
+  "version": "0.0.1",
+  "transpile": true,
+  "guid": {
+    "dev": "24D5C91219414BB6B062211C0CF6839E",
+    "prd": "24D5C91219414BB6B062211C0CF6839F"
+  }
+}
