@@ -270,6 +270,7 @@ async function main() {
                 height,
             };
             console.log(`writing dst "${dstFile}" (${JSON.stringify(area)})`);
+            fs.mkdirSync(path.dirname(dstFile), { recursive: true });
             await src.extract(area).toFile(dstFile);
 
             // Convert to model space.
@@ -287,8 +288,10 @@ async function main() {
     // ------------------------------------
     console.log("\n----- CREATE CUBE MODEL (IF MISSING) -----\n");
     if (!fs.existsSync(PATH_UNIT_CUBE_MODEL)) {
-        console.log(`creating "${PATH_UNIT_CUBE_MODEL}"`);
-        fs.writeFileSync(PATH_UNIT_CUBE_MODEL, DATA_UNIT_CUBE);
+        const dstFile = PATH_UNIT_CUBE_MODEL;
+        console.log(`creating "${dstFile}"`);
+        fs.mkdirSync(path.dirname(dstFile), { recursive: true });
+        fs.writeFileSync(dstFile, DATA_UNIT_CUBE);
     } else {
         console.log(
             `already have "${PATH_UNIT_CUBE_MODEL}", skipping this step`
@@ -341,6 +344,7 @@ async function main() {
     }
 
     console.log(`creating "${dstFile}"`);
+    fs.mkdirSync(path.dirname(dstFile), { recursive: true });
     const data: string = JSON.stringify(template, null, 8);
     fs.writeFileSync(dstFile, data);
 
