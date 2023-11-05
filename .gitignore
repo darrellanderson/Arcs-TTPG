@@ -1,4 +1,5 @@
 /node_modules
+yarn-error.log
 
 # production
 
@@ -15,4 +16,5 @@
 
 ttpgcfg.local.json
 
+# VSCode
 Arcs-TTPG.code-workspace
