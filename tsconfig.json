@@ -4,14 +4,15 @@
         "lib": ["ES2023", "DOM"],
         "module": "commonjs",
         "strict": true,
-        "strictNullChecks": true,
         "outDir": "./build",
         "useUnknownInCatchVariables": false,
         "jsx": "react",
         "jsxFactory": "jsxInTTPG",
         "jsxFragmentFactory": "jsxFrag",
         "rootDir": "./src",
-        "skipLibCheck": true
+        "skipLibCheck": true,
+        "strictNullChecks": true,
+        "noImplicitAny": true
     },
     "include": ["./src/**/*.ts", "./src/**/*.tsx"]
 }
