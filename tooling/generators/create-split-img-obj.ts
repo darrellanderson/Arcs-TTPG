@@ -2,6 +2,18 @@
  * Create a board object from a board image.  If the image is large, split it
  * into chunks and join those as a series of objects in the final template.
  *
+ * ARGS:
+ * -f : config file (e.g. "prebuild/board/map/map-red-dark.config.json")
+ *
+ * CONFIG FILE:
+ * - width : final obj width, in game units.
+ * - height : final obj height, in game units.
+ * - depth : final obj depth, in game units.
+ * - preshrink : if positive, shrink input to this max dimension before splitting.
+ * - input : input image.
+ * - output : create this outout image set and template JSON file.
+ * - nsid : object template metadata string.
+ *
  * INPUT:
  * - prebuild/.../board.jpg
  *
@@ -16,6 +28,17 @@ import * as fs from "fs-extra";
 import * as yargs from "yargs";
 import * as path from "path";
 import * as crypto from "crypto";
+
+const args = yargs
+    .options({
+        f: {
+            alias: "config",
+            descript: "input configuration file (JSON)",
+            type: "string",
+            demand: true,
+        },
+    })
+    .parseSync(); // creates typed result
 
 const DIR_INPUT_PREBUILD: string = path.normalize("prebuild");
 const DIR_OUTPUT_TEMPLATE: string = path.normalize("assets/Templates");
@@ -79,6 +102,7 @@ const DATA_MERGED_CUBES_TEMPLATE = {
     Restitution: 0.3,
     Density: 1,
     SurfaceType: "Cardboard",
+
     Roughness: 1,
     Metallic: 0,
     PrimaryColor: {
@@ -143,78 +167,39 @@ interface Chunk {
     top: number;
     width: number;
     height: number;
-    fileLocal: string;
+    dstFileRelativeToTextureDir: string;
 }
 
 async function main() {
     // ------------------------------------
-    console.log("\n----- PARSE ARGS -----\n");
+    console.log("\n----- READ CONFIG -----\n");
 
-    const args = yargs
-        .options({
-            w: {
-                alias: "width",
-                describe: "final obj width (Y in TTPG space)",
-                type: "number",
-                //demand: true,
-                default: 187.12,
-            },
-            h: {
-                alias: "height",
-                describe: "final obj width (X in TTPG space)",
-                type: "number",
-                //demand: true,
-                default: 100,
-            },
-            d: {
-                alias: "depth",
-                describe: "final obj width (Z in TTPG space)",
-                type: "number",
-                //demand: true,
-                default: 1,
-            },
-            p: {
-                alias: "preshrink",
-                describe:
-                    "resize input to be at most P pixels in either dimension",
-                type: "number",
-                //demand: true,
-                default: Number.MAX_SAFE_INTEGER,
-            },
-            i: {
-                alias: "input",
-                describe:
-                    "relative to prebuild/, split this image (does not modify original image)",
-                type: "string",
-                demand: true,
-            },
-            o: {
-                alias: "output",
-                describe:
-                    "relative to assets/{Textures|Templates}, base name for output files",
-                type: "string",
-                demand: true,
-            },
-        })
-        .parseSync(); // creates typed result
+    const configFile = path.normalize(args.f);
+    if (!fs.existsSync(configFile)) {
+        throw new Error(`Missing config file "${configFile}"`);
+    }
+    const configData = fs.readFileSync(configFile).toString();
+    const config = JSON.parse(configData);
 
-    console.log(
-        [
-            "OPTIONS:",
-            `width: ${args.width}`,
-            `width: ${args.width}`,
-            `height: ${args.height}`,
-            `depth: ${args.depth}`,
-            `preshrink: ${args.preshrink}`,
-            `input: ${args.input}`,
-            `output: ${args.output}`,
-        ].join("\n")
-    );
+    // Validate expected fields.
+    if (
+        typeof config.width !== "number" ||
+        typeof config.height !== "number" ||
+        typeof config.depth !== "number" ||
+        typeof config.preshrink !== "number" ||
+        typeof config.input !== "string" ||
+        typeof config.output !== "string" ||
+        typeof config.nsid !== "string"
+    ) {
+        throw new Error(`config.output not a string`);
+    }
+
+    console.log("CONFIG: " + JSON.stringify(config, null, 4));
 
     // ------------------------------------
     console.log("\n----- LOAD INPUT -----\n");
 
-    const inputTexture: string = path.join(DIR_INPUT_PREBUILD, args.i);
+    const inputTexture: string = path.join(DIR_INPUT_PREBUILD, config.input);
     if (!fs.existsSync(inputTexture)) {
         throw new Error(`Missing input file "${inputTexture}"`);
     }
@@ -229,10 +214,10 @@ async function main() {
     // ------------------------------------
     console.log("\n----- PRESHRINK INPUT -----\n");
 
-    const preshrink: number = args.p;
-    const scaleW: number = preshrink / stats.width;
-    const scaleH: number = preshrink / stats.height;
-    const scale: number = Math.min(scaleW, scaleH, 1);
+    const preshrink: number = config.preshrink;
+    const scaleW: number = Math.min(preshrink / stats.width, 1);
+    const scaleH: number = Math.min(preshrink / stats.height, 1);
+    const scale: number = preshrink > 0 ? Math.min(scaleW, scaleH) : 1;
     const w: number = Math.floor(stats.width * scale);
     const h: number = Math.floor(stats.height * scale);
     console.log(`preshrink x${scale.toFixed(3)}: ${w}x${h} px`);
@@ -255,8 +240,18 @@ async function main() {
             const bottom: number = Math.min(top + CHUNK_SIZE, h);
             const height: number = bottom - top;
 
-            const dstFileLocal: string = `${args.o}-${col}x${row}.jpg`;
-            const dstFile: string = path.join(DIR_OUTPUT_TEXTURE, dstFileLocal);
+            const dstDir: string = path.dirname(config.output);
+            const dstBasename: string = path.basename(config.output);
+            const dstFileName: string = `${dstBasename}-${col}x${row}.jpg`;
+            const dstFileRelativeToTextureDir: string = path.join(
+                dstDir,
+                dstBasename,
+                dstFileName
+            );
+            const dstFile: string = path.join(
+                DIR_OUTPUT_TEXTURE,
+                dstFileRelativeToTextureDir
+            );
             if (fs.existsSync(dstFile)) {
                 throw new Error(
                     `Output texture file "${dstFile}" already exists`
@@ -275,11 +270,11 @@ async function main() {
 
             // Convert to model space.
             const chunk = {
-                left: (left / w - 0.5) * args.w,
-                top: (top / h - 0.5) * args.h,
-                width: (width / w) * args.w,
-                height: (height / h) * args.h,
-                fileLocal: dstFileLocal,
+                left: (left / w - 0.5) * config.width,
+                top: (top / h - 0.5) * config.height,
+                width: (width / w) * config.width,
+                height: (height / h) * config.height,
+                dstFileRelativeToTextureDir,
             };
             chunks.push(chunk);
         }
@@ -301,20 +296,24 @@ async function main() {
     // ------------------------------------
     console.log("\n----- CREATE OUTPUT TEMPLATE -----\n");
 
-    const dstFile: string = path.join(DIR_OUTPUT_TEMPLATE, `${args.o}.json`);
+    const dstFile: string = path.join(
+        DIR_OUTPUT_TEMPLATE,
+        `${config.output}.json`
+    );
     if (fs.existsSync(dstFile)) {
         throw new Error(`Output template file "${dstFile}" already exists`);
     }
     const template = DATA_MERGED_CUBES_TEMPLATE;
 
     // Fill in the top-level.
-    template.Name = path.basename(args.o);
+    template.Name = path.basename(config.output);
     template.GUID = crypto
         .createHash("sha256")
-        .update(args.o)
+        .update(config.output)
         .digest("hex")
         .substring(0, 32)
         .toUpperCase();
+    template.Metadata = config.nsid;
 
     // Add cubes.
     const _round3Decimals = (x: number): number => {
@@ -335,10 +334,10 @@ async function main() {
         cubeTemplate.Scale = {
             X: _round3Decimals(chunk.height), // TTPG flips X/Y
             Y: _round3Decimals(chunk.width),
-            Z: _round3Decimals(args.d),
+            Z: _round3Decimals(config.depth),
         };
 
-        cubeTemplate.Texture = chunk.fileLocal;
+        cubeTemplate.Texture = chunk.dstFileRelativeToTextureDir;
 
         template.Models.push(cubeTemplate);
     }
