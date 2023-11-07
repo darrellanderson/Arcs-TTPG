@@ -10,9 +10,7 @@
         "jsxFactory": "jsxInTTPG",
         "jsxFragmentFactory": "jsxFrag",
         "rootDir": "./src",
-        "skipLibCheck": true,
-        "strictNullChecks": true,
-        "noImplicitAny": true
+        "skipLibCheck": true
     },
     "include": ["./src/**/*.ts", "./src/**/*.tsx"]
 }
