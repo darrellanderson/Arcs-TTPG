@@ -1,3 +1,5 @@
+#!env ts-node
+
 /**
  * Create a board object from a board image.  If the image is large, split it
  * into chunks and join those as a series of objects in the final template.
@@ -11,16 +13,16 @@
  * - depth : final obj depth, in game units.
  * - preshrink : if positive, shrink input to this max dimension before splitting.
  * - input : input image.
- * - output : create this outout image set and template JSON file.
+ * - output : create this output image set and template JSON file.
  * - nsid : object template metadata string.
  *
  * INPUT:
- * - prebuild/.../board.jpg
+ * - prebuild/.../{board}.jpg
  *
  * OUTPUT:
  * - assets/Models/utility/unit-cube-top-uvs.obj (if missing)
- * - assets/Templates/.../board.json
- * - assets/Textures/.../board-?x?.jpg
+ * - assets/Templates/.../{board}.json
+ * - assets/Textures/.../{board}-?x?.jpg
  */
 
 import * as sharp from "sharp";
@@ -191,7 +193,7 @@ async function main() {
         typeof config.output !== "string" ||
         typeof config.nsid !== "string"
     ) {
-        throw new Error(`config.output not a string`);
+        throw new Error(`config error`);
     }
 
     console.log("CONFIG: " + JSON.stringify(config, null, 4));
