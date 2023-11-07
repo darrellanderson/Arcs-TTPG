@@ -5,7 +5,8 @@
  * into chunks and join those as a series of objects in the final template.
  *
  * ARGS:
- * -f : config file (e.g. "prebuild/board/map/map-red-dark.config.json")
+ * -f <file> : config file (e.g. "prebuild/board/map/map-red-dark.config.json")
+ * -x : overwrite output files (otherwise fail if they already exist)
  *
  * CONFIG FILE:
  * - width : final obj width, in game units.
@@ -14,7 +15,7 @@
  * - preshrink : if positive, shrink input to this max dimension before splitting.
  * - input : input image.
  * - output : create this output image set and template JSON file.
- * - nsid : object template metadata string.
+ * - metadata : object template metadata string.
  *
  * INPUT:
  * - prebuild/.../{board}.jpg
@@ -38,6 +39,13 @@ const args = yargs
             descript: "input configuration file (JSON)",
             type: "string",
             demand: true,
+        },
+        x: {
+            alias: "clobber",
+            descript: "overwrite existing output files",
+            type: "boolean",
+            default: false,
+            demand: false,
         },
     })
     .parseSync(); // creates typed result
@@ -191,7 +199,7 @@ async function main() {
         typeof config.preshrink !== "number" ||
         typeof config.input !== "string" ||
         typeof config.output !== "string" ||
-        typeof config.nsid !== "string"
+        typeof config.metadata !== "string"
     ) {
         throw new Error(`config error`);
     }
@@ -254,7 +262,7 @@ async function main() {
                 DIR_OUTPUT_TEXTURE,
                 dstFileRelativeToTextureDir
             );
-            if (fs.existsSync(dstFile)) {
+            if (fs.existsSync(dstFile) && !args.x) {
                 throw new Error(
                     `Output texture file "${dstFile}" already exists`
                 );
@@ -302,7 +310,7 @@ async function main() {
         DIR_OUTPUT_TEMPLATE,
         `${config.output}.json`
     );
-    if (fs.existsSync(dstFile)) {
+    if (fs.existsSync(dstFile) && !args.x) {
         throw new Error(`Output template file "${dstFile}" already exists`);
     }
     const template = DATA_MERGED_CUBES_TEMPLATE;
@@ -315,7 +323,7 @@ async function main() {
         .digest("hex")
         .substring(0, 32)
         .toUpperCase();
-    template.Metadata = config.nsid;
+    template.Metadata = config.metadata;
 
     // Add cubes.
     const _round3Decimals = (x: number): number => {
