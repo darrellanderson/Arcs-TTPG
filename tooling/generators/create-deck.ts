@@ -168,9 +168,11 @@ async function main() {
 
             // ALWAYS resize card, always deal with the same img type later.
             console.log(`processing ${file} (${cardPixels.w}x${cardPixels.h})`);
-            inputCard[key] = img.resize(cardPixels.w, cardPixels.h, {
-                fit: "fill",
-            });
+            inputCard[key] = await img
+                .resize(cardPixels.w, cardPixels.h, {
+                    fit: "fill",
+                })
+                .toBuffer();
         }
     }
     if (cardPixels.w < 0) {
@@ -234,6 +236,35 @@ async function main() {
         DIR_OUTPUT_TEXTURE,
         path.normalize(config.output) + ".jpg"
     );
+    if (fs.existsSync(dstFile) && !args.x) {
+        throw new Error(`Output cardsheet file "${dstFile}" already exists`);
+    }
+
+    const composite: object[] = [];
+    for (let index = 0; index < config.inputCards.length; index++) {
+        const inputCard = config.inputCards[index];
+        const col = index % layout.cols;
+        const row = Math.floor(index / layout.cols);
+        composite.push({
+            input: inputCard.face,
+            top: row * cardPixels.h,
+            left: col * cardPixels.w,
+        });
+    }
+
+    console.log(`writing "${dstFile}"`);
+    const dir = path.dirname(dstFile);
+    fs.mkdirsSync(dir);
+    await sharp({
+        create: {
+            width: layout.cols * cardPixels.w,
+            height: layout.rows * cardPixels.h,
+            channels: 4,
+            background: { r: 0, g: 0, b: 0, alpha: 1 },
+        },
+    })
+        .composite(composite)
+        .toFile(dstFile);
 }
 
 main();
