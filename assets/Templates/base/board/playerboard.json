@@ -45,7 +45,7 @@
                         },
                         "Texture": "base/board/playerboard/playerboard-0x0.jpg",
                         "NormalMap": "",
-                        "ExtraMap": "",
+                        "ExtraMap": "base/board/playerboard/playerboard-mask-0x0.png",
                         "ExtraMap2": "",
                         "IsTransparent": false,
                         "CastShadow": true,

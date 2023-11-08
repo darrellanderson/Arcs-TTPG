@@ -5,8 +5,7 @@
  * into chunks and join those as a series of objects in the final template.
  *
  * ARGS:
- * -f <file> : config file (e.g. "prebuild/board/map/map-red-dark.config.json")
- * -x : overwrite output files (otherwise fail if they already exist)
+ * -f <file> : config file (e.g. "prebuild/base/board/map-red-dark.config.json")
  *
  * CONFIG FILE:
  * - width : final obj width, in game units.
@@ -27,11 +26,12 @@
  * - assets/Textures/.../{board}-?x?.jpg
  */
 
-import * as sharp from "sharp";
 import * as fs from "fs-extra";
 import * as yargs from "yargs";
 import * as path from "path";
 import * as crypto from "crypto";
+
+import { SplitImage, SplitImageChunk } from "./lib/split-image";
 
 const args = yargs
     .options({
@@ -206,90 +206,27 @@ async function main() {
         throw new Error(`config error`);
     }
 
-    console.log("CONFIG: " + JSON.stringify(config, null, 4));
+    console.log("CONFIG: " + configFile);
 
     // ------------------------------------
-    console.log("\n----- LOAD INPUT -----\n");
+    console.log("\n----- SPLIT INPUT -----\n");
 
-    const inputTexture: string = path.join(DIR_INPUT_PREBUILD, config.input);
-    if (!fs.existsSync(inputTexture)) {
-        throw new Error(`Missing input file "${inputTexture}"`);
-    }
+    const splitImageChunks = await new SplitImage()
+        .setSrcFileRelativeToPrebuild(config.input)
+        .setPreShrink(config.preshink)
+        .setDstDirRelativeToAssetsTextures(config.output)
+        .setDstObjectSize(config.width, config.height)
+        .split();
 
-    let src = sharp(inputTexture);
-    const stats = await src.metadata();
-    if (!stats.width || !stats.height) {
-        throw new Error("sharp metadata missing width or height");
-    }
-    console.log(`loaded "${inputTexture}": ${stats.width}x${stats.height} px`);
-
-    // ------------------------------------
-    console.log("\n----- PRESHRINK INPUT -----\n");
-
-    const preshrink: number = config.preshrink;
-    const scaleW: number = Math.min(preshrink / stats.width, 1);
-    const scaleH: number = Math.min(preshrink / stats.height, 1);
-    const scale: number = preshrink > 0 ? Math.min(scaleW, scaleH) : 1;
-    const w: number = Math.floor(stats.width * scale);
-    const h: number = Math.floor(stats.height * scale);
-    console.log(`preshrink x${scale.toFixed(3)}: ${w}x${h} px`);
-    src = src.resize(w, h, { fit: "fill" }); // always resize even if scale 1 for extract to work
-
-    // ------------------------------------
-    console.log("\n----- CREATE OUTPUT TEXTURES -----\n");
-
-    const numCols: number = Math.ceil(w / CHUNK_SIZE);
-    const numRows: number = Math.ceil(h / CHUNK_SIZE);
-    console.log(`chunking output ${numCols}x${numRows}`);
-
-    const chunks: Chunk[] = [];
-    for (let col: number = 0; col < numCols; col++) {
-        for (let row: number = 0; row < numRows; row++) {
-            const left: number = col * CHUNK_SIZE;
-            const right: number = Math.min(left + CHUNK_SIZE, w);
-            const width: number = right - left;
-            const top: number = row * CHUNK_SIZE;
-            const bottom: number = Math.min(top + CHUNK_SIZE, h);
-            const height: number = bottom - top;
-
-            const dstDir: string = path.dirname(config.output);
-            const dstBasename: string = path.basename(config.output);
-            const dstFileName: string = `${dstBasename}-${col}x${row}.jpg`;
-            const dstFileRelativeToTextureDir: string = path.join(
-                dstDir,
-                dstBasename,
-                dstFileName
-            );
-            const dstFile: string = path.join(
-                DIR_OUTPUT_TEXTURE,
-                dstFileRelativeToTextureDir
-            );
-            if (fs.existsSync(dstFile) && !args.x) {
-                throw new Error(
-                    `Output texture file "${dstFile}" already exists`
-                );
-            }
-
-            const area = {
-                left,
-                top,
-                width,
-                height,
-            };
-            console.log(`writing dst "${dstFile}" (${JSON.stringify(area)})`);
-            fs.mkdirSync(path.dirname(dstFile), { recursive: true });
-            await src.extract(area).toFile(dstFile);
-
-            // Convert to model space.
-            const chunk = {
-                left: (left / w - 0.5) * config.width,
-                top: (top / h - 0.5) * config.height,
-                width: (width / w) * config.width,
-                height: (height / h) * config.height,
-                dstFileRelativeToTextureDir,
-            };
-            chunks.push(chunk);
-        }
+    let splitMaskChunks: SplitImageChunk[] | undefined = undefined;
+    if (config.inputMask) {
+        splitMaskChunks = await new SplitImage()
+            .setSrcFileRelativeToPrebuild(config.inputMask)
+            .setPreShrink(config.preshink)
+            .setPostShrink(1024) // mask can be smaller in memory
+            .setDstDirRelativeToAssetsTextures(config.output)
+            .setDstObjectSize(config.width, config.height)
+            .split();
     }
 
     // ------------------------------------
@@ -312,9 +249,6 @@ async function main() {
         DIR_OUTPUT_TEMPLATE,
         `${config.output}.json`
     );
-    if (fs.existsSync(dstFile) && !args.x) {
-        throw new Error(`Output template file "${dstFile}" already exists`);
-    }
     const template = DATA_MERGED_CUBES_TEMPLATE;
 
     // Fill in the top-level.
@@ -333,24 +267,29 @@ async function main() {
         return Math.round(x * 1000) / 1000;
     };
     template.Models = [];
-    for (const chunk of chunks) {
+    for (let index = 0; index < splitImageChunks.length; index++) {
+        const chunk = splitImageChunks[index];
+        const maskChunk = splitMaskChunks ? splitMaskChunks[index] : undefined;
+
         const cubeTemplate = JSON.parse(
             JSON.stringify(DATA_CUBE_MODEL_TEMPLATE)
         ); // copy
 
         cubeTemplate.Offset = {
-            X: -_round3Decimals(chunk.top + chunk.height / 2), // TTPG flips X/Y
-            Y: _round3Decimals(chunk.left + chunk.width / 2),
+            X: -_round3Decimals(chunk.oTop + chunk.oHeight / 2), // TTPG flips X/Y
+            Y: _round3Decimals(chunk.oLeft + chunk.oWidth / 2),
             Z: 0,
         };
-
         cubeTemplate.Scale = {
-            X: _round3Decimals(chunk.height), // TTPG flips X/Y
-            Y: _round3Decimals(chunk.width),
+            X: _round3Decimals(chunk.oHeight), // TTPG flips X/Y
+            Y: _round3Decimals(chunk.oWidth),
             Z: _round3Decimals(config.depth),
         };
+        cubeTemplate.Texture = chunk.filenameRelativeToAssetsTextures;
 
-        cubeTemplate.Texture = chunk.dstFileRelativeToTextureDir;
+        if (maskChunk) {
+            cubeTemplate.ExtraMap = maskChunk.filenameRelativeToAssetsTextures;
+        }
 
         template.Models.push(cubeTemplate);
     }

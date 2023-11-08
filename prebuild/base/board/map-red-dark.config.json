@@ -678,12 +678,5 @@
             "FlipValidity": 0,
             "Tags": ["cluster-6", "out-of-play-marker"]
         }
-    ],
-    "ZoomViewDirection": {
-        "X": 0,
-        "Y": 0,
-        "Z": 1
-    },
-    "GroundAccessibility": "Zoom",
-    "Tags": []
+    ]
 }
