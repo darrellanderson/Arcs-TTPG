@@ -16,6 +16,7 @@
  * - input : input image.
  * - output : create this output image set and template JSON file.
  * - metadata : object template metadata string.
+ * - snapPoints : array of {x,y,z} points.
  *
  * INPUT:
  * - prebuild/.../{board}.jpg
@@ -199,7 +200,8 @@ async function main() {
         typeof config.preshrink !== "number" ||
         typeof config.input !== "string" ||
         typeof config.output !== "string" ||
-        typeof config.metadata !== "string"
+        typeof config.metadata !== "string" ||
+        !Array.isArray(config.snapPoints)
     ) {
         throw new Error(`config error`);
     }
@@ -324,6 +326,7 @@ async function main() {
         .substring(0, 32)
         .toUpperCase();
     template.Metadata = config.metadata;
+    template.SnapPoints = config.snapPoints;
 
     // Add cubes.
     const _round3Decimals = (x: number): number => {

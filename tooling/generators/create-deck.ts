@@ -265,6 +265,19 @@ async function main() {
     })
         .composite(composite)
         .toFile(dstFile);
+
+    // ------------------------------------
+    console.log("\n----- CREATING DECK TEMPLATE -----\n");
+
+    dstFile = path.join(
+        DIR_OUTPUT_TEMPLATE,
+        path.normalize(config.output) + ".jpg"
+    );
+    if (fs.existsSync(dstFile) && !args.x) {
+        throw new Error(`Output template file "${dstFile}" already exists`);
+    }
+
+    // TODO XXX
 }
 
 main();
