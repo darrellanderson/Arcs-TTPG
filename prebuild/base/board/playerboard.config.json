@@ -1,0 +1,17 @@
+{
+    "width": 187.12,
+    "height": 100,
+    "depth": 0.2,
+    "preshrink": -1,
+    "input": "base/board/playerboard.jpg",
+    "output": "base/board/playerboard",
+    "metadata": "board:base/playerboard",
+    "snapPoints": [],
+    "ZoomViewDirection": {
+        "X": 0,
+        "Y": 0,
+        "Z": 1
+    },
+    "GroundAccessibility": "Zoom",
+    "Tags": []
+}

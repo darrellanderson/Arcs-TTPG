@@ -1,8 +1,8 @@
 {
         "Type": "Generic",
-        "GUID": "0799848F56BBD60A54896C7429234B23",
+        "GUID": "C5E768160FF7FC1304EA2E2C3A8F7311",
         "Name": "map-red-dark",
-        "Metadata": "map:base/map-red-dark",
+        "Metadata": "board:base/map-red-dark",
         "CollisionType": "Regular",
         "Friction": 0.7,
         "Restitution": 0.3,
@@ -43,7 +43,7 @@
                                 "Y": 0,
                                 "Z": 0
                         },
-                        "Texture": "base/map/map-red-dark/map-red-dark-0x0.jpg",
+                        "Texture": "base/board/map-red-dark/map-red-dark-0x0.jpg",
                         "NormalMap": "",
                         "ExtraMap": "",
                         "ExtraMap2": "",
@@ -70,7 +70,7 @@
                                 "Y": 0,
                                 "Z": 0
                         },
-                        "Texture": "base/map/map-red-dark/map-red-dark-0x1.jpg",
+                        "Texture": "base/board/map-red-dark/map-red-dark-0x1.jpg",
                         "NormalMap": "",
                         "ExtraMap": "",
                         "ExtraMap2": "",
@@ -97,7 +97,7 @@
                                 "Y": 0,
                                 "Z": 0
                         },
-                        "Texture": "base/map/map-red-dark/map-red-dark-1x0.jpg",
+                        "Texture": "base/board/map-red-dark/map-red-dark-1x0.jpg",
                         "NormalMap": "",
                         "ExtraMap": "",
                         "ExtraMap2": "",
@@ -124,7 +124,7 @@
                                 "Y": 0,
                                 "Z": 0
                         },
-                        "Texture": "base/map/map-red-dark/map-red-dark-1x1.jpg",
+                        "Texture": "base/board/map-red-dark/map-red-dark-1x1.jpg",
                         "NormalMap": "",
                         "ExtraMap": "",
                         "ExtraMap2": "",
@@ -151,7 +151,7 @@
                                 "Y": 0,
                                 "Z": 0
                         },
-                        "Texture": "base/map/map-red-dark/map-red-dark-2x0.jpg",
+                        "Texture": "base/board/map-red-dark/map-red-dark-2x0.jpg",
                         "NormalMap": "",
                         "ExtraMap": "",
                         "ExtraMap2": "",
@@ -178,7 +178,7 @@
                                 "Y": 0,
                                 "Z": 0
                         },
-                        "Texture": "base/map/map-red-dark/map-red-dark-2x1.jpg",
+                        "Texture": "base/board/map-red-dark/map-red-dark-2x1.jpg",
                         "NormalMap": "",
                         "ExtraMap": "",
                         "ExtraMap2": "",

@@ -3,9 +3,9 @@
     "height": 100,
     "depth": 0.2,
     "preshrink": -1,
-    "input": "base/map/map-red-dark.jpg",
-    "output": "base/map/map-red-dark",
-    "metadata": "map:base/map-red-dark",
+    "input": "base/board/map-red-dark.jpg",
+    "output": "base/board/map-red-dark",
+    "metadata": "board:base/map-red-dark",
     "snapPoints": [
         {
             "X": 40.6366,
