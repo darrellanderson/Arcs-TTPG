@@ -29,10 +29,10 @@ export class SplitImage {
     private _dstObjectHeight: number | undefined;
 
     // Other config.
-    private _chunkSize: number = 4014; // 4014 if using 98%
+    private _chunkSize: number = 4032; // use 126/128 of 4096
     private _postShrink: number = -1;
     private _preshrink: number = -1;
-    private _verbose: boolean = true;
+    private _verbose: boolean = true; // CAREFUL, CHUNKSIZE WILL BE INCREASED ~2%
 
     // Edge-aligned UVs can have artifacts.  Bleed edge for [0.001:0.999] UVs.
     private _bleedPreserveInternal98Percent: boolean = true;
@@ -161,13 +161,15 @@ export class SplitImage {
                     height: chunkHeight,
                 });
 
-                // Bleed edge pixel.
+                // Bleed edge pixel.  Use interior 126/128 of image,
+                // roughly 1% but more pow-2 friendly.  That means
+                // grow by 1/126, and UVs inset 1/128.
                 if (this._bleedPreserveInternal98Percent) {
                     if (this._verbose) {
                         console.log(`split: bleeding`);
                     }
-                    const dX = Math.floor(chunkWidth * 0.01);
-                    const dY = Math.floor(chunkHeight * 0.01);
+                    const dX = Math.max(Math.round(chunkWidth * 0.007936), 1);
+                    const dY = Math.max(Math.round(chunkHeight * 0.007936), 1);
                     const extWidth = chunkWidth + dX * 2;
                     const extHeight = chunkHeight + dY * 2;
                     const chunkBuf = await chunkImg.toBuffer();
