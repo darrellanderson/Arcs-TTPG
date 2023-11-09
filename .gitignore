@@ -5,6 +5,7 @@ yarn-error.log
 
 /build
 /lib
+/prebuild/_pending
 
 # local build for development
 

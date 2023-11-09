@@ -7,5 +7,105 @@
     "inputMask": "base/board/playerboard-mask.png",
     "output": "base/board/playerboard",
     "metadata": "board:base/playerboard",
-    "snapPoints": []
+    "snapPoints": [
+        {
+            "X": 3.03744,
+            "Y": -4.83695,
+            "Z": 0.125002,
+            "Range": 2,
+            "SnapRotation": 0,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": ["city", "starport", "resource-token"]
+        },
+        {
+            "X": 3.03395,
+            "Y": -1.61045,
+            "Z": 0.125,
+            "Range": 2,
+            "SnapRotation": 0,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": ["starport", "city", "resource-token"]
+        },
+        {
+            "X": 2.95356,
+            "Y": 3.18781,
+            "Z": 0.125,
+            "Range": 2,
+            "SnapRotation": 0,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": ["city", "starport"]
+        },
+        {
+            "X": 3.05465,
+            "Y": 8.00086,
+            "Z": 0.125,
+            "Range": 2,
+            "SnapRotation": 0,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": ["city", "starport"]
+        },
+        {
+            "X": 3.02086,
+            "Y": 11.2331,
+            "Z": 0.125,
+            "Range": 2,
+            "SnapRotation": 0,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": ["city", "starport"]
+        },
+        {
+            "X": 2.95382,
+            "Y": -11.2729,
+            "Z": 0.125,
+            "Range": 2,
+            "SnapRotation": 0,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": ["resource-token"]
+        },
+        {
+            "X": 2.95032,
+            "Y": -8.05402,
+            "Z": 0.125,
+            "Range": 2,
+            "SnapRotation": 0,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": ["resource-token"]
+        },
+        {
+            "X": 3.0005,
+            "Y": 1.58931,
+            "Z": 0.124998,
+            "Range": 2,
+            "SnapRotation": 0,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": ["resource-token"]
+        },
+        {
+            "X": 2.96618,
+            "Y": 4.87327,
+            "Z": 0.125002,
+            "Range": 2,
+            "SnapRotation": 0,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": ["resource-token"]
+        }
+    ]
 }
