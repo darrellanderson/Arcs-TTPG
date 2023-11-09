@@ -165,14 +165,16 @@ export class SplitImage {
                 // roughly 1% but more pow-2 friendly.  That means
                 // grow by 1/126, and UVs inset 1/128.
                 if (this._bleedPreserveInternal98Percent) {
-                    if (this._verbose) {
-                        console.log(`split: bleeding`);
-                    }
                     const dX = Math.max(Math.round(chunkWidth * 0.007936), 1);
                     const dY = Math.max(Math.round(chunkHeight * 0.007936), 1);
                     const extWidth = chunkWidth + dX * 2;
                     const extHeight = chunkHeight + dY * 2;
                     const chunkBuf = await chunkImg.toBuffer();
+                    if (this._verbose) {
+                        console.log(
+                            `split: bleeding [${chunkWidth}x${chunkHeight}] => [${extWidth}x${extHeight}]`
+                        );
+                    }
                     chunkImg = await sharp({
                         create: {
                             width: extWidth,
@@ -189,22 +191,22 @@ export class SplitImage {
                     ]);
                 }
 
-                // Optionally shrink final chunk image (based on chunk size for consistency).
-                if (
-                    this._postShrink > 0 &&
-                    this._postShrink < this._chunkSize
-                ) {
-                    const scale = this._postShrink / this._chunkSize;
-                    const postW = Math.floor(chunkWidth * scale);
-                    const postH = Math.floor(chunkHeight * scale);
+                // Optionally shrink final chunk image.
+                if (this._postShrink > 0) {
+                    const stats = await chunkImg.metadata();
+                    if (!stats.width || !stats.height) {
+                        throw new Error("metadata failed");
+                    }
+                    const scale =
+                        this._postShrink / Math.max(stats.width, stats.height);
+                    const postW = Math.floor(stats.width * scale);
+                    const postH = Math.floor(stats.height * scale);
                     console.log(`postShrink: ${postW}x${postH}`);
-                    chunkImg = sharp(await chunkImg.toBuffer()).resize(
-                        postW,
-                        postH,
-                        {
-                            fit: "fill",
-                        }
-                    );
+                    chunkImg = sharp(await chunkImg.png().toBuffer());
+                    chunkImg = chunkImg.resize(postW, postH, {
+                        fit: "fill",
+                    });
+                    chunkImg = sharp(await chunkImg.png().toBuffer());
                 }
 
                 // Save file.
@@ -218,8 +220,9 @@ export class SplitImage {
                     path.normalize(chunkFilenameRelativeToAssetsTextures)
                 );
                 if (this._verbose) {
+                    const stats = await chunkImg.metadata();
                     console.log(
-                        `split: chunk "${dstFile}" [${chunkWidth}x${chunkHeight}]`
+                        `split: chunk "${dstFile}"x [${stats.width}x${stats.height}]`
                     );
                 }
                 const dstDir = path.dirname(dstFile);

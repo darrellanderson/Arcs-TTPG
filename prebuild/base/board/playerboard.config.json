@@ -1,7 +1,7 @@
 {
-    "width": 187.12,
-    "height": 100,
-    "depth": 0.2,
+    "width": 27.62,
+    "height": 11.07,
+    "depth": 0.25,
     "preshrink": -1,
     "input": "base/board/playerboard.jpg",
     "inputMask": "base/board/playerboard-mask.png",

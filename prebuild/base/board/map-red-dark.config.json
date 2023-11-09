@@ -1,16 +1,18 @@
 {
-    "width": 187.12,
-    "height": 100,
-    "depth": 0.2,
+    "_width": 187.12,
+    "_height": 100,
+    "width": 84.64,
+    "height": 45.23,
+    "depth": 0.25,
     "preshrink": -1,
     "input": "base/board/map-red-dark.jpg",
     "output": "base/board/map-red-dark",
     "metadata": "board:base/map-red-dark",
     "snapPoints": [
         {
-            "X": 40.6366,
-            "Y": -81.6043,
-            "Z": 0.1,
+            "X": 18.381,
+            "Y": -36.91,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 2,
             "RotationOffset": -90,
@@ -19,9 +21,9 @@
             "Tags": ["action-card", "action-card-discard"]
         },
         {
-            "X": -22.1374,
-            "Y": -82.0902,
-            "Z": 0.0999939,
+            "X": -10.013,
+            "Y": -37.129,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 2,
             "RotationOffset": -90,
@@ -30,9 +32,9 @@
             "Tags": ["action-card"]
         },
         {
-            "X": 34.9247,
-            "Y": 73.2121,
-            "Z": 0.0999939,
+            "X": 15.797,
+            "Y": 33.114,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -41,9 +43,9 @@
             "Tags": ["ambition-marker"]
         },
         {
-            "X": 34.949,
-            "Y": 80.4435,
-            "Z": 0.0999939,
+            "X": 15.808,
+            "Y": 36.385,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -52,9 +54,9 @@
             "Tags": ["ambition-marker"]
         },
         {
-            "X": 34.9784,
-            "Y": 87.64,
-            "Z": 0.1,
+            "X": 15.822,
+            "Y": 39.64,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -63,9 +65,9 @@
             "Tags": ["ambition-marker"]
         },
         {
-            "X": -41.6516,
-            "Y": 70.5788,
-            "Z": 0.1,
+            "X": -18.84,
+            "Y": 31.923,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -74,9 +76,9 @@
             "Tags": ["chapter-marker"]
         },
         {
-            "X": -41.7362,
-            "Y": 75.5104,
-            "Z": 0.0999939,
+            "X": -18.879,
+            "Y": 34.153,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -85,9 +87,9 @@
             "Tags": ["chapter-marker"]
         },
         {
-            "X": -41.6666,
-            "Y": 80.4003,
-            "Z": 0.0999939,
+            "X": -18.847,
+            "Y": 36.365,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -96,9 +98,9 @@
             "Tags": ["chapter-marker"]
         },
         {
-            "X": -41.6717,
-            "Y": 85.3021,
-            "Z": 0.1,
+            "X": -18.849,
+            "Y": 38.582,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -107,9 +109,9 @@
             "Tags": ["chapter-marker"]
         },
         {
-            "X": -41.6769,
-            "Y": 90.2232,
-            "Z": 0.100006,
+            "X": -18.852,
+            "Y": 40.808,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -118,9 +120,9 @@
             "Tags": ["chapter-marker"]
         },
         {
-            "X": -35.5667,
-            "Y": -81.822,
-            "Z": 0.1,
+            "X": -16.088,
+            "Y": -37.008,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 2,
             "RotationOffset": 0,
@@ -129,9 +131,9 @@
             "Tags": ["zero-marker"]
         },
         {
-            "X": 37.3533,
-            "Y": -11.6464,
-            "Z": 0.1,
+            "X": 16.896,
+            "Y": -5.268,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -140,9 +142,9 @@
             "Tags": ["starport", "city"]
         },
         {
-            "X": 40.2114,
-            "Y": -5.20701,
-            "Z": 0.0999939,
+            "X": 18.189,
+            "Y": -2.355,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -151,9 +153,9 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": 37.9467,
-            "Y": 9.16558,
-            "Z": 0.1,
+            "X": 17.164,
+            "Y": 4.146,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -162,9 +164,9 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": 41.5084,
-            "Y": 25.8583,
-            "Z": 0.1,
+            "X": 18.775,
+            "Y": 11.696,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -173,9 +175,9 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": 37.1187,
-            "Y": 31.3564,
-            "Z": 0.1,
+            "X": 16.79,
+            "Y": 14.182,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -184,9 +186,9 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": 25.905,
-            "Y": 40.1459,
-            "Z": 0.1,
+            "X": 11.718,
+            "Y": 18.158,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -195,9 +197,9 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": 16.3102,
-            "Y": 55.7365,
-            "Z": 0.0999939,
+            "X": 7.378,
+            "Y": 25.21,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -206,9 +208,9 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": 2.05249,
-            "Y": 45.8827,
-            "Z": 0.1,
+            "X": 0.928,
+            "Y": 20.753,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -217,9 +219,9 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": -0.968996,
-            "Y": 51.4312,
-            "Z": 0.0999939,
+            "X": -0.438,
+            "Y": 23.262,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -228,9 +230,9 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": -10.985,
-            "Y": 49.6048,
-            "Z": 0.1,
+            "X": -4.969,
+            "Y": 22.436,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -239,9 +241,9 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": -17.5815,
-            "Y": 31.2659,
-            "Z": 0.100006,
+            "X": -7.953,
+            "Y": 14.142,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -250,9 +252,9 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": -33.1413,
-            "Y": 35.7278,
-            "Z": 0.1,
+            "X": -14.991,
+            "Y": 16.16,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -261,9 +263,9 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": -37.1499,
-            "Y": 30.4636,
-            "Z": 0.0999939,
+            "X": -16.804,
+            "Y": 13.779,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -272,9 +274,9 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": -34.9785,
-            "Y": 14.3597,
-            "Z": 0.0999939,
+            "X": -15.822,
+            "Y": 6.495,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -283,9 +285,9 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": -31.0489,
-            "Y": 8.87655,
-            "Z": 0.1,
+            "X": -14.044,
+            "Y": 4.015,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -294,9 +296,9 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": -39.718,
-            "Y": -5.69345,
-            "Z": 0.1,
+            "X": -17.966,
+            "Y": -2.575,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -305,9 +307,9 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": -35.8385,
-            "Y": -11.0408,
-            "Z": 0.1,
+            "X": -16.211,
+            "Y": -4.994,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -316,9 +318,9 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": -31.4771,
-            "Y": -26.2733,
-            "Z": 0.1,
+            "X": -14.238,
+            "Y": -11.883,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -327,9 +329,9 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": -28.8605,
-            "Y": -54.2547,
-            "Z": 0.1,
+            "X": -13.054,
+            "Y": -24.539,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -338,9 +340,9 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": -9.76986,
-            "Y": -44.6203,
-            "Z": 0.1,
+            "X": -4.419,
+            "Y": -20.182,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -349,9 +351,9 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": 2.51817,
-            "Y": -56.0129,
-            "Z": 0.1,
+            "X": 1.139,
+            "Y": -25.335,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -360,9 +362,9 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": -1.61389,
-            "Y": -61.2529,
-            "Z": 0.1,
+            "X": -0.73,
+            "Y": -27.705,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -371,9 +373,9 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": 12.8069,
-            "Y": -44.7486,
-            "Z": 0.1,
+            "X": 5.793,
+            "Y": -20.24,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -382,9 +384,9 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": 28.4413,
-            "Y": -51.9322,
-            "Z": 0.0999939,
+            "X": 12.865,
+            "Y": -23.489,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -393,9 +395,9 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": 32.5535,
-            "Y": -46.6186,
-            "Z": 0.0999939,
+            "X": 14.725,
+            "Y": -21.086,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -404,9 +406,9 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": 37.202,
-            "Y": -31.4291,
-            "Z": 0.1,
+            "X": 16.828,
+            "Y": -14.215,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -415,9 +417,9 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": 21.3925,
-            "Y": 3.00118,
-            "Z": 0.0999939,
+            "X": 9.676,
+            "Y": 1.357,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 2,
             "RotationOffset": 0,
@@ -426,9 +428,9 @@
             "Tags": ["path-marker", "cluster-1"]
         },
         {
-            "X": 7.58626,
-            "Y": 20.3743,
-            "Z": 0.0999939,
+            "X": 3.431,
+            "Y": 9.215,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 2,
             "RotationOffset": 60,
@@ -437,9 +439,9 @@
             "Tags": ["path-marker", "cluster-2"]
         },
         {
-            "X": -9.66606,
-            "Y": 17.3476,
-            "Z": 0.0999939,
+            "X": -4.372,
+            "Y": 7.846,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 2,
             "RotationOffset": 120,
@@ -448,9 +450,9 @@
             "Tags": ["path-marker", "cluster-3"]
         },
         {
-            "X": -17.8294,
-            "Y": -4.42192,
-            "Z": 0.1,
+            "X": -8.065,
+            "Y": -2,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 2,
             "RotationOffset": 180,
@@ -459,9 +461,9 @@
             "Tags": ["path-marker", "cluster-4"]
         },
         {
-            "X": -3.85091,
-            "Y": -20.6972,
-            "Z": 0.0999939,
+            "X": -1.742,
+            "Y": -9.361,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 2,
             "RotationOffset": -120,
@@ -470,9 +472,9 @@
             "Tags": ["path-marker", "cluster-5"]
         },
         {
-            "X": 12.5921,
-            "Y": -18.7013,
-            "Z": 0.1,
+            "X": 5.696,
+            "Y": -8.459,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 2,
             "RotationOffset": -60,
@@ -481,9 +483,9 @@
             "Tags": ["path-marker", "cluster-6"]
         },
         {
-            "X": 38.1033,
-            "Y": -6.04194,
-            "Z": 0.1,
+            "X": 17.235,
+            "Y": -2.733,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": -60,
@@ -492,9 +494,9 @@
             "Tags": ["out-of-play-marker", "cluster-1"]
         },
         {
-            "X": 36.5001,
-            "Y": 11.4865,
-            "Z": 0.1,
+            "X": 16.51,
+            "Y": 5.195,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": -60,
@@ -503,9 +505,9 @@
             "Tags": ["out-of-play-marker", "cluster-1"]
         },
         {
-            "X": 39.0258,
-            "Y": 27.3884,
-            "Z": 0.0999878,
+            "X": 17.653,
+            "Y": 12.388,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": -60,
@@ -514,9 +516,9 @@
             "Tags": ["cluster-1", "out-of-play-marker"]
         },
         {
-            "X": 26.5968,
-            "Y": 39.69,
-            "Z": 0.1,
+            "X": 12.031,
+            "Y": 17.952,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": -60,
@@ -525,9 +527,9 @@
             "Tags": ["out-of-play-marker", "cluster-2"]
         },
         {
-            "X": 16.0489,
-            "Y": 53.453,
-            "Z": 0.1,
+            "X": 7.259,
+            "Y": 24.177,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": -60,
@@ -536,9 +538,9 @@
             "Tags": ["cluster-2", "out-of-play-marker"]
         },
         {
-            "X": 0.677954,
-            "Y": 46.8371,
-            "Z": 0.1,
+            "X": 0.307,
+            "Y": 21.184,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": -60,
@@ -547,9 +549,9 @@
             "Tags": ["cluster-2", "out-of-play-marker"]
         },
         {
-            "X": -13.4139,
-            "Y": 48.9469,
-            "Z": 0.1,
+            "X": -6.068,
+            "Y": 22.139,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": -60,
@@ -558,9 +560,9 @@
             "Tags": ["out-of-play-marker", "cluster-3"]
         },
         {
-            "X": -19.4767,
-            "Y": 31.7429,
-            "Z": 0.1,
+            "X": -8.81,
+            "Y": 14.357,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": -60,
@@ -569,9 +571,9 @@
             "Tags": ["cluster-3", "out-of-play-marker"]
         },
         {
-            "X": -33.4422,
-            "Y": 31.0436,
-            "Z": 0.1,
+            "X": -15.127,
+            "Y": 14.041,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": -60,
@@ -580,9 +582,9 @@
             "Tags": ["out-of-play-marker", "cluster-3"]
         },
         {
-            "X": -33.7048,
-            "Y": 11.7769,
-            "Z": 0.0999878,
+            "X": -15.246,
+            "Y": 5.327,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": -60,
@@ -591,9 +593,9 @@
             "Tags": ["out-of-play-marker", "cluster-4"]
         },
         {
-            "X": -34.3807,
-            "Y": -6.49239,
-            "Z": 0.1,
+            "X": -15.551,
+            "Y": -2.937,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": -60,
@@ -602,9 +604,9 @@
             "Tags": ["cluster-4", "out-of-play-marker"]
         },
         {
-            "X": -31.1767,
-            "Y": -23.7029,
-            "Z": 0.1,
+            "X": -14.102,
+            "Y": -10.721,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": -60,
@@ -613,9 +615,9 @@
             "Tags": ["out-of-play-marker", "cluster-4"]
         },
         {
-            "X": -27.6154,
-            "Y": -50.8228,
-            "Z": 0.1,
+            "X": -12.491,
+            "Y": -22.987,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": -60,
@@ -624,9 +626,9 @@
             "Tags": ["out-of-play-marker", "cluster-5"]
         },
         {
-            "X": -9.37287,
-            "Y": -41.8138,
-            "Z": 0.1,
+            "X": -4.24,
+            "Y": -18.912,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": -60,
@@ -635,9 +637,9 @@
             "Tags": ["cluster-5", "out-of-play-marker"]
         },
         {
-            "X": 3.10924,
-            "Y": -56.1715,
-            "Z": 0.1,
+            "X": 1.406,
+            "Y": -25.406,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": -60,
@@ -646,9 +648,9 @@
             "Tags": ["cluster-5", "out-of-play-marker"]
         },
         {
-            "X": 13.9009,
-            "Y": -42.9335,
-            "Z": 0.1,
+            "X": 6.288,
+            "Y": -19.419,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": -60,
@@ -657,9 +659,9 @@
             "Tags": ["out-of-play-marker", "cluster-6"]
         },
         {
-            "X": 29.7644,
-            "Y": -46.6119,
-            "Z": 0.0999878,
+            "X": 13.463,
+            "Y": -21.083,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": -60,
@@ -668,9 +670,9 @@
             "Tags": ["cluster-6", "out-of-play-marker"]
         },
         {
-            "X": 35.618,
-            "Y": -28.5142,
-            "Z": 0.1,
+            "X": 16.111,
+            "Y": -12.897,
+            "Z": 0.125,
             "Range": 3,
             "SnapRotation": 0,
             "RotationOffset": -60,

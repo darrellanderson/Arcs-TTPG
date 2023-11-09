@@ -136,7 +136,7 @@ const DATA_MERGED_CUBES_TEMPLATE = {
     Collision: [],
     Lights: [],
     SnapPointsGlobal: false,
-    SnapPoints: [],
+    SnapPoints: [{}],
     ZoomViewDirection: {
         X: 0,
         Y: 0,
@@ -212,6 +212,7 @@ async function main() {
     // ------------------------------------
     console.log("\n----- SPLIT INPUT -----\n");
 
+    console.log(`PROCESSING "${config.input}"`);
     const splitImageChunks = await new SplitImage()
         .setSrcFileRelativeToPrebuild(config.input)
         .setPreShrink(config.preshink)
@@ -221,6 +222,7 @@ async function main() {
 
     let splitMaskChunks: SplitImageChunk[] | undefined = undefined;
     if (config.inputMask) {
+        console.log(`PROCESSING "${config.inputMask}"`);
         splitMaskChunks = await new SplitImage()
             .setSrcFileRelativeToPrebuild(config.inputMask)
             .setPreShrink(config.preshink)
