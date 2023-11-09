@@ -29,10 +29,13 @@ export class SplitImage {
     private _dstObjectHeight: number | undefined;
 
     // Other config.
-    private _chunkSize: number = 4096;
+    private _chunkSize: number = 4014; // 4014 if using 98%
     private _postShrink: number = -1;
     private _preshrink: number = -1;
     private _verbose: boolean = true;
+
+    // Edge-aligned UVs can have artifacts.  Bleed edge for [0.001:0.999] UVs.
+    private _bleedPreserveInternal98Percent: boolean = true;
 
     // ----------------------------------------------------
 
@@ -157,6 +160,32 @@ export class SplitImage {
                     width: chunkWidth,
                     height: chunkHeight,
                 });
+
+                // Bleed edge pixel.
+                if (this._bleedPreserveInternal98Percent) {
+                    if (this._verbose) {
+                        console.log(`split: bleeding`);
+                    }
+                    const dX = Math.floor(chunkWidth * 0.01);
+                    const dY = Math.floor(chunkHeight * 0.01);
+                    const extWidth = chunkWidth + dX * 2;
+                    const extHeight = chunkHeight + dY * 2;
+                    const chunkBuf = await chunkImg.toBuffer();
+                    chunkImg = await sharp({
+                        create: {
+                            width: extWidth,
+                            height: extHeight,
+                            channels: 4,
+                            background: { r: 0, g: 0, b: 0, alpha: 1 },
+                        },
+                    }).composite([
+                        { input: chunkBuf, left: dX - 1, top: dY },
+                        { input: chunkBuf, left: dX + 1, top: dY },
+                        { input: chunkBuf, left: dX, top: dY - 1 },
+                        { input: chunkBuf, left: dX, top: dY + 1 },
+                        { input: chunkBuf, left: dX, top: dY },
+                    ]);
+                }
 
                 // Optionally shrink final chunk image (based on chunk size for consistency).
                 if (
