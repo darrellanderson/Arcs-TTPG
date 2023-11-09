@@ -1,0 +1,133 @@
+{
+	"Type": "Generic",
+	"GUID": "B70A2F0EAE4D829670DCD683AD07FA5F",
+	"Name": "Starport Token",
+	"Metadata": "token:base/starport",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0.3,
+	"Density": 1,
+	"SurfaceType": "Plastic",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [
+		{
+			"Model": "utility/token/triangle/triangle-shape.png",
+			"ShapeAccuracy": 10,
+			"Offset":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0.025
+			},
+			"Scale":
+			{
+				"X": 1,
+				"Y": 1,
+				"Z": 0.05
+			},
+			"Rotation":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Texture": "base/token/starport/starport.face.png",
+			"NormalMap": "",
+			"ExtraMap": "",
+			"ExtraMap2": "",
+			"IsTransparent": false,
+			"CastShadow": true,
+			"IsTwoSided": false,
+			"UseOverrides": true,
+			"SurfaceType": "Plastic"
+		},
+		{
+			"Model": "utility/token/triangle/triangle-shape.png",
+			"ShapeAccuracy": 10,
+			"Offset":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": -0.025
+			},
+			"Scale":
+			{
+				"X": 1,
+				"Y": 1,
+				"Z": 0.05
+			},
+			"Rotation":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Texture": "base/token/starport/starport.back.png",
+			"NormalMap": "",
+			"ExtraMap": "utility/token/triangle/triangle-mask.back.png",
+			"ExtraMap2": "",
+			"IsTransparent": false,
+			"CastShadow": true,
+			"IsTwoSided": false,
+			"UseOverrides": true,
+			"SurfaceType": "Plastic"
+		}
+	],
+	"Collision": [
+		{
+			"Model": "utility/token/triangle/triangle-shape.png",
+			"ShapeAccuracy": 5,
+			"Offset":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Scale":
+			{
+				"X": 1,
+				"Y": 1,
+				"Z": 0.1
+			},
+			"Rotation":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Type": "Convex",
+			"ConvexCollision": true
+		}
+	],
+	"Lights": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"GroundAccessibility": "Zoom",
+	"Tags": [
+		"starport"
+	]
+}
