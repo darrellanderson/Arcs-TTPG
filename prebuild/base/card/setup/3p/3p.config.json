@@ -1,0 +1,31 @@
+{
+    "inputDir": "base/card/setup/3p",
+    "inputCards": [
+        {
+            "face": "3p-core-conflict.jpg",
+            "name": "Core Conflict (3p)",
+            "metadata": "card.setup.3p:base/core-conflict"
+        },
+        {
+            "face": "3p-frontiers.jpg",
+            "name": "Frontiers (3p)",
+            "metadata": "card.setup.3p:base/frontiers"
+        },
+        {
+            "face": "3p-homelands.jpg",
+            "name": "Homelands (3p)",
+            "metadata": "card.setup.3p:base/homelands"
+        },
+        {
+            "face": "3p-mix-up.jpg",
+            "name": "Mix Up (3p)",
+            "metadata": "card.setup.3p:base/mix-up"
+        }
+    ],
+    "sharedBack": "base/card/setup/3p/3p.back.jpg",
+    "cardWidth": 9,
+    "cardHeight": 6.44,
+    "preshrink": 500,
+    "output": "base/card/setup/setup-3p",
+    "cardTags": ["setup-card"]
+}

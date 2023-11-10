@@ -18,9 +18,7 @@ export class MergeImage {
 
     // ----------------------------------------------------
 
-    constructor() {
-        console.log("XXX1 " + this._preshrink);
-    }
+    constructor() {}
 
     setSrcFilesRelativeToPrebuild(values: string[]): MergeImage {
         this._srcFilesRelativeToPrebuild = values;
@@ -45,7 +43,6 @@ export class MergeImage {
             throw new Error(`value "${value}" out of range`);
         }
         this._preshrink = value;
-        console.log("XXX2 " + this._preshrink);
         return this;
     }
 
@@ -63,7 +60,6 @@ export class MergeImage {
         ) {
             throw new Error("merge: not fully initialized");
         }
-        console.log("XXX " + this._preshrink);
 
         // Load src images, apply preshrink.
         const origPixels = { w: -1, h: -1 }; // seed with first card loaded

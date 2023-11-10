@@ -1,0 +1,31 @@
+{
+    "inputDir": "base/card/setup/2p",
+    "inputCards": [
+        {
+            "face": "2p-frontiers.jpg",
+            "name": "Frontiers (2p)",
+            "metadata": "card.setup.2p:base/frontiers"
+        },
+        {
+            "face": "2p-homelands.jpg",
+            "name": "Homelands (2p)",
+            "metadata": "card.setup.2p:base/homelands"
+        },
+        {
+            "face": "2p-mix-up-1.jpg",
+            "name": "Mix Up 1 (2p)",
+            "metadata": "card.setup.2p:base/mix-up-1"
+        },
+        {
+            "face": "2p-mix-up-2.jpg",
+            "name": "Mix Up 2 (2p)",
+            "metadata": "card.setup.2p:base/mix-up-2"
+        }
+    ],
+    "sharedBack": "base/card/setup/2p/2p.back.jpg",
+    "cardWidth": 9,
+    "cardHeight": 6.44,
+    "preshrink": 500,
+    "output": "base/card/setup/setup-2p",
+    "cardTags": ["setup-card"]
+}
