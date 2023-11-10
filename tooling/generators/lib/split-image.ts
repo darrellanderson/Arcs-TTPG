@@ -165,8 +165,8 @@ export class SplitImage {
                 // roughly 1% but more pow-2 friendly.  That means
                 // grow by 1/126, and UVs inset 1/128.
                 if (this._bleedPreserveInternal98Percent) {
-                    const dX = Math.max(Math.round(chunkWidth * 0.007936), 1);
-                    const dY = Math.max(Math.round(chunkHeight * 0.007936), 1);
+                    const dX = Math.max(Math.floor(chunkWidth * 0.007936), 1);
+                    const dY = Math.max(Math.floor(chunkHeight * 0.007936), 1);
                     const extWidth = chunkWidth + dX * 2;
                     const extHeight = chunkHeight + dY * 2;
                     const chunkBuf = await chunkImg.toBuffer();

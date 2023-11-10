@@ -9,9 +9,9 @@
     "metadata": "board:base/playerboard",
     "snapPoints": [
         {
-            "X": 3.03744,
-            "Y": -4.83695,
-            "Z": 0.125002,
+            "X": 3.2,
+            "Y": -4.837,
+            "Z": 0.125,
             "Range": 2,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -20,8 +20,8 @@
             "Tags": ["city", "starport", "resource-token"]
         },
         {
-            "X": 3.03395,
-            "Y": -1.61045,
+            "X": 3.2,
+            "Y": -1.61,
             "Z": 0.125,
             "Range": 2,
             "SnapRotation": 0,
@@ -31,8 +31,8 @@
             "Tags": ["starport", "city", "resource-token"]
         },
         {
-            "X": 2.95356,
-            "Y": 3.18781,
+            "X": 3.2,
+            "Y": 3.2,
             "Z": 0.125,
             "Range": 2,
             "SnapRotation": 0,
@@ -42,8 +42,8 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": 3.05465,
-            "Y": 8.00086,
+            "X": 3.2,
+            "Y": 8.05,
             "Z": 0.125,
             "Range": 2,
             "SnapRotation": 0,
@@ -53,8 +53,8 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": 3.02086,
-            "Y": 11.2331,
+            "X": 3.2,
+            "Y": 11.25,
             "Z": 0.125,
             "Range": 2,
             "SnapRotation": 0,
@@ -64,8 +64,8 @@
             "Tags": ["city", "starport"]
         },
         {
-            "X": 2.95382,
-            "Y": -11.2729,
+            "X": 3.2,
+            "Y": -11.273,
             "Z": 0.125,
             "Range": 2,
             "SnapRotation": 0,
@@ -75,8 +75,8 @@
             "Tags": ["resource-token"]
         },
         {
-            "X": 2.95032,
-            "Y": -8.05402,
+            "X": 3.2,
+            "Y": -8.054,
             "Z": 0.125,
             "Range": 2,
             "SnapRotation": 0,
@@ -86,9 +86,9 @@
             "Tags": ["resource-token"]
         },
         {
-            "X": 3.0005,
-            "Y": 1.58931,
-            "Z": 0.124998,
+            "X": 3.2,
+            "Y": 1.589,
+            "Z": 0.125,
             "Range": 2,
             "SnapRotation": 0,
             "RotationOffset": 0,
@@ -97,9 +97,9 @@
             "Tags": ["resource-token"]
         },
         {
-            "X": 2.96618,
-            "Y": 4.87327,
-            "Z": 0.125002,
+            "X": 3.2,
+            "Y": 4.873,
+            "Z": 0.125,
             "Range": 2,
             "SnapRotation": 0,
             "RotationOffset": 0,
