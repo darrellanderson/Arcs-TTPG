@@ -1,0 +1,151 @@
+{
+    "inputDir": "base/card/action",
+    "inputCards": [
+        {
+            "face": "administration/1.jpg",
+            "name": "Administration 1",
+            "metadata": "card.action.administration:base/1"
+        },
+        {
+            "face": "administration/2.jpg",
+            "name": "Administration 2",
+            "metadata": "card.action.administration:base/2"
+        },
+        {
+            "face": "administration/3.jpg",
+            "name": "Administration 3",
+            "metadata": "card.action.administration:base/3"
+        },
+        {
+            "face": "administration/4.jpg",
+            "name": "Administration 4",
+            "metadata": "card.action.administration:base/4"
+        },
+        {
+            "face": "administration/5.jpg",
+            "name": "Administration 5",
+            "metadata": "card.action.administration:base/5"
+        },
+        {
+            "face": "administration/6.jpg",
+            "name": "Administration 6",
+            "metadata": "card.action.administration:base/6"
+        },
+        {
+            "face": "administration/7.jpg",
+            "name": "Administration 7",
+            "metadata": "card.action.administration:base/7"
+        },
+        {
+            "face": "aggression/1.jpg",
+            "name": "Aggression 1",
+            "metadata": "card.action.aggression:base/1"
+        },
+        {
+            "face": "aggression/2.jpg",
+            "name": "Aggression 2",
+            "metadata": "card.action.aggression:base/2"
+        },
+        {
+            "face": "aggression/3.jpg",
+            "name": "Aggression 3",
+            "metadata": "card.action.aggression:base/3"
+        },
+        {
+            "face": "aggression/4.jpg",
+            "name": "Aggression 4",
+            "metadata": "card.action.aggression:base/4"
+        },
+        {
+            "face": "aggression/5.jpg",
+            "name": "Aggression 5",
+            "metadata": "card.action.aggression:base/5"
+        },
+        {
+            "face": "aggression/6.jpg",
+            "name": "Aggression 6",
+            "metadata": "card.action.aggression:base/6"
+        },
+        {
+            "face": "aggression/7.jpg",
+            "name": "Aggression 7",
+            "metadata": "card.action.aggression:base/7"
+        },
+        {
+            "face": "construction/1.jpg",
+            "name": "Construction 1",
+            "metadata": "card.action.construction:base/1"
+        },
+        {
+            "face": "construction/2.jpg",
+            "name": "Construction 2",
+            "metadata": "card.action.construction:base/2"
+        },
+        {
+            "face": "construction/3.jpg",
+            "name": "Construction 3",
+            "metadata": "card.action.construction:base/3"
+        },
+        {
+            "face": "construction/4.jpg",
+            "name": "Construction 4",
+            "metadata": "card.action.construction:base/4"
+        },
+        {
+            "face": "construction/5.jpg",
+            "name": "Construction 5",
+            "metadata": "card.action.construction:base/5"
+        },
+        {
+            "face": "construction/6.jpg",
+            "name": "Construction 6",
+            "metadata": "card.action.construction:base/6"
+        },
+        {
+            "face": "construction/7.jpg",
+            "name": "Construction 7",
+            "metadata": "card.action.construction:base/7"
+        },
+        {
+            "face": "mobilization/1.jpg",
+            "name": "Mobilization 1",
+            "metadata": "card.action.mobilization:base/1"
+        },
+        {
+            "face": "mobilization/2.jpg",
+            "name": "Mobilization 2",
+            "metadata": "card.action.mobilization:base/2"
+        },
+        {
+            "face": "mobilization/3.jpg",
+            "name": "Mobilization 3",
+            "metadata": "card.action.mobilization:base/3"
+        },
+        {
+            "face": "mobilization/4.jpg",
+            "name": "Mobilization 4",
+            "metadata": "card.action.mobilization:base/4"
+        },
+        {
+            "face": "mobilization/5.jpg",
+            "name": "Mobilization 5",
+            "metadata": "card.action.mobilization:base/5"
+        },
+        {
+            "face": "mobilization/6.jpg",
+            "name": "Mobilization 6",
+            "metadata": "card.action.mobilization:base/6"
+        },
+        {
+            "face": "mobilization/7.jpg",
+            "name": "Mobilization 7",
+            "metadata": "card.action.mobilization:base/7"
+        }
+    ],
+    "sharedBack": "base/card/action/action.back.jpg",
+    "cardWidth": 6.44,
+    "cardHeight": 9,
+    "preshrink": 500,
+    "output": "base/card/action",
+    "cardTags": ["action-card"]
+}
