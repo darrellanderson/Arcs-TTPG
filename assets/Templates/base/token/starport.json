@@ -49,7 +49,7 @@
 				"Y": 0,
 				"Z": 0
 			},
-			"Texture": "base/token/starport/starport.face.png",
+			"Texture": "base/token/starport/starport.face.jpg",
 			"NormalMap": "",
 			"ExtraMap": "",
 			"ExtraMap2": "",
@@ -80,7 +80,7 @@
 				"Y": 0,
 				"Z": 0
 			},
-			"Texture": "base/token/starport/starport.back.png",
+			"Texture": "base/token/starport/starport.back.jpg",
 			"NormalMap": "",
 			"ExtraMap": "utility/token/triangle/triangle-mask.back.png",
 			"ExtraMap2": "",

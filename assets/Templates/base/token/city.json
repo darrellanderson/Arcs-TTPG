@@ -49,7 +49,7 @@
 				"Y": 0,
 				"Z": 0
 			},
-			"Texture": "base/token/city/city.face.png",
+			"Texture": "base/token/city/city.face.jpg",
 			"NormalMap": "",
 			"ExtraMap": "utility/token/triangle/triangle-mask.face.png",
 			"ExtraMap2": "",
@@ -80,7 +80,7 @@
 				"Y": 0,
 				"Z": 0
 			},
-			"Texture": "base/token/city/city.back.png",
+			"Texture": "base/token/city/city.back.jpg",
 			"NormalMap": "",
 			"ExtraMap": "",
 			"ExtraMap2": "",
