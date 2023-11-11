@@ -1,0 +1,51 @@
+{
+    "inputDir": "base/card/leader/",
+    "inputCards": [
+        {
+            "face": "01-elder.jpg",
+            "name": "Elder",
+            "metadata": "card.leader:base/elder"
+        },
+        {
+            "face": "02-mystic.jpg",
+            "name": "Mystic",
+            "metadata": "card.leader:base/mystic"
+        },
+        {
+            "face": "03-fuel-drinker.jpg",
+            "name": "Fuel Drinker",
+            "metadata": "card.leader:base/fuel-drinker"
+        },
+        {
+            "face": "04-upstart.jpg",
+            "name": "Upstart",
+            "metadata": "card.leader:base/upstart"
+        },
+        {
+            "face": "05-rebel.jpg",
+            "name": "Rebel",
+            "metadata": "card.leader:base/rebel"
+        },
+        {
+            "face": "06-warrior.jpg",
+            "name": "Warrior",
+            "metadata": "card.leader:base/warrior"
+        },
+        {
+            "face": "07-feastbringer.jpg",
+            "name": "Feastbringer",
+            "metadata": "card.leader:base/feastbringer"
+        },
+        {
+            "face": "08-demagogue.jpg",
+            "name": "Demagogue",
+            "metadata": "card.leader:base/demagogue"
+        }
+    ],
+    "sharedBack": "base/card/leader/leader.back.jpg",
+    "cardWidth": 6.44,
+    "cardHeight": 11,
+    "preshrink": 500,
+    "output": "base/card/leader",
+    "cardTags": ["leader-card"]
+}

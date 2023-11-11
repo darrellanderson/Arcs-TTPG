@@ -1,0 +1,81 @@
+{
+    "inputDir": "base/card/lore/",
+    "inputCards": [
+        {
+            "face": "01-tool-priests.jpg",
+            "name": "Tool-Priests",
+            "metadata": "card.lore:base/tool-priests"
+        },
+        {
+            "face": "02-galactic-rifles.jpg",
+            "name": "Galactic Rifles",
+            "metadata": "card.lore:base/galactic-rifles"
+        },
+        {
+            "face": "03-sprinter-drives.jpg",
+            "name": "Sprinter Drives",
+            "metadata": "card.lore:base/sprinter-drives"
+        },
+        {
+            "face": "04-mirror-plating.jpg",
+            "name": "Mirror Plating",
+            "metadata": "card.lore:base/mirror-plating"
+        },
+        {
+            "face": "05-hidden-harbors.jpg",
+            "name": "Hidden Harbors",
+            "metadata": "card.lore:base/hidden-harbors"
+        },
+        {
+            "face": "06-signal-breaker.jpg",
+            "name": "Signal Breaker",
+            "metadata": "card.lore:base/signal-breaker"
+        },
+        {
+            "face": "07-repair-drones.jpg",
+            "name": "Repair Drones",
+            "metadata": "card.lore:base/repair-drones"
+        },
+        {
+            "face": "08-gate-ports.jpg",
+            "name": "Gate Ports",
+            "metadata": "card.lore:base/gate-ports"
+        },
+        {
+            "face": "09-cloud-cities.jpg",
+            "name": "Cloud Cities",
+            "metadata": "card.lore:base/cloud-cities"
+        },
+        {
+            "face": "10-living-structures.jpg",
+            "name": "Living Structures",
+            "metadata": "card.lore:base/living-structures"
+        },
+        {
+            "face": "11-gate-stations.jpg",
+            "name": "Gate Stations",
+            "metadata": "card.lore:base/gate-stations"
+        },
+        {
+            "face": "12-railgun-arrays.jpg",
+            "name": "Railgun Arrays",
+            "metadata": "card.lore:base/railgun-arrays"
+        },
+        {
+            "face": "13-ancient-holdings.jpg",
+            "name": "Ancient Holdings",
+            "metadata": "card.lore:base/ancient-holdings"
+        },
+        {
+            "face": "14-seeker-torpedoes.jpg",
+            "name": "Seeker Torpedoes",
+            "metadata": "card.lore:base/seeker-torpedoes"
+        }
+    ],
+    "sharedBack": "base/card/lore/lore.back.jpg",
+    "cardWidth": 6.44,
+    "cardHeight": 9,
+    "preshrink": 500,
+    "output": "base/card/lore",
+    "cardTags": ["lore-card"]
+}
