@@ -1,0 +1,166 @@
+{
+    "inputDir": "base/card/court/",
+    "inputCards": [
+        {
+            "face": "guild/01-loyal-engineers.jpg",
+            "name": "Loyal Engineers",
+            "metadata": "card.court.guild:base/loyal-engineers"
+        },
+        {
+            "face": "guild/02-mining-interest.jpg",
+            "name": "Mining Interest",
+            "metadata": "card.court.guild:base/mining-interest"
+        },
+        {
+            "face": "guild/03-material-cartel.jpg",
+            "name": "Material Cartel",
+            "metadata": "card.court.guild:base/material-cartel"
+        },
+        {
+            "face": "guild/04-admin-union.jpg",
+            "name": "Admin Union",
+            "metadata": "card.court.guild:base/admin-union"
+        },
+        {
+            "face": "guild/05-construction-union.jpg",
+            "name": "Construction Union",
+            "metadata": "card.court.guild:base/construction-union"
+        },
+        {
+            "face": "guild/06-fuel-cartel.jpg",
+            "name": "Fuel Cartel",
+            "metadata": "card.court.guild:base/fuel-cartel"
+        },
+        {
+            "face": "guild/07-loyal-pilots.jpg",
+            "name": "Loyal Pilots",
+            "metadata": "card.court.guild:base/loyal-pilots"
+        },
+        {
+            "face": "guild/08-gatekeepers.jpg",
+            "name": "Gatekeepers",
+            "metadata": "card.court.guild:base/gatekeepers"
+        },
+        {
+            "face": "guild/09-shipping-interest.jpg",
+            "name": "Shipping Interest",
+            "metadata": "card.court.guild:base/shipping-interest"
+        },
+        {
+            "face": "guild/10-spacing-union.jpg",
+            "name": "Spacing Union",
+            "metadata": "card.court.guild:base/spacing-union"
+        },
+        {
+            "face": "guild/11-arms-union.jpg",
+            "name": "Arms Union",
+            "metadata": "card.court.guild:base/arms-union"
+        },
+        {
+            "face": "guild/12-prison-wardens.jpg",
+            "name": "Prison Wardens",
+            "metadata": "card.court.guild:base/prison-wardens"
+        },
+        {
+            "face": "guild/13-skirmishers.jpg",
+            "name": "Skirmishers",
+            "metadata": "card.court.guild:base/skirmishers"
+        },
+        {
+            "face": "guild/14-court-enforcers.jpg",
+            "name": "Court Enforcers",
+            "metadata": "card.court.guild:base/court-enforcers"
+        },
+        {
+            "face": "guild/15-loyal-marines.jpg",
+            "name": "Loyal Marines",
+            "metadata": "card.court.guild:base/loyal-marines"
+        },
+        {
+            "face": "guild/16-lattice-spies.jpg",
+            "name": "Lattice Spies",
+            "metadata": "card.court.guild:base/lattice-spies"
+        },
+        {
+            "face": "guild/17-farseers.jpg",
+            "name": "Farseers",
+            "metadata": "card.court.guild:base/farseers"
+        },
+        {
+            "face": "guild/18-secret-order.jpg",
+            "name": "Secret Order",
+            "metadata": "card.court.guild:base/18-secret-order"
+        },
+        {
+            "face": "guild/19-loyal-empaths.jpg",
+            "name": "Loyal Empaths",
+            "metadata": "card.court.guild:base/loyal-empaths"
+        },
+        {
+            "face": "guild/20-silver-tongues.jpg",
+            "name": "Silver Tongues",
+            "metadata": "card.court.guild:base/silver-tongues"
+        },
+        {
+            "face": "guild/21-loyal-keepers.jpg",
+            "name": "Loyal Keepers",
+            "metadata": "card.court.guild:base/loyal-keepers"
+        },
+        {
+            "face": "guild/22-sworn-guardians.jpg",
+            "name": "Sworn Guardians",
+            "metadata": "card.court.guild:base/sworn-guardians"
+        },
+        {
+            "face": "guild/23-elder-broker.jpg",
+            "name": "Elder Broker",
+            "metadata": "card.court.guild:base/elder-broker"
+        },
+        {
+            "face": "guild/24-relic-fence.jpg",
+            "name": "Relic Fence",
+            "metadata": "card.court.guild:base/relic-fence"
+        },
+        {
+            "face": "guild/25-galactic-bards.jpg",
+            "name": "Galactic Bards",
+            "metadata": "card.court.guild:base/galactic-bards"
+        },
+        {
+            "face": "vox/26-mass-uprising.jpg",
+            "name": "Mass Uprising",
+            "metadata": "card.court.vox:base/mass-uprising"
+        },
+        {
+            "face": "vox/27-populist-demands.jpg",
+            "name": "Populist Demands",
+            "metadata": "card.court.vox:base/populist-demands"
+        },
+        {
+            "face": "vox/28-outrage-spreads.jpg",
+            "name": "Outrage Spreads",
+            "metadata": "card.court.vox:base/outrage-spreads"
+        },
+        {
+            "face": "vox/29-song-of-freedom.jpg",
+            "name": "Song of Freedom",
+            "metadata": "card.court.vox:base/song-of-freedom"
+        },
+        {
+            "face": "vox/30-guild-struggle.jpg",
+            "name": "Guild Struggle",
+            "metadata": "card.court.vox:base/guild-struggle"
+        },
+        {
+            "face": "vox/31-call-to-action.jpg",
+            "name": "Call to Action",
+            "metadata": "card.court.vox:base/call-to-action"
+        }
+    ],
+    "sharedBack": "base/card/court/court.back.jpg",
+    "cardWidth": 6.44,
+    "cardHeight": 9,
+    "preshrink": 500,
+    "output": "base/card/court",
+    "cardTags": ["court-card"]
+}
