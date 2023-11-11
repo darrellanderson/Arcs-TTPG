@@ -1,8 +1,8 @@
 {
 	"Type": "Generic",
 	"GUID": "CBFC7031004504DAA78247BA54CD1E66",
-	"Name": "Ambition 6-3",
-	"Metadata": "token.ambition:base/6-3-3-2",
+	"Name": "Ambition 3-2/6-3",
+	"Metadata": "token.ambition:base/3-2-6-3",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.3,
@@ -44,9 +44,9 @@
 			},
 			"Rotation":
 			{
-				"X": 0,
+				"X": 180,
 				"Y": 0,
-				"Z": -90
+				"Z": 90
 			},
 			"Texture": "base/token/ambition/ambition-6-3.face.jpg",
 			"NormalMap": "",
@@ -74,9 +74,9 @@
 			},
 			"Rotation":
 			{
-				"X": -180,
+				"X": 0,
 				"Y": 0,
-				"Z": 90
+				"Z": -90
 			},
 			"Texture": "base/token/ambition/ambition-6-3.back.jpg",
 			"NormalMap": "",

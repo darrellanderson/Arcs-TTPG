@@ -1,8 +1,8 @@
 {
 	"Type": "Generic",
 	"GUID": "CBFC7031004504DAA78247BA54CD1E67",
-	"Name": "Ambition 9-4",
-	"Metadata": "token.ambition:base/9-4-5-3",
+	"Name": "Ambition 5-3/9-4",
+	"Metadata": "token.ambition:base/5-3-9-4",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.3,
@@ -44,9 +44,9 @@
 			},
 			"Rotation":
 			{
-				"X": 0,
+				"X": 180,
 				"Y": 0,
-				"Z": -90
+				"Z": 90
 			},
 			"Texture": "base/token/ambition/ambition-9-4.face.jpg",
 			"NormalMap": "",
@@ -74,9 +74,9 @@
 			},
 			"Rotation":
 			{
-				"X": -180,
+				"X": 0,
 				"Y": 0,
-				"Z": 90
+				"Z": -90
 			},
 			"Texture": "base/token/ambition/ambition-9-4.back.jpg",
 			"NormalMap": "",
