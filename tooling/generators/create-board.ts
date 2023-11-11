@@ -17,9 +17,6 @@
  * - metadata : object template metadata string.
  * - snapPoints : array of {x,y,z} points.
  *
- * INPUT:
- * - prebuild/.../{board}.jpg
- *
  * OUTPUT:
  * - assets/Models/utility/unit-cube-top-uvs.obj (if missing)
  * - assets/Templates/.../{board}.json

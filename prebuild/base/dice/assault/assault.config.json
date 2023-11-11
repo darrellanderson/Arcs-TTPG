@@ -1,0 +1,14 @@
+{
+    "inputDir": "base/dice/assault",
+    "faces": [
+        { "face": "assault-1.png", "name": "", "metadata": "" },
+        { "face": "assault-2.png", "name": "", "metadata": "" },
+        { "face": "assault-3.png", "name": "", "metadata": "" },
+        { "face": "assault-4.png", "name": "", "metadata": "" },
+        { "face": "assault-5.png", "name": "", "metadata": "" },
+        { "face": "assault-6.png", "name": "", "metadata": "" }
+    ],
+    "metadata": "dice:base/assault",
+    "output": "base/dice/assault",
+    "tags": ["die", "die-assault"]
+}

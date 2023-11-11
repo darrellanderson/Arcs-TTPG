@@ -5,7 +5,6 @@
  *
  * ARGS:
  * -f : config file (e.g. "prebuild/card/.../{deck}.config.json")
- * -x : overwrite output files (otherwise fail if they already exist)
  *
  * CONFIG FILE:
  * - inputDir : path relative to prebuild.
@@ -14,17 +13,6 @@
  * - cardHeight : card height, in game units.
  * - preshrink : if positive, shrink cards to max dimension before assembly.
  * - output : create cardsheet and deck template.
- *
- * INPUT METADATA FILE:
- * - name : string.
- * - nsid : unique template metadata string.
- * - description : (placeholder, not supported yet).
- *
- * INPUT:
- * - prebuild/card/{deck}/{card1}.jpg, & .json
- * - ...
- * - prebuild/card/{deck}/{cardN}.jpg, & .json
- * - prebuild/card/{deck}.back.jpg
  *
  * OUTPUT:
  * - assets/Templates/card/{deck}.json

@@ -1,0 +1,13 @@
+{
+    "inputDir": "base/dice/skirmish",
+    "faces": [
+        { "face": "skirmish-1.png", "name": "", "metadata": "" },
+        { "face": "skirmish-2.png", "name": "", "metadata": "" },
+        { "face": "skirmish-3.png", "name": "", "metadata": "" },
+        { "face": "skirmish-4.png", "name": "", "metadata": "" },
+        { "face": "skirmish-5.png", "name": "", "metadata": "" },
+        { "face": "skirmish-6.png", "name": "", "metadata": "" }
+    ],
+    "output": "base/dice/skirmish",
+    "tags": ["die", "die-skirmish"]
+}

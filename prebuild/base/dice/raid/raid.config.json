@@ -1,0 +1,13 @@
+{
+    "inputDir": "base/dice/raid",
+    "faces": [
+        { "face": "raid-1.png", "name": "", "metadata": "" },
+        { "face": "raid-2.png", "name": "", "metadata": "" },
+        { "face": "raid-3.png", "name": "", "metadata": "" },
+        { "face": "raid-4.png", "name": "", "metadata": "" },
+        { "face": "raid-5.png", "name": "", "metadata": "" },
+        { "face": "raid-6.png", "name": "", "metadata": "" }
+    ],
+    "output": "base/dice/raid",
+    "tags": ["die", "die-raid"]
+}
