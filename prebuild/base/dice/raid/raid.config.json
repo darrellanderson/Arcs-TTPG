@@ -1,12 +1,72 @@
 {
     "inputDir": "base/dice/raid",
     "faces": [
-        { "face": "raid-1.png", "name": "", "metadata": "" },
-        { "face": "raid-2.png", "name": "", "metadata": "" },
-        { "face": "raid-3.png", "name": "", "metadata": "" },
-        { "face": "raid-4.png", "name": "", "metadata": "" },
-        { "face": "raid-5.png", "name": "", "metadata": "" },
-        { "face": "raid-6.png", "name": "", "metadata": "" }
+        {
+            "face": "raid-1.png",
+            "name": "Raid",
+            "metadata": {
+                "self": 0,
+                "intercept": 1,
+                "ship": 0,
+                "building": 0,
+                "raid": 2
+            }
+        },
+        {
+            "face": "raid-2.png",
+            "name": "Raid",
+            "metadata": {
+                "self": 1,
+                "intercept": 0,
+                "ship": 0,
+                "building": 0,
+                "raid": 1
+            }
+        },
+        {
+            "face": "raid-3.png",
+            "name": "Raid",
+            "metadata": {
+                "self": 0,
+                "intercept": 1,
+                "ship": 0,
+                "building": 0,
+                "raid": 0
+            }
+        },
+        {
+            "face": "raid-4.png",
+            "name": "Raid",
+            "metadata": {
+                "self": 1,
+                "intercept": 0,
+                "ship": 0,
+                "building": 1,
+                "raid": 0
+            }
+        },
+        {
+            "face": "raid-5.png",
+            "name": "Raid",
+            "metadata": {
+                "self": 0,
+                "intercept": 0,
+                "ship": 0,
+                "building": 1,
+                "raid": 1
+            }
+        },
+        {
+            "face": "raid-6.png",
+            "name": "Raid",
+            "metadata": {
+                "self": 1,
+                "intercept": 0,
+                "ship": 0,
+                "building": 1,
+                "raid": 0
+            }
+        }
     ],
     "output": "base/dice/raid",
     "tags": ["die", "die-raid"]

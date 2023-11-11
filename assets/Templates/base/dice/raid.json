@@ -72,43 +72,43 @@
                         "X": 0,
                         "Y": 0,
                         "Z": 1,
-                        "Name": "",
-                        "Metadata": ""
+                        "Name": "Raid",
+                        "Metadata": "{\"self\":0,\"intercept\":1,\"ship\":0,\"building\":0,\"raid\":2}"
                 },
                 {
                         "X": -1,
                         "Y": 0,
                         "Z": 0,
-                        "Name": "",
-                        "Metadata": ""
+                        "Name": "Raid",
+                        "Metadata": "{\"self\":1,\"intercept\":0,\"ship\":0,\"building\":0,\"raid\":1}"
                 },
                 {
                         "X": 0,
                         "Y": 1,
                         "Z": 0,
-                        "Name": "",
-                        "Metadata": ""
+                        "Name": "Raid",
+                        "Metadata": "{\"self\":0,\"intercept\":1,\"ship\":0,\"building\":0,\"raid\":0}"
                 },
                 {
                         "X": 0,
                         "Y": -1,
                         "Z": 0,
-                        "Name": "",
-                        "Metadata": ""
+                        "Name": "Raid",
+                        "Metadata": "{\"self\":1,\"intercept\":0,\"ship\":0,\"building\":1,\"raid\":0}"
                 },
                 {
                         "X": 1,
                         "Y": 0,
                         "Z": 0,
-                        "Name": "",
-                        "Metadata": ""
+                        "Name": "Raid",
+                        "Metadata": "{\"self\":0,\"intercept\":0,\"ship\":0,\"building\":1,\"raid\":1}"
                 },
                 {
                         "X": 0,
                         "Y": 0,
                         "Z": -1,
-                        "Name": "",
-                        "Metadata": ""
+                        "Name": "Raid",
+                        "Metadata": "{\"self\":1,\"intercept\":0,\"ship\":0,\"building\":1,\"raid\":0}"
                 }
         ]
 }

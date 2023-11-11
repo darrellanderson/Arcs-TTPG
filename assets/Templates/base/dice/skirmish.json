@@ -72,43 +72,43 @@
                         "X": 0,
                         "Y": 0,
                         "Z": 1,
-                        "Name": "",
-                        "Metadata": ""
+                        "Name": "Skirmish",
+                        "Metadata": "{\"self\":0,\"intercept\":0,\"ship\":0,\"building\":0,\"raid\":0}"
                 },
                 {
                         "X": -1,
                         "Y": 0,
                         "Z": 0,
-                        "Name": "",
-                        "Metadata": ""
+                        "Name": "Skirmish",
+                        "Metadata": "{\"self\":0,\"intercept\":0,\"ship\":0,\"building\":0,\"raid\":0}"
                 },
                 {
                         "X": 0,
                         "Y": 1,
                         "Z": 0,
-                        "Name": "",
-                        "Metadata": ""
+                        "Name": "Skirmish",
+                        "Metadata": "{\"self\":0,\"intercept\":0,\"ship\":0,\"building\":0,\"raid\":0}"
                 },
                 {
                         "X": 0,
                         "Y": -1,
                         "Z": 0,
-                        "Name": "",
-                        "Metadata": ""
+                        "Name": "Skirmish",
+                        "Metadata": "{\"self\":0,\"intercept\":0,\"ship\":1,\"building\":0,\"raid\":0}"
                 },
                 {
                         "X": 1,
                         "Y": 0,
                         "Z": 0,
-                        "Name": "",
-                        "Metadata": ""
+                        "Name": "Skirmish",
+                        "Metadata": "{\"self\":0,\"intercept\":0,\"ship\":1,\"building\":0,\"raid\":0}"
                 },
                 {
                         "X": 0,
                         "Y": 0,
                         "Z": -1,
-                        "Name": "",
-                        "Metadata": ""
+                        "Name": "Skirmish",
+                        "Metadata": "{\"self\":0,\"intercept\":0,\"ship\":1,\"building\":0,\"raid\":0}"
                 }
         ]
 }

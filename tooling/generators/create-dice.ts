@@ -184,7 +184,10 @@ async function main() {
         if (typeof face.name !== "string") {
             throw new Error("config faces error");
         }
-        if (typeof face.metadata !== "string") {
+        if (
+            typeof face.metadata !== "string" &&
+            typeof face.metadata != "object"
+        ) {
             throw new Error("config faces error");
         }
     }
@@ -320,8 +323,10 @@ async function main() {
 
     // Overwrite face name/metadata.
     for (let i = 0; i < config.faces.length; i++) {
+        const md = config.faces[i].metadata;
         template.Faces[i].Name = config.faces[i].name;
-        template.Faces[i].Metadata = config.faces[i].metadata;
+        template.Faces[i].Metadata =
+            typeof md === "string" ? md : JSON.stringify(md);
     }
 
     console.log(`writing "${dstFile}"`);

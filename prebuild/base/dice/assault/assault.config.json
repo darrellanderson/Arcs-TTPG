@@ -1,12 +1,72 @@
 {
     "inputDir": "base/dice/assault",
     "faces": [
-        { "face": "assault-1.png", "name": "", "metadata": "" },
-        { "face": "assault-2.png", "name": "", "metadata": "" },
-        { "face": "assault-3.png", "name": "", "metadata": "" },
-        { "face": "assault-4.png", "name": "", "metadata": "" },
-        { "face": "assault-5.png", "name": "", "metadata": "" },
-        { "face": "assault-6.png", "name": "", "metadata": "" }
+        {
+            "face": "assault-1.png",
+            "name": "Assault",
+            "metadata": {
+                "self": 0,
+                "intercept": 0,
+                "ship": 0,
+                "building": 0,
+                "raid": 0
+            }
+        },
+        {
+            "face": "assault-2.png",
+            "name": "Assault",
+            "metadata": {
+                "self": 1,
+                "intercept": 0,
+                "ship": 1,
+                "building": 0,
+                "raid": 0
+            }
+        },
+        {
+            "face": "assault-3.png",
+            "name": "Assault",
+            "metadata": {
+                "self": 0,
+                "intercept": 1,
+                "ship": 1,
+                "building": 0,
+                "raid": 0
+            }
+        },
+        {
+            "face": "assault-4.png",
+            "name": "Assault",
+            "metadata": {
+                "self": 1,
+                "intercept": 0,
+                "ship": 2,
+                "building": 0,
+                "raid": 0
+            }
+        },
+        {
+            "face": "assault-5.png",
+            "name": "Assault",
+            "metadata": {
+                "self": 0,
+                "intercept": 0,
+                "ship": 2,
+                "building": 0,
+                "raid": 0
+            }
+        },
+        {
+            "face": "assault-6.png",
+            "name": "Assault",
+            "metadata": {
+                "self": 1,
+                "intercept": 0,
+                "ship": 1,
+                "building": 0,
+                "raid": 0
+            }
+        }
     ],
     "metadata": "dice:base/assault",
     "output": "base/dice/assault",

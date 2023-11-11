@@ -1,12 +1,72 @@
 {
     "inputDir": "base/dice/skirmish",
     "faces": [
-        { "face": "skirmish-1.png", "name": "", "metadata": "" },
-        { "face": "skirmish-2.png", "name": "", "metadata": "" },
-        { "face": "skirmish-3.png", "name": "", "metadata": "" },
-        { "face": "skirmish-4.png", "name": "", "metadata": "" },
-        { "face": "skirmish-5.png", "name": "", "metadata": "" },
-        { "face": "skirmish-6.png", "name": "", "metadata": "" }
+        {
+            "face": "skirmish-1.png",
+            "name": "Skirmish",
+            "metadata": {
+                "self": 0,
+                "intercept": 0,
+                "ship": 0,
+                "building": 0,
+                "raid": 0
+            }
+        },
+        {
+            "face": "skirmish-2.png",
+            "name": "Skirmish",
+            "metadata": {
+                "self": 0,
+                "intercept": 0,
+                "ship": 0,
+                "building": 0,
+                "raid": 0
+            }
+        },
+        {
+            "face": "skirmish-3.png",
+            "name": "Skirmish",
+            "metadata": {
+                "self": 0,
+                "intercept": 0,
+                "ship": 0,
+                "building": 0,
+                "raid": 0
+            }
+        },
+        {
+            "face": "skirmish-4.png",
+            "name": "Skirmish",
+            "metadata": {
+                "self": 0,
+                "intercept": 0,
+                "ship": 1,
+                "building": 0,
+                "raid": 0
+            }
+        },
+        {
+            "face": "skirmish-5.png",
+            "name": "Skirmish",
+            "metadata": {
+                "self": 0,
+                "intercept": 0,
+                "ship": 1,
+                "building": 0,
+                "raid": 0
+            }
+        },
+        {
+            "face": "skirmish-6.png",
+            "name": "Skirmish",
+            "metadata": {
+                "self": 0,
+                "intercept": 0,
+                "ship": 1,
+                "building": 0,
+                "raid": 0
+            }
+        }
     ],
     "output": "base/dice/skirmish",
     "tags": ["die", "die-skirmish"]
