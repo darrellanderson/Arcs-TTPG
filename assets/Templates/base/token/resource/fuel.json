@@ -1,0 +1,75 @@
+{
+	"Type": "Card",
+	"GUID": "B687951A0544911CB4DE9C84F502EAD3",
+	"Name": "Fuel",
+	"Metadata": "token.resource:base/fuel",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"Lights": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"GroundAccessibility": "Nothing",
+	"Tags": [
+		"resource-token"
+	],
+	"FrontTexture": "base/token/resource/fuel.jpg",
+	"BackTexture": "",
+	"HiddenTexture": "",
+	"BackIndex": 0,
+	"HiddenIndex": 0,
+	"NumHorizontal": 1,
+	"NumVertical": 1,
+	"Width": 3.016,
+	"Height": 3.016,
+	"Thickness": 0.5,
+	"HiddenInHand": false,
+	"UsedWithCardHolders": false,
+	"CanStack": true,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": true,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "Round",
+	"Indices": [ 0 ],
+	"CardNames":
+	{
+	},
+	"CardMetadata":
+	{
+		"0": "token.resource:base/fuel"
+	},
+	"CardTags":
+	{
+	}
+}

@@ -1,193 +1,199 @@
 {
-        "Type": "Generic",
-        "GUID": "B13BCF14BEB512425D9E0548671C9076",
-        "Name": "playerboard",
-        "Metadata": "board:base/playerboard",
-        "CollisionType": "Regular",
-        "Friction": 0.7,
-        "Restitution": 0.3,
-        "Density": 1,
-        "SurfaceType": "Cardboard",
-        "Roughness": 1,
-        "Metallic": 0,
-        "PrimaryColor": {
-                "R": 255,
-                "G": 255,
-                "B": 255
-        },
-        "SecondaryColor": {
-                "R": 0,
-                "G": 0,
-                "B": 0
-        },
-        "Flippable": false,
-        "AutoStraighten": false,
-        "ShouldSnap": false,
-        "ScriptName": "",
-        "Blueprint": "",
-        "Models": [
-                {
-                        "Model": "utility/unit-cube-top-uvs.obj",
-                        "Offset": {
-                                "X": 0,
-                                "Y": 0,
-                                "Z": 0
-                        },
-                        "Scale": {
-                                "X": 11.07,
-                                "Y": 27.62,
-                                "Z": 0.25
-                        },
-                        "Rotation": {
-                                "X": 0,
-                                "Y": 0,
-                                "Z": 0
-                        },
-                        "Texture": "base/board/playerboard/playerboard-0x0.jpg",
-                        "NormalMap": "",
-                        "ExtraMap": "base/board/playerboard/playerboard-mask-0x0.png",
-                        "ExtraMap2": "",
-                        "IsTransparent": false,
-                        "CastShadow": true,
-                        "IsTwoSided": false,
-                        "UseOverrides": true,
-                        "SurfaceType": "Cardboard"
-                }
-        ],
-        "Collision": [],
-        "Lights": [],
-        "SnapPointsGlobal": false,
-        "SnapPoints": [
-                {
-                        "X": 3.2,
-                        "Y": -4.837,
-                        "Z": 0.125,
-                        "Range": 2,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "city",
-                                "starport",
-                                "resource-token"
-                        ]
-                },
-                {
-                        "X": 3.2,
-                        "Y": -1.61,
-                        "Z": 0.125,
-                        "Range": 2,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "starport",
-                                "city",
-                                "resource-token"
-                        ]
-                },
-                {
-                        "X": 3.2,
-                        "Y": 3.2,
-                        "Z": 0.125,
-                        "Range": 2,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "city",
-                                "starport"
-                        ]
-                },
-                {
-                        "X": 3.2,
-                        "Y": 8.05,
-                        "Z": 0.125,
-                        "Range": 2,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "city",
-                                "starport"
-                        ]
-                },
-                {
-                        "X": 3.2,
-                        "Y": 11.25,
-                        "Z": 0.125,
-                        "Range": 2,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "city",
-                                "starport"
-                        ]
-                },
-                {
-                        "X": 3.2,
-                        "Y": -11.273,
-                        "Z": 0.125,
-                        "Range": 2,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "resource-token"
-                        ]
-                },
-                {
-                        "X": 3.2,
-                        "Y": -8.054,
-                        "Z": 0.125,
-                        "Range": 2,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "resource-token"
-                        ]
-                },
-                {
-                        "X": 3.2,
-                        "Y": 1.589,
-                        "Z": 0.125,
-                        "Range": 2,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "resource-token"
-                        ]
-                },
-                {
-                        "X": 3.2,
-                        "Y": 4.873,
-                        "Z": 0.125,
-                        "Range": 2,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "resource-token"
-                        ]
-                }
-        ],
-        "ZoomViewDirection": {
-                "X": 0,
-                "Y": 0,
-                "Z": 1
-        },
-        "GroundAccessibility": "Zoom",
-        "Tags": []
+	"Type": "Generic",
+	"GUID": "B13BCF14BEB512425D9E0548671C9076",
+	"Name": "playerboard",
+	"Metadata": "board:base/playerboard",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0.3,
+	"Density": 1,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": false,
+	"AutoStraighten": false,
+	"ShouldSnap": false,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [
+		{
+			"Model": "utility/unit-cube-top-uvs.obj",
+			"Offset":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Scale":
+			{
+				"X": 11.07,
+				"Y": 27.62,
+				"Z": 0.25
+			},
+			"Rotation":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Texture": "base/board/playerboard/playerboard-0x0.jpg",
+			"NormalMap": "",
+			"ExtraMap": "base/board/playerboard/playerboard-mask-0x0.png",
+			"ExtraMap2": "",
+			"IsTransparent": false,
+			"CastShadow": true,
+			"IsTwoSided": false,
+			"UseOverrides": true,
+			"SurfaceType": "Cardboard"
+		}
+	],
+	"Collision": [],
+	"Lights": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [
+		{
+			"X": 3,
+			"Y": -4.837,
+			"Z": 0.125,
+			"Range": 2,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"city",
+				"starport",
+				"resource-token"
+			]
+		},
+		{
+			"X": 3,
+			"Y": -1.61,
+			"Z": 0.125,
+			"Range": 2,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"starport",
+				"city",
+				"resource-token"
+			]
+		},
+		{
+			"X": 3,
+			"Y": 3.2,
+			"Z": 0.125,
+			"Range": 2,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"city",
+				"starport"
+			]
+		},
+		{
+			"X": 3,
+			"Y": 8.05,
+			"Z": 0.125,
+			"Range": 2,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"city",
+				"starport"
+			]
+		},
+		{
+			"X": 3,
+			"Y": 11.25,
+			"Z": 0.125,
+			"Range": 2,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"city",
+				"starport"
+			]
+		},
+		{
+			"X": 3,
+			"Y": -11.2,
+			"Z": 0.125,
+			"Range": 2,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"resource-token"
+			]
+		},
+		{
+			"X": 3,
+			"Y": -8.054,
+			"Z": 0.125,
+			"Range": 2,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"resource-token"
+			]
+		},
+		{
+			"X": 3,
+			"Y": 1.6,
+			"Z": 0.125,
+			"Range": 2,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"resource-token"
+			]
+		},
+		{
+			"X": 3,
+			"Y": 4.75,
+			"Z": 0.125,
+			"Range": 2,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"resource-token"
+			]
+		}
+	],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 1
+	},
+	"GroundAccessibility": "Zoom",
+	"Tags": []
 }
