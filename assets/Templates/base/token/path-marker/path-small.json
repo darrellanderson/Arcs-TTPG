@@ -1,0 +1,80 @@
+{
+	"Type": "Card",
+	"GUID": "526AB399B54E7C8CA9A4CE888B797B41",
+	"Name": "path-small",
+	"Metadata": "token.path:base/small",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0,
+	"Density": 0.5,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": true,
+	"AutoStraighten": false,
+	"ShouldSnap": true,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [],
+	"Collision": [],
+	"Lights": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"GroundAccessibility": "Nothing",
+	"Tags": [
+		"path-marker"
+	],
+	"FrontTexture": "base/token/path-marker/path-marker-small.png",
+	"BackTexture": "",
+	"HiddenTexture": "",
+	"BackIndex": 0,
+	"HiddenIndex": 0,
+	"NumHorizontal": 1,
+	"NumVertical": 1,
+	"Width": 6,
+	"Height": 3.58594,
+	"Thickness": 0.2,
+	"HiddenInHand": false,
+	"UsedWithCardHolders": false,
+	"CanStack": false,
+	"UsePrimaryColorForSide": false,
+	"FrontTextureOverrideExposed": false,
+	"AllowFlippedInStack": false,
+	"MirrorBack": true,
+	"EmissiveFront": false,
+	"Model": "base/token/path-marker/path-marker-small.png",
+	"ShapeAccuracy": 10,
+	"ConvexCollision": true,
+	"Indices": [ 0 ],
+	"CardNames":
+	{
+	},
+	"CardMetadata":
+	{
+		"0": "token.path:base/small"
+	},
+	"CardTags":
+	{
+		"0": [
+			"path-marker"
+		]
+	}
+}

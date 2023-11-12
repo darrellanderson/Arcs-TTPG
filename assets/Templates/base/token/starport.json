@@ -1,7 +1,7 @@
 {
 	"Type": "Generic",
 	"GUID": "B70A2F0EAE4D829670DCD683AD07FA5F",
-	"Name": "Starport Token",
+	"Name": "starport",
 	"Metadata": "token:base/starport",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
@@ -35,13 +35,13 @@
 			{
 				"X": 0.2,
 				"Y": 0,
-				"Z": 0.025
+				"Z": 0.05
 			},
 			"Scale":
 			{
 				"X": 2.6,
 				"Y": 2.6,
-				"Z": 0.05
+				"Z": 0.1
 			},
 			"Rotation":
 			{
@@ -66,13 +66,13 @@
 			{
 				"X": 0.2,
 				"Y": 0,
-				"Z": -0.025
+				"Z": -0.05
 			},
 			"Scale":
 			{
 				"X": 2.6,
 				"Y": 2.6,
-				"Z": 0.05
+				"Z": 0.1
 			},
 			"Rotation":
 			{
@@ -105,7 +105,7 @@
 			{
 				"X": 2.6,
 				"Y": 2.6,
-				"Z": 0.1
+				"Z": 0.2
 			},
 			"Rotation":
 			{

@@ -422,7 +422,7 @@
             "Z": 0.125,
             "Range": 3,
             "SnapRotation": 2,
-            "RotationOffset": 0,
+            "RotationOffset": 10,
             "Shape": 0,
             "FlipValidity": 0,
             "Tags": ["path-marker", "cluster-1"]
@@ -433,7 +433,7 @@
             "Z": 0.125,
             "Range": 3,
             "SnapRotation": 2,
-            "RotationOffset": 60,
+            "RotationOffset": 70,
             "Shape": 0,
             "FlipValidity": 0,
             "Tags": ["path-marker", "cluster-2"]
@@ -444,18 +444,18 @@
             "Z": 0.125,
             "Range": 3,
             "SnapRotation": 2,
-            "RotationOffset": 120,
+            "RotationOffset": 130,
             "Shape": 0,
             "FlipValidity": 0,
             "Tags": ["path-marker", "cluster-3"]
         },
         {
-            "X": -8.065,
+            "X": -7.8,
             "Y": -2,
             "Z": 0.125,
             "Range": 3,
             "SnapRotation": 2,
-            "RotationOffset": 180,
+            "RotationOffset": -168,
             "Shape": 0,
             "FlipValidity": 0,
             "Tags": ["path-marker", "cluster-4"]
@@ -466,7 +466,7 @@
             "Z": 0.125,
             "Range": 3,
             "SnapRotation": 2,
-            "RotationOffset": -120,
+            "RotationOffset": -113.2,
             "Shape": 0,
             "FlipValidity": 0,
             "Tags": ["path-marker", "cluster-5"]
@@ -477,7 +477,7 @@
             "Z": 0.125,
             "Range": 3,
             "SnapRotation": 2,
-            "RotationOffset": -60,
+            "RotationOffset": -55,
             "Shape": 0,
             "FlipValidity": 0,
             "Tags": ["path-marker", "cluster-6"]
