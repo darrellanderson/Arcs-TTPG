@@ -12,11 +12,6 @@
  * - output : create dice image and template.
  * - tags : array of tags.
  *
- * INPUT METADATA FILE:
- * - name : string.
- * - nsid : unique template metadata string.
- * - description : (placeholder, not supported yet).
- *
  * OUTPUT:
  * - assets/Templates/dice/{die}.json
  * - assets/Textures/dice/{die}.jpg
