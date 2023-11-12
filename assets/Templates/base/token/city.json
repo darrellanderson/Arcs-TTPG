@@ -1,7 +1,7 @@
 {
 	"Type": "Generic",
 	"GUID": "089342B75C496065DC234BBC502FF6D9",
-	"Name": "city",
+	"Name": "City",
 	"Metadata": "token:base/city",
 	"CollisionType": "Regular",
 	"Friction": 0.7,

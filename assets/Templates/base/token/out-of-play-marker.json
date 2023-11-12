@@ -1,7 +1,7 @@
 {
 	"Type": "Card",
 	"GUID": "EEC4E1DD5D4F57A22875EAB13AA57C16",
-	"Name": "out-of-play-marker",
+	"Name": "Out of Play Marker",
 	"Metadata": "token:base/out-of-play-marker",
 	"CollisionType": "Regular",
 	"Friction": 0.7,

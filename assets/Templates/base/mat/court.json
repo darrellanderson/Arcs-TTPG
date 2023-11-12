@@ -1,8 +1,8 @@
 {
 	"Type": "Generic",
-	"GUID": "B13BCF14BEB512425D9E0548671C9076",
-	"Name": "Playerboard",
-	"Metadata": "board:base/playerboard",
+	"GUID": "92913936CAEE03128228BCD1C72D295A",
+	"Name": "Court",
+	"Metadata": "mat:base/court",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.3,
@@ -38,8 +38,8 @@
 			},
 			"Scale":
 			{
-				"X": 11.07,
-				"Y": 27.62,
+				"X": 10,
+				"Y": 35.2,
 				"Z": 0.25
 			},
 			"Rotation":
@@ -48,9 +48,9 @@
 				"Y": 0,
 				"Z": 0
 			},
-			"Texture": "base/board/playerboard/playerboard-0x0.jpg",
+			"Texture": "base/mat/court.jpg",
 			"NormalMap": "",
-			"ExtraMap": "base/board/playerboard/playerboard-mask-0x0.png",
+			"ExtraMap": "",
 			"ExtraMap2": "",
 			"IsTransparent": false,
 			"CastShadow": true,
@@ -64,127 +64,68 @@
 	"SnapPointsGlobal": false,
 	"SnapPoints": [
 		{
-			"X": 3,
-			"Y": -4.837,
+			"X": 0,
+			"Y": -13.88,
 			"Z": 0.125,
-			"Range": 2,
+			"Range": 3,
 			"SnapRotation": 0,
 			"RotationOffset": 0,
 			"Shape": 0,
 			"FlipValidity": 0,
 			"Tags": [
-				"city",
-				"starport",
-				"resource-token"
+				"court-card"
 			]
 		},
 		{
-			"X": 3,
-			"Y": -1.61,
+			"X": 0,
+			"Y": -6.94,
 			"Z": 0.125,
-			"Range": 2,
+			"Range": 3,
 			"SnapRotation": 0,
 			"RotationOffset": 0,
 			"Shape": 0,
 			"FlipValidity": 0,
 			"Tags": [
-				"starport",
-				"city",
-				"resource-token"
+				"court-card"
 			]
 		},
 		{
-			"X": 3,
-			"Y": 3.2,
+			"X": 0,
+			"Y": 0,
 			"Z": 0.125,
-			"Range": 2,
+			"Range": 3,
 			"SnapRotation": 0,
 			"RotationOffset": 0,
 			"Shape": 0,
 			"FlipValidity": 0,
 			"Tags": [
-				"city",
-				"starport"
+				"court-card"
 			]
 		},
 		{
-			"X": 3,
-			"Y": 8.05,
+			"X": 0,
+			"Y": 6.94,
 			"Z": 0.125,
-			"Range": 2,
+			"Range": 3,
 			"SnapRotation": 0,
 			"RotationOffset": 0,
 			"Shape": 0,
 			"FlipValidity": 0,
 			"Tags": [
-				"city",
-				"starport"
+				"court-card"
 			]
 		},
 		{
-			"X": 3,
-			"Y": 11.25,
+			"X": 0,
+			"Y": 13.88,
 			"Z": 0.125,
-			"Range": 2,
+			"Range": 3,
 			"SnapRotation": 0,
 			"RotationOffset": 0,
 			"Shape": 0,
 			"FlipValidity": 0,
 			"Tags": [
-				"city",
-				"starport"
-			]
-		},
-		{
-			"X": 3,
-			"Y": -11.2,
-			"Z": 0.125,
-			"Range": 2,
-			"SnapRotation": 0,
-			"RotationOffset": 0,
-			"Shape": 0,
-			"FlipValidity": 0,
-			"Tags": [
-				"resource-token"
-			]
-		},
-		{
-			"X": 3,
-			"Y": -8.054,
-			"Z": 0.125,
-			"Range": 2,
-			"SnapRotation": 0,
-			"RotationOffset": 0,
-			"Shape": 0,
-			"FlipValidity": 0,
-			"Tags": [
-				"resource-token"
-			]
-		},
-		{
-			"X": 3,
-			"Y": 1.6,
-			"Z": 0.125,
-			"Range": 2,
-			"SnapRotation": 0,
-			"RotationOffset": 0,
-			"Shape": 0,
-			"FlipValidity": 0,
-			"Tags": [
-				"resource-token"
-			]
-		},
-		{
-			"X": 3,
-			"Y": 4.75,
-			"Z": 0.125,
-			"Range": 2,
-			"SnapRotation": 0,
-			"RotationOffset": 0,
-			"Shape": 0,
-			"FlipValidity": 0,
-			"Tags": [
-				"resource-token"
+				"court-card"
 			]
 		}
 	],
@@ -194,6 +135,6 @@
 		"Y": 0,
 		"Z": 1
 	},
-	"GroundAccessibility": "Zoom",
+	"GroundAccessibility": "Nothing",
 	"Tags": []
 }

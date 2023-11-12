@@ -1,7 +1,7 @@
 {
 	"Type": "Generic",
 	"GUID": "743132942049067B55F61AB297173F4D",
-	"Name": "power marker",
+	"Name": "Power Marker",
 	"Metadata": "unit:base/power-marker",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
@@ -70,5 +70,7 @@
 		"Z": 0
 	},
 	"GroundAccessibility": "Nothing",
-	"Tags": []
+	"Tags": [
+		"power-marker"
+	]
 }

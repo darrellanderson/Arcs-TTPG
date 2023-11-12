@@ -1,7 +1,7 @@
 {
 	"Type": "Generic",
 	"GUID": "C5E768160FF7FC1304EA2E2C3A8F7311",
-	"Name": "map-red-dark",
+	"Name": "Map",
 	"Metadata": "board:base/map-red-dark",
 	"CollisionType": "Regular",
 	"Friction": 0.7,

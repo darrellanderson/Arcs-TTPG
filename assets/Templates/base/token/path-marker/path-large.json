@@ -1,7 +1,7 @@
 {
 	"Type": "Card",
 	"GUID": "0B6155349F45E503467F70B01B2FEA28",
-	"Name": "path-large",
+	"Name": "Path (Large)",
 	"Metadata": "token.path:base/large",
 	"CollisionType": "Regular",
 	"Friction": 0.7,

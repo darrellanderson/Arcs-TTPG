@@ -1,7 +1,7 @@
 {
 	"Type": "Generic",
 	"GUID": "5E707FE1A94298ED707277A8E7A9EF40",
-	"Name": "initiative-tall",
+	"Name": "Initiative Marker",
 	"Metadata": "token:base/initiative.tall",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
