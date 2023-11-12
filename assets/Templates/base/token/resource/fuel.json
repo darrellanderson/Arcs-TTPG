@@ -40,7 +40,7 @@
 	},
 	"GroundAccessibility": "Nothing",
 	"Tags": [
-		"resource-token"
+		"resource-token", "resource-token-fuel"
 	],
 	"FrontTexture": "base/token/resource/fuel.jpg",
 	"BackTexture": "",
