@@ -1,7 +1,7 @@
 #!env ts-node
 
 /**
- * Create a deck from individual card images and corresponding metadata.
+ * Create mat with card images and corresponding metadata.
  *
  * ARGS:
  * -f : config file (e.g. "prebuild/base/mat/court.config.json")
@@ -10,10 +10,10 @@
  * - cardWidth : card width, in game units.
  * - cardHeight : card height, in game units.
  * - depth : final obj depth, in game units.
+ * - gap : padding between cards and to mat edge, in game units.
  *
  * - inputDir : path relative to prebuild.
  * - slots : array of [img, label, tags].
- * - gap : padding between cards and to mat edge, in game units.
  * - cols : if > 0, wrap after N columns.
  *
  * - metadata : string
@@ -148,13 +148,13 @@ async function main() {
     }
     for (const slot of config.slots) {
         if (typeof slot.img !== "string") {
-            throw new Error("config slot error");
+            throw new Error("config slot error (img)");
         }
         if (typeof slot.label !== "string") {
-            throw new Error("config slot error");
+            throw new Error("config slot error (label)");
         }
         if (!Array.isArray(slot.tags)) {
-            throw new Error("config slot error");
+            throw new Error("config slot error (tags)");
         }
     }
     for (const tag of config.tags) {
@@ -205,11 +205,11 @@ async function main() {
 
     // Create backing image.  We could be clever with shared UVs, but keep
     // things simple and create a single image.
-    const cols =
-        config.cols > 0
-            ? config.slots.length % config.cols
-            : config.slots.length;
+    const cols = config.cols > 0 ? config.cols : config.slots.length;
     const rows = Math.ceil(config.slots.length / cols);
+    console.log(
+        `layout ${cols}x${rows} (config #slots=${config.slots.length} cols=${config.cols})`
+    );
 
     // Game object size (world space).
     const world = {
@@ -242,6 +242,8 @@ async function main() {
 
         const left = gapPx + col * (gapPx + cardPixels.w) + bleed.w;
         const top = gapPx + row * (gapPx + cardPixels.h) + bleed.h;
+
+        console.log(`[${index} @ ${col}x${row}]`);
 
         const input = await slot.img
             .grayscale(true)
@@ -282,9 +284,8 @@ async function main() {
                 config.cardWidth * (col + 0.5) -
                 world.w / 2,
             X:
-                config.gap * (row + 1) +
-                config.cardHeight * (row + 0.5) -
-                world.h / 2,
+                world.h / 2 -
+                (config.gap * (row + 1) + config.cardHeight * (row + 0.5)),
             Tags: slot.tags,
 
             // Other snap point fields.
