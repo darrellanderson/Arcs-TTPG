@@ -7,7 +7,7 @@
         {
             "img": "lore.back.jpg",
             "label": "LORE",
-            "tags": ["lore-card"]
+            "tags": ["card.lore"]
         }
     ],
     "gap": 0.5,

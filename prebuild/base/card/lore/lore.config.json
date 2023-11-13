@@ -77,5 +77,5 @@
     "cardHeight": 9,
     "preshrink": 500,
     "output": "base/card/lore",
-    "cardTags": ["lore-card"]
+    "cardTags": ["card-lore"]
 }

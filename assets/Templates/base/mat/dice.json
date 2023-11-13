@@ -62,7 +62,7 @@
                         "Y": -2.5,
                         "X": 6.25,
                         "Tags": [
-                                "die-assault"
+                                "die.assault"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -75,7 +75,7 @@
                         "Y": 0,
                         "X": 6.25,
                         "Tags": [
-                                "die-assault"
+                                "die.assault"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -88,7 +88,7 @@
                         "Y": 2.5,
                         "X": 6.25,
                         "Tags": [
-                                "die-assault"
+                                "die.assault"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -101,7 +101,7 @@
                         "Y": -2.5,
                         "X": 3.75,
                         "Tags": [
-                                "die-assault"
+                                "die.assault"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -114,7 +114,7 @@
                         "Y": 0,
                         "X": 3.75,
                         "Tags": [
-                                "die-assault"
+                                "die.assault"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -127,7 +127,7 @@
                         "Y": 2.5,
                         "X": 3.75,
                         "Tags": [
-                                "die-assault"
+                                "die.assault"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -140,7 +140,7 @@
                         "Y": -2.5,
                         "X": 1.25,
                         "Tags": [
-                                "die-raid"
+                                "die.raid"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -153,7 +153,7 @@
                         "Y": 0,
                         "X": 1.25,
                         "Tags": [
-                                "die-raid"
+                                "die.raid"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -166,7 +166,7 @@
                         "Y": 2.5,
                         "X": 1.25,
                         "Tags": [
-                                "die-raid"
+                                "die.raid"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -179,7 +179,7 @@
                         "Y": -2.5,
                         "X": -1.25,
                         "Tags": [
-                                "die-raid"
+                                "die.raid"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -192,7 +192,7 @@
                         "Y": 0,
                         "X": -1.25,
                         "Tags": [
-                                "die-raid"
+                                "die.raid"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -205,7 +205,7 @@
                         "Y": 2.5,
                         "X": -1.25,
                         "Tags": [
-                                "die-raid"
+                                "die.raid"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -218,7 +218,7 @@
                         "Y": -2.5,
                         "X": -3.75,
                         "Tags": [
-                                "die-skirmish"
+                                "die.skirmish"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -231,7 +231,7 @@
                         "Y": 0,
                         "X": -3.75,
                         "Tags": [
-                                "die-skirmish"
+                                "die.skirmish"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -244,7 +244,7 @@
                         "Y": 2.5,
                         "X": -3.75,
                         "Tags": [
-                                "die-skirmish"
+                                "die.skirmish"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -257,7 +257,7 @@
                         "Y": -2.5,
                         "X": -6.25,
                         "Tags": [
-                                "die-skirmish"
+                                "die.skirmish"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -270,7 +270,7 @@
                         "Y": 0,
                         "X": -6.25,
                         "Tags": [
-                                "die-skirmish"
+                                "die.skirmish"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -283,7 +283,7 @@
                         "Y": 2.5,
                         "X": -6.25,
                         "Tags": [
-                                "die-skirmish"
+                                "die.skirmish"
                         ],
                         "Z": 0.125,
                         "Range": 3,

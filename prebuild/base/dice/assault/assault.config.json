@@ -70,5 +70,5 @@
     ],
     "metadata": "dice:base/assault",
     "output": "base/dice/assault",
-    "tags": ["die", "die-assault"]
+    "tags": ["die", "die.assault"]
 }

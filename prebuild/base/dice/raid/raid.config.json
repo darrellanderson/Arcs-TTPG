@@ -69,5 +69,5 @@
         }
     ],
     "output": "base/dice/raid",
-    "tags": ["die", "die-raid"]
+    "tags": ["die", "die.raid"]
 }

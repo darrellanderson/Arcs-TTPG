@@ -7,7 +7,7 @@
     "preshrink": -1,
     "input": "base/board/map-red-dark.jpg",
     "output": "base/board/map-red-dark",
-    "metadata": "board:base/map-red-dark",
+    "metadata": "board:base/map",
     "snapPoints": [
         {
             "X": 18.381,
@@ -18,7 +18,7 @@
             "RotationOffset": -90,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["action-card", "action-card-discard"]
+            "Tags": ["card.action", "card.action.discard"]
         },
         {
             "X": -10.013,
@@ -29,7 +29,7 @@
             "RotationOffset": -90,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["action-card"]
+            "Tags": ["card.action"]
         },
         {
             "X": 15.797,
@@ -139,7 +139,7 @@
             "RotationOffset": 0,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["starport", "city"]
+            "Tags": ["building"]
         },
         {
             "X": 18.189,
@@ -150,7 +150,7 @@
             "RotationOffset": 0,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["city", "starport"]
+            "Tags": ["building"]
         },
         {
             "X": 17.164,
@@ -161,7 +161,7 @@
             "RotationOffset": 0,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["city", "starport"]
+            "Tags": ["building"]
         },
         {
             "X": 18.775,
@@ -172,7 +172,7 @@
             "RotationOffset": 0,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["city", "starport"]
+            "Tags": ["building"]
         },
         {
             "X": 16.79,
@@ -183,7 +183,7 @@
             "RotationOffset": 0,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["city", "starport"]
+            "Tags": ["building"]
         },
         {
             "X": 11.6,
@@ -194,7 +194,7 @@
             "RotationOffset": 0,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["city", "starport"]
+            "Tags": ["building"]
         },
         {
             "X": 7.3,
@@ -205,7 +205,7 @@
             "RotationOffset": 0,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["city", "starport"]
+            "Tags": ["building"]
         },
         {
             "X": 0.928,
@@ -216,7 +216,7 @@
             "RotationOffset": 0,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["city", "starport"]
+            "Tags": ["building"]
         },
         {
             "X": -0.438,
@@ -227,7 +227,7 @@
             "RotationOffset": 0,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["city", "starport"]
+            "Tags": ["building"]
         },
         {
             "X": -5,
@@ -238,7 +238,7 @@
             "RotationOffset": 0,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["city", "starport"]
+            "Tags": ["building"]
         },
         {
             "X": -7.953,
@@ -249,7 +249,7 @@
             "RotationOffset": 0,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["city", "starport"]
+            "Tags": ["building"]
         },
         {
             "X": -14.991,
@@ -260,7 +260,7 @@
             "RotationOffset": 0,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["city", "starport"]
+            "Tags": ["building"]
         },
         {
             "X": -16.804,
@@ -271,7 +271,7 @@
             "RotationOffset": 0,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["city", "starport"]
+            "Tags": ["building"]
         },
         {
             "X": -15.9,
@@ -282,7 +282,7 @@
             "RotationOffset": 0,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["city", "starport"]
+            "Tags": ["building"]
         },
         {
             "X": -14.044,
@@ -293,7 +293,7 @@
             "RotationOffset": 0,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["city", "starport"]
+            "Tags": ["building"]
         },
         {
             "X": -17.966,
@@ -304,7 +304,7 @@
             "RotationOffset": 0,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["city", "starport"]
+            "Tags": ["building"]
         },
         {
             "X": -16.211,
@@ -315,7 +315,7 @@
             "RotationOffset": 0,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["city", "starport"]
+            "Tags": ["building"]
         },
         {
             "X": -14.238,
@@ -326,7 +326,7 @@
             "RotationOffset": 0,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["city", "starport"]
+            "Tags": ["building"]
         },
         {
             "X": -13.1,
@@ -337,7 +337,7 @@
             "RotationOffset": 0,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["city", "starport"]
+            "Tags": ["building"]
         },
         {
             "X": -4.419,
@@ -348,7 +348,7 @@
             "RotationOffset": 0,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["city", "starport"]
+            "Tags": ["building"]
         },
         {
             "X": 1.05,
@@ -359,7 +359,7 @@
             "RotationOffset": 0,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["city", "starport"]
+            "Tags": ["building"]
         },
         {
             "X": -0.75,
@@ -370,7 +370,7 @@
             "RotationOffset": 0,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["city", "starport"]
+            "Tags": ["building"]
         },
         {
             "X": 5.75,
@@ -381,7 +381,7 @@
             "RotationOffset": 0,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["city", "starport"]
+            "Tags": ["building"]
         },
         {
             "X": 12.865,
@@ -392,7 +392,7 @@
             "RotationOffset": 0,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["city", "starport"]
+            "Tags": ["building"]
         },
         {
             "X": 14.725,
@@ -403,7 +403,7 @@
             "RotationOffset": 0,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["city", "starport"]
+            "Tags": ["building"]
         },
         {
             "X": 16.828,
@@ -414,7 +414,7 @@
             "RotationOffset": 0,
             "Shape": 0,
             "FlipValidity": 0,
-            "Tags": ["city", "starport"]
+            "Tags": ["building"]
         },
         {
             "X": 9.676,

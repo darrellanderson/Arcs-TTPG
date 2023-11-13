@@ -9,10 +9,10 @@
             "label": "3-4P",
             "tags": ["court-card"]
         },
-        { "img": "court.back.jpg", "label": "COURT", "tags": ["court-card"] },
-        { "img": "court.back.jpg", "label": "COURT", "tags": ["court-card"] },
-        { "img": "court.back.jpg", "label": "COURT", "tags": ["court-card"] },
-        { "img": "court.back.jpg", "label": "DECK", "tags": ["court-card"] }
+        { "img": "court.back.jpg", "label": "COURT", "tags": ["card.court"] },
+        { "img": "court.back.jpg", "label": "COURT", "tags": ["card.court"] },
+        { "img": "court.back.jpg", "label": "COURT", "tags": ["card.court"] },
+        { "img": "court.back.jpg", "label": "DECK", "tags": ["card.court"] }
     ],
     "gap": 0.5,
     "cols": -1,

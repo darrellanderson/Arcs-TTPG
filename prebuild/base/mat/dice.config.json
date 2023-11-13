@@ -7,92 +7,92 @@
         {
             "img": "assault/assault-3.png",
             "label": "",
-            "tags": ["die-assault"]
+            "tags": ["die.assault"]
         },
         {
             "img": "assault/assault-3.png",
             "label": "",
-            "tags": ["die-assault"]
+            "tags": ["die.assault"]
         },
         {
             "img": "assault/assault-3.png",
             "label": "",
-            "tags": ["die-assault"]
+            "tags": ["die.assault"]
         },
         {
             "img": "assault/assault-3.png",
             "label": "",
-            "tags": ["die-assault"]
+            "tags": ["die.assault"]
         },
         {
             "img": "assault/assault-3.png",
             "label": "",
-            "tags": ["die-assault"]
+            "tags": ["die.assault"]
         },
         {
             "img": "assault/assault-3.png",
             "label": "",
-            "tags": ["die-assault"]
+            "tags": ["die.assault"]
         },
         {
             "img": "raid/raid-1.png",
             "label": "",
-            "tags": ["die-raid"]
+            "tags": ["die.raid"]
         },
         {
             "img": "raid/raid-1.png",
             "label": "",
-            "tags": ["die-raid"]
+            "tags": ["die.raid"]
         },
         {
             "img": "raid/raid-1.png",
             "label": "",
-            "tags": ["die-raid"]
+            "tags": ["die.raid"]
         },
         {
             "img": "raid/raid-1.png",
             "label": "",
-            "tags": ["die-raid"]
+            "tags": ["die.raid"]
         },
         {
             "img": "raid/raid-1.png",
             "label": "",
-            "tags": ["die-raid"]
+            "tags": ["die.raid"]
         },
         {
             "img": "raid/raid-1.png",
             "label": "",
-            "tags": ["die-raid"]
+            "tags": ["die.raid"]
         },
         {
             "img": "skirmish/skirmish-5.png",
             "label": "",
-            "tags": ["die-skirmish"]
+            "tags": ["die.skirmish"]
         },
         {
             "img": "skirmish/skirmish-5.png",
             "label": "",
-            "tags": ["die-skirmish"]
+            "tags": ["die.skirmish"]
         },
         {
             "img": "skirmish/skirmish-5.png",
             "label": "",
-            "tags": ["die-skirmish"]
+            "tags": ["die.skirmish"]
         },
         {
             "img": "skirmish/skirmish-5.png",
             "label": "",
-            "tags": ["die-skirmish"]
+            "tags": ["die.skirmish"]
         },
         {
             "img": "skirmish/skirmish-5.png",
             "label": "",
-            "tags": ["die-skirmish"]
+            "tags": ["die.skirmish"]
         },
         {
             "img": "skirmish/skirmish-5.png",
             "label": "",
-            "tags": ["die-skirmish"]
+            "tags": ["die.skirmish"]
         }
     ],
     "gap": 0.5,

@@ -1,8 +1,8 @@
 {
 	"Type": "Generic",
-	"GUID": "089342B75C496065DC234BBC502FF6D9",
-	"Name": "City",
-	"Metadata": "token:base/city",
+	"GUID": "B70A2F0EAE4D829670DCD683AD07FA5F",
+	"Name": "Starport",
+	"Metadata": "token:base/starport",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.3,
@@ -49,9 +49,9 @@
 				"Y": 0,
 				"Z": 0
 			},
-			"Texture": "base/token/city/city.face.jpg",
+			"Texture": "base/token/building/starport/starport.face.jpg",
 			"NormalMap": "",
-			"ExtraMap": "utility/token/triangle/triangle-mask.face.png",
+			"ExtraMap": "",
 			"ExtraMap2": "",
 			"IsTransparent": false,
 			"CastShadow": true,
@@ -80,7 +80,7 @@
 				"Y": 0,
 				"Z": 0
 			},
-			"Texture": "base/token/city/city.back.jpg",
+			"Texture": "base/token/building/starport/starport.back.jpg",
 			"NormalMap": "",
 			"ExtraMap": "",
 			"ExtraMap2": "",
@@ -128,6 +128,6 @@
 	},
 	"GroundAccessibility": "Zoom",
 	"Tags": [
-		"city"
+		"building", "building.starport"
 	]
 }

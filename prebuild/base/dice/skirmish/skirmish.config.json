@@ -69,5 +69,5 @@
         }
     ],
     "output": "base/dice/skirmish",
-    "tags": ["die", "die-skirmish"]
+    "tags": ["die", "die.skirmish"]
 }

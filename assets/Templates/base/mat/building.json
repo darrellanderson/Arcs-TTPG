@@ -1,8 +1,8 @@
 {
         "Type": "Generic",
-        "GUID": "506AFAED075F21C0E7396D0EC826506D",
-        "Name": "starport",
-        "Metadata": "mat:base/starport",
+        "GUID": "78F0AAAFAD12C51C1F0C0396CA2DE5D9",
+        "Name": "building",
+        "Metadata": "mat:base/building",
         "CollisionType": "Regular",
         "Friction": 0.7,
         "Restitution": 0.3,
@@ -43,7 +43,7 @@
                                 "Y": 0,
                                 "Z": 0
                         },
-                        "Texture": "base/mat/starport.jpg",
+                        "Texture": "base/mat/building.jpg",
                         "NormalMap": "",
                         "ExtraMap": "",
                         "ExtraMap2": "",
@@ -62,7 +62,7 @@
                         "Y": -6.14,
                         "X": -0.22,
                         "Tags": [
-                                "starport"
+                                "building"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -75,7 +75,7 @@
                         "Y": -3.0700000000000003,
                         "X": -0.22,
                         "Tags": [
-                                "starport"
+                                "building"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -88,7 +88,7 @@
                         "Y": 0,
                         "X": -0.22,
                         "Tags": [
-                                "starport"
+                                "building"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -101,7 +101,7 @@
                         "Y": 3.0699999999999994,
                         "X": -0.22,
                         "Tags": [
-                                "starport"
+                                "building"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -114,7 +114,7 @@
                         "Y": 6.14,
                         "X": -0.22,
                         "Tags": [
-                                "starport"
+                                "building"
                         ],
                         "Z": 0.125,
                         "Range": 3,

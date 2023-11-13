@@ -40,7 +40,7 @@
 	},
 	"GroundAccessibility": "Nothing",
 	"Tags": [
-		"resource-token", "resource-token-weapons"
+		"resource", "resource.weapons"
 	],
 	"FrontTexture": "base/token/resource/weapons.jpg",
 	"BackTexture": "",

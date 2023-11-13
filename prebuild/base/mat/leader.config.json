@@ -7,7 +7,7 @@
         {
             "img": "leader.back.jpg",
             "label": "LEADER",
-            "tags": ["leader-card"]
+            "tags": ["card.leader"]
         }
     ],
     "gap": 0.5,

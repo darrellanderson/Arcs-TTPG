@@ -2,7 +2,7 @@
 	"Type": "Generic",
 	"GUID": "5E707FE1A94298ED707277A8E7A9EF40",
 	"Name": "Initiative Marker",
-	"Metadata": "token:base/initiative.tall",
+	"Metadata": "token:base/initiative",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.3,

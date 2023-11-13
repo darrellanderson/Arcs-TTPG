@@ -70,5 +70,5 @@
 		"Z": 0
 	},
 	"GroundAccessibility": "Nothing",
-	"Tags": []
+	"Tags": ["ship"]
 }

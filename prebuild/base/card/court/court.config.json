@@ -162,5 +162,5 @@
     "cardHeight": 9,
     "preshrink": 500,
     "output": "base/card/court",
-    "cardTags": ["court-card"]
+    "cardTags": ["card.court"]
 }

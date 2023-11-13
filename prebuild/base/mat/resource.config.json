@@ -7,27 +7,27 @@
         {
             "img": "material.jpg",
             "label": "",
-            "tags": ["resource-token-material"]
+            "tags": ["resource.material"]
         },
         {
             "img": "fuel.jpg",
             "label": "",
-            "tags": ["resource-token-fuel"]
+            "tags": ["resource.fuel"]
         },
         {
             "img": "weapons.jpg",
             "label": "",
-            "tags": ["resource-token-weapons"]
+            "tags": ["resource.weapons"]
         },
         {
             "img": "relics.jpg",
             "label": "",
-            "tags": ["resource-token-relics"]
+            "tags": ["resource.relics"]
         },
         {
             "img": "psionic.jpg",
             "label": "",
-            "tags": ["resource-token-psionic"]
+            "tags": ["resource.psionic"]
         }
     ],
     "gap": 0.5,

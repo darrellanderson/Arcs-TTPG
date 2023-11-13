@@ -40,7 +40,7 @@
 	},
 	"GroundAccessibility": "Nothing",
 	"Tags": [
-		"resource-token", "resource-token-relics"
+		"resource", "resource.relics"
 	],
 	"FrontTexture": "base/token/resource/relics.jpg",
 	"BackTexture": "",
