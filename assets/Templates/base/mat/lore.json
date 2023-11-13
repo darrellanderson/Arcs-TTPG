@@ -1,8 +1,8 @@
 {
         "Type": "Generic",
-        "GUID": "92913936CAEE03128228BCD1C72D295A",
-        "Name": "court",
-        "Metadata": "mat:base/court",
+        "GUID": "1E24B6111C38CF4FCF7F5F922256424F",
+        "Name": "lore",
+        "Metadata": "mat:base/lore",
         "CollisionType": "Regular",
         "Friction": 0.7,
         "Restitution": 0.3,
@@ -35,7 +35,7 @@
                         },
                         "Scale": {
                                 "X": 10,
-                                "Y": 35.2,
+                                "Y": 7.44,
                                 "Z": 0.25
                         },
                         "Rotation": {
@@ -43,7 +43,7 @@
                                 "Y": 0,
                                 "Z": 0
                         },
-                        "Texture": "base/mat/court.jpg",
+                        "Texture": "base/mat/lore.jpg",
                         "NormalMap": "",
                         "ExtraMap": "",
                         "ExtraMap2": "",
@@ -59,62 +59,10 @@
         "SnapPointsGlobal": false,
         "SnapPoints": [
                 {
-                        "Y": -13.88,
-                        "X": 0,
-                        "Tags": [
-                                "court-card"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": -6.940000000000001,
-                        "X": 0,
-                        "Tags": [
-                                "court-card"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
                         "Y": 0,
                         "X": 0,
                         "Tags": [
-                                "court-card"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 6.940000000000001,
-                        "X": 0,
-                        "Tags": [
-                                "court-card"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 13.879999999999999,
-                        "X": 0,
-                        "Tags": [
-                                "court-card"
+                                "lore-card"
                         ],
                         "Z": 0.125,
                         "Range": 3,

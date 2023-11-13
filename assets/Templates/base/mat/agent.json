@@ -1,8 +1,8 @@
 {
         "Type": "Generic",
-        "GUID": "92913936CAEE03128228BCD1C72D295A",
-        "Name": "court",
-        "Metadata": "mat:base/court",
+        "GUID": "7B8A92026E77D957F93DC0BBE969D23A",
+        "Name": "agent",
+        "Metadata": "mat:base/agent",
         "CollisionType": "Regular",
         "Friction": 0.7,
         "Restitution": 0.3,
@@ -34,8 +34,8 @@
                                 "Z": 0
                         },
                         "Scale": {
-                                "X": 10,
-                                "Y": 35.2,
+                                "X": 5.25,
+                                "Y": 3.52,
                                 "Z": 0.25
                         },
                         "Rotation": {
@@ -43,7 +43,7 @@
                                 "Y": 0,
                                 "Z": 0
                         },
-                        "Texture": "base/mat/court.jpg",
+                        "Texture": "base/mat/agent.jpg",
                         "NormalMap": "",
                         "ExtraMap": "",
                         "ExtraMap2": "",
@@ -59,10 +59,10 @@
         "SnapPointsGlobal": false,
         "SnapPoints": [
                 {
-                        "Y": -13.88,
-                        "X": 0,
+                        "Y": -0.7550000000000001,
+                        "X": 1.9,
                         "Tags": [
-                                "court-card"
+                                "unit-agent"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -72,10 +72,10 @@
                         "FlipValidity": 0
                 },
                 {
-                        "Y": -6.940000000000001,
-                        "X": 0,
+                        "Y": 0.7550000000000001,
+                        "X": 1.9,
                         "Tags": [
-                                "court-card"
+                                "unit-agent"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -85,10 +85,10 @@
                         "FlipValidity": 0
                 },
                 {
-                        "Y": 0,
-                        "X": 0,
+                        "Y": -0.7550000000000001,
+                        "X": 0.95,
                         "Tags": [
-                                "court-card"
+                                "unit-agent"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -98,10 +98,10 @@
                         "FlipValidity": 0
                 },
                 {
-                        "Y": 6.940000000000001,
-                        "X": 0,
+                        "Y": 0.7550000000000001,
+                        "X": 0.95,
                         "Tags": [
-                                "court-card"
+                                "unit-agent"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -111,10 +111,75 @@
                         "FlipValidity": 0
                 },
                 {
-                        "Y": 13.879999999999999,
+                        "Y": -0.7550000000000001,
                         "X": 0,
                         "Tags": [
-                                "court-card"
+                                "unit-agent"
+                        ],
+                        "Z": 0.125,
+                        "Range": 3,
+                        "SnapRotation": 0,
+                        "RotationOffset": 0,
+                        "Shape": 0,
+                        "FlipValidity": 0
+                },
+                {
+                        "Y": 0.7550000000000001,
+                        "X": 0,
+                        "Tags": [
+                                "unit-agent"
+                        ],
+                        "Z": 0.125,
+                        "Range": 3,
+                        "SnapRotation": 0,
+                        "RotationOffset": 0,
+                        "Shape": 0,
+                        "FlipValidity": 0
+                },
+                {
+                        "Y": -0.7550000000000001,
+                        "X": -0.9500000000000002,
+                        "Tags": [
+                                "unit-agent"
+                        ],
+                        "Z": 0.125,
+                        "Range": 3,
+                        "SnapRotation": 0,
+                        "RotationOffset": 0,
+                        "Shape": 0,
+                        "FlipValidity": 0
+                },
+                {
+                        "Y": 0.7550000000000001,
+                        "X": -0.9500000000000002,
+                        "Tags": [
+                                "unit-agent"
+                        ],
+                        "Z": 0.125,
+                        "Range": 3,
+                        "SnapRotation": 0,
+                        "RotationOffset": 0,
+                        "Shape": 0,
+                        "FlipValidity": 0
+                },
+                {
+                        "Y": -0.7550000000000001,
+                        "X": -1.9000000000000004,
+                        "Tags": [
+                                "unit-agent"
+                        ],
+                        "Z": 0.125,
+                        "Range": 3,
+                        "SnapRotation": 0,
+                        "RotationOffset": 0,
+                        "Shape": 0,
+                        "FlipValidity": 0
+                },
+                {
+                        "Y": 0.7550000000000001,
+                        "X": -1.9000000000000004,
+                        "Tags": [
+                                "unit-agent"
                         ],
                         "Z": 0.125,
                         "Range": 3,

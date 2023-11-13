@@ -1,0 +1,64 @@
+{
+    "cardWidth": 1.01,
+    "cardHeight": 0.45,
+    "depth": 0.25,
+    "inputDir": "base/mat",
+    "slots": [
+        {
+            "img": "agent-footprint.jpg",
+            "label": "",
+            "tags": ["unit-agent"]
+        },
+        {
+            "img": "agent-footprint.jpg",
+            "label": "",
+            "tags": ["unit-agent"]
+        },
+        {
+            "img": "agent-footprint.jpg",
+            "label": "",
+            "tags": ["unit-agent"]
+        },
+        {
+            "img": "agent-footprint.jpg",
+            "label": "",
+            "tags": ["unit-agent"]
+        },
+        {
+            "img": "agent-footprint.jpg",
+            "label": "",
+            "tags": ["unit-agent"]
+        },
+        {
+            "img": "agent-footprint.jpg",
+            "label": "",
+            "tags": ["unit-agent"]
+        },
+        {
+            "img": "agent-footprint.jpg",
+            "label": "",
+            "tags": ["unit-agent"]
+        },
+        {
+            "img": "agent-footprint.jpg",
+            "label": "",
+            "tags": ["unit-agent"]
+        },
+        {
+            "img": "agent-footprint.jpg",
+            "label": "",
+            "tags": ["unit-agent"]
+        },
+        {
+            "img": "agent-footprint.jpg",
+            "label": "",
+            "tags": ["unit-agent"]
+        }
+    ],
+    "gap": 0.5,
+    "cols": 2,
+    "postShrink": 1024,
+    "metadata": "mat:base/agent",
+    "output": "base/mat/agent",
+    "tags": []
+}

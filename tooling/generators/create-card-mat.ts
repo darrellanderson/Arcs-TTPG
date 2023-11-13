@@ -15,6 +15,7 @@
  * - inputDir : path relative to prebuild.
  * - slots : array of [img, label, tags].
  * - cols : if > 0, wrap after N columns.
+ * - postShrink : if > 0, shrink final image.
  *
  * - metadata : string
  * - output : create mat image and template.
@@ -139,6 +140,7 @@ async function main() {
         typeof config.cardHeight !== "number" ||
         typeof config.depth !== "number" ||
         typeof config.gap !== "number" ||
+        typeof config.postShrink !== "number" ||
         typeof config.cols !== "number" ||
         typeof config.metadata !== "string" ||
         typeof config.output !== "string" ||
@@ -278,7 +280,7 @@ async function main() {
         }
 
         // Slot snap point (TTPG flips XY).
-        snapPoints.push({
+        const snapPoint = {
             Y:
                 config.gap * (col + 1) +
                 config.cardWidth * (col + 0.5) -
@@ -295,17 +297,34 @@ async function main() {
             RotationOffset: 0,
             Shape: 0,
             FlipValidity: 0,
-        });
+        };
+        if (config.snapDeltaX) {
+            snapPoint.X += config.snapDeltaX;
+        }
+        snapPoints.push(snapPoint);
     }
 
-    const dstImg = sharp({
+    let width = px.w + bleed.w * 2;
+    let height = px.h + bleed.h * 2;
+    let dstImg = sharp({
         create: {
-            width: px.w + bleed.w * 2,
-            height: px.h + bleed.h * 2,
+            width,
+            height,
             channels: 4,
             background: { r: 0, g: 0, b: 0, alpha: 1 },
         },
     }).composite(composite);
+
+    if (config.postShrink > 0) {
+        const scale = config.postShrink / Math.max(width, height);
+        const postW = Math.round(width * scale);
+        const postH = Math.round(height * scale);
+        console.log(`postShrink: ${postW}x${postH}`);
+        dstImg = sharp(await dstImg.png().toBuffer());
+        dstImg = dstImg.resize(postW, postH, {
+            fit: "fill",
+        });
+    }
 
     const dstImgRelativeToAssetsTextures = path.normalize(
         config.output + ".jpg"

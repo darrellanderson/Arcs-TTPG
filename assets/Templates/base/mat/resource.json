@@ -1,8 +1,8 @@
 {
         "Type": "Generic",
-        "GUID": "92913936CAEE03128228BCD1C72D295A",
-        "Name": "court",
-        "Metadata": "mat:base/court",
+        "GUID": "5004C9E71B35E9887B80C01ABE40412D",
+        "Name": "resource",
+        "Metadata": "mat:base/resource",
         "CollisionType": "Regular",
         "Friction": 0.7,
         "Restitution": 0.3,
@@ -34,8 +34,8 @@
                                 "Z": 0
                         },
                         "Scale": {
-                                "X": 10,
-                                "Y": 35.2,
+                                "X": 4,
+                                "Y": 18,
                                 "Z": 0.25
                         },
                         "Rotation": {
@@ -43,7 +43,7 @@
                                 "Y": 0,
                                 "Z": 0
                         },
-                        "Texture": "base/mat/court.jpg",
+                        "Texture": "base/mat/resource.jpg",
                         "NormalMap": "",
                         "ExtraMap": "",
                         "ExtraMap2": "",
@@ -59,10 +59,10 @@
         "SnapPointsGlobal": false,
         "SnapPoints": [
                 {
-                        "Y": -13.88,
+                        "Y": -7,
                         "X": 0,
                         "Tags": [
-                                "court-card"
+                                "resource-token-material"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -72,10 +72,10 @@
                         "FlipValidity": 0
                 },
                 {
-                        "Y": -6.940000000000001,
+                        "Y": -3.5,
                         "X": 0,
                         "Tags": [
-                                "court-card"
+                                "resource-token-fuel"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -88,7 +88,7 @@
                         "Y": 0,
                         "X": 0,
                         "Tags": [
-                                "court-card"
+                                "resource-token-weapons"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -98,10 +98,10 @@
                         "FlipValidity": 0
                 },
                 {
-                        "Y": 6.940000000000001,
+                        "Y": 3.5,
                         "X": 0,
                         "Tags": [
-                                "court-card"
+                                "resource-token-relics"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -111,10 +111,10 @@
                         "FlipValidity": 0
                 },
                 {
-                        "Y": 13.879999999999999,
+                        "Y": 7,
                         "X": 0,
                         "Tags": [
-                                "court-card"
+                                "resource-token-psionic"
                         ],
                         "Z": 0.125,
                         "Range": 3,

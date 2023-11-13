@@ -1,0 +1,19 @@
+{
+    "cardWidth": 6.44,
+    "cardHeight": 9,
+    "depth": 0.25,
+    "inputDir": "base/card/leader",
+    "slots": [
+        {
+            "img": "leader.back.jpg",
+            "label": "LEADER",
+            "tags": ["leader-card"]
+        }
+    ],
+    "gap": 0.5,
+    "cols": -1,
+    "postShrink": 1024,
+    "metadata": "mat:base/leader",
+    "output": "base/mat/leader",
+    "tags": []
+}

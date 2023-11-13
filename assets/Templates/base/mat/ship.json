@@ -1,0 +1,264 @@
+{
+        "Type": "Generic",
+        "GUID": "7FB645DA07F2F77B80D45AA8B7E01117",
+        "Name": "ship",
+        "Metadata": "mat:base/ship",
+        "CollisionType": "Regular",
+        "Friction": 0.7,
+        "Restitution": 0.3,
+        "Density": 1,
+        "SurfaceType": "Cardboard",
+        "Roughness": 1,
+        "Metallic": 0,
+        "PrimaryColor": {
+                "R": 255,
+                "G": 255,
+                "B": 255
+        },
+        "SecondaryColor": {
+                "R": 0,
+                "G": 0,
+                "B": 0
+        },
+        "Flippable": false,
+        "AutoStraighten": false,
+        "ShouldSnap": false,
+        "ScriptName": "",
+        "Blueprint": "",
+        "Models": [
+                {
+                        "Model": "utility/unit-cube-top-uvs.obj",
+                        "Offset": {
+                                "X": 0,
+                                "Y": 0,
+                                "Z": 0
+                        },
+                        "Scale": {
+                                "X": 5.25,
+                                "Y": 9.77,
+                                "Z": 0.25
+                        },
+                        "Rotation": {
+                                "X": 0,
+                                "Y": 0,
+                                "Z": 0
+                        },
+                        "Texture": "base/mat/ship.jpg",
+                        "NormalMap": "",
+                        "ExtraMap": "",
+                        "ExtraMap2": "",
+                        "IsTransparent": false,
+                        "CastShadow": true,
+                        "IsTwoSided": false,
+                        "UseOverrides": true,
+                        "SurfaceType": "Cardboard"
+                }
+        ],
+        "Collision": [],
+        "Lights": [],
+        "SnapPointsGlobal": false,
+        "SnapPoints": [
+                {
+                        "Y": -3.09,
+                        "X": 1.9,
+                        "Tags": [
+                                "unit-ship"
+                        ],
+                        "Z": 0.125,
+                        "Range": 3,
+                        "SnapRotation": 0,
+                        "RotationOffset": 0,
+                        "Shape": 0,
+                        "FlipValidity": 0
+                },
+                {
+                        "Y": 0,
+                        "X": 1.9,
+                        "Tags": [
+                                "unit-ship"
+                        ],
+                        "Z": 0.125,
+                        "Range": 3,
+                        "SnapRotation": 0,
+                        "RotationOffset": 0,
+                        "Shape": 0,
+                        "FlipValidity": 0
+                },
+                {
+                        "Y": 3.09,
+                        "X": 1.9,
+                        "Tags": [
+                                "unit-ship"
+                        ],
+                        "Z": 0.125,
+                        "Range": 3,
+                        "SnapRotation": 0,
+                        "RotationOffset": 0,
+                        "Shape": 0,
+                        "FlipValidity": 0
+                },
+                {
+                        "Y": -3.09,
+                        "X": 0.95,
+                        "Tags": [
+                                "unit-ship"
+                        ],
+                        "Z": 0.125,
+                        "Range": 3,
+                        "SnapRotation": 0,
+                        "RotationOffset": 0,
+                        "Shape": 0,
+                        "FlipValidity": 0
+                },
+                {
+                        "Y": 0,
+                        "X": 0.95,
+                        "Tags": [
+                                "unit-ship"
+                        ],
+                        "Z": 0.125,
+                        "Range": 3,
+                        "SnapRotation": 0,
+                        "RotationOffset": 0,
+                        "Shape": 0,
+                        "FlipValidity": 0
+                },
+                {
+                        "Y": 3.09,
+                        "X": 0.95,
+                        "Tags": [
+                                "unit-ship"
+                        ],
+                        "Z": 0.125,
+                        "Range": 3,
+                        "SnapRotation": 0,
+                        "RotationOffset": 0,
+                        "Shape": 0,
+                        "FlipValidity": 0
+                },
+                {
+                        "Y": -3.09,
+                        "X": 0,
+                        "Tags": [
+                                "unit-ship"
+                        ],
+                        "Z": 0.125,
+                        "Range": 3,
+                        "SnapRotation": 0,
+                        "RotationOffset": 0,
+                        "Shape": 0,
+                        "FlipValidity": 0
+                },
+                {
+                        "Y": 0,
+                        "X": 0,
+                        "Tags": [
+                                "unit-ship"
+                        ],
+                        "Z": 0.125,
+                        "Range": 3,
+                        "SnapRotation": 0,
+                        "RotationOffset": 0,
+                        "Shape": 0,
+                        "FlipValidity": 0
+                },
+                {
+                        "Y": 3.09,
+                        "X": 0,
+                        "Tags": [
+                                "unit-ship"
+                        ],
+                        "Z": 0.125,
+                        "Range": 3,
+                        "SnapRotation": 0,
+                        "RotationOffset": 0,
+                        "Shape": 0,
+                        "FlipValidity": 0
+                },
+                {
+                        "Y": -3.09,
+                        "X": -0.9500000000000002,
+                        "Tags": [
+                                "unit-ship"
+                        ],
+                        "Z": 0.125,
+                        "Range": 3,
+                        "SnapRotation": 0,
+                        "RotationOffset": 0,
+                        "Shape": 0,
+                        "FlipValidity": 0
+                },
+                {
+                        "Y": 0,
+                        "X": -0.9500000000000002,
+                        "Tags": [
+                                "unit-ship"
+                        ],
+                        "Z": 0.125,
+                        "Range": 3,
+                        "SnapRotation": 0,
+                        "RotationOffset": 0,
+                        "Shape": 0,
+                        "FlipValidity": 0
+                },
+                {
+                        "Y": 3.09,
+                        "X": -0.9500000000000002,
+                        "Tags": [
+                                "unit-ship"
+                        ],
+                        "Z": 0.125,
+                        "Range": 3,
+                        "SnapRotation": 0,
+                        "RotationOffset": 0,
+                        "Shape": 0,
+                        "FlipValidity": 0
+                },
+                {
+                        "Y": -3.09,
+                        "X": -1.9000000000000004,
+                        "Tags": [
+                                "unit-ship"
+                        ],
+                        "Z": 0.125,
+                        "Range": 3,
+                        "SnapRotation": 0,
+                        "RotationOffset": 0,
+                        "Shape": 0,
+                        "FlipValidity": 0
+                },
+                {
+                        "Y": 0,
+                        "X": -1.9000000000000004,
+                        "Tags": [
+                                "unit-ship"
+                        ],
+                        "Z": 0.125,
+                        "Range": 3,
+                        "SnapRotation": 0,
+                        "RotationOffset": 0,
+                        "Shape": 0,
+                        "FlipValidity": 0
+                },
+                {
+                        "Y": 3.09,
+                        "X": -1.9000000000000004,
+                        "Tags": [
+                                "unit-ship"
+                        ],
+                        "Z": 0.125,
+                        "Range": 3,
+                        "SnapRotation": 0,
+                        "RotationOffset": 0,
+                        "Shape": 0,
+                        "FlipValidity": 0
+                }
+        ],
+        "ZoomViewDirection": {
+                "X": 0,
+                "Y": 0,
+                "Z": 1
+        },
+        "GroundAccessibility": "Nothing",
+        "Tags": []
+}

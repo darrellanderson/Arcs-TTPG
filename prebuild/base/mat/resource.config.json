@@ -1,0 +1,39 @@
+{
+    "cardWidth": 3,
+    "cardHeight": 3,
+    "depth": 0.25,
+    "inputDir": "base/token/resource",
+    "slots": [
+        {
+            "img": "material.jpg",
+            "label": "",
+            "tags": ["resource-token-material"]
+        },
+        {
+            "img": "fuel.jpg",
+            "label": "",
+            "tags": ["resource-token-fuel"]
+        },
+        {
+            "img": "weapons.jpg",
+            "label": "",
+            "tags": ["resource-token-weapons"]
+        },
+        {
+            "img": "relics.jpg",
+            "label": "",
+            "tags": ["resource-token-relics"]
+        },
+        {
+            "img": "psionic.jpg",
+            "label": "",
+            "tags": ["resource-token-psionic"]
+        }
+    ],
+    "gap": 0.5,
+    "cols": -1,
+    "postShrink": 1024,
+    "metadata": "mat:base/resource",
+    "output": "base/mat/resource",
+    "tags": []
+}

@@ -1,0 +1,19 @@
+{
+    "cardWidth": 6.44,
+    "cardHeight": 9,
+    "depth": 0.25,
+    "inputDir": "base/card/lore",
+    "slots": [
+        {
+            "img": "lore.back.jpg",
+            "label": "LORE",
+            "tags": ["lore-card"]
+        }
+    ],
+    "gap": 0.5,
+    "cols": -1,
+    "postShrink": 1024,
+    "metadata": "mat:base/lore",
+    "output": "base/mat/lore",
+    "tags": []
+}

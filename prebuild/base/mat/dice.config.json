@@ -1,0 +1,104 @@
+{
+    "cardWidth": 2,
+    "cardHeight": 2,
+    "depth": 0.25,
+    "inputDir": "base/dice",
+    "slots": [
+        {
+            "img": "assault/assault-3.png",
+            "label": "",
+            "tags": ["die-assault"]
+        },
+        {
+            "img": "assault/assault-3.png",
+            "label": "",
+            "tags": ["die-assault"]
+        },
+        {
+            "img": "assault/assault-3.png",
+            "label": "",
+            "tags": ["die-assault"]
+        },
+        {
+            "img": "assault/assault-3.png",
+            "label": "",
+            "tags": ["die-assault"]
+        },
+        {
+            "img": "assault/assault-3.png",
+            "label": "",
+            "tags": ["die-assault"]
+        },
+        {
+            "img": "assault/assault-3.png",
+            "label": "",
+            "tags": ["die-assault"]
+        },
+        {
+            "img": "raid/raid-1.png",
+            "label": "",
+            "tags": ["die-raid"]
+        },
+        {
+            "img": "raid/raid-1.png",
+            "label": "",
+            "tags": ["die-raid"]
+        },
+        {
+            "img": "raid/raid-1.png",
+            "label": "",
+            "tags": ["die-raid"]
+        },
+        {
+            "img": "raid/raid-1.png",
+            "label": "",
+            "tags": ["die-raid"]
+        },
+        {
+            "img": "raid/raid-1.png",
+            "label": "",
+            "tags": ["die-raid"]
+        },
+        {
+            "img": "raid/raid-1.png",
+            "label": "",
+            "tags": ["die-raid"]
+        },
+        {
+            "img": "skirmish/skirmish-5.png",
+            "label": "",
+            "tags": ["die-skirmish"]
+        },
+        {
+            "img": "skirmish/skirmish-5.png",
+            "label": "",
+            "tags": ["die-skirmish"]
+        },
+        {
+            "img": "skirmish/skirmish-5.png",
+            "label": "",
+            "tags": ["die-skirmish"]
+        },
+        {
+            "img": "skirmish/skirmish-5.png",
+            "label": "",
+            "tags": ["die-skirmish"]
+        },
+        {
+            "img": "skirmish/skirmish-5.png",
+            "label": "",
+            "tags": ["die-skirmish"]
+        },
+        {
+            "img": "skirmish/skirmish-5.png",
+            "label": "",
+            "tags": ["die-skirmish"]
+        }
+    ],
+    "gap": 0.5,
+    "cols": 3,
+    "postShrink": 1024,
+    "metadata": "mat:base/dice",
+    "output": "base/mat/dice",
+    "tags": []
+}
