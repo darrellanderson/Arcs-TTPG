@@ -10,7 +10,9 @@
         "jsxFactory": "jsxInTTPG",
         "jsxFragmentFactory": "jsxFrag",
         "rootDir": "./src",
-        "skipLibCheck": true
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "types": ["@types/jest", "@types/node", "@tabletop-playground/api"]
     },
     "include": ["./src/**/*.ts", "./src/**/*.tsx"]
 }
