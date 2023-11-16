@@ -19,3 +19,6 @@ ttpgcfg.local.json
 
 # VSCode
 Arcs-TTPG.code-workspace
+
+# Jest --coverage
+/coverage

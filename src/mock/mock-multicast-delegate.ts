@@ -7,8 +7,8 @@ export class MockMulticastDelegate<T> implements MulticastDelegate<T> {
         this._listeners.push(fn);
     }
     remove(fn: T): void {
-        for (let i = this._listeners.length - 1; i >= 0; i++) {
-            if (this._listeners === fn) {
+        for (let i = this._listeners.length - 1; i >= 0; i--) {
+            if (this._listeners[i] === fn) {
                 this._listeners.splice(i, 1);
             }
         }
