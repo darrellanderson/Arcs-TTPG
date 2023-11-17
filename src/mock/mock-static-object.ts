@@ -7,17 +7,76 @@ import {
     UIElement,
     Vector,
 } from "@tabletop-playground/api";
+import { MockColor, MockRotator, MockVector } from "./";
 
-export type MockStaticObjectParams = { templateMetadata?: string };
+export type MockStaticObjectParams = {
+    position?: Vector | [x: number, y: number, z: number];
+    rotation?: Rotator | [pitch: number, yaw: number, roll: number];
+    templateMetadata?: string;
+};
 
 export class MockStaticObject implements StaticObject {
+    private static __nextIdNumber = 1;
+
+    private _description: string = "";
+    private _id: string = `__id__${MockStaticObject.__nextIdNumber++}__`;
+    private _name: string = "";
+    private _position: Vector = new MockVector(0, 0, 0);
+    private _primaryColor = new MockColor(1, 1, 1, 1);
+    private _rotation: Rotator = new MockRotator(0, 0, 0);
     private _templateMetadata: string = "";
 
     constructor(params: MockStaticObjectParams) {
+        if (params.position) {
+            this._position = MockVector._from(params.position);
+        }
+        if (params.rotation) {
+            this._rotation = MockRotator._from(params.rotation);
+        }
         if (typeof params.templateMetadata === "string") {
             this._templateMetadata = params.templateMetadata;
         }
     }
+
+    getDescription(): string {
+        return this._description;
+    }
+
+    getName(): string {
+        return this._name;
+    }
+
+    getPosition(): Vector {
+        return this._position;
+    }
+
+    getRotation(): Rotator {
+        return this._rotation;
+    }
+
+    setDescription(description: string): void {
+        this._description = description;
+    }
+
+    setName(name: string): void {
+        this._name = name;
+    }
+
+    setPosition(
+        position: Vector | [x: number, y: number, z: number],
+        animationSpeed?: number | undefined
+    ): void {
+        this._position = MockVector._from(position);
+    }
+
+    setRotation(
+        rotation: Rotator | [pitch: number, yaw: number, roll: number],
+        animationSpeed?: number | undefined
+    ): void {
+        this._rotation = MockRotator._from(rotation);
+    }
+
+    // --------------------------------
 
     worldRotationToLocal(
         rotation: Rotator | [pitch: number, yaw: number, roll: number]
@@ -61,24 +120,9 @@ export class MockStaticObject implements StaticObject {
     setRoughness(roughness: number): void {
         throw new Error("Method not implemented.");
     }
-    setRotation(
-        rotation: Rotator | [pitch: number, yaw: number, roll: number],
-        animationSpeed?: number | undefined
-    ): void {
-        throw new Error("Method not implemented.");
-    }
     setPrimaryColor(
         color: Color | [r: number, g: number, b: number, a: number]
     ): void {
-        throw new Error("Method not implemented.");
-    }
-    setPosition(
-        position: Vector | [x: number, y: number, z: number],
-        animationSpeed?: number | undefined
-    ): void {
-        throw new Error("Method not implemented.");
-    }
-    setName(name: string): void {
         throw new Error("Method not implemented.");
     }
     setMetallic(metallic: number): void {
@@ -88,9 +132,6 @@ export class MockStaticObject implements StaticObject {
         throw new Error("Method not implemented.");
     }
     setFriction(friction: number): void {
-        throw new Error("Method not implemented.");
-    }
-    setDescription(description: string): void {
         throw new Error("Method not implemented.");
     }
     setDensity(density: number): void {
@@ -166,22 +207,13 @@ export class MockStaticObject implements StaticObject {
     getRoughness(): number {
         throw new Error("Method not implemented.");
     }
-    getRotation(): Rotator {
-        throw new Error("Method not implemented.");
-    }
     getPrimaryColor(): Color {
-        throw new Error("Method not implemented.");
-    }
-    getPosition(): Vector {
         throw new Error("Method not implemented.");
     }
     getPackageName(): string {
         throw new Error("Method not implemented.");
     }
     getPackageId(): string {
-        throw new Error("Method not implemented.");
-    }
-    getName(): string {
         throw new Error("Method not implemented.");
     }
     getMetallic(): number {
@@ -203,9 +235,6 @@ export class MockStaticObject implements StaticObject {
         throw new Error("Method not implemented.");
     }
     getDrawingLines(): DrawingLine[] {
-        throw new Error("Method not implemented.");
-    }
-    getDescription(): string {
         throw new Error("Method not implemented.");
     }
     getDensity(): number {

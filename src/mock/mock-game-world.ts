@@ -18,14 +18,22 @@ import {
     Vector,
     Zone,
 } from "@tabletop-playground/api";
-import { MockGlobalGrid } from "./mock-global-grid";
-import { MockTurnSystem } from "./mock-turn-system";
-import { MockLightingSettings } from "./mock-lighting-settings";
+import { MockGlobalGrid, MockLightingSettings, MockTurnSystem } from "./";
 
 export class MockGameWorld implements GameWorld {
     grid: GlobalGrid = new MockGlobalGrid();
     lighting: LightingSettings = new MockLightingSettings();
     turns: TurnSystem = new MockTurnSystem();
+
+    static getExecutionReason(): string {
+        return "";
+    }
+
+    getExecutionReason() {
+        return MockGameWorld.getExecutionReason();
+    }
+
+    // --------------------------------
 
     updateUI(element: UIElement): void {
         throw new Error("Method not implemented.");
