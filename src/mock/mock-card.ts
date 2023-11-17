@@ -15,9 +15,9 @@ export type MockCardParams = MockGameObjectParams & {
 export class MockCard extends MockGameObject implements Card {
     private readonly _cardDetails: CardDetails[] = [];
 
-    constructor(params: MockCardParams) {
+    constructor(params?: MockCardParams) {
         super(params);
-        if (Array.isArray(params.cardDetails)) {
+        if (params?.cardDetails) {
             this._cardDetails.push(...params.cardDetails);
         }
     }

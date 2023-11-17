@@ -1,5 +1,18 @@
 import { MockColor } from "./mock-color";
 
+it("_from", () => {
+    const a = MockColor._from([1, 2, 3, 4]);
+    expect(a.r).toBe(1);
+    expect(a.g).toBe(2);
+    expect(a.b).toBe(3);
+    expect(a.a).toBe(4);
+    const b = MockColor._from(a);
+    expect(b.r).toBe(1);
+    expect(b.g).toBe(2);
+    expect(b.b).toBe(3);
+    expect(b.a).toBe(4);
+});
+
 it("constructor", () => {
     const a = new MockColor(1, 2, 3, 4);
     expect(a.r).toBe(1);

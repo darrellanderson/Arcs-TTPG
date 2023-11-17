@@ -21,29 +21,29 @@ export class MockCardDetails implements CardDetails {
     readonly flipped: boolean = false;
     readonly tags: string[] = [];
 
-    constructor(params: MockCardDetailsParams) {
-        if (typeof params.index === "number") {
+    constructor(params?: MockCardDetailsParams) {
+        if (typeof params?.index === "number") {
             this.index = params.index;
         }
-        if (typeof params.stackIndex === "number") {
+        if (typeof params?.stackIndex === "number") {
             this.stackIndex = params.stackIndex;
         }
-        if (typeof params.templateId === "string") {
+        if (typeof params?.templateId === "string") {
             this.templateId = params.templateId;
         }
-        if (typeof params.name === "string") {
+        if (typeof params?.name === "string") {
             this.name = params.name;
         }
-        if (typeof params.metadata === "string") {
+        if (typeof params?.metadata === "string") {
             this.metadata = params.metadata;
         }
-        if (typeof params.textureOverrideURL === "string") {
-            this.textureOverrideURL = params.textureOverrideURL;
+        if (typeof params?.textureOverrideURL === "string") {
+            this.textureOverrideURL = params?.textureOverrideURL;
         }
-        if (typeof params.flipped === "boolean") {
+        if (typeof params?.flipped === "boolean") {
             this.flipped = params.flipped;
         }
-        if (Array.isArray(params.tags)) {
+        if (params?.tags) {
             this.tags = params.tags;
         }
     }

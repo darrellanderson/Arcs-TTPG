@@ -2,6 +2,13 @@ import { Color, Vector } from "@tabletop-playground/api";
 import { MockVector } from "./mock-vector";
 
 export class MockColor implements Color {
+    static _from(color: Color | [r: number, g: number, b: number, a: number]) {
+        if (color instanceof MockColor) {
+            return color;
+        }
+        return new MockColor(color[0], color[1], color[2], color[3]);
+    }
+
     r: number;
     g: number;
     b: number;

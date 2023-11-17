@@ -14,7 +14,7 @@ import { MockMulticastDelegate } from "./mock-multicast-delegate";
 export type MockGameObjectParams = MockStaticObjectParams & {};
 
 export class MockGameObject extends MockStaticObject implements GameObject {
-    constructor(params: MockGameObjectParams) {
+    constructor(params?: MockGameObjectParams) {
         super(params);
     }
 

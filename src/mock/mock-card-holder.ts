@@ -4,8 +4,10 @@ import {
     MulticastDelegate,
     Player,
 } from "@tabletop-playground/api";
-import { MockGameObject } from "./mock-game-object";
+import { MockGameObject, MockGameObjectParams } from "./mock-game-object";
 import { MockMulticastDelegate } from "./mock-multicast-delegate";
+
+export type MockCardHolderParams = MockGameObjectParams & {};
 
 export class MockCardHolder extends MockGameObject implements CardHolder {
     onInserted: MulticastDelegate<
@@ -40,6 +42,10 @@ export class MockCardHolder extends MockGameObject implements CardHolder {
     >();
     onBecameHand: MulticastDelegate<(holder: this, player: Player) => void> =
         new MockMulticastDelegate<(holder: this, player: Player) => void>();
+
+    constructor(params?: MockCardHolderParams) {
+        super(params);
+    }
 
     setOnlyOwnerTakesCards(onlyOwner: boolean): void {
         throw new Error("Method not implemented.");

@@ -10,8 +10,19 @@ import {
 import { MockColor, MockRotator, MockVector } from "./";
 
 export type MockStaticObjectParams = {
+    description?: string;
+    extent?: Vector | [x: number, y: number, z: number];
+    extentCenter?: Vector | [x: number, y: number, z: number];
+    id?: string;
+    name?: string;
     position?: Vector | [x: number, y: number, z: number];
+    primaryColor?: Color | [r: number, g: number, b: number, a: number];
     rotation?: Rotator | [pitch: number, yaw: number, roll: number];
+    savedData?: { [key: string]: string };
+    scale?: Vector | [x: number, y: number, z: number];
+    secondaryColor?: Color | [r: number, g: number, b: number, a: number];
+    size?: Vector | [x: number, y: number, z: number];
+    tags?: string[];
     templateMetadata?: string;
 };
 
@@ -19,27 +30,81 @@ export class MockStaticObject implements StaticObject {
     private static __nextIdNumber = 1;
 
     private _description: string = "";
+    private _extent: Vector = new MockVector(1, 1, 1);
+    private _extentCenter: Vector = new MockVector(0, 0, 0);
     private _id: string = `__id__${MockStaticObject.__nextIdNumber++}__`;
+    private _isValid: boolean = true;
     private _name: string = "";
     private _position: Vector = new MockVector(0, 0, 0);
-    private _primaryColor = new MockColor(1, 1, 1, 1);
+    private _primaryColor: Color = new MockColor(1, 1, 1, 1);
     private _rotation: Rotator = new MockRotator(0, 0, 0);
+    private _savedData: { [key: string]: string } = {};
+    private _scale: Vector = new MockVector(1, 1, 1);
+    private _secondaryColor: Color = new MockColor(0, 0, 0, 1);
+    private _size: Vector = new MockVector(2, 2, 2);
+    private _tags: string[] = [];
     private _templateMetadata: string = "";
 
-    constructor(params: MockStaticObjectParams) {
-        if (params.position) {
+    constructor(params?: MockStaticObjectParams) {
+        if (params?.description) {
+            this._description = params.description;
+        }
+        if (params?.id) {
+            this._id = params.id;
+        }
+        if (params?.name) {
+            this._name = params.name;
+        }
+        if (params?.position) {
             this._position = MockVector._from(params.position);
         }
-        if (params.rotation) {
+        if (params?.primaryColor) {
+            this._primaryColor = MockColor._from(params.primaryColor);
+        }
+        if (params?.rotation) {
             this._rotation = MockRotator._from(params.rotation);
         }
-        if (typeof params.templateMetadata === "string") {
+        if (params?.savedData) {
+            this._savedData = params.savedData;
+        }
+        if (params?.scale) {
+            this._scale = MockVector._from(params.scale);
+        }
+        if (params?.secondaryColor) {
+            this._secondaryColor = MockColor._from(params.secondaryColor);
+        }
+        if (params?.size) {
+            this._size = MockVector._from(params.size);
+        }
+        if (params?.tags) {
+            this._tags = params.tags;
+        }
+        if (params?.templateMetadata) {
             this._templateMetadata = params.templateMetadata;
         }
     }
 
+    destroy(): void {
+        this._isValid = false;
+    }
+
     getDescription(): string {
         return this._description;
+    }
+
+    getExtentCenter(
+        currentRotation: boolean,
+        includeGeometry: boolean
+    ): Vector {
+        return this._extentCenter;
+    }
+
+    getExtent(currentRotation: boolean, includeGeometry: boolean): Vector {
+        return this._extent;
+    }
+
+    getId(): string {
+        return this._id;
     }
 
     getName(): string {
@@ -50,12 +115,49 @@ export class MockStaticObject implements StaticObject {
         return this._position;
     }
 
+    getPrimaryColor(): Color {
+        return this._primaryColor;
+    }
+
     getRotation(): Rotator {
         return this._rotation;
     }
 
+    getSavedData(key: string): string {
+        return this._savedData[key];
+    }
+
+    getScale(): Vector {
+        return this._scale;
+    }
+
+    getSecondaryColor(): Color {
+        return this._secondaryColor;
+    }
+
+    getSize(): Vector {
+        return this._size;
+    }
+
+    getTags(): string[] {
+        return this._tags;
+    }
+
+    getTemplateMetadata(): string {
+        return this._templateMetadata;
+    }
+
+    isValid(): boolean {
+        return this._isValid;
+    }
+
     setDescription(description: string): void {
         this._description = description;
+    }
+
+    setId(iD: string): boolean {
+        this._id = iD;
+        return true;
     }
 
     setName(name: string): void {
@@ -69,11 +171,35 @@ export class MockStaticObject implements StaticObject {
         this._position = MockVector._from(position);
     }
 
+    setPrimaryColor(
+        color: Color | [r: number, g: number, b: number, a: number]
+    ): void {
+        this._primaryColor = MockColor._from(color);
+    }
+
     setRotation(
         rotation: Rotator | [pitch: number, yaw: number, roll: number],
         animationSpeed?: number | undefined
     ): void {
         this._rotation = MockRotator._from(rotation);
+    }
+
+    setSavedData(data: string, key: string): void {
+        this._savedData[key] = data;
+    }
+
+    setScale(scale: Vector | [x: number, y: number, z: number]): void {
+        this._scale = MockVector._from(scale);
+    }
+
+    setSecondaryColor(
+        color: Color | [r: number, g: number, b: number, a: number]
+    ): void {
+        this._secondaryColor = MockColor._from(color);
+    }
+
+    setTags(tags: string[]): void {
+        this._tags = tags;
     }
 
     // --------------------------------
@@ -97,38 +223,16 @@ export class MockStaticObject implements StaticObject {
     setUI(index: number, element: UIElement): void {
         throw new Error("Method not implemented.");
     }
-    setTags(tags: string[]): void {
-        throw new Error("Method not implemented.");
-    }
     setSurfaceType(surfaceType: string): void {
-        throw new Error("Method not implemented.");
-    }
-    setSecondaryColor(
-        color: Color | [r: number, g: number, b: number, a: number]
-    ): void {
         throw new Error("Method not implemented.");
     }
     setScript(filename: string, packageId?: string | undefined): void {
         throw new Error("Method not implemented.");
     }
-    setScale(scale: Vector | [x: number, y: number, z: number]): void {
-        throw new Error("Method not implemented.");
-    }
-    setSavedData(data: string, key: string): void {
-        throw new Error("Method not implemented.");
-    }
     setRoughness(roughness: number): void {
         throw new Error("Method not implemented.");
     }
-    setPrimaryColor(
-        color: Color | [r: number, g: number, b: number, a: number]
-    ): void {
-        throw new Error("Method not implemented.");
-    }
     setMetallic(metallic: number): void {
-        throw new Error("Method not implemented.");
-    }
-    setId(iD: string): boolean {
         throw new Error("Method not implemented.");
     }
     setFriction(friction: number): void {
@@ -162,22 +266,13 @@ export class MockStaticObject implements StaticObject {
     ): Vector {
         throw new Error("Method not implemented.");
     }
-    isValid(): boolean {
-        throw new Error("Method not implemented.");
-    }
     getUIs(): UIElement[] {
         throw new Error("Method not implemented.");
     }
     getTemplateName(): string {
         throw new Error("Method not implemented.");
     }
-    getTemplateMetadata(): string {
-        return this._templateMetadata;
-    }
     getTemplateId(): string {
-        throw new Error("Method not implemented.");
-    }
-    getTags(): string[] {
         throw new Error("Method not implemented.");
     }
     getSurfaceType(): string {
@@ -186,28 +281,13 @@ export class MockStaticObject implements StaticObject {
     getSnapPoint(index: number): SnapPoint | undefined {
         throw new Error("Method not implemented.");
     }
-    getSize(): Vector {
-        throw new Error("Method not implemented.");
-    }
-    getSecondaryColor(): Color {
-        throw new Error("Method not implemented.");
-    }
     getScriptPackageId(): string {
         throw new Error("Method not implemented.");
     }
     getScriptFilename(): string {
         throw new Error("Method not implemented.");
     }
-    getScale(): Vector {
-        throw new Error("Method not implemented.");
-    }
-    getSavedData(key: string): string {
-        throw new Error("Method not implemented.");
-    }
     getRoughness(): number {
-        throw new Error("Method not implemented.");
-    }
-    getPrimaryColor(): Color {
         throw new Error("Method not implemented.");
     }
     getPackageName(): string {
@@ -219,19 +299,7 @@ export class MockStaticObject implements StaticObject {
     getMetallic(): number {
         throw new Error("Method not implemented.");
     }
-    getId(): string {
-        throw new Error("Method not implemented.");
-    }
     getFriction(): number {
-        throw new Error("Method not implemented.");
-    }
-    getExtentCenter(
-        currentRotation: boolean,
-        includeGeometry: boolean
-    ): Vector {
-        throw new Error("Method not implemented.");
-    }
-    getExtent(currentRotation: boolean, includeGeometry: boolean): Vector {
         throw new Error("Method not implemented.");
     }
     getDrawingLines(): DrawingLine[] {
@@ -247,9 +315,6 @@ export class MockStaticObject implements StaticObject {
         throw new Error("Method not implemented.");
     }
     getAllSnapPoints(): SnapPoint[] {
-        throw new Error("Method not implemented.");
-    }
-    destroy(): void {
         throw new Error("Method not implemented.");
     }
     attachUI(element: UIElement): number {
