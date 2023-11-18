@@ -1,51 +1,87 @@
-import { MockStaticObject } from ".";
+import { MockColor } from "./mock-color";
+import { MockDrawingLine } from "./mock-drawing-line";
+import { MockRotator } from "./mock-rotator";
+import { MockStaticObject } from "./mock-static-object";
+import { MockUIElement } from "./mock-ui-element";
+import { MockVector } from "./mock-vector";
 
 it("constructor", () => {
-    const description = "my-description";
-    const id = "my-id";
-    const name = "my-name";
-    const position: [x: number, y: number, z: number] = [1, 2, 3];
-    const primaryColor: [r: number, g: number, b: number, a: number] = [
-        0.1, 0.2, 0.3, 0.4,
-    ];
-    const savedData = { "my-key": "my-value" };
-    const rotation: [pitch: number, yaw: number, roll: number] = [5, 6, 7];
-    const scale: [x: number, y: number, z: number] = [4, 2, 3];
-    const secondaryColor: [r: number, g: number, b: number, a: number] = [
-        0.5, 0.6, 0.7, 0.8,
-    ];
-    const size: [x: number, y: number, z: number] = [5, 2, 3];
-    const templateMetadata = "my-metadata";
+    const params = {
+        bounciness: 2,
+        density: 3,
+        description: "my-description",
+        drawingLines: [],
+        extent: new MockVector(1, 2, 3),
+        extentCenter: new MockVector(4, 5, 6),
+        friction: 4,
+        id: "my-id",
+        metallic: 5,
+        name: "my-name",
+        packageId: "my-package-id",
+        packageName: "my-package-name",
+        position: new MockVector(7, 8, 9),
+        primaryColor: new MockColor(0.1, 0.2, 0.3, 0.4),
+        rotation: new MockRotator(10, 11, 12),
+        roughness: 6,
+        savedData: { "my-key": "my-value" },
+        scale: new MockVector(13, 14, 15),
+        scriptFilename: "my-script-filename",
+        scriptPackageId: "my-script-package-id",
+        secondaryColor: new MockColor(0.5, 0.6, 0.7, 0.8),
+        size: new MockVector(16, 17, 18),
+        snapPoints: [],
+        surfaceType: "my-surface-type",
+        tags: ["my-tag"],
+        templateId: "my-template-id",
+        templateMetadata: "my-template-metadata",
+        templateName: "my-template-name",
+        uis: [],
+    };
 
-    const staticObj = new MockStaticObject({
-        description,
-        id,
-        name,
-        position,
-        primaryColor,
-        rotation,
-        savedData,
-        scale,
-        secondaryColor,
-        size,
-        templateMetadata,
-    });
+    const obj = new MockStaticObject(params);
 
-    expect(staticObj.getDescription()).toBe(description);
-    expect(staticObj.getId()).toBe(id);
-    expect(staticObj.getName()).toBe(name);
-    expect(staticObj.getPosition().equals(position, 0)).toBe(true);
-    expect(staticObj.getPrimaryColor().toString()).toBe(
-        "(R=0.1,G=0.2,B=0.3,A=0.4)"
-    );
-    expect(staticObj.getRotation().equals(rotation, 0)).toBe(true);
-    expect(staticObj.getSavedData("my-key")).toBe("my-value");
-    expect(staticObj.getScale().equals(scale, 0)).toBe(true);
-    expect(staticObj.getSecondaryColor().toString()).toBe(
-        "(R=0.5,G=0.6,B=0.7,A=0.8)"
-    );
-    expect(staticObj.getSize().equals(size, 0)).toBe(true);
-    expect(staticObj.getTemplateMetadata()).toBe(templateMetadata);
+    expect(obj.getBounciness()).toBe(params.bounciness);
+    expect(obj.getDensity()).toBe(params.density);
+    expect(obj.getDescription()).toBe(params.description);
+    expect(obj.getDrawingLines()).toEqual(params.drawingLines);
+    expect(obj.getExtent(false, false)).toEqual(params.extent);
+    expect(obj.getExtentCenter(false, false)).toEqual(params.extentCenter);
+    expect(obj.getFriction()).toBe(params.friction);
+    expect(obj.getId()).toBe(params.id);
+    expect(obj.getMetallic()).toBe(params.metallic);
+    expect(obj.getName()).toBe(params.name);
+    expect(obj.getPackageId()).toBe(params.packageId);
+    expect(obj.getPackageName()).toBe(params.packageName);
+    expect(obj.getPosition()).toEqual(params.position);
+    expect(obj.getPrimaryColor()).toEqual(params.primaryColor);
+    expect(obj.getRotation()).toEqual(params.rotation);
+    expect(obj.getRoughness()).toBe(params.roughness);
+    expect(obj.getSavedData("my-key")).toBe("my-value");
+    expect(obj.getScale()).toEqual(params.scale);
+    expect(obj.getScriptFilename()).toBe(params.scriptFilename);
+    expect(obj.getScriptPackageId()).toBe(params.scriptPackageId);
+    expect(obj.getAllSnapPoints()).toEqual(params.snapPoints);
+    expect(obj.getTags()).toEqual(params.tags);
+    expect(obj.getTemplateId()).toBe(params.templateId);
+    expect(obj.getTemplateMetadata()).toBe(params.templateMetadata);
+    expect(obj.getTemplateName()).toBe(params.templateName);
+    expect(obj.getUIs()).toEqual(params.uis);
+});
+
+it("bounciness", () => {
+    const input = 7;
+    const obj = new MockStaticObject();
+    obj.setBounciness(input);
+    const output = obj.getBounciness();
+    expect(output).toBe(input);
+});
+
+it("density", () => {
+    const input = 7;
+    const obj = new MockStaticObject();
+    obj.setDensity(input);
+    const output = obj.getDensity();
+    expect(output).toBe(input);
 });
 
 it("description", () => {
@@ -56,11 +92,32 @@ it("description", () => {
     expect(output).toBe(input);
 });
 
+it("drawingLines", () => {
+    const input = new MockDrawingLine();
+    const obj = new MockStaticObject();
+    obj.addDrawingLine(input);
+    expect(obj.getDrawingLines()).toEqual([input]);
+    obj.removeDrawingLineObject(input);
+    expect(obj.getDrawingLines()).toEqual([]);
+    obj.addDrawingLine(input);
+    expect(obj.getDrawingLines()).toEqual([input]);
+    obj.removeDrawingLine(0);
+    expect(obj.getDrawingLines()).toEqual([]);
+});
+
+it("friction", () => {
+    const input = 7;
+    const obj = new MockStaticObject();
+    obj.setFriction(input);
+    const output = obj.getFriction();
+    expect(output).toBe(input);
+});
+
 it("id", () => {
     // default
     const obj = new MockStaticObject();
     let output = obj.getId();
-    expect(output).toMatch(/__id__([0-9]?)__/);
+    expect(output).toMatch(/__id__([0-9]+)__/);
 
     // custom
     const input = "test-id";
@@ -74,6 +131,14 @@ it("isValid", () => {
     expect(obj.isValid()).toBe(true);
     obj.destroy();
     expect(obj.isValid()).toBe(false);
+});
+
+it("metallic", () => {
+    const input = 7;
+    const obj = new MockStaticObject();
+    obj.setMetallic(input);
+    const output = obj.getMetallic();
+    expect(output).toBe(input);
 });
 
 it("name", () => {
@@ -110,6 +175,14 @@ it("rotation", () => {
     expect(output.equals(input, 0)).toBe(true);
 });
 
+it("roughness", () => {
+    const input = 7;
+    const obj = new MockStaticObject();
+    obj.setRoughness(input);
+    const output = obj.getRoughness();
+    expect(output).toBe(input);
+});
+
 it("savedData", () => {
     const input = "my-saved-data";
     const key = "my-key";
@@ -129,6 +202,14 @@ it("secondaryColor", () => {
     expect(output.toString()).toBe("(R=0.1,G=0.2,B=0.3,A=1)");
 });
 
+it("surfaceType", () => {
+    const input = "override-surface-type";
+    const obj = new MockStaticObject();
+    obj.setSurfaceType(input);
+    const output = obj.getSurfaceType();
+    expect(output.toString()).toBe(input);
+});
+
 it("tags", () => {
     const input = ["a", "b", "c"];
     const obj = new MockStaticObject();
@@ -142,4 +223,26 @@ it("templateMetadata", () => {
     const obj = new MockStaticObject({ templateMetadata: input });
     const output = obj.getTemplateMetadata();
     expect(output).toBe(input);
+});
+
+it("ui", () => {
+    const input = new MockUIElement();
+    const obj = new MockStaticObject();
+    const index = obj.addUI(input);
+    expect(obj.getUIs()).toEqual([input]);
+
+    obj.removeUI(index);
+    expect(obj.getUIs()).toEqual([]);
+
+    obj.addUI(input);
+    expect(obj.getUIs()).toEqual([input]);
+    obj.removeUIElement(input);
+    expect(obj.getUIs()).toEqual([]);
+
+    expect(() => {
+        obj.attachUI(input);
+    }).toThrow();
+    expect(() => {
+        obj.getAttachedUIs();
+    }).toThrow();
 });

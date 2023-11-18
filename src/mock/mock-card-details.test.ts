@@ -1,4 +1,4 @@
-import { MockCardDetails } from ".";
+import { MockCardDetails } from "./mock-card-details";
 
 describe("MockCardDetails", () => {
     test("index", () => {

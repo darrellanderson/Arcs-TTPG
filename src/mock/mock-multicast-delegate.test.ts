@@ -1,4 +1,4 @@
-import { MockMulticastDelegate } from ".";
+import { MockMulticastDelegate } from "./mock-multicast-delegate";
 
 it("constructor", () => {
     new MockMulticastDelegate<number>();

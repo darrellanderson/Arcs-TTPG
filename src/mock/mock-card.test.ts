@@ -1,4 +1,5 @@
-import { MockCard, MockCardDetails } from ".";
+import { MockCard } from "./mock-card";
+import { MockCardDetails } from "./mock-card-details";
 
 it("constructor", () => {
     new MockCard({});
