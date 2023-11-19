@@ -5,7 +5,7 @@ import { MockColor } from "./mock-color";
 export class MockVector implements Vector {
     static _from(b: Vector | [x: number, y: number, z: number]): Vector {
         if (b instanceof MockVector) {
-            return b;
+            return b.clone();
         }
         return new MockVector(b[0], b[1], b[2]);
     }

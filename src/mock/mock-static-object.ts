@@ -46,6 +46,9 @@ export type MockStaticObjectParams = {
 export class MockStaticObject implements StaticObject {
     private static __nextIdNumber = 1;
 
+    private __modelSize: Vector = new MockVector(1, 1, 1);
+    private __modelCenter: Vector = new MockVector(0, 0, 0);
+
     private _bounciness: number = 1;
     private _density: number = 1;
     private _description: string = "";

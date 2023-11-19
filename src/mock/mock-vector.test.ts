@@ -30,7 +30,7 @@ it("get/set []", () => {
 
 it("[Symbol.iterator", () => {
     const vector = new MockVector(1, 2, 3);
-    const out = [];
+    const out: number[] = [];
     for (const item of vector) {
         out.push(item);
     }

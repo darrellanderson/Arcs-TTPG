@@ -39,7 +39,7 @@ it("get/set []", () => {
 
 it("[Symbol.iterator", () => {
     const a = new MockColor(1, 2, 3, 4);
-    const out = [];
+    const out: number[] = [];
     for (const item of a) {
         out.push(item);
     }

@@ -18,7 +18,9 @@ import {
     Vector,
     Zone,
 } from "@tabletop-playground/api";
-import { MockGlobalGrid, MockLightingSettings, MockTurnSystem } from "./";
+import { MockGlobalGrid } from "./mock-global-grid";
+import { MockLightingSettings } from "./mock-lighting-settings";
+import { MockTurnSystem } from "./mock-turn-system";
 
 export class MockGameWorld implements GameWorld {
     grid: GlobalGrid = new MockGlobalGrid();
@@ -29,8 +31,14 @@ export class MockGameWorld implements GameWorld {
         return "";
     }
 
+    constructor() {}
+
     getExecutionReason() {
         return MockGameWorld.getExecutionReason();
+    }
+
+    getGameTime(): number {
+        return 0;
     }
 
     // --------------------------------
@@ -200,9 +208,6 @@ export class MockGameWorld implements GameWorld {
         throw new Error("Method not implemented.");
     }
     getGravityMultiplier(): number {
-        throw new Error("Method not implemented.");
-    }
-    getGameTime(): number {
         throw new Error("Method not implemented.");
     }
     getDrawingLines(): DrawingLine[] {

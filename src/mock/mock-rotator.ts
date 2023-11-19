@@ -6,7 +6,7 @@ export class MockRotator implements Rotator {
         b: Rotator | [pitch: number, yaw: number, roll: number]
     ): Rotator {
         if (b instanceof MockRotator) {
-            return b;
+            return b.clone();
         }
         return new MockRotator(b[0], b[1], b[2]);
     }
