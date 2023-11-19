@@ -1,18 +1,16 @@
 import { MockColor } from "./mock-color";
 import { MockDrawingLine } from "./mock-drawing-line";
 import { MockRotator } from "./mock-rotator";
-import { MockStaticObject } from "./mock-static-object";
+import { MockStaticObject, MockStaticObjectParams } from "./mock-static-object";
 import { MockUIElement } from "./mock-ui-element";
 import { MockVector } from "./mock-vector";
 
 it("constructor", () => {
-    const params = {
+    const params: MockStaticObjectParams = {
         bounciness: 2,
         density: 3,
         description: "my-description",
         drawingLines: [],
-        extent: new MockVector(1, 2, 3),
-        extentCenter: new MockVector(4, 5, 6),
         friction: 4,
         id: "my-id",
         metallic: 5,
@@ -28,7 +26,6 @@ it("constructor", () => {
         scriptFilename: "my-script-filename",
         scriptPackageId: "my-script-package-id",
         secondaryColor: new MockColor(0.5, 0.6, 0.7, 0.8),
-        size: new MockVector(16, 17, 18),
         snapPoints: [],
         surfaceType: "my-surface-type",
         tags: ["my-tag"],
@@ -44,8 +41,10 @@ it("constructor", () => {
     expect(obj.getDensity()).toBe(params.density);
     expect(obj.getDescription()).toBe(params.description);
     expect(obj.getDrawingLines()).toEqual(params.drawingLines);
-    expect(obj.getExtent(false, false)).toEqual(params.extent);
-    expect(obj.getExtentCenter(false, false)).toEqual(params.extentCenter);
+    expect(obj.getExtent(false, false).toString()).toEqual("(X=6.5,Y=7,Z=7.5)");
+    expect(obj.getExtentCenter(false, false).toString()).toEqual(
+        "(X=0,Y=0,Z=0)"
+    );
     expect(obj.getFriction()).toBe(params.friction);
     expect(obj.getId()).toBe(params.id);
     expect(obj.getMetallic()).toBe(params.metallic);
@@ -58,6 +57,7 @@ it("constructor", () => {
     expect(obj.getRoughness()).toBe(params.roughness);
     expect(obj.getSavedData("my-key")).toBe("my-value");
     expect(obj.getScale()).toEqual(params.scale);
+    expect(obj.getSize().toString()).toEqual("(X=13,Y=14,Z=15)");
     expect(obj.getScriptFilename()).toBe(params.scriptFilename);
     expect(obj.getScriptPackageId()).toBe(params.scriptPackageId);
     expect(obj.getAllSnapPoints()).toEqual(params.snapPoints);

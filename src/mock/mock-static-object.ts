@@ -12,12 +12,12 @@ import { MockRotator } from "./mock-rotator";
 import { MockVector } from "./mock-vector";
 
 export type MockStaticObjectParams = {
+    _modelSize?: Vector | [x: number, y: number, z: number];
+    _modelCenter?: Vector | [x: number, y: number, z: number];
     bounciness?: number;
     density?: number;
     description?: string;
     drawingLines?: DrawingLine[];
-    extent?: Vector | [x: number, y: number, z: number];
-    extentCenter?: Vector | [x: number, y: number, z: number];
     friction?: number;
     id?: string;
     metallic?: number;
@@ -33,7 +33,6 @@ export type MockStaticObjectParams = {
     scriptFilename?: string;
     scriptPackageId?: string;
     secondaryColor?: Color | [r: number, g: number, b: number, a: number];
-    size?: Vector | [x: number, y: number, z: number];
     snapPoints?: SnapPoint[];
     surfaceType?: string;
     tags?: string[];
@@ -53,8 +52,6 @@ export class MockStaticObject implements StaticObject {
     private _density: number = 1;
     private _description: string = "";
     private _drawingLines: DrawingLine[] = [];
-    private _extent: Vector = new MockVector(1, 1, 1);
-    private _extentCenter: Vector = new MockVector(0, 0, 0);
     private _friction: number = 1;
     private _id: string = `__id__${MockStaticObject.__nextIdNumber++}__`;
     private _isValid: boolean = true;
@@ -71,7 +68,6 @@ export class MockStaticObject implements StaticObject {
     private _scriptFilename: string = "";
     private _scriptPackageId: string = "";
     private _secondaryColor: Color = new MockColor(0, 0, 0, 1);
-    private _size: Vector = new MockVector(2, 2, 2);
     private _snapPoints: SnapPoint[] = [];
     private _surfaceType: string = "";
     private _tags: string[] = [];
@@ -81,6 +77,12 @@ export class MockStaticObject implements StaticObject {
     private _uis: UIElement[] = [];
 
     constructor(params?: MockStaticObjectParams) {
+        if (params?._modelSize) {
+            this.__modelSize = MockVector._from(params._modelSize);
+        }
+        if (params?._modelCenter) {
+            this.__modelCenter = MockVector._from(params._modelCenter);
+        }
         if (params?.bounciness !== undefined) {
             this._bounciness = params.bounciness;
         }
@@ -92,12 +94,6 @@ export class MockStaticObject implements StaticObject {
         }
         if (params?.drawingLines) {
             this._drawingLines = params.drawingLines;
-        }
-        if (params?.extent) {
-            this._extent = MockVector._from(params.extent);
-        }
-        if (params?.extentCenter) {
-            this._extentCenter = MockVector._from(params.extentCenter);
         }
         if (params?.friction !== undefined) {
             this._friction = params.friction;
@@ -143,9 +139,6 @@ export class MockStaticObject implements StaticObject {
         }
         if (params?.secondaryColor) {
             this._secondaryColor = MockColor._from(params.secondaryColor);
-        }
-        if (params?.size) {
-            this._size = MockVector._from(params.size);
         }
         if (params?.snapPoints) {
             this._snapPoints = params.snapPoints;
@@ -216,11 +209,18 @@ export class MockStaticObject implements StaticObject {
         currentRotation: boolean,
         includeGeometry: boolean
     ): Vector {
-        return this._extentCenter;
+        const center = this.__modelCenter;
+        const scale = this.getScale();
+        return new MockVector(
+            center.x * scale.x,
+            center.y * scale.y,
+            center.z * scale.z
+        );
     }
 
     getExtent(currentRotation: boolean, includeGeometry: boolean): Vector {
-        return this._extent;
+        const size = this.getSize();
+        return size.multiply(0.5);
     }
 
     getFriction(): number {
@@ -284,7 +284,13 @@ export class MockStaticObject implements StaticObject {
     }
 
     getSize(): Vector {
-        return this._size;
+        const size = this.__modelSize;
+        const scale = this.getScale();
+        return new MockVector(
+            size.x * scale.x,
+            size.y * scale.y,
+            size.z * scale.z
+        );
     }
 
     getSnapPoint(index: number): SnapPoint | undefined {
