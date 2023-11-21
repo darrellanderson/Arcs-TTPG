@@ -1,7 +1,6 @@
-//import { Card, CardDetails, StaticObject } from "@tabletop-playground/api";
-import { Card, CardDetails, StaticObject } from "../mock/index";
-//const { Card, CardDetails, StaticObject } = require("@tabletop-playground/api");
-//const { Card, CardDetails, StaticObject } = require("../api");
+//import { Card, CardDetails, StaticObject } from "../mock/index";
+//import { Card, CardDetails, StaticObject } from "ttpg-mock";
+import { Card, CardDetails, StaticObject } from "@tabletop-playground/api";
 
 export class Nsid {
     get(obj: StaticObject): string {

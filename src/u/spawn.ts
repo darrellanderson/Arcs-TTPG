@@ -1,4 +1,4 @@
-import { GameObject, Rotator, Vector, world } from "../mock/index";
+import { GameObject, Rotator, Vector, world } from "@tabletop-playground/api";
 
 const _nsidToSpawnRecord: {
     [key: string]: { templateId: string; name: string; desc: string };

@@ -1,5 +1,5 @@
 import { Nsid } from "./nsid";
-import { MockCard, MockCardDetails, MockGameObject } from "../mock";
+import { MockCard, MockCardDetails, MockGameObject } from "ttpg-mock";
 
 it("constructor", () => {
     new Nsid();
