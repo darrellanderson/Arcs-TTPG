@@ -647,6 +647,11 @@
   resolved "https://registry.yarnpkg.com/@tabletop-playground/api/-/api-0.38.0.tgz#d8c123bc03f2626a892862682e3dfe4195a1f0f2"
   integrity sha512-KAPg2h2AiXnSzGNxGFiSzOXIozt+RKH0WcmYwsBj3LAF1sQ6tzRTfu1IR4OwK0/8cXhyY1ke7X8HlGy9DWOs2w==
 
+"@tabletop-playground/api@^0.39.0":
+  version "0.39.0"
+  resolved "https://registry.yarnpkg.com/@tabletop-playground/api/-/api-0.39.0.tgz#8d9265beabe26a7be96100abe8b21548df5dc390"
+  integrity sha512-lXf0XA2EL1oNjeVnQs/JPmpymKs6HCH5HMPkugaYRMsgoLgIMo9X1oL2RoE1E1HXAnCnthCT66RAhIdgaCU6HQ==
+
 "@tootallnate/once@2":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-2.0.0.tgz#f544a148d3ab35801c1f633a7441fd87c2e484bf"
@@ -3245,10 +3250,15 @@ ts-node@^10.9.1:
     v8-compile-cache-lib "^3.0.1"
     yn "3.1.1"
 
+ttpg-darrell@../ttpg-darrell:
+  version "1.0.0"
+  dependencies:
+    "@tabletop-playground/api" "^0.39.0"
+
 ttpg-mock@^1.0.0:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/ttpg-mock/-/ttpg-mock-1.0.3.tgz#3c507a27c35c19fddff02ec1d44e187814ab315a"
-  integrity sha512-LA7s1S/PS5VmwlRLKqwQREeRuo+Hq26G/Z4BAWWjnDJ3Rus3YqV4f3AihmD9VDn+ptOdC8/DmGdfascj5VnSxQ==
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/ttpg-mock/-/ttpg-mock-1.0.5.tgz#0757687131ad4df61f494ed16445c5a6c5cb9051"
+  integrity sha512-oOZCrNdvz/mKx+KlHdEdmFlutniak7s09j2+7Ls2cSKElYMOPSlt00TNiK4KFYmIXPvJZ6ykkDPQ9eAabGopJQ==
 
 ttpg-scripts@^1.4.1:
   version "1.4.4"
