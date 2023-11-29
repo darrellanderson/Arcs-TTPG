@@ -29,6 +29,7 @@
     "node": "^21.1.0",
     "prettier": "^3.0.3",
     "sharp": "^0.32.6",
+    "three": "^0.158.0",
     "ts-jest": "^29.1.1",
     "ts-node": "^10.9.1",
     "ttpg-darrell": "../ttpg-darrell",
