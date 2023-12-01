@@ -1,10 +1,8 @@
 {
-    "_width": 187.12,
-    "_height": 100,
     "width": 84.64,
     "height": 45.23,
     "depth": 0.25,
-    "preshrink": -1,
+    "preshrink": { "w": 8192, "h": 0 },
     "input": "base/board/map-red-dark.jpg",
     "output": "base/board/map-red-dark",
     "metadata": "board:base/map",

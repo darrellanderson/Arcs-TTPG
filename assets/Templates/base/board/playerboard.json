@@ -27,10 +27,10 @@
         "Blueprint": "",
         "Models": [
                 {
-                        "Model": "utility/unit-cube-top-uvs.obj",
+                        "Model": "base/board/playerboard/playerboard-0x0.obj",
                         "Offset": {
-                                "X": 0,
-                                "Y": 0,
+                                "X": -5.535,
+                                "Y": 13.81,
                                 "Z": 0
                         },
                         "Scale": {
@@ -45,7 +45,7 @@
                         },
                         "Texture": "base/board/playerboard/playerboard-0x0.jpg",
                         "NormalMap": "",
-                        "ExtraMap": "base/board/playerboard/playerboard-mask-0x0.png",
+                        "ExtraMap": "base/board/playerboard/playerboard-0x0-mask.png",
                         "ExtraMap2": "",
                         "IsTransparent": false,
                         "CastShadow": true,

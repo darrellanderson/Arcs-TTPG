@@ -1,23 +1,25 @@
-./tooling/generators/create-board.ts -f prebuild/base/board/map-red-dark.config.json
-./tooling/generators/create-board.ts -f prebuild/base/board/playerboard.config.json
+#!/bin/sh
 
-/tooling/generators/create-deck.ts -f prebuild/base/card/action/action.config.json
-/tooling/generators/create-deck.ts -f prebuild/base/card/court/court.config.json
-/tooling/generators/create-deck.ts -f prebuild/base/card/leader/leader.config.json
-/tooling/generators/create-deck.ts -f prebuild/base/card/lore/lore.config.json
-/tooling/generators/create-deck.ts -f prebuild/base/card/setup/2p/2p.config.json
-/tooling/generators/create-deck.ts -f prebuild/base/card/setup/3p/3p.config.json
-/tooling/generators/create-deck.ts -f prebuild/base/card/setup/4p/4p.config.json
+./node_modules/ttpg-darrell/tooling/generators/create-board.ts -f prebuild/base/board/map-red-dark.config.json
+./node_modules/ttpg-darrell/tooling/generators/create-board.ts -f prebuild/base/board/playerboard.config.json
 
-./tooling/generators/create-card-mat.ts -f prebuild/base/mat/agent.config.json
-./tooling/generators/create-card-mat.ts -f prebuild/base/mat/building.config.json
-./tooling/generators/create-card-mat.ts -f prebuild/base/mat/court.config.json
-./tooling/generators/create-card-mat.ts -f prebuild/base/mat/dice.config.json
-./tooling/generators/create-card-mat.ts -f prebuild/base/mat/leader.config.json
-./tooling/generators/create-card-mat.ts -f prebuild/base/mat/lore.config.json
-./tooling/generators/create-card-mat.ts -f prebuild/base/mat/resource.config.json
-./tooling/generators/create-card-mat.ts -f prebuild/base/mat/ship.config.json
+./node_modules/ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/base/card/action/action.config.json
+./node_modules/ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/base/card/court/court.config.json
+./node_modules/ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/base/card/leader/leader.config.json
+./node_modules/ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/base/card/lore/lore.config.json
+./node_modules/ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/base/card/setup/2p/2p.config.json
+./node_modules/ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/base/card/setup/3p/3p.config.json
+./node_modules/ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/base/card/setup/4p/4p.config.json
 
-./tooling/generators/create-dice.ts -f prebuild/base/dice/assault/assault.config.json
-./tooling/generators/create-dice.ts -f prebuild/base/dice/raid/raid.config.json
-./tooling/generators/create-dice.ts -f prebuild/base/dice/skirmish/skirmish.config.json
+./node_modules/ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/agent.config.json
+./node_modules/ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/building.config.json
+./node_modules/ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/court.config.json
+./node_modules/ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/dice.config.json
+./node_modules/ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/leader.config.json
+./node_modules/ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/lore.config.json
+./node_modules/ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/resource.config.json
+./node_modules/ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/ship.config.json
+
+./node_modules/ttpg-darrell/tooling/generators/create-dice.ts -f prebuild/base/dice/assault/assault.config.json
+./node_modules/ttpg-darrell/tooling/generators/create-dice.ts -f prebuild/base/dice/raid/raid.config.json
+./node_modules/ttpg-darrell/tooling/generators/create-dice.ts -f prebuild/base/dice/skirmish/skirmish.config.json

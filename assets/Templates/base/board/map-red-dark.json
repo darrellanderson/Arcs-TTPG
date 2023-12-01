@@ -1,1022 +1,983 @@
 {
-        "Type": "Generic",
-        "GUID": "C5E768160FF7FC1304EA2E2C3A8F7311",
-        "Name": "map-red-dark",
-        "Metadata": "board:base/map",
-        "CollisionType": "Regular",
-        "Friction": 0.7,
-        "Restitution": 0.3,
-        "Density": 1,
-        "SurfaceType": "Cardboard",
-        "Roughness": 1,
-        "Metallic": 0,
-        "PrimaryColor": {
-                "R": 255,
-                "G": 255,
-                "B": 255
-        },
-        "SecondaryColor": {
-                "R": 0,
-                "G": 0,
-                "B": 0
-        },
-        "Flippable": false,
-        "AutoStraighten": false,
-        "ShouldSnap": false,
-        "ScriptName": "",
-        "Blueprint": "",
-        "Models": [
-                {
-                        "Model": "utility/unit-cube-top-uvs.obj",
-                        "Offset": {
-                                "X": 4.235,
-                                "Y": -23.939,
-                                "Z": 0
-                        },
-                        "Scale": {
-                                "X": 36.76,
-                                "Y": 36.763,
-                                "Z": 0.25
-                        },
-                        "Rotation": {
-                                "X": 0,
-                                "Y": 0,
-                                "Z": 0
-                        },
-                        "Texture": "base/board/map-red-dark/map-red-dark-0x0.jpg",
-                        "NormalMap": "",
-                        "ExtraMap": "",
-                        "ExtraMap2": "",
-                        "IsTransparent": false,
-                        "CastShadow": true,
-                        "IsTwoSided": false,
-                        "UseOverrides": true,
-                        "SurfaceType": "Cardboard"
-                },
-                {
-                        "Model": "utility/unit-cube-top-uvs.obj",
-                        "Offset": {
-                                "X": -18.38,
-                                "Y": -23.939,
-                                "Z": 0
-                        },
-                        "Scale": {
-                                "X": 8.47,
-                                "Y": 36.763,
-                                "Z": 0.25
-                        },
-                        "Rotation": {
-                                "X": 0,
-                                "Y": 0,
-                                "Z": 0
-                        },
-                        "Texture": "base/board/map-red-dark/map-red-dark-0x1.jpg",
-                        "NormalMap": "",
-                        "ExtraMap": "",
-                        "ExtraMap2": "",
-                        "IsTransparent": false,
-                        "CastShadow": true,
-                        "IsTwoSided": false,
-                        "UseOverrides": true,
-                        "SurfaceType": "Cardboard"
-                },
-                {
-                        "Model": "utility/unit-cube-top-uvs.obj",
-                        "Offset": {
-                                "X": 4.235,
-                                "Y": 12.824,
-                                "Z": 0
-                        },
-                        "Scale": {
-                                "X": 36.76,
-                                "Y": 36.763,
-                                "Z": 0.25
-                        },
-                        "Rotation": {
-                                "X": 0,
-                                "Y": 0,
-                                "Z": 0
-                        },
-                        "Texture": "base/board/map-red-dark/map-red-dark-1x0.jpg",
-                        "NormalMap": "",
-                        "ExtraMap": "",
-                        "ExtraMap2": "",
-                        "IsTransparent": false,
-                        "CastShadow": true,
-                        "IsTwoSided": false,
-                        "UseOverrides": true,
-                        "SurfaceType": "Cardboard"
-                },
-                {
-                        "Model": "utility/unit-cube-top-uvs.obj",
-                        "Offset": {
-                                "X": -18.38,
-                                "Y": 12.824,
-                                "Z": 0
-                        },
-                        "Scale": {
-                                "X": 8.47,
-                                "Y": 36.763,
-                                "Z": 0.25
-                        },
-                        "Rotation": {
-                                "X": 0,
-                                "Y": 0,
-                                "Z": 0
-                        },
-                        "Texture": "base/board/map-red-dark/map-red-dark-1x1.jpg",
-                        "NormalMap": "",
-                        "ExtraMap": "",
-                        "ExtraMap2": "",
-                        "IsTransparent": false,
-                        "CastShadow": true,
-                        "IsTwoSided": false,
-                        "UseOverrides": true,
-                        "SurfaceType": "Cardboard"
-                },
-                {
-                        "Model": "utility/unit-cube-top-uvs.obj",
-                        "Offset": {
-                                "X": 4.235,
-                                "Y": 36.763,
-                                "Z": 0
-                        },
-                        "Scale": {
-                                "X": 36.76,
-                                "Y": 11.115,
-                                "Z": 0.25
-                        },
-                        "Rotation": {
-                                "X": 0,
-                                "Y": 0,
-                                "Z": 0
-                        },
-                        "Texture": "base/board/map-red-dark/map-red-dark-2x0.jpg",
-                        "NormalMap": "",
-                        "ExtraMap": "",
-                        "ExtraMap2": "",
-                        "IsTransparent": false,
-                        "CastShadow": true,
-                        "IsTwoSided": false,
-                        "UseOverrides": true,
-                        "SurfaceType": "Cardboard"
-                },
-                {
-                        "Model": "utility/unit-cube-top-uvs.obj",
-                        "Offset": {
-                                "X": -18.38,
-                                "Y": 36.763,
-                                "Z": 0
-                        },
-                        "Scale": {
-                                "X": 8.47,
-                                "Y": 11.115,
-                                "Z": 0.25
-                        },
-                        "Rotation": {
-                                "X": 0,
-                                "Y": 0,
-                                "Z": 0
-                        },
-                        "Texture": "base/board/map-red-dark/map-red-dark-2x1.jpg",
-                        "NormalMap": "",
-                        "ExtraMap": "",
-                        "ExtraMap2": "",
-                        "IsTransparent": false,
-                        "CastShadow": true,
-                        "IsTwoSided": false,
-                        "UseOverrides": true,
-                        "SurfaceType": "Cardboard"
-                }
-        ],
-        "Collision": [],
-        "Lights": [],
-        "SnapPointsGlobal": false,
-        "SnapPoints": [
-                {
-                        "X": 18.381,
-                        "Y": -36.91,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": -90,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "card.action",
-                                "card.action.discard"
-                        ]
-                },
-                {
-                        "X": -10.013,
-                        "Y": -37.129,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": -90,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "card.action"
-                        ]
-                },
-                {
-                        "X": 15.797,
-                        "Y": 33.114,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "ambition-marker"
-                        ]
-                },
-                {
-                        "X": 15.808,
-                        "Y": 36.385,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "ambition-marker"
-                        ]
-                },
-                {
-                        "X": 15.822,
-                        "Y": 39.64,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "ambition-marker"
-                        ]
-                },
-                {
-                        "X": -18.84,
-                        "Y": 31.923,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "chapter-marker"
-                        ]
-                },
-                {
-                        "X": -18.879,
-                        "Y": 34.153,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "chapter-marker"
-                        ]
-                },
-                {
-                        "X": -18.847,
-                        "Y": 36.365,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "chapter-marker"
-                        ]
-                },
-                {
-                        "X": -18.849,
-                        "Y": 38.582,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "chapter-marker"
-                        ]
-                },
-                {
-                        "X": -18.852,
-                        "Y": 40.75,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "chapter-marker"
-                        ]
-                },
-                {
-                        "X": -16.088,
-                        "Y": -37.008,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "zero-marker"
-                        ]
-                },
-                {
-                        "X": 16.896,
-                        "Y": -5.15,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "building"
-                        ]
-                },
-                {
-                        "X": 18.189,
-                        "Y": -2.355,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "building"
-                        ]
-                },
-                {
-                        "X": 17.164,
-                        "Y": 4.146,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "building"
-                        ]
-                },
-                {
-                        "X": 18.775,
-                        "Y": 11.696,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "building"
-                        ]
-                },
-                {
-                        "X": 16.79,
-                        "Y": 14.182,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "building"
-                        ]
-                },
-                {
-                        "X": 11.6,
-                        "Y": 18.158,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "building"
-                        ]
-                },
-                {
-                        "X": 7.3,
-                        "Y": 25.21,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "building"
-                        ]
-                },
-                {
-                        "X": 0.928,
-                        "Y": 20.753,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "building"
-                        ]
-                },
-                {
-                        "X": -0.438,
-                        "Y": 23.262,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "building"
-                        ]
-                },
-                {
-                        "X": -5,
-                        "Y": 22.436,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "building"
-                        ]
-                },
-                {
-                        "X": -7.953,
-                        "Y": 14.142,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "building"
-                        ]
-                },
-                {
-                        "X": -14.991,
-                        "Y": 16.16,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "building"
-                        ]
-                },
-                {
-                        "X": -16.804,
-                        "Y": 13.779,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "building"
-                        ]
-                },
-                {
-                        "X": -15.9,
-                        "Y": 6.495,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "building"
-                        ]
-                },
-                {
-                        "X": -14.044,
-                        "Y": 4.015,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "building"
-                        ]
-                },
-                {
-                        "X": -17.966,
-                        "Y": -2.575,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "building"
-                        ]
-                },
-                {
-                        "X": -16.211,
-                        "Y": -4.96,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "building"
-                        ]
-                },
-                {
-                        "X": -14.238,
-                        "Y": -11.883,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "building"
-                        ]
-                },
-                {
-                        "X": -13.1,
-                        "Y": -24.539,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "building"
-                        ]
-                },
-                {
-                        "X": -4.419,
-                        "Y": -20.182,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "building"
-                        ]
-                },
-                {
-                        "X": 1.05,
-                        "Y": -25.335,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "building"
-                        ]
-                },
-                {
-                        "X": -0.75,
-                        "Y": -27.705,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "building"
-                        ]
-                },
-                {
-                        "X": 5.75,
-                        "Y": -20.24,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "building"
-                        ]
-                },
-                {
-                        "X": 12.865,
-                        "Y": -23.45,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "building"
-                        ]
-                },
-                {
-                        "X": 14.725,
-                        "Y": -21.086,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "building"
-                        ]
-                },
-                {
-                        "X": 16.828,
-                        "Y": -14.215,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "building"
-                        ]
-                },
-                {
-                        "X": 9.676,
-                        "Y": 1.357,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 10,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "path-marker",
-                                "cluster-1"
-                        ]
-                },
-                {
-                        "X": 3.431,
-                        "Y": 9.215,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 70,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "path-marker",
-                                "cluster-2"
-                        ]
-                },
-                {
-                        "X": -4.372,
-                        "Y": 7.846,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 130,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "path-marker",
-                                "cluster-3"
-                        ]
-                },
-                {
-                        "X": -7.8,
-                        "Y": -2,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": -168,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "path-marker",
-                                "cluster-4"
-                        ]
-                },
-                {
-                        "X": -1.742,
-                        "Y": -9.361,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": -113.2,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "path-marker",
-                                "cluster-5"
-                        ]
-                },
-                {
-                        "X": 5.696,
-                        "Y": -8.459,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": -55,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "path-marker",
-                                "cluster-6"
-                        ]
-                },
-                {
-                        "X": 17.235,
-                        "Y": -2.733,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": -60,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "out-of-play-marker",
-                                "cluster-1"
-                        ]
-                },
-                {
-                        "X": 16.51,
-                        "Y": 5.195,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": -60,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "out-of-play-marker",
-                                "cluster-1"
-                        ]
-                },
-                {
-                        "X": 17.653,
-                        "Y": 12.388,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": -60,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "cluster-1",
-                                "out-of-play-marker"
-                        ]
-                },
-                {
-                        "X": 12.031,
-                        "Y": 17.952,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": -60,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "out-of-play-marker",
-                                "cluster-2"
-                        ]
-                },
-                {
-                        "X": 7.259,
-                        "Y": 24.177,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": -60,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "cluster-2",
-                                "out-of-play-marker"
-                        ]
-                },
-                {
-                        "X": 0.307,
-                        "Y": 21.184,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": -60,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "cluster-2",
-                                "out-of-play-marker"
-                        ]
-                },
-                {
-                        "X": -6.068,
-                        "Y": 22.139,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": -60,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "out-of-play-marker",
-                                "cluster-3"
-                        ]
-                },
-                {
-                        "X": -8.81,
-                        "Y": 14.357,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": -60,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "cluster-3",
-                                "out-of-play-marker"
-                        ]
-                },
-                {
-                        "X": -15.127,
-                        "Y": 14.041,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": -60,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "out-of-play-marker",
-                                "cluster-3"
-                        ]
-                },
-                {
-                        "X": -15.246,
-                        "Y": 5.327,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": -60,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "out-of-play-marker",
-                                "cluster-4"
-                        ]
-                },
-                {
-                        "X": -15.551,
-                        "Y": -2.937,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": -60,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "cluster-4",
-                                "out-of-play-marker"
-                        ]
-                },
-                {
-                        "X": -14.102,
-                        "Y": -10.721,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": -60,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "out-of-play-marker",
-                                "cluster-4"
-                        ]
-                },
-                {
-                        "X": -12.491,
-                        "Y": -22.987,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": -60,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "out-of-play-marker",
-                                "cluster-5"
-                        ]
-                },
-                {
-                        "X": -4.24,
-                        "Y": -18.912,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": -60,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "cluster-5",
-                                "out-of-play-marker"
-                        ]
-                },
-                {
-                        "X": 1.406,
-                        "Y": -25.406,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": -60,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "cluster-5",
-                                "out-of-play-marker"
-                        ]
-                },
-                {
-                        "X": 6.288,
-                        "Y": -19.419,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": -60,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "out-of-play-marker",
-                                "cluster-6"
-                        ]
-                },
-                {
-                        "X": 13.463,
-                        "Y": -21.083,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": -60,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "cluster-6",
-                                "out-of-play-marker"
-                        ]
-                },
-                {
-                        "X": 16.111,
-                        "Y": -12.897,
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 0,
-                        "RotationOffset": -60,
-                        "Shape": 0,
-                        "FlipValidity": 0,
-                        "Tags": [
-                                "cluster-6",
-                                "out-of-play-marker"
-                        ]
-                }
-        ],
-        "ZoomViewDirection": {
-                "X": 0,
-                "Y": 0,
-                "Z": 1
-        },
-        "GroundAccessibility": "Zoom",
-        "Tags": []
+	"Type": "Generic",
+	"GUID": "C5E768160FF7FC1304EA2E2C3A8F7311",
+	"Name": "map-red-dark",
+	"Metadata": "board:base/map",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0.3,
+	"Density": 1,
+	"SurfaceType": "Cardboard",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 255,
+		"G": 255,
+		"B": 255
+	},
+	"SecondaryColor":
+	{
+		"R": 0,
+		"G": 0,
+		"B": 0
+	},
+	"Flippable": false,
+	"AutoStraighten": false,
+	"ShouldSnap": false,
+	"ScriptName": "",
+	"Blueprint": "",
+	"Models": [
+		{
+			"Model": "base/board/map-red-dark/map-red-dark-0x0.obj",
+			"Offset":
+			{
+				"X": 1.455,
+				"Y": -21.16,
+				"Z": 0
+			},
+			"Scale":
+			{
+				"X": 42.321,
+				"Y": 42.32,
+				"Z": 0.25
+			},
+			"Rotation":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Texture": "base/board/map-red-dark/map-red-dark-0x0.jpg",
+			"NormalMap": "",
+			"ExtraMap": "",
+			"ExtraMap2": "",
+			"IsTransparent": false,
+			"CastShadow": true,
+			"IsTwoSided": false,
+			"UseOverrides": true,
+			"SurfaceType": "Cardboard"
+		},
+		{
+			"Model": "base/board/map-red-dark/map-red-dark-0x1.obj",
+			"Offset":
+			{
+				"X": -21.16,
+				"Y": -21.16,
+				"Z": 0
+			},
+			"Scale":
+			{
+				"X": 2.909,
+				"Y": 42.32,
+				"Z": 0.25
+			},
+			"Rotation":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Texture": "base/board/map-red-dark/map-red-dark-0x1.jpg",
+			"NormalMap": "",
+			"ExtraMap": "",
+			"ExtraMap2": "",
+			"IsTransparent": false,
+			"CastShadow": true,
+			"IsTwoSided": false,
+			"UseOverrides": true,
+			"SurfaceType": "Cardboard"
+		},
+		{
+			"Model": "base/board/map-red-dark/map-red-dark-1x0.obj",
+			"Offset":
+			{
+				"X": 1.455,
+				"Y": 21.16,
+				"Z": 0
+			},
+			"Scale":
+			{
+				"X": 42.321,
+				"Y": 42.32,
+				"Z": 0.25
+			},
+			"Rotation":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Texture": "base/board/map-red-dark/map-red-dark-1x0.jpg",
+			"NormalMap": "",
+			"ExtraMap": "",
+			"ExtraMap2": "",
+			"IsTransparent": false,
+			"CastShadow": true,
+			"IsTwoSided": false,
+			"UseOverrides": true,
+			"SurfaceType": "Cardboard"
+		},
+		{
+			"Model": "base/board/map-red-dark/map-red-dark-1x1.obj",
+			"Offset":
+			{
+				"X": -21.16,
+				"Y": 21.16,
+				"Z": 0
+			},
+			"Scale":
+			{
+				"X": 2.909,
+				"Y": 42.32,
+				"Z": 0.25
+			},
+			"Rotation":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Texture": "base/board/map-red-dark/map-red-dark-1x1.jpg",
+			"NormalMap": "",
+			"ExtraMap": "",
+			"ExtraMap2": "",
+			"IsTransparent": false,
+			"CastShadow": true,
+			"IsTwoSided": false,
+			"UseOverrides": true,
+			"SurfaceType": "Cardboard"
+		}
+	],
+	"Collision": [],
+	"Lights": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [
+		{
+			"X": 18.381,
+			"Y": -36.91,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 2,
+			"RotationOffset": -90,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"card.action",
+				"card.action.discard"
+			]
+		},
+		{
+			"X": -10.013,
+			"Y": -37.129,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 2,
+			"RotationOffset": -90,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"card.action"
+			]
+		},
+		{
+			"X": 15.797,
+			"Y": 33.114,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"ambition-marker"
+			]
+		},
+		{
+			"X": 15.808,
+			"Y": 36.385,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"ambition-marker"
+			]
+		},
+		{
+			"X": 15.822,
+			"Y": 39.64,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"ambition-marker"
+			]
+		},
+		{
+			"X": -18.84,
+			"Y": 31.923,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"chapter-marker"
+			]
+		},
+		{
+			"X": -18.879,
+			"Y": 34.153,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"chapter-marker"
+			]
+		},
+		{
+			"X": -18.847,
+			"Y": 36.365,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"chapter-marker"
+			]
+		},
+		{
+			"X": -18.849,
+			"Y": 38.582,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"chapter-marker"
+			]
+		},
+		{
+			"X": -18.852,
+			"Y": 40.75,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"chapter-marker"
+			]
+		},
+		{
+			"X": -16.088,
+			"Y": -37.008,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 2,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"zero-marker"
+			]
+		},
+		{
+			"X": 16.896,
+			"Y": -5.15,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": 18.189,
+			"Y": -2.355,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": 17.164,
+			"Y": 4.146,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": 18.775,
+			"Y": 11.696,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": 16.79,
+			"Y": 14.182,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": 11.6,
+			"Y": 18.158,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": 7.3,
+			"Y": 25.21,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": 0.928,
+			"Y": 20.753,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": -0.438,
+			"Y": 23.262,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": -5,
+			"Y": 22.436,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": -7.953,
+			"Y": 14.142,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": -14.991,
+			"Y": 16.16,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": -16.804,
+			"Y": 13.779,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": -15.9,
+			"Y": 6.495,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": -14.044,
+			"Y": 4.015,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": -17.966,
+			"Y": -2.575,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": -16.211,
+			"Y": -4.96,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": -14.238,
+			"Y": -11.883,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": -13.1,
+			"Y": -24.539,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": -4.419,
+			"Y": -20.182,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": 1.05,
+			"Y": -25.335,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": -0.75,
+			"Y": -27.705,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": 5.75,
+			"Y": -20.24,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": 12.865,
+			"Y": -23.45,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": 14.725,
+			"Y": -21.086,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": 16.828,
+			"Y": -14.215,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": 9.676,
+			"Y": 1.357,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 2,
+			"RotationOffset": 10,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"path-marker",
+				"cluster-1"
+			]
+		},
+		{
+			"X": 3.431,
+			"Y": 9.215,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 2,
+			"RotationOffset": 70,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"path-marker",
+				"cluster-2"
+			]
+		},
+		{
+			"X": -4.372,
+			"Y": 7.846,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 2,
+			"RotationOffset": 130,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"path-marker",
+				"cluster-3"
+			]
+		},
+		{
+			"X": -7.8,
+			"Y": -2,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 2,
+			"RotationOffset": -168,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"path-marker",
+				"cluster-4"
+			]
+		},
+		{
+			"X": -1.742,
+			"Y": -9.361,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 2,
+			"RotationOffset": -113.2,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"path-marker",
+				"cluster-5"
+			]
+		},
+		{
+			"X": 5.696,
+			"Y": -8.459,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 2,
+			"RotationOffset": -55,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"path-marker",
+				"cluster-6"
+			]
+		},
+		{
+			"X": 17.235,
+			"Y": -2.733,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": -60,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"out-of-play-marker",
+				"cluster-1"
+			]
+		},
+		{
+			"X": 16.51,
+			"Y": 5.195,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": -60,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"out-of-play-marker",
+				"cluster-1"
+			]
+		},
+		{
+			"X": 17.653,
+			"Y": 12.388,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": -60,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"cluster-1",
+				"out-of-play-marker"
+			]
+		},
+		{
+			"X": 12.031,
+			"Y": 17.952,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": -60,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"out-of-play-marker",
+				"cluster-2"
+			]
+		},
+		{
+			"X": 7.259,
+			"Y": 24.177,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": -60,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"cluster-2",
+				"out-of-play-marker"
+			]
+		},
+		{
+			"X": 0.307,
+			"Y": 21.184,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": -60,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"cluster-2",
+				"out-of-play-marker"
+			]
+		},
+		{
+			"X": -6.068,
+			"Y": 22.139,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": -60,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"out-of-play-marker",
+				"cluster-3"
+			]
+		},
+		{
+			"X": -8.81,
+			"Y": 14.357,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": -60,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"cluster-3",
+				"out-of-play-marker"
+			]
+		},
+		{
+			"X": -15.127,
+			"Y": 14.041,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": -60,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"out-of-play-marker",
+				"cluster-3"
+			]
+		},
+		{
+			"X": -15.246,
+			"Y": 5.327,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": -60,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"out-of-play-marker",
+				"cluster-4"
+			]
+		},
+		{
+			"X": -15.551,
+			"Y": -2.937,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": -60,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"cluster-4",
+				"out-of-play-marker"
+			]
+		},
+		{
+			"X": -14.102,
+			"Y": -10.721,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": -60,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"out-of-play-marker",
+				"cluster-4"
+			]
+		},
+		{
+			"X": -12.491,
+			"Y": -22.987,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": -60,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"out-of-play-marker",
+				"cluster-5"
+			]
+		},
+		{
+			"X": -4.24,
+			"Y": -18.912,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": -60,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"cluster-5",
+				"out-of-play-marker"
+			]
+		},
+		{
+			"X": 1.406,
+			"Y": -25.406,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": -60,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"cluster-5",
+				"out-of-play-marker"
+			]
+		},
+		{
+			"X": 6.288,
+			"Y": -19.419,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": -60,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"out-of-play-marker",
+				"cluster-6"
+			]
+		},
+		{
+			"X": 13.463,
+			"Y": -21.083,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": -60,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"cluster-6",
+				"out-of-play-marker"
+			]
+		},
+		{
+			"X": 16.111,
+			"Y": -12.897,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 0,
+			"RotationOffset": -60,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"cluster-6",
+				"out-of-play-marker"
+			]
+		}
+	],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 1
+	},
+	"GroundAccessibility": "Zoom",
+	"Tags": []
 }
