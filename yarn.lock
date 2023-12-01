@@ -3255,8 +3255,10 @@ ts-node@^10.9.1:
     v8-compile-cache-lib "^3.0.1"
     yn "3.1.1"
 
-ttpg-darrell@../ttpg-darrell:
+ttpg-darrell@^1.0.0:
   version "1.0.0"
+  resolved "https://registry.yarnpkg.com/ttpg-darrell/-/ttpg-darrell-1.0.0.tgz#59371aa3637ce90e955927de454cd7efa9d95c6f"
+  integrity sha512-+JB8gN6vdjdCyTkdNvMsNcMKYtM3go6S7z7UEmc4/5BJfx3iWWM/+0voFQPawVq7nc0gTlAjz5hO9tv96Sfyfw==
   dependencies:
     "@tabletop-playground/api" "^0.39.0"
 
