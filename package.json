@@ -38,6 +38,6 @@
   },
   "dependencies": {
     "jsx-in-ttpg": "^2.1.0",
-    "ttpg-darrell": "^1.0.0"
+    "ttpg-darrell": "^1.0.3"
   }
 }

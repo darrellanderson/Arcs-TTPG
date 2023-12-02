@@ -2,6 +2,7 @@
         "Type": "Dice",
         "GUID": "34A07D1F636DF315E79A8F6F59FDB9A8",
         "Name": "skirmish",
+        "Metadata": "dice:base/skirmish",
         "CollisionType": "Regular",
         "Friction": 0.7,
         "Restitution": 0.5,

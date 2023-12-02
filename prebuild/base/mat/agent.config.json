@@ -58,6 +58,7 @@
     "gap": 0.5,
     "cols": 2,
     "postShrink": 1024,
+    "snapRotation": 3,
     "metadata": "mat:base/agent",
     "output": "base/mat/agent",
     "tags": []

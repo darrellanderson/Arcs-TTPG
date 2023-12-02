@@ -68,6 +68,7 @@
             }
         }
     ],
+    "metadata": "dice:base/skirmish",
     "output": "base/dice/skirmish",
     "tags": ["die", "die.skirmish"]
 }
