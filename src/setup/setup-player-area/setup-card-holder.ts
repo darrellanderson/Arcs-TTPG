@@ -1,6 +1,5 @@
-import { Color, GameObject, Rotator, Vector } from "@tabletop-playground/api";
-import { AbstractSetup } from "setup/abstract-setup";
-import { LayoutObjects, Spawn } from "ttpg-darrell";
+import { GameObject } from "@tabletop-playground/api";
+import { AbstractSetup, LayoutObjects, Spawn } from "ttpg-darrell";
 
 export class SetupCardHolder extends AbstractSetup {
     private readonly _cardHolder: GameObject;
@@ -21,5 +20,6 @@ export class SetupCardHolder extends AbstractSetup {
     _afterLayout(): void {
         const playerSlot: number = this.getPlayerSlot();
         this._cardHolder.setOwningPlayerSlot(playerSlot);
+        // Card holder gets color from owning slot, do not set primary color
     }
 }

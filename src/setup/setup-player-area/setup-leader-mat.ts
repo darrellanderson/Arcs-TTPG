@@ -1,6 +1,5 @@
-import { Color, GameObject, Rotator, Vector } from "@tabletop-playground/api";
-import { AbstractSetup } from "setup/abstract-setup";
-import { LayoutObjects, Spawn } from "ttpg-darrell";
+import { Color, GameObject } from "@tabletop-playground/api";
+import { AbstractSetup, LayoutObjects, Spawn } from "ttpg-darrell";
 
 export class SetupLeaderMat extends AbstractSetup {
     private readonly _mat: GameObject;
