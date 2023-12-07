@@ -1,8 +1,8 @@
 {
     "board:base/map": "C5E768160FF7FC1304EA2E2C3A8F7311",
     "board:base/playerboard": "B13BCF14BEB512425D9E0548671C9076",
-    "card.action.administration:base/*": "BFFD6C5F77CDF1938D9999D786F17A0D",
-    "card.court.guild:base/*": "BFB10116FFC833E5D6FEFC24B37DE817",
+    "card.action:base/*": "BFFD6C5F77CDF1938D9999D786F17A0D",
+    "card.court:base/*": "BFB10116FFC833E5D6FEFC24B37DE817",
     "card.leader:base/*": "5BD791889C0D0A13F44937FC79DA4609",
     "card.lore:base/*": "BFD8227E3148F0622C1CFA1F913A4843",
     "card.setup.2p:base/*": "941AC2907C26DB687AB49985EA47918C",

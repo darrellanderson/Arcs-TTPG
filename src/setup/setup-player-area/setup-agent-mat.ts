@@ -1,4 +1,10 @@
-import { Color, GameObject, Rotator, Vector } from "@tabletop-playground/api";
+import {
+    Color,
+    GameObject,
+    ObjectType,
+    Rotator,
+    Vector,
+} from "@tabletop-playground/api";
 import { AbstractSetup, LayoutObjects, Spawn } from "ttpg-darrell";
 
 export class SetupAgentMat extends AbstractSetup {
@@ -22,6 +28,7 @@ export class SetupAgentMat extends AbstractSetup {
         const primaryColor: Color = this.getPrimaryColor();
         const rot: Rotator = this._mat.getRotation();
 
+        this._mat.setObjectType(ObjectType.Ground);
         this._mat.setOwningPlayerSlot(playerSlot);
         this._mat.setPrimaryColor(primaryColor);
 

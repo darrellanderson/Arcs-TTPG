@@ -1,4 +1,4 @@
-import { Color, GameObject } from "@tabletop-playground/api";
+import { Color, GameObject, ObjectType } from "@tabletop-playground/api";
 import { AbstractSetup, LayoutObjects, Spawn } from "ttpg-darrell";
 
 export class SetupLeaderMat extends AbstractSetup {
@@ -21,6 +21,7 @@ export class SetupLeaderMat extends AbstractSetup {
         const playerSlot: number = this.getPlayerSlot();
         const primaryColor: Color = this.getPrimaryColor();
 
+        this._mat.setObjectType(ObjectType.Ground);
         this._mat.setOwningPlayerSlot(playerSlot);
         this._mat.setPrimaryColor(primaryColor);
     }

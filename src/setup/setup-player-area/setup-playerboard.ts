@@ -1,4 +1,10 @@
-import { Color, GameObject, Rotator, Vector } from "@tabletop-playground/api";
+import {
+    Color,
+    GameObject,
+    ObjectType,
+    Rotator,
+    Vector,
+} from "@tabletop-playground/api";
 import { AbstractSetup, LayoutObjects, Spawn } from "ttpg-darrell";
 
 export class SetupPlayerboard extends AbstractSetup {
@@ -25,6 +31,7 @@ export class SetupPlayerboard extends AbstractSetup {
         const primaryColor: Color = this.getPrimaryColor();
         const rot: Rotator = this._playerboard.getRotation();
 
+        this._playerboard.setObjectType(ObjectType.Ground);
         this._playerboard.setOwningPlayerSlot(playerSlot);
         this._playerboard.setPrimaryColor(primaryColor);
 

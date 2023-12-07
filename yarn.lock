@@ -749,10 +749,18 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@^29.5.7", "@types/jest@^29.5.8":
+"@types/jest@^29.5.7":
   version "29.5.10"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-29.5.10.tgz#a10fc5bab9e426081c12b2ef73d24d4f0c9b7f50"
   integrity sha512-tE4yxKEphEyxj9s4inideLHktW/x6DwesIwWZ9NN1FKf9zbJYsnhBoA9vrHA/IuIOKwPa5PcFBNV4lpMIOEzyQ==
+  dependencies:
+    expect "^29.0.0"
+    pretty-format "^29.0.0"
+
+"@types/jest@^29.5.8":
+  version "29.5.11"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-29.5.11.tgz#0c13aa0da7d0929f078ab080ae5d4ced80fa2f2c"
+  integrity sha512-S2mHmYIVe13vrm6q4kN6fLYYAka15ALQki/vgDC3mIukEOx8WJlv0kQPM+d4w8Gp6u0uSdKND04IlTXBv0rwnQ==
   dependencies:
     expect "^29.0.0"
     pretty-format "^29.0.0"
@@ -773,7 +781,14 @@
   dependencies:
     "@types/node" "*"
 
-"@types/node@*", "@types/node@^20.8.10":
+"@types/node@*":
+  version "20.10.4"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.10.4.tgz#b246fd84d55d5b1b71bf51f964bd514409347198"
+  integrity sha512-D08YG6rr8X90YB56tSIuBaddy/UXAA9RKJoFvrsnogAum/0pmjkgi4+2nx96A330FmioegBWmEYQ+syqCFaveg==
+  dependencies:
+    undici-types "~5.26.4"
+
+"@types/node@^20.8.10":
   version "20.10.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.10.2.tgz#32a5e8228357f57714ad28d52229ab04880c2814"
   integrity sha512-37MXfxkb0vuIlRKHNxwCkb60PNBpR94u4efQuN4JgIAm66zfCDXGSAFCef9XUWFovX2R1ok6Z7MHhtdVXXkkIw==
@@ -3286,16 +3301,16 @@ ts-node@^10.9.1:
     yn "3.1.1"
 
 ttpg-darrell@^1.0.3:
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/ttpg-darrell/-/ttpg-darrell-1.0.10.tgz#570ce0819e66759986bef41db9ad9a0717080ed8"
-  integrity sha512-3JUvqjwd1fYBtw4ljIL76lAZP9ear2AKK99YVZdN8TRk3pwBFXgcaQ4ZmM3pI7+MZOZS9km6xpIS7rbzR3B0KQ==
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/ttpg-darrell/-/ttpg-darrell-1.0.12.tgz#fad823eb164dde835357c07974c0571dee58de15"
+  integrity sha512-ICl/OguvE4n+Qzfl5jiFEfoSygVva6zpmpvIxMNCw/ScO1Ywyq83fEvrZjav8evZW9QnojaFlupxIZRWkXqF0w==
   dependencies:
     "@tabletop-playground/api" "^0.39.0"
 
 ttpg-mock@^1.0.0:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/ttpg-mock/-/ttpg-mock-1.0.7.tgz#35d7fab5734f5c9aca7716ef4aea1041a5cb564e"
-  integrity sha512-IaRWdqx3N3OY1JOvx7Aq4NIhUAY29EFDoO6WXfs9HbXnnajoIb4uMH1z3zq9SfAINpokp9Q9so3+ss3dQiv3Lw==
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/ttpg-mock/-/ttpg-mock-1.0.9.tgz#178c5167d5988ebda848593fd99f3070c24cb48a"
+  integrity sha512-rf80M+EBDOyu//vK64cylTGQJ5d+xzJ0MapWFT9ablGeh5k2F7de1g5vwtKhaWieZ1NFneJpNxmbtEoFdAGcZg==
   dependencies:
     "@jest/globals" "^29.7.0"
     "@tabletop-playground/api" "^0.39.0"
