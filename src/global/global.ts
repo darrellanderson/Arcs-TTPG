@@ -6,6 +6,9 @@ new InjectSpawnNSIDs().init();
 import { RecycleAgent } from "./garbage-handlers/recycle-agent";
 new RecycleAgent().init();
 
+import { RecycleAmbitionToken } from "./garbage-handlers/recycle-ambition-token";
+new RecycleAmbitionToken().init();
+
 import { RecycleCardAction } from "./garbage-handlers/recycle-card-action";
 new RecycleCardAction().init();
 
@@ -29,6 +32,9 @@ new RecycleShip().init();
 
 import { RecycleStarport } from "./garbage-handlers/recycle-starport";
 new RecycleStarport().init();
+
+import { RecycleZeroMarker } from "./garbage-handlers/recycle-zero-marker";
+new RecycleZeroMarker().init();
 
 // ------------------------------------
 
