@@ -67,7 +67,7 @@ export class RecycleDice implements GarbageHandler, AbstractGlobal {
             const above = snapPoint.getGlobalPosition().add([0, 0, 10]);
             obj.setPosition(above);
             obj.snapToGround();
-            obj.snap(); // apply snap point rotation
+            obj.snap(1); // apply snap point rotation
             return true;
         }
         return false;

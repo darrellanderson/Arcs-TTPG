@@ -60,12 +60,16 @@ export class RecycleResources implements GarbageHandler, AbstractGlobal {
         const deck = snapPoint.getSnappedObject() as Card | undefined;
         if (deck) {
             const card = obj as Card;
-            deck.addCards(card);
+            const toFront = true;
+            const offset = 0;
+            const animate = true;
+            const flipped = false;
+            deck.addCards(card, toFront, offset, animate, flipped);
         } else {
             const above = snapPoint.getGlobalPosition().add([0, 0, 10]);
             obj.setPosition(above);
             obj.snapToGround();
-            obj.snap(); // apply snap point rotation
+            obj.snap(1); // apply snap point rotation
         }
         return true;
     }
