@@ -3,6 +3,11 @@ new InjectSpawnNSIDs().init();
 
 // ------------------------------------
 
+import { DiceReport } from "./dice-report/dice-report";
+new DiceReport().init();
+
+// ------------------------------------
+
 import { RecycleAgent } from "./garbage-handlers/recycle-agent";
 new RecycleAgent().init();
 

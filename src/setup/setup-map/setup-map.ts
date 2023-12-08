@@ -1,10 +1,11 @@
 import {
+    Card,
     GameObject,
     ObjectType,
     SnapPoint,
     world,
 } from "@tabletop-playground/api";
-import { AbstractSetup, LayoutObjects, Spawn } from "ttpg-darrell";
+import { AbstractSetup, LayoutObjects, NSID, Spawn } from "ttpg-darrell";
 
 export class SetupMap extends AbstractSetup {
     readonly _map: GameObject;
@@ -44,9 +45,38 @@ export class SetupMap extends AbstractSetup {
         }
         const snapPoint = snapPoints[0];
         const above = snapPoint.getGlobalPosition().add([0, 0, 10]);
-        const deck = Spawn.spawnOrThrow("card.action:base/*", above);
+        const deck = Spawn.spawnOrThrow("card.action:base/*", above) as Card;
         deck.snapToGround(); // move within snap range
         deck.snap(); // apply snap point rotation
+
+        // Move 4p cards to the side.
+        const nsids: string[] = NSID.getDeck(deck);
+        let moveCards: Card | undefined;
+        for (let i = nsids.length - 1; i >= 0; i--) {
+            const nsid: string = nsids[i];
+            const parsed = NSID.parse(nsid);
+            const name0: string | undefined = parsed?.name[0];
+            if (name0 === "1" || name0 === "7") {
+                const numCards = 1;
+                const fromFront = false;
+                const offset = i;
+                const keep = false;
+                const card = deck.takeCards(numCards, fromFront, offset, keep);
+                if (!card) {
+                    throw new Error("takeCards");
+                }
+                if (!moveCards) {
+                    moveCards = card;
+                } else {
+                    moveCards.addCards(card);
+                }
+            }
+        }
+        if (moveCards) {
+            moveCards.setRotation(deck.getRotation().compose([0, 90, 0]));
+            moveCards.setPosition(deck.getPosition().add([0, 0, 10]));
+            moveCards.snapToGround();
+        }
     }
 
     _addAmbitionMarkers() {
