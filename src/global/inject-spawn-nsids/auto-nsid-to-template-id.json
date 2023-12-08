@@ -38,5 +38,6 @@
     "unit:base/agent": "B01A5AC8A24B8B43DC0AA5948FAE3D1D",
     "unit:base/power-marker": "743132942049067B55F61AB297173F4D",
     "unit:base/ship": "7F162CAED442508DE857BA978A7E39B3",
-    "cardholder:base/trh": "94140905C5434F82AB759ABFC8BAC74E"
+    "cardholder:base/trh": "94140905C5434F82AB759ABFC8BAC74E",
+    "container:base/garbage": "75D23ABAC84B47F5525975B9C6107CD1"
 }

@@ -7,6 +7,7 @@ import { SetupResourceArea } from "./setup-resource-area/setup-resource-area";
 
 // Make globals are set up.
 import * as myglobal from "../global/global";
+import { SetupGarbage } from "./setup-garbage";
 if (!myglobal) {
     throw new Error("global");
 }
@@ -34,11 +35,13 @@ const upper = new LayoutObjects()
     .setIsVertical(false)
     .setChildDistanace(outerSpacing)
     .add(ul)
+    .add(new SetupGarbage().getLayoutObjects())
     .add(ur);
 const lower = new LayoutObjects()
     .setIsVertical(false)
     .setChildDistanace(outerSpacing)
     .add(ll)
+    .add(new SetupGarbage().getLayoutObjects())
     .add(lr);
 new LayoutObjects()
     .setIsVertical(true)

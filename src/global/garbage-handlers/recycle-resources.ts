@@ -22,7 +22,7 @@ export class RecycleResources implements GarbageHandler, AbstractGlobal {
     }
 
     canRecycle(obj: GameObject): boolean {
-        if (!(obj instanceof Dice)) {
+        if (!(obj instanceof Card)) {
             return false;
         }
 
