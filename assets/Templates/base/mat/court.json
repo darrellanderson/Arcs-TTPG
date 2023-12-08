@@ -35,7 +35,7 @@
                         },
                         "Scale": {
                                 "X": 10,
-                                "Y": 35.2,
+                                "Y": 42.14,
                                 "Z": 0.25
                         },
                         "Rotation": {
@@ -59,7 +59,46 @@
         "SnapPointsGlobal": false,
         "SnapPoints": [
                 {
-                        "Y": -13.88,
+                        "Y": -17.35,
+                        "X": 0,
+                        "Tags": [
+                                "card.court"
+                        ],
+                        "Z": 0.125,
+                        "Range": 3,
+                        "SnapRotation": 2,
+                        "RotationOffset": 0,
+                        "Shape": 0,
+                        "FlipValidity": 0
+                },
+                {
+                        "Y": -10.41,
+                        "X": 0,
+                        "Tags": [
+                                "card.court"
+                        ],
+                        "Z": 0.125,
+                        "Range": 3,
+                        "SnapRotation": 2,
+                        "RotationOffset": 0,
+                        "Shape": 0,
+                        "FlipValidity": 0
+                },
+                {
+                        "Y": -3.469999999999999,
+                        "X": 0,
+                        "Tags": [
+                                "card.court"
+                        ],
+                        "Z": 0.125,
+                        "Range": 3,
+                        "SnapRotation": 2,
+                        "RotationOffset": 0,
+                        "Shape": 0,
+                        "FlipValidity": 0
+                },
+                {
+                        "Y": 3.4700000000000024,
                         "X": 0,
                         "Tags": [
                                 "court-card"
@@ -72,10 +111,11 @@
                         "FlipValidity": 0
                 },
                 {
-                        "Y": -6.940000000000001,
+                        "Y": 10.41,
                         "X": 0,
                         "Tags": [
-                                "card.court"
+                                "card.court",
+                                "card.court.deck"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -85,36 +125,11 @@
                         "FlipValidity": 0
                 },
                 {
-                        "Y": 0,
+                        "Y": 17.35,
                         "X": 0,
                         "Tags": [
-                                "card.court"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 6.940000000000001,
-                        "X": 0,
-                        "Tags": [
-                                "card.court"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 13.879999999999999,
-                        "X": 0,
-                        "Tags": [
-                                "card.court"
+                                "card.court",
+                                "card.court.discard"
                         ],
                         "Z": 0.125,
                         "Range": 3,
