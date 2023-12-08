@@ -1,0 +1,104 @@
+{
+	"Type": "Container",
+	"GUID": "75D23ABAC84B47F5525975B9C6107CD1",
+	"Name": "Garbage",
+	"Metadata": "container:base/garbage",
+	"CollisionType": "Regular",
+	"Friction": 0.7,
+	"Restitution": 0.3,
+	"Density": 1,
+	"SurfaceType": "Plastic",
+	"Roughness": 1,
+	"Metallic": 0,
+	"PrimaryColor":
+	{
+		"R": 76,
+		"G": 33,
+		"B": 121
+	},
+	"SecondaryColor":
+	{
+		"R": 102,
+		"G": 102,
+		"B": 102
+	},
+	"Flippable": false,
+	"AutoStraighten": false,
+	"ShouldSnap": false,
+	"ScriptName": "obj/container/garbage.js",
+	"Blueprint": "",
+	"Models": [
+		{
+			"Model": "utility/crate.obj",
+			"Offset":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Scale":
+			{
+				"X": 0.8,
+				"Y": 0.8,
+				"Z": 0.5
+			},
+			"Rotation":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Texture": "utility/crate_c.png",
+			"NormalMap": "",
+			"ExtraMap": "utility/crate_x.png",
+			"ExtraMap2": "",
+			"IsTransparent": false,
+			"CastShadow": true,
+			"IsTwoSided": false,
+			"UseOverrides": true,
+			"SurfaceType": "Plastic"
+		},
+		{
+			"Model": "utility/crate-lid-closed.obj",
+			"Offset":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Scale":
+			{
+				"X": 0.8,
+				"Y": 0.8,
+				"Z": 0.5
+			},
+			"Rotation":
+			{
+				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Texture": "utility/crate_c.png",
+			"NormalMap": "",
+			"ExtraMap": "utility/crate_x.png",
+			"ExtraMap2": "",
+			"IsTransparent": false,
+			"CastShadow": true,
+			"IsTwoSided": false,
+			"UseOverrides": true,
+			"SurfaceType": "Plastic"
+		}
+	],
+	"Collision": [],
+	"Lights": [],
+	"SnapPointsGlobal": false,
+	"SnapPoints": [],
+	"ZoomViewDirection":
+	{
+		"X": 0,
+		"Y": 0,
+		"Z": 0
+	},
+	"GroundAccessibility": "Nothing",
+	"Tags": []
+}
