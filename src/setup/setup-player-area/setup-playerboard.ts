@@ -46,5 +46,12 @@ export class SetupPlayerboard extends AbstractSetup {
             obj.setRotation(rot);
             obj.snapToGround();
         }
+
+        // Put power marker on player board.
+        const pos = this._playerboard.getPosition().add([0, 0, 10]);
+        const obj = Spawn.spawnOrThrow("unit:base/power-marker", pos);
+        obj.setOwningPlayerSlot(playerSlot);
+        obj.setPrimaryColor(primaryColor);
+        obj.snapToGround();
     }
 }
