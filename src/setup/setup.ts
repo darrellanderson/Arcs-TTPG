@@ -1,18 +1,18 @@
-import { Vector, refObject, world } from "@tabletop-playground/api";
+import {
+    Vector,
+    VerticalAlignment,
+    refObject,
+    world,
+} from "@tabletop-playground/api";
 import { LayoutObjects } from "ttpg-darrell";
 import { SetupPlayerArea } from "./setup-player-area/setup-player-area";
 import { SetupMap } from "./setup-map/setup-map";
 import { SetupCourt } from "./setup-court/setup-court";
 import { SetupResourceArea } from "./setup-resource-area/setup-resource-area";
-
-// Make globals are set up.
-import * as myglobal from "../global/global";
 import { SetupGarbage } from "./setup-garbage";
-if (!myglobal) {
-    throw new Error("global");
-}
+import { SetupOther } from "./setup-other/setup-other";
 
-console.log("---- setup ----");
+console.log("----- SETUP -----");
 
 for (const obj of world.getAllObjects()) {
     if (obj !== refObject) {
@@ -33,12 +33,14 @@ const ur = new SetupPlayerArea(3).getLayoutObjects().flip(false, true);
 const outerSpacing = 4;
 const upper = new LayoutObjects()
     .setIsVertical(false)
+    .setVerticalAlignment(VerticalAlignment.Bottom)
     .setChildDistanace(outerSpacing)
     .add(ul)
     .add(new SetupGarbage().getLayoutObjects())
     .add(ur);
 const lower = new LayoutObjects()
     .setIsVertical(false)
+    .setVerticalAlignment(VerticalAlignment.Top)
     .setChildDistanace(outerSpacing)
     .add(ll)
     .add(new SetupGarbage().getLayoutObjects())
@@ -58,3 +60,7 @@ court.layoutRightOf(map, outerSpacing);
 // Resources to the left.
 const resourceArea = new SetupResourceArea().getLayoutObjects();
 resourceArea.layoutLeftOf(map, outerSpacing);
+
+// Random other things.
+const setupOther = new SetupOther().getLayoutObjects();
+setupOther.doLayoutAtPoint(new Vector(0, -100, world.getTableHeight() + 2), 0);

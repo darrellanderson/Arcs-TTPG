@@ -25,7 +25,7 @@
 	"Flippable": false,
 	"AutoStraighten": true,
 	"ShouldSnap": true,
-	"ScriptName": "",
+	"ScriptName": "obj/unit/ship.js",
 	"Blueprint": "",
 	"Models": [
 		{

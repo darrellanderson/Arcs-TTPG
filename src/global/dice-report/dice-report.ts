@@ -1,5 +1,5 @@
 import { Dice, Player, globalEvents, world } from "@tabletop-playground/api";
-import { AbstractGlobal } from "ttpg-darrell";
+import { AbstractGlobal, NSID } from "ttpg-darrell";
 
 export class DiceReport implements AbstractGlobal {
     init(): void {
@@ -12,6 +12,11 @@ export class DiceReport implements AbstractGlobal {
         const typeToCount: { [key: string]: number } = {};
 
         for (const die of dice) {
+            const nsid = NSID.get(die);
+            if (!nsid.startsWith("dice")) {
+                continue; // not a with-metadata die
+            }
+
             const face = JSON.parse(die.getCurrentFaceMetadata());
             if (typeof face !== "object") {
                 throw new Error("not object");
@@ -28,12 +33,14 @@ export class DiceReport implements AbstractGlobal {
         }
 
         const types = Object.keys(typeToCount).sort();
-        const msg = types
-            .map((type) => {
-                const count = typeToCount[type];
-                return `${type}: ${count}`;
-            })
-            .join(", ");
+        const msg =
+            ">>> " +
+            types
+                .map((type) => {
+                    const count = typeToCount[type];
+                    return `${type}: ${count}`;
+                })
+                .join(", ");
 
         console.log(msg);
 

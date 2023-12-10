@@ -20,49 +20,38 @@ export class SetupDice extends AbstractSetup {
     _afterLayout(): void {
         this._mat.setObjectType(ObjectType.Ground);
 
-        let snapPoints = this._mat
-            .getAllSnapPoints()
-            .filter((p) => p.getTags().includes("die.assault"));
-        if (snapPoints.length !== 6) {
-            throw new Error(`bad snap point count (${snapPoints.length})`);
-        }
-        for (const snapPoint of snapPoints) {
-            const above = snapPoint.getGlobalPosition().add([0, 0, 10]);
-            const obj = Spawn.spawnOrThrow("dice:base/assault", above);
-            obj.snapToGround(); // move within snap range
-            obj.snap(); // apply snap point rotation
+        const createDice = (
+            nsid: string,
+            snapPointTag: string,
+            face: number
+        ) => {
+            let snapPoints = this._mat
+                .getAllSnapPoints()
+                .filter((p) => p.getTags().includes(snapPointTag));
+            if (snapPoints.length !== 6) {
+                throw new Error(`bad snap point count (${snapPoints.length})`);
+            }
+            for (const snapPoint of snapPoints) {
+                const above = snapPoint.getGlobalPosition().add([0, 0, 10]);
+                const dice = Spawn.spawnOrThrow(nsid, above) as Dice;
+                dice.snapToGround(); // move within snap range
+                dice.snap(); // apply snap point rotation
 
-            (obj as Dice).setCurrentFace(1);
-        }
+                dice.setCurrentFace(face);
 
-        snapPoints = this._mat
-            .getAllSnapPoints()
-            .filter((p) => p.getTags().includes("die.raid"));
-        if (snapPoints.length !== 6) {
-            throw new Error(`bad snap point count (${snapPoints.length})`);
-        }
-        for (const snapPoint of snapPoints) {
-            const above = snapPoint.getGlobalPosition().add([0, 0, 10]);
-            const obj = Spawn.spawnOrThrow("dice:base/raid", above);
-            obj.snapToGround(); // move within snap range
-            obj.snap(); // apply snap point rotation
+                // Validate die json.
+                for (const json of dice.getAllFaceMetadata()) {
+                    try {
+                        JSON.parse(json);
+                    } catch (e) {
+                        throw new Error(`bad die json "${json}" (${nsid})`);
+                    }
+                }
+            }
+        };
 
-            (obj as Dice).setCurrentFace(1);
-        }
-
-        snapPoints = this._mat
-            .getAllSnapPoints()
-            .filter((p) => p.getTags().includes("die.skirmish"));
-        if (snapPoints.length !== 6) {
-            throw new Error(`bad snap point count (${snapPoints.length})`);
-        }
-        for (const snapPoint of snapPoints) {
-            const above = snapPoint.getGlobalPosition().add([0, 0, 10]);
-            const obj = Spawn.spawnOrThrow("dice:base/skirmish", above);
-            obj.snapToGround(); // move within snap range
-            obj.snap(); // apply snap point rotation
-
-            (obj as Dice).setCurrentFace(1);
-        }
+        createDice("dice:base/assault", "die.assault", 1);
+        createDice("dice:base/raid", "die.raid", 1);
+        createDice("dice:base/skirmish", "die.skirmish", 1);
     }
 }

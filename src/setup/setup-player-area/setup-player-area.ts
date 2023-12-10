@@ -6,6 +6,7 @@ import { SetupShipMat } from "./setup-ship-mat";
 import { SetupAgentMat } from "./setup-agent-mat";
 import { SetupBuildingMat } from "./setup-building-mat";
 import { SetupCardHolder } from "./setup-card-holder";
+import { SetupLoreMat } from "./setup-lore-mat";
 
 // TODO: This belongs in a library...
 const colorFromHex = (hex: string): Color => {
@@ -62,6 +63,10 @@ export class SetupPlayerArea extends AbstractSetup {
             .setPlayerSlot(slot)
             .setPrimaryColor(color)
             .getLayoutObjects();
+        const loreMat = new SetupLoreMat()
+            .setPlayerSlot(slot)
+            .setPrimaryColor(color)
+            .getLayoutObjects();
 
         const shipMat = new SetupShipMat()
             .setPlayerSlot(slot)
@@ -86,7 +91,8 @@ export class SetupPlayerArea extends AbstractSetup {
             .setIsVertical(false)
             .setChildDistanace(spacing)
             .add(playerboard)
-            .add(leaderMat);
+            .add(leaderMat)
+            .add(loreMat);
         let row2 = new LayoutObjects()
             .setIsVertical(false)
             .setChildDistanace(spacing)

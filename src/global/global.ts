@@ -1,3 +1,5 @@
+console.log("----- GLOBAL -----");
+
 import { InjectSpawnNSIDs } from "./inject-spawn-nsids/inject-spawn-nsids";
 new InjectSpawnNSIDs().init();
 
