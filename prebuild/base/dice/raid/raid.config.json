@@ -70,5 +70,6 @@
     ],
     "metadata": "dice:base/raid",
     "output": "base/dice/raid",
+    "name": "Raid",
     "tags": ["die", "die.raid"]
 }

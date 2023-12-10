@@ -70,5 +70,6 @@
     ],
     "metadata": "dice:base/assault",
     "output": "base/dice/assault",
+    "name": "Assault",
     "tags": ["die", "die.assault"]
 }

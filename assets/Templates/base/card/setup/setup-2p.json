@@ -1,7 +1,7 @@
 {
         "Type": "Card",
         "GUID": "941AC2907C26DB687AB49985EA47918C",
-        "Name": "setup-2p",
+        "Name": "Setup (2P)",
         "Metadata": "",
         "CollisionType": "Regular",
         "Friction": 0.7,

@@ -1,7 +1,7 @@
 {
         "Type": "Dice",
         "GUID": "25B3E3F96B0180F152BE19F44DAC52B3",
-        "Name": "raid",
+        "Name": "Raid",
         "Metadata": "dice:base/raid",
         "CollisionType": "Regular",
         "Friction": 0.7,

@@ -147,5 +147,6 @@
     "cardHeight": 9,
     "preshrink": 500,
     "output": "base/card/action",
+    "name": "Action",
     "cardTags": ["card.action"]
 }

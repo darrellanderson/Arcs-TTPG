@@ -1,7 +1,7 @@
 {
         "Type": "Dice",
         "GUID": "AA9243FED7C4CE8922BD78AF419D7FD4",
-        "Name": "assault",
+        "Name": "Assault",
         "Metadata": "dice:base/assault",
         "CollisionType": "Regular",
         "Friction": 0.7,

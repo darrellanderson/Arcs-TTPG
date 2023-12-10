@@ -3288,16 +3288,16 @@ ts-node@^10.9.1:
     yn "3.1.1"
 
 ttpg-darrell@^1.0.3:
-  version "1.0.17"
-  resolved "https://registry.yarnpkg.com/ttpg-darrell/-/ttpg-darrell-1.0.17.tgz#9b8e0908719153acdbf18f5b0c2e2e31c51eaf1f"
-  integrity sha512-GcR/kJ2x84XPNhZ0g86Npq7JsPWHqKUKwTA9Rm/+l62D7oIvkaE9MBDciN/sXnpwtIC2EHoRI2KwYmJJRV+88A==
+  version "1.0.18"
+  resolved "https://registry.yarnpkg.com/ttpg-darrell/-/ttpg-darrell-1.0.18.tgz#306634fea5b2614a786e7b96cb611c6d2115a7e2"
+  integrity sha512-t6zm+XZ/SSn+DZaWLoMCeaY2P1L7IikvtilyaVFe6qTX0WXRWe4+P8FjOE1mhxnY+BZkkPAk8o17j6Y8Y3bSeg==
   dependencies:
     "@tabletop-playground/api" "^0.39.0"
 
 ttpg-mock@^1.0.0:
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/ttpg-mock/-/ttpg-mock-1.0.10.tgz#792374a1b52d30fe56ac1c04b824dbc749502679"
-  integrity sha512-e+zDRTUmZtH0uNm43B8/CXnnnqgd8RGrjDARn56YdOp0sc9aOtgTRVwxgveo+aoZEkYyszTO4xFku2/uddqSMQ==
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/ttpg-mock/-/ttpg-mock-1.0.11.tgz#82e0e5f85da2551b183927712d6967f37a74a5c3"
+  integrity sha512-jhr7o91FQpp9v7D2zrPKh2swOWGSEPuttMvY/HX+0oKju9DmPoYmmqGHxn3jNwfzxDEGthdGAgvFvnmNnZnzUw==
   dependencies:
     "@jest/globals" "^29.7.0"
     "@tabletop-playground/api" "^0.39.0"

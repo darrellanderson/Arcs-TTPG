@@ -1,7 +1,7 @@
 {
         "Type": "Card",
         "GUID": "5BD791889C0D0A13F44937FC79DA4609",
-        "Name": "leader",
+        "Name": "Leader",
         "Metadata": "",
         "CollisionType": "Regular",
         "Friction": 0.7,

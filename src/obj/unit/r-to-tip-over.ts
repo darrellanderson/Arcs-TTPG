@@ -7,7 +7,7 @@ import {
 
 refObject.onFlipUpright.add((object: GameObject, player: Player) => {
     process.nextTick(() => {
-        const msg = "Use [R] to flip ships";
+        const msg = "Use [R] to tip over/upright";
         player.showMessage(msg);
         player.sendChatMessage(msg, [1, 0, 0, 1]);
     });

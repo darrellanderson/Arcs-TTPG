@@ -47,5 +47,6 @@
     "cardHeight": 11,
     "preshrink": 500,
     "output": "base/card/leader",
+    "name": "Leader",
     "cardTags": ["card.leader"]
 }

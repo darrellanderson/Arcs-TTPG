@@ -1,7 +1,7 @@
 {
         "Type": "Card",
         "GUID": "BFB10116FFC833E5D6FEFC24B37DE817",
-        "Name": "court",
+        "Name": "Court",
         "Metadata": "",
         "CollisionType": "Regular",
         "Friction": 0.7,

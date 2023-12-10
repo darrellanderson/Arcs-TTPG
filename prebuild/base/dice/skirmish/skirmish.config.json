@@ -70,5 +70,6 @@
     ],
     "metadata": "dice:base/skirmish",
     "output": "base/dice/skirmish",
+    "name": "Skirmish",
     "tags": ["die", "die.skirmish"]
 }

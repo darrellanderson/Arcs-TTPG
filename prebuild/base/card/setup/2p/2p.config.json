@@ -27,5 +27,6 @@
     "cardHeight": 6.44,
     "preshrink": 500,
     "output": "base/card/setup/setup-2p",
+    "name": "Setup (2P)",
     "cardTags": ["card.setup"]
 }
