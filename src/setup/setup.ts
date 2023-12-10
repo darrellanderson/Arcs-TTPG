@@ -9,8 +9,9 @@ import { SetupPlayerArea } from "./setup-player-area/setup-player-area";
 import { SetupMap } from "./setup-map/setup-map";
 import { SetupCourt } from "./setup-court/setup-court";
 import { SetupResourceArea } from "./setup-resource-area/setup-resource-area";
-import { SetupGarbage } from "./setup-garbage";
+import { SetupGarbage } from "./setup-garbage/setup-garbage";
 import { SetupOther } from "./setup-other/setup-other";
+import { SPACING } from "./setup-config";
 
 console.log("----- SETUP -----");
 
@@ -30,24 +31,23 @@ const lr = new SetupPlayerArea(1).getLayoutObjects().flip(false, false);
 const ul = new SetupPlayerArea(2).getLayoutObjects().flip(false, true);
 const ur = new SetupPlayerArea(3).getLayoutObjects().flip(false, true);
 
-const outerSpacing = 4;
 const upper = new LayoutObjects()
     .setIsVertical(false)
     .setVerticalAlignment(VerticalAlignment.Bottom)
-    .setChildDistanace(outerSpacing)
+    .setChildDistance(SPACING)
     .add(ul)
     .add(new SetupGarbage().getLayoutObjects())
     .add(ur);
 const lower = new LayoutObjects()
     .setIsVertical(false)
     .setVerticalAlignment(VerticalAlignment.Top)
-    .setChildDistanace(outerSpacing)
+    .setChildDistance(SPACING)
     .add(ll)
     .add(new SetupGarbage().getLayoutObjects())
     .add(lr);
 new LayoutObjects()
     .setIsVertical(true)
-    .setChildDistanace(outerSpacing)
+    .setChildDistance(SPACING)
     .add(upper)
     .add(setupMap.getLayoutObjects())
     .add(lower)
@@ -55,11 +55,11 @@ new LayoutObjects()
 
 // Court to the right.
 const court = new SetupCourt().getLayoutObjects();
-court.layoutRightOf(map, outerSpacing);
+court.layoutRightOf(map, SPACING);
 
 // Resources to the left.
 const resourceArea = new SetupResourceArea().getLayoutObjects();
-resourceArea.layoutLeftOf(map, outerSpacing);
+resourceArea.layoutLeftOf(map, SPACING);
 
 // Random other things.
 const setupOther = new SetupOther().getLayoutObjects();

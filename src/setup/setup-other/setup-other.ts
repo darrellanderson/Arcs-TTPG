@@ -1,4 +1,5 @@
 import { world } from "@tabletop-playground/api";
+import { SPACING } from "setup/setup-config";
 import { AbstractSetup, LayoutObjects, Spawn } from "ttpg-darrell";
 
 /**
@@ -8,7 +9,7 @@ export class SetupOther extends AbstractSetup {
     getLayoutObjects(): LayoutObjects {
         const layoutObjects = new LayoutObjects()
             .setIsVertical(true)
-            .setChildDistanace(4);
+            .setChildDistance(SPACING);
 
         const d4 = world.createObjectFromTemplate(
             "1885447D4CF808B36797CFB1DD679BAC",

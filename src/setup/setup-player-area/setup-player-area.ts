@@ -7,6 +7,7 @@ import { SetupAgentMat } from "./setup-agent-mat";
 import { SetupBuildingMat } from "./setup-building-mat";
 import { SetupCardHolder } from "./setup-card-holder";
 import { SetupLoreMat } from "./setup-lore-mat";
+import { HALF_SPACING } from "setup/setup-config";
 
 // TODO: This belongs in a library...
 const colorFromHex = (hex: string): Color => {
@@ -86,27 +87,26 @@ export class SetupPlayerArea extends AbstractSetup {
             .setPrimaryColor(color)
             .getLayoutObjects();
 
-        const spacing = 2;
         let row1 = new LayoutObjects()
             .setIsVertical(false)
-            .setChildDistanace(spacing)
+            .setChildDistance(HALF_SPACING)
             .add(playerboard)
             .add(leaderMat)
             .add(loreMat);
         let row2 = new LayoutObjects()
             .setIsVertical(false)
-            .setChildDistanace(spacing)
+            .setChildDistance(HALF_SPACING)
             .add(shipMat)
             .add(agentMat)
             .add(buildingMat);
         let row3 = new LayoutObjects()
             .setIsVertical(false)
-            .setChildDistanace(spacing)
+            .setChildDistance(HALF_SPACING)
             .add(cardHolder);
 
         this._layoutObjects = new LayoutObjects()
             .setIsVertical(true)
-            .setChildDistanace(spacing)
+            .setChildDistance(HALF_SPACING)
             .add(row1)
             .add(row2)
             .add(row3);

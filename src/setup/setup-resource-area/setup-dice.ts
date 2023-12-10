@@ -34,6 +34,7 @@ export class SetupDice extends AbstractSetup {
             for (const snapPoint of snapPoints) {
                 const above = snapPoint.getGlobalPosition().add([0, 0, 10]);
                 const dice = Spawn.spawnOrThrow(nsid, above) as Dice;
+                dice.setName(""); // use the faces for name
                 dice.snapToGround(); // move within snap range
                 dice.snap(); // apply snap point rotation
 
