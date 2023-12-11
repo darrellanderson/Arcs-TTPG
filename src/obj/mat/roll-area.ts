@@ -56,6 +56,7 @@ export class RollArea {
 
     private _interval: any = undefined;
     private _d6states: D6State[] | undefined = undefined;
+    private _uiAttached: boolean = false;
 
     constructor(gameObject: GameObject) {
         if (!gameObject) {
@@ -104,7 +105,6 @@ export class RollArea {
         this._screenUi.width = unpaddedWidth + RollArea.GAP_SIZE * 2 + 100;
         this._screenUi.height = 1;
         this._screenUi.widget = this._widget;
-        world.addScreenUI(this._screenUi);
         this._obj.onDestroyed.add(() => {
             world.removeScreenUIElement(this._screenUi);
         });
@@ -113,9 +113,7 @@ export class RollArea {
         this._zone.onBeginOverlap.add((zone: Zone, obj: GameObject) => {
             const isDice = obj instanceof Dice;
             if (isDice && !this._interval) {
-                this._interval = setInterval(() => {
-                    this._intervalHandler();
-                }, RollArea.INTERVAL_MSECS);
+                this.startInterval();
             }
         });
         this._zone.onEndOverlap.add((zone: Zone, obj: GameObject) => {
@@ -123,13 +121,15 @@ export class RollArea {
             if (!isDice || obj.isHeld()) {
                 return; // not a die, or being held by a player.
             }
+            console.log(`RollArea redirecting "${obj.getId()}"`);
             const speed = obj.getLinearVelocity().magnitude();
             const dir = this._obj
                 .getPosition()
-                .add([0, 0, obj.getSize().z])
+                .add([0, 0, 10])
                 .subtract(obj.getPosition())
                 .clampVectorMagnitude(1, 1);
-            obj.setLinearVelocity(dir.multiply(speed)); // end of roll still happens
+            obj.setPosition(obj.getPosition().add([0, 0, 2]));
+            obj.setLinearVelocity(dir.multiply(speed + 1)); // end of roll still happens
         });
 
         // Move zone when linked lobject moves.  CAREFUL, onMovementStopped can be spammy!
@@ -153,9 +153,7 @@ export class RollArea {
         });
 
         // Start the interval handler in case dice are inside.
-        this._interval = setInterval(() => {
-            this._intervalHandler();
-        }, RollArea.INTERVAL_MSECS);
+        this.startInterval();
     }
 
     private static _findOrCreateZone(obj: GameObject) {
@@ -202,6 +200,22 @@ export class RollArea {
         size.y -= 2;
         size.z = RollArea.ZONE_HEIGHT;
         this._zone.setScale(size);
+    }
+
+    private startInterval() {
+        // Cancel any current timer.
+        if (this._interval) {
+            clearInterval(this._interval);
+            this._interval = undefined;
+        }
+
+        // Update immedately.
+        this._intervalHandler();
+
+        // Start a new interval.
+        this._interval = setInterval(() => {
+            this._intervalHandler();
+        }, RollArea.INTERVAL_MSECS);
     }
 
     private _intervalHandler() {
@@ -339,12 +353,19 @@ export class RollArea {
         addSummaryRow("raid");
         this._summaryBox.setChild(summary);
 
+        if (!this._uiAttached) {
+            world.addScreenUI(this._screenUi);
+            this._uiAttached = true;
+        }
+
         // Stop when no dice inside.
         console.log("RollArea: updated");
         if (dice.length === 0) {
             console.log("RollArea: no dice, clearing interval");
             clearInterval(this._interval);
             this._interval = undefined;
+            world.removeScreenUIElement(this._screenUi);
+            this._uiAttached = false;
         }
     }
 }
