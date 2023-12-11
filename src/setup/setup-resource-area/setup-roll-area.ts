@@ -6,7 +6,7 @@ export class SetupRollArea extends AbstractSetup {
 
     constructor() {
         super();
-        this._mat = Spawn.spawnOrThrow("mat:base/roll-area", [0, 0, 0]);
+        this._mat = Spawn.spawnOrThrow("mat:base/roll-area-w-sides", [0, 0, 0]);
     }
 
     getLayoutObjects(): LayoutObjects {

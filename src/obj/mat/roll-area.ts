@@ -12,12 +12,14 @@ import {
     HorizontalBox,
     ImageWidget,
     LayoutBox,
+    ScreenUIElement,
     Text,
     TextJustification,
     UIElement,
-    UIPresentationStyle,
     Vector,
+    VerticalAlignment,
     VerticalBox,
+    Widget,
     Zone,
     refObject,
     refPackageId,
@@ -28,25 +30,32 @@ import { D6Widget, NSID } from "ttpg-darrell";
 const packageId: string = refPackageId;
 
 type D6State = {
+    objId: string;
     nsid: string;
     currentFaceIndex: number;
     currentFaceMetadata: string;
 };
 
+function capitalizeFirstLetter(s: string) {
+    return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
 export class RollArea {
-    public static readonly HEIGHT: number = 10;
-    public static readonly INTERVAL_MSECS: number = 250;
+    public static readonly ZONE_HEIGHT: number = 10;
+    public static readonly INTERVAL_MSECS: number = 1000;
+    public static readonly DICE_SIZE: number = 40;
+    public static readonly GAP_SIZE: number = 4;
 
     private readonly _obj: GameObject;
     private readonly _zone: Zone;
 
     private readonly _diceBox: LayoutBox;
     private readonly _summaryBox: LayoutBox;
-    private readonly _ui: UIElement;
+    private readonly _screenUi: ScreenUIElement;
+    private readonly _widget: Widget;
 
-    private _scale: number = 4;
     private _interval: any = undefined;
-    private _d6states: D6State[] = [];
+    private _d6states: D6State[] | undefined = undefined;
 
     constructor(gameObject: GameObject) {
         if (!gameObject) {
@@ -56,30 +65,49 @@ export class RollArea {
         this._obj = gameObject;
         this._zone = RollArea._findOrCreateZone(this._obj);
 
-        const spacing = 4 * this._scale;
-        const margin = spacing;
-        this._diceBox = new LayoutBox().setHorizontalAlignment(
-            HorizontalAlignment.Center
-        );
-        this._summaryBox = new LayoutBox();
-        const div = new Border().setColor([1, 1, 1, 1]);
+        const unpaddedWidth =
+            RollArea.DICE_SIZE * 4 + RollArea.GAP_SIZE * 2 + 4;
+        this._diceBox = new LayoutBox().setOverrideWidth(unpaddedWidth);
+        this._summaryBox = new LayoutBox().setOverrideWidth(unpaddedWidth);
         const widget = new VerticalBox()
-            .setChildDistance(spacing)
-            .addChild(this._diceBox)
-            .addChild(div)
-            .addChild(this._summaryBox);
-        const widgetBox = new LayoutBox()
-            .setPadding(margin, margin, margin, margin)
-            .setChild(widget);
+            .addChild(this._summaryBox)
+            .addChild(this._diceBox);
+        this._widget = new LayoutBox()
+            .setHorizontalAlignment(HorizontalAlignment.Left)
+            .setVerticalAlignment(VerticalAlignment.Top)
+            .setChild(
+                new Border()
+                    .setColor([0, 0, 0, 1])
+                    .setChild(
+                        new Border().setChild(
+                            new LayoutBox()
+                                .setPadding(
+                                    RollArea.GAP_SIZE,
+                                    RollArea.GAP_SIZE,
+                                    RollArea.GAP_SIZE,
+                                    RollArea.GAP_SIZE
+                                )
+                                .setChild(widget)
+                        )
+                    )
+            );
 
-        this._ui = new UIElement();
-        this._ui.anchorY = 1;
-        this._ui.position = new Vector(0, 0, 20);
-        this._ui.presentationStyle = UIPresentationStyle.ViewAligned;
-        this._ui.scale = 1 / this._scale;
-        this._ui.widget = new Border().setChild(widgetBox);
-        this._ui.widget.setVisible(false);
-        this._obj.addUI(this._ui);
+        this._screenUi = new ScreenUIElement();
+        this._screenUi.anchorX = 0;
+        this._screenUi.anchorY = 0;
+        this._screenUi.relativePositionX = false;
+        this._screenUi.relativePositionY = false;
+        this._screenUi.positionX = 16;
+        this._screenUi.positionY = 16;
+        this._screenUi.relativeWidth = false;
+        this._screenUi.relativeHeight = true;
+        this._screenUi.width = unpaddedWidth + RollArea.GAP_SIZE * 2 + 100;
+        this._screenUi.height = 1;
+        this._screenUi.widget = this._widget;
+        world.addScreenUI(this._screenUi);
+        this._obj.onDestroyed.add(() => {
+            world.removeScreenUIElement(this._screenUi);
+        });
 
         // Redirect dice rolling out of zone back in.
         this._zone.onBeginOverlap.add((zone: Zone, obj: GameObject) => {
@@ -119,13 +147,10 @@ export class RollArea {
             }
         });
 
-        // Destroy zone when linked object is destroyed.
+        this._updateZone();
         this._obj.onDestroyed.add(() => {
-            console.log(`RollArea destroying zone "${this._zone.getId()}"`);
             this._zone.destroy();
         });
-
-        this._updateZone();
 
         // Start the interval handler in case dice are inside.
         this._interval = setInterval(() => {
@@ -148,14 +173,14 @@ export class RollArea {
             zone = world.createZone([0, 0, 0]);
         }
         zone.setId(id);
-        zone.setAlwaysVisible(true);
+        zone.setAlwaysVisible(false);
         zone.setColor([1, 1, 1, 0.1]);
         return zone;
     }
 
     private _updateZone() {
         // Fix location.
-        const z = RollArea.HEIGHT / 2 / this._obj.getScale().z;
+        const z = RollArea.ZONE_HEIGHT / 2 / this._obj.getScale().z;
         const pos = this._obj.localPositionToWorld([0, 0, z]);
         const rot = this._obj.getRotation();
         this._zone.setPosition(pos);
@@ -175,7 +200,7 @@ export class RollArea {
         // Fix size.
         size.x -= 2;
         size.y -= 2;
-        size.z = RollArea.HEIGHT;
+        size.z = RollArea.ZONE_HEIGHT;
         this._zone.setScale(size);
     }
 
@@ -192,19 +217,10 @@ export class RollArea {
                 return true;
             }) as Dice[];
 
-        // Stop when no dice inside.
-        if (dice.length === 0) {
-            console.log("RollArea: no dice, clearing interval");
-            clearInterval(this._interval);
-            this._ui.widget.setVisible(false);
-            this._interval = undefined;
-            return;
-        }
-        this._ui.widget.setVisible(true);
-
         // Abort if nothing changed.
         const states: D6State[] = dice.map((d) => {
             return {
+                objId: d.getId(),
                 nsid: NSID.get(d),
                 currentFaceIndex: d.getCurrentFaceIndex(),
                 currentFaceMetadata: d.getCurrentFaceMetadata(),
@@ -214,28 +230,32 @@ export class RollArea {
             if (a.nsid !== b.nsid) {
                 return a.nsid.localeCompare(b.nsid);
             }
-            return a.currentFaceMetadata.localeCompare(b.currentFaceMetadata);
+            if (a.currentFaceMetadata !== b.currentFaceMetadata) {
+                return a.currentFaceMetadata.localeCompare(
+                    b.currentFaceMetadata
+                );
+            }
+            return a.objId.localeCompare(b.objId);
         });
-        if (JSON.stringify(states) === JSON.stringify(this._d6states)) {
+        if (
+            this._d6states &&
+            JSON.stringify(states) === JSON.stringify(this._d6states)
+        ) {
             return;
         }
         this._d6states = states;
 
         // Draw dice.
-        const cols = Math.ceil(Math.sqrt(dice.length));
+        const cols = 4;
         const rows = Math.ceil(states.length / cols);
 
-        const gap = 6 * this._scale;
-        const size = 40 * this._scale;
-        const frame = 1 * this._scale; // white border, eats into gap size
-
         const canvas = new Canvas();
-        const canvasBox = new LayoutBox()
-            .setOverrideWidth(cols * size + (cols - 1) * gap + frame * 2)
-            .setOverrideHeight(rows * size + (rows - 1) * gap + frame * 2)
-            .setChild(canvas);
 
-        this._diceBox.setChild(canvasBox);
+        this._diceBox
+            .setOverrideHeight(
+                rows * RollArea.DICE_SIZE + (rows - 1) * RollArea.GAP_SIZE
+            )
+            .setChild(canvas);
 
         const nsidToTexture: { [key: string]: string } = {
             "dice:base/assault": "base/dice/assault.png",
@@ -249,20 +269,18 @@ export class RollArea {
 
             const texture: string = nsidToTexture[state.nsid];
             const d6 = new D6Widget()
-                .setSize(size)
+                .setSize(RollArea.DICE_SIZE)
                 .setDiceImage(texture, packageId)
                 .setFace(state.currentFaceIndex);
-            const x = col * (size + gap) + frame;
-            const y = row * (size + gap) + frame;
-            const white = new Border().setColor([1, 1, 1, 1]);
+            const x = col * (RollArea.DICE_SIZE + RollArea.GAP_SIZE);
+            const y = row * (RollArea.DICE_SIZE + RollArea.GAP_SIZE);
             canvas.addChild(
-                white,
-                x - frame,
-                y - frame,
-                size + frame * 2,
-                size + frame * 2
+                d6.getWidget(),
+                x,
+                y,
+                RollArea.DICE_SIZE,
+                RollArea.DICE_SIZE
             );
-            canvas.addChild(d6.getWidget(), x, y, size, size);
         }
 
         // Summary.
@@ -283,43 +301,51 @@ export class RollArea {
             }
         }
 
-        const summary = new VerticalBox()
-            .setChildDistance(2 * this._scale)
-            .setHorizontalAlignment(HorizontalAlignment.Center);
-        const labelToTexture: { [key: string]: string } = {
+        const summary = new VerticalBox().setChildDistance(RollArea.GAP_SIZE);
+        const keyToTexture: { [key: string]: string } = {
             self: "base/dice/symbols/self.png",
             intercept: "base/dice/symbols/intercept.png",
             ship: "base/dice/symbols/ship.png",
             building: "base/dice/symbols/building.png",
             raid: "base/dice/symbols/raid.png",
         };
-        const addSummaryRow = (label: string, count: number) => {
-            const texture: string = labelToTexture[label];
-            const d = 10 * this._scale;
+        const addSummaryRow = (key: string) => {
+            const texture: string = keyToTexture[key];
             const symbol = new ImageWidget()
                 .setImage(texture, packageId)
-                .setImageSize(d * 1.75, d);
+                .setImageSize(RollArea.DICE_SIZE, RollArea.DICE_SIZE);
 
-            const fontSize = 10 * this._scale;
             const countText = new Text()
-                .setFontSize(fontSize)
-                .setText(count.toString())
-                .setJustification(TextJustification.Right);
-            const labelText = new Text().setFontSize(fontSize).setText(label);
+                .setFontSize(RollArea.DICE_SIZE * 0.4)
+                .setJustification(TextJustification.Center)
+                .setText(count[key] ? count[key].toString() : "");
+            const labelText = new Text()
+                .setFontSize(RollArea.DICE_SIZE * 0.3)
+                .setJustification(TextJustification.Left)
+                .setText(capitalizeFirstLetter(key));
 
             const row = new HorizontalBox()
-                .setChildDistance(3 * this._scale)
-                .addChild(countText)
-                .addChild(symbol)
-                .addChild(labelText);
+                .setVerticalAlignment(VerticalAlignment.Center)
+                .setChildDistance(RollArea.GAP_SIZE)
+                .addChild(symbol, 1)
+                .addChild(labelText, 2)
+                .addChild(countText, 1);
             summary.addChild(row);
         };
-        addSummaryRow("self", count.self);
-        addSummaryRow("intercept", count.intercept);
-        addSummaryRow("ship", count.ship);
-        addSummaryRow("building", count.building);
-        addSummaryRow("raid", count.raid);
+        addSummaryRow("self");
+        addSummaryRow("intercept");
+        addSummaryRow("ship");
+        addSummaryRow("building");
+        addSummaryRow("raid");
         this._summaryBox.setChild(summary);
+
+        // Stop when no dice inside.
+        console.log("RollArea: updated");
+        if (dice.length === 0) {
+            console.log("RollArea: no dice, clearing interval");
+            clearInterval(this._interval);
+            this._interval = undefined;
+        }
     }
 }
 

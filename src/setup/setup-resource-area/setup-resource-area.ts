@@ -24,7 +24,8 @@ export class SetupResourceArea extends AbstractSetup {
             .setChildDistance(SPACING)
             .setIsVertical(true)
             .add(new SetupGarbage().getLayoutObjects())
-            .add(new SetupRollArea().getLayoutObjects());
+            .add(new SetupRollArea().getLayoutObjects())
+            .add(new SetupGarbage().getLayoutObjects());
 
         this._layoutObjects = new LayoutObjects()
             .setChildDistance(SPACING)
