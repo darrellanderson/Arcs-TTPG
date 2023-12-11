@@ -15,10 +15,14 @@ import { SPACING } from "./setup-config";
 
 console.log("----- SETUP -----");
 
+// Purge world.
 for (const obj of world.getAllObjects()) {
     if (obj !== refObject) {
         obj.destroy();
     }
+}
+for (const zone of world.getAllZones()) {
+    zone.destroy();
 }
 
 // Map in center.

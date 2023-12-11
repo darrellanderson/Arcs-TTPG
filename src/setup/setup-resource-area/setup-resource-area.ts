@@ -3,6 +3,7 @@ import { SetupDice } from "./setup-dice";
 import { SetupResources } from "./setup-resources";
 import { SetupGarbage } from "setup/setup-garbage/setup-garbage";
 import { SPACING } from "setup/setup-config";
+import { SetupRollArea } from "./setup-roll-area";
 
 export class SetupResourceArea extends AbstractSetup {
     private readonly _layoutObjects: LayoutObjects;
@@ -10,7 +11,6 @@ export class SetupResourceArea extends AbstractSetup {
     constructor() {
         super();
 
-        const garbage = new SetupGarbage();
         const dice = new SetupDice();
         const resources = new SetupResources();
 
@@ -23,7 +23,8 @@ export class SetupResourceArea extends AbstractSetup {
         const colLeft = new LayoutObjects()
             .setChildDistance(SPACING)
             .setIsVertical(true)
-            .add(garbage.getLayoutObjects());
+            .add(new SetupGarbage().getLayoutObjects())
+            .add(new SetupRollArea().getLayoutObjects());
 
         this._layoutObjects = new LayoutObjects()
             .setChildDistance(SPACING)
