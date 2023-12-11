@@ -23,3 +23,5 @@
 ../ttpg-darrell/tooling/generators/create-dice.ts -f prebuild/base/dice/assault/assault.config.json
 ../ttpg-darrell/tooling/generators/create-dice.ts -f prebuild/base/dice/raid/raid.config.json
 ../ttpg-darrell/tooling/generators/create-dice.ts -f prebuild/base/dice/skirmish/skirmish.config.json
+
+../ttpg-darrell/tooling/extract-nsid-to-template-id.ts -i assets/Templates -o ./src/global/inject-spawn-nsids/auto-nsid-to-template-id.json
