@@ -102,50 +102,50 @@
         },
         "CardTags": {
                 "0": [
-                        "card-lore"
+                        "card.lore"
                 ],
                 "1": [
-                        "card-lore"
+                        "card.lore"
                 ],
                 "2": [
-                        "card-lore"
+                        "card.lore"
                 ],
                 "3": [
-                        "card-lore"
+                        "card.lore"
                 ],
                 "4": [
-                        "card-lore"
+                        "card.lore"
                 ],
                 "5": [
-                        "card-lore"
+                        "card.lore"
                 ],
                 "6": [
-                        "card-lore"
+                        "card.lore"
                 ],
                 "7": [
-                        "card-lore"
+                        "card.lore"
                 ],
                 "8": [
-                        "card-lore"
+                        "card.lore"
                 ],
                 "9": [
-                        "card-lore"
+                        "card.lore"
                 ],
                 "10": [
-                        "card-lore"
+                        "card.lore"
                 ],
                 "11": [
-                        "card-lore"
+                        "card.lore"
                 ],
                 "12": [
-                        "card-lore"
+                        "card.lore"
                 ],
                 "13": [
-                        "card-lore"
+                        "card.lore"
                 ]
         },
         "GroundAccessibility": "ZoomAndContext",
         "Tags": [
-                "card-lore"
+                "card.lore"
         ]
 }

@@ -1,114 +1,115 @@
 {
-	"Type": "Card",
-	"GUID": "79520F82C4D0A417ADDA5F1A2BAFA80A",
-	"Name": "Leader (L&L)",
-	"Metadata": "",
-	"CollisionType": "Regular",
-	"Friction": 0.7,
-	"Restitution": 0,
-	"Density": 0.5,
-	"SurfaceType": "Cardboard",
-	"Roughness": 1,
-	"Metallic": 0,
-	"PrimaryColor":
-	{
-		"R": 255,
-		"G": 255,
-		"B": 255
-	},
-	"SecondaryColor":
-	{
-		"R": 0,
-		"G": 0,
-		"B": 0
-	},
-	"Flippable": true,
-	"AutoStraighten": false,
-	"ShouldSnap": true,
-	"ScriptName": "",
-	"Blueprint": "",
-	"Models": [],
-	"Collision": [],
-	"Lights": [],
-	"SnapPointsGlobal": false,
-	"SnapPoints": [],
-	"ZoomViewDirection":
-	{
-		"X": 0,
-		"Y": 0,
-		"Z": 0
-	},
-	"GroundAccessibility": "ZoomAndContext",
-	"Tags": [
-		"card.leader"
-	],
-	"FrontTexture": "leaders-and-lore/card/leader.face.jpg",
-	"BackTexture": "leaders-and-lore/card/leader.back.jpg",
-	"HiddenTexture": "",
-	"BackIndex": -2,
-	"HiddenIndex": -3,
-	"NumHorizontal": 4,
-	"NumVertical": 2,
-	"Width": 6.44,
-	"Height": 11,
-	"Thickness": 0.05,
-	"HiddenInHand": true,
-	"UsedWithCardHolders": true,
-	"CanStack": true,
-	"UsePrimaryColorForSide": false,
-	"FrontTextureOverrideExposed": false,
-	"AllowFlippedInStack": false,
-	"MirrorBack": true,
-	"EmissiveFront": false,
-	"Model": "Rounded",
-	"Indices": [ 0, 1, 2, 3, 4, 5, 6, 7 ],
-	"CardNames":
-	{
-		"0": "Archivist",
-		"1": "Overseer",
-		"2": "Corsair",
-		"3": "Noble",
-		"4": "Anarchist",
-		"5": "Shaper",
-		"6": "Agitator",
-		"7": "Quartermaster"
-	},
-	"CardMetadata":
-	{
-		"0": "card.leader:leaders-and-lore/archivist",
-		"1": "card.leader:leaders-and-lore/overseer",
-		"2": "card.leader:leaders-and-lore/corsair",
-		"3": "card.leader:leaders-and-lore/noble",
-		"4": "card.leader:leaders-and-lore/anarchist",
-		"5": "card.leader:leaders-and-lore/shaper",
-		"6": "card.leader:leaders-and-lore/agitator",
-		"7": "card.leader:leaders-and-lore/quartermaster"
-	},
-	"CardTags":
-	{
-		"0": [
-			"card.leader"
-		],
-		"1": [
-			"card.leader"
-		],
-		"2": [
-			"card.leader"
-		],
-		"3": [
-			"card.leader"
-		],
-		"4": [
-			"card.leader"
-		],
-		"5": [
-			"card.leader"
-		],
-		"6": [
-			"card.leader"
-		],
-		"7": [
-			"card.leader"
-		]
-	}
+        "Type": "Card",
+        "GUID": "79520F82C4D0A417ADDA5F1A2BAFA80A",
+        "Name": "Leader",
+        "Metadata": "",
+        "CollisionType": "Regular",
+        "Friction": 0.7,
+        "Restitution": 0,
+        "Density": 0.5,
+        "SurfaceType": "Cardboard",
+        "Roughness": 1,
+        "Metallic": 0,
+        "PrimaryColor": {
+                "R": 255,
+                "G": 255,
+                "B": 255
+        },
+        "SecondaryColor": {
+                "R": 0,
+                "G": 0,
+                "B": 0
+        },
+        "Flippable": true,
+        "AutoStraighten": false,
+        "ShouldSnap": true,
+        "ScriptName": "",
+        "Blueprint": "",
+        "Models": [],
+        "Collision": [],
+        "SnapPointsGlobal": false,
+        "SnapPoints": [],
+        "ZoomViewDirection": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+        },
+        "FrontTexture": "leaders-and-lore/card/leader.face.jpg",
+        "BackTexture": "leaders-and-lore/card/leader.back.jpg",
+        "HiddenTexture": "",
+        "BackIndex": "$BACK_INDEX",
+        "HiddenIndex": -3,
+        "NumHorizontal": 4,
+        "NumVertical": 2,
+        "Width": 6.44,
+        "Height": 11,
+        "Thickness": 0.05,
+        "HiddenInHand": true,
+        "UsedWithCardHolders": true,
+        "CanStack": true,
+        "UsePrimaryColorForSide": false,
+        "FrontTextureOverrideExposed": false,
+        "AllowFlippedInStack": false,
+        "MirrorBack": true,
+        "Model": "Rounded",
+        "Indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+        ],
+        "CardNames": {
+                "0": "Archivist",
+                "1": "Overseer",
+                "2": "Corsair",
+                "3": "Noble",
+                "4": "Anarchist",
+                "5": "Shaper",
+                "6": "Agitator",
+                "7": "Quartermaster"
+        },
+        "CardMetadata": {
+                "0": "card.leader:leaders-and-lore/archivist",
+                "1": "card.leader:leaders-and-lore/overseer",
+                "2": "card.leader:leaders-and-lore/corsair",
+                "3": "card.leader:leaders-and-lore/noble",
+                "4": "card.leader:leaders-and-lore/anarchist",
+                "5": "card.leader:leaders-and-lore/shaper",
+                "6": "card.leader:leaders-and-lore/agitator",
+                "7": "card.leader:leaders-and-lore/quartermaster"
+        },
+        "CardTags": {
+                "0": [
+                        "card.leader"
+                ],
+                "1": [
+                        "card.leader"
+                ],
+                "2": [
+                        "card.leader"
+                ],
+                "3": [
+                        "card.leader"
+                ],
+                "4": [
+                        "card.leader"
+                ],
+                "5": [
+                        "card.leader"
+                ],
+                "6": [
+                        "card.leader"
+                ],
+                "7": [
+                        "card.leader"
+                ]
+        },
+        "GroundAccessibility": "ZoomAndContext",
+        "Tags": [
+                "card.leader"
+        ]
 }

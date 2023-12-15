@@ -78,5 +78,5 @@
     "preshrink": 500,
     "output": "base/card/lore",
     "name": "Lore",
-    "cardTags": ["card-lore"]
+    "cardTags": ["card.lore"]
 }
