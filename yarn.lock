@@ -3768,9 +3768,9 @@ ts-node@^10.9.1:
     yn "3.1.1"
 
 ttpg-darrell@^1.0.3:
-  version "1.0.23"
-  resolved "https://registry.yarnpkg.com/ttpg-darrell/-/ttpg-darrell-1.0.23.tgz#8a61ffd0e6a1cc57cb1f2a8e4d47d1b276318270"
-  integrity sha512-gtZsNfMHbzbwn8t5TSOdb7r33le7N+4WxyDh4oMij8jkb3gVrD8jfMGfMqAlMAqabyZAiAjulUiMrl3JPqesRA==
+  version "1.0.24"
+  resolved "https://registry.yarnpkg.com/ttpg-darrell/-/ttpg-darrell-1.0.24.tgz#f6ff6854e6a3bb114f85a715bad36b82ac048dfa"
+  integrity sha512-nWBGASKY0HxdbcPRiT1cpZV8OOON2ed26QH362G5CINvY+2tBDuVaMUQtilJhhJTSnF6nLcJnewbMHSNlctMNQ==
   dependencies:
     "@tabletop-playground/api" "^0.39.0"
 

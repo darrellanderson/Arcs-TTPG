@@ -1,0 +1,82 @@
+{
+    "inputDir": "leaders-and-lore/card/lore/",
+    "inputCards": [
+        {
+            "face": "15-predictive-sensors.jpg",
+            "name": "Predictive Sensors",
+            "metadata": "card.lore:leaders-and-lore/predictive-sensors"
+        },
+        {
+            "face": "16-force-beams.jpg",
+            "name": "Force Beams",
+            "metadata": "card.lore:leaders-and-lore/force-beams"
+        },
+        {
+            "face": "17-raider-exosuits.jpg",
+            "name": "Raider Exosuits",
+            "metadata": "card.lore:leaders-and-lore/raider-exosuits"
+        },
+        {
+            "face": "18-survival-overrides.jpg",
+            "name": "Survival Overrides",
+            "metadata": "card.lore:leaders-and-lore/survival-overrides"
+        },
+        {
+            "face": "19-empaths-vision.jpg",
+            "name": "Empath's Vision",
+            "metadata": "card.lore:leaders-and-lore/empaths-vision"
+        },
+        {
+            "face": "20-empaths-bond.jpg",
+            "name": "Empath's Bond",
+            "metadata": "card.lore:leaders-and-lore/empaths-bond"
+        },
+        {
+            "face": "21-keepers-trust.jpg",
+            "name": "Keeper's Trust",
+            "metadata": "card.lore:leaders-and-lore/keepers-trust"
+        },
+        {
+            "face": "22-keepers-solidarity.jpg",
+            "name": "Keepers Solidarity",
+            "metadata": "card.lore:leaders-and-lore/keepers-solidarity"
+        },
+        {
+            "face": "23-warlords-cruelty.jpg",
+            "name": "Warlords Cruelty",
+            "metadata": "card.lore:leaders-and-lore/warlords-cruelty"
+        },
+        {
+            "face": "24-warlords-terror.jpg",
+            "name": "Warlords Terror",
+            "metadata": "card.lore:leaders-and-lore/warlords-terror"
+        },
+        {
+            "face": "25-tyrants-ego.jpg",
+            "name": "Tyrant's Ego",
+            "metadata": "card.lore:leaders-and-lore/tyrants-ego"
+        },
+        {
+            "face": "26-tyrants-authority.jpg",
+            "name": "Tyrant's Authority",
+            "metadata": "card.lore:leaders-and-lore/tyrants-authority"
+        },
+        {
+            "face": "27-tycoons-ambition.jpg",
+            "name": "Tycoon's Ambition",
+            "metadata": "card.lore:leaders-and-lore/tycoons-ambition"
+        },
+        {
+            "face": "28-tycoons-charm.jpg",
+            "name": "Tycoon's Charm",
+            "metadata": "card.lore:leaders-and-lore/tycoons-charm"
+        }
+    ],
+    "sharedBack": "base/card/lore/lore.back.jpg",
+    "cardWidth": 6.44,
+    "cardHeight": 9,
+    "preshrink": 500,
+    "output": "leaders-and-lore/card/lore",
+    "name": "Lore",
+    "cardTags": ["card-lore"]
+}

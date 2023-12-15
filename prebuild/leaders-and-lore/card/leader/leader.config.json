@@ -1,0 +1,52 @@
+{
+    "inputDir": "leaders-and-lore/card/leader/",
+    "inputCards": [
+        {
+            "face": "01-archivist.jpg",
+            "name": "Archivist",
+            "metadata": "card.leader:leaders-and-lore/archivist"
+        },
+        {
+            "face": "02-overseer.jpg",
+            "name": "Overseer",
+            "metadata": "card.leader:leaders-and-lore/overseer"
+        },
+        {
+            "face": "03-corsair.jpg",
+            "name": "Corsair",
+            "metadata": "card.leader:leaders-and-lore/corsair"
+        },
+        {
+            "face": "04-noble.jpg",
+            "name": "Noble",
+            "metadata": "card.leader:leaders-and-lore/noble"
+        },
+        {
+            "face": "05-anarchist.jpg",
+            "name": "Anarchist",
+            "metadata": "card.leader:leaders-and-lore/anarchist"
+        },
+        {
+            "face": "06-shaper.jpg",
+            "name": "Shaper",
+            "metadata": "card.leader:leaders-and-lore/shaper"
+        },
+        {
+            "face": "07-agitator.jpg",
+            "name": "Agitator",
+            "metadata": "card.leader:leaders-and-lore/agitator"
+        },
+        {
+            "face": "08-quartermaster.jpg",
+            "name": "Quartermaster",
+            "metadata": "card.leader:leaders-and-lore/quartermaster"
+        }
+    ],
+    "sharedBack": "base/card/leader/leader.back.jpg",
+    "cardWidth": 6.44,
+    "cardHeight": 11,
+    "preshrink": 500,
+    "output": "leaders-and-lore/card/leader",
+    "name": "Leader",
+    "cardTags": ["card.leader"]
+}

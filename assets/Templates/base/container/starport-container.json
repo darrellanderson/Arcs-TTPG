@@ -25,7 +25,7 @@
 	"Flippable": false,
 	"AutoStraighten": false,
 	"ShouldSnap": false,
-	"ScriptName": "",
+	"ScriptName": "obj/container/unit-container.js",
 	"Blueprint": "",
 	"Models": [
 		{

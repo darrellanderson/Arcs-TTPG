@@ -28,7 +28,11 @@ export class SetupOther extends AbstractSetup {
             .add(Spawn.spawnOrThrow("token.path:base/small", [0, 0, 0]))
             .add(Spawn.spawnOrThrow("token:base/out-of-play-marker", [0, 0, 0]))
             .add(Spawn.spawnOrThrow("card.leader:base/*", [0, 0, 0]))
+            .add(
+                Spawn.spawnOrThrow("card.leader:leaders-and-lore/*", [0, 0, 0])
+            )
             .add(Spawn.spawnOrThrow("card.lore:base/*", [0, 0, 0]))
+            .add(Spawn.spawnOrThrow("card.lore:leaders-and-lore/*", [0, 0, 0]))
             .add(d4);
 
         return layoutObjects;

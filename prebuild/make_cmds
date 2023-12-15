@@ -10,6 +10,8 @@
 ../ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/base/card/setup/2p/2p.config.json
 ../ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/base/card/setup/3p/3p.config.json
 ../ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/base/card/setup/4p/4p.config.json
+../ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/leaders-and-lore/card/leader/leader.config.json
+../ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/leaders-and-lore/card/lore/lore.config.json
 
 ../ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/action-face-up.config.json
 ../ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/agent.config.json
