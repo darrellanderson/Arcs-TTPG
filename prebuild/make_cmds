@@ -11,6 +11,7 @@
 ../ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/base/card/setup/3p/3p.config.json
 ../ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/base/card/setup/4p/4p.config.json
 
+../ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/action-face-up.config.json
 ../ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/agent.config.json
 ../ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/building.config.json
 ../ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/court.config.json
@@ -25,3 +26,4 @@
 ../ttpg-darrell/tooling/generators/create-dice.ts -f prebuild/base/dice/skirmish/skirmish.config.json
 
 ../ttpg-darrell/tooling/extract-nsid-to-template-id.ts -i assets/Templates -o ./src/global/inject-spawn-nsids/auto-nsid-to-template-id.json
+

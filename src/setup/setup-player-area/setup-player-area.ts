@@ -2,12 +2,12 @@ import { Color } from "@tabletop-playground/api";
 import { AbstractSetup, LayoutObjects } from "ttpg-darrell";
 import { SetupPlayerboard } from "./setup-playerboard";
 import { SetupLeaderMat } from "./setup-leader-mat";
-import { SetupShipMat } from "./setup-ship-mat";
-import { SetupAgentMat } from "./setup-agent-mat";
-import { SetupBuildingMat } from "./setup-building-mat";
 import { SetupCardHolder } from "./setup-card-holder";
 import { SetupLoreMat } from "./setup-lore-mat";
 import { HALF_SPACING } from "setup/setup-config";
+import { SetupShipContainer } from "./setup-ship-container";
+import { SetupAgentContainer } from "./setup-agent-container";
+import { SetupStarportContainer } from "./setup-starport-container";
 
 // TODO: This belongs in a library...
 const colorFromHex = (hex: string): Color => {
@@ -56,6 +56,8 @@ export class SetupPlayerArea extends AbstractSetup {
         this.setPlayerSlot(slot);
         this.setPrimaryColor(color);
 
+        const forwardGap = new LayoutObjects().setOverrideHeight(9);
+
         const playerboard = new SetupPlayerboard()
             .setPlayerSlot(slot)
             .setPrimaryColor(color)
@@ -69,15 +71,15 @@ export class SetupPlayerArea extends AbstractSetup {
             .setPrimaryColor(color)
             .getLayoutObjects();
 
-        const shipMat = new SetupShipMat()
+        const shipContainer = new SetupShipContainer()
             .setPlayerSlot(slot)
             .setPrimaryColor(color)
             .getLayoutObjects();
-        const agentMat = new SetupAgentMat()
+        const agentContainer = new SetupAgentContainer()
             .setPlayerSlot(slot)
             .setPrimaryColor(color)
             .getLayoutObjects();
-        const buildingMat = new SetupBuildingMat()
+        const startportContainer = new SetupStarportContainer()
             .setPlayerSlot(slot)
             .setPrimaryColor(color)
             .getLayoutObjects();
@@ -87,19 +89,21 @@ export class SetupPlayerArea extends AbstractSetup {
             .setPrimaryColor(color)
             .getLayoutObjects();
 
-        let row1 = new LayoutObjects()
+        const items = new LayoutObjects()
             .setIsVertical(false)
             .setChildDistance(HALF_SPACING)
+            .add(startportContainer)
+            .add(shipContainer)
+            .add(agentContainer);
+
+        const row1 = new LayoutObjects()
+            .setIsVertical(false)
+            .setChildDistance(HALF_SPACING)
+            .add(items)
             .add(playerboard)
             .add(leaderMat)
             .add(loreMat);
-        let row2 = new LayoutObjects()
-            .setIsVertical(false)
-            .setChildDistance(HALF_SPACING)
-            .add(shipMat)
-            .add(agentMat)
-            .add(buildingMat);
-        let row3 = new LayoutObjects()
+        const row3 = new LayoutObjects()
             .setIsVertical(false)
             .setChildDistance(HALF_SPACING)
             .add(cardHolder);
@@ -107,8 +111,8 @@ export class SetupPlayerArea extends AbstractSetup {
         this._layoutObjects = new LayoutObjects()
             .setIsVertical(true)
             .setChildDistance(HALF_SPACING)
+            .add(forwardGap)
             .add(row1)
-            .add(row2)
             .add(row3);
     }
 

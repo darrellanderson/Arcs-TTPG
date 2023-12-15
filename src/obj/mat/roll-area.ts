@@ -54,7 +54,7 @@ export class RollArea {
     private readonly _screenUi: ScreenUIElement;
     private readonly _widget: Widget;
 
-    private _interval: any = undefined;
+    private _interval: unknown | undefined = undefined;
     private _d6states: D6State[] | undefined = undefined;
     private _uiAttached: boolean = false;
 

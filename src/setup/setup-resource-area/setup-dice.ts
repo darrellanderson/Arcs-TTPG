@@ -25,7 +25,7 @@ export class SetupDice extends AbstractSetup {
             snapPointTag: string,
             face: number
         ) => {
-            let snapPoints = this._mat
+            const snapPoints = this._mat
                 .getAllSnapPoints()
                 .filter((p) => p.getTags().includes(snapPointTag));
             if (snapPoints.length !== 6) {

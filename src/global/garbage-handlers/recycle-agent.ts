@@ -1,12 +1,25 @@
-import { Dice, GameObject, world } from "@tabletop-playground/api";
+import { GameObject, world } from "@tabletop-playground/api";
 import {
     AbstractGlobal,
     GarbageContainer,
     GarbageHandler,
     NSID,
+    SimpleToContainerHandler,
 } from "ttpg-darrell";
 
-export class RecycleAgent implements GarbageHandler, AbstractGlobal {
+export class RecycleAgentContainer
+    extends SimpleToContainerHandler
+    implements GarbageHandler, AbstractGlobal
+{
+    init(): void {
+        this.addRecycleObjectNsid("unit:base/agent")
+            .setContainerNsid("container:base/agent")
+            .setRequireOwningPlayerSlot(true);
+        GarbageContainer.addHandler(this);
+    }
+}
+
+export class RecycleAgentMat implements GarbageHandler, AbstractGlobal {
     private _playerSlotToMat: { [key: number]: GameObject } = {};
 
     init(): void {

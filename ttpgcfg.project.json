@@ -1,11 +1,1 @@
-{
-    "name": "Arcs",
-    "slug": "arcs-ttpg",
-    "version": "0.0.1",
-    "transpile": true,
-    "guid": {
-        "dev": "24D5C91219414BB6B062211C0CF6840E",
-        "prd": "24D5C91219414BB6B062211C0CF6840F"
-    },
-    "modId": 3552376
-}
+{"name":"Arcs","slug":"arcs-ttpg","version":"0.0.1","transpile":true,"guid":{"dev":"24D5C91219414BB6B062211C0CF6840E","prd":"24D5C91219414BB6B062211C0CF6840F"},"modId":3552376}

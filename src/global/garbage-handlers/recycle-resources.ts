@@ -1,4 +1,4 @@
-import { Card, Dice, GameObject, world } from "@tabletop-playground/api";
+import { Card, GameObject, world } from "@tabletop-playground/api";
 import {
     AbstractGlobal,
     GarbageContainer,

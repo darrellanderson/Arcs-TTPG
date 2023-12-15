@@ -10,8 +10,12 @@ new DiceReport().init();
 
 // ------------------------------------
 
-import { RecycleAgent } from "./garbage-handlers/recycle-agent";
-new RecycleAgent().init();
+import {
+    RecycleAgentContainer,
+    RecycleAgentMat,
+} from "./garbage-handlers/recycle-agent";
+new RecycleAgentContainer().init();
+new RecycleAgentMat().init();
 
 import { RecycleAmbitionToken } from "./garbage-handlers/recycle-ambition-token";
 new RecycleAmbitionToken().init();
@@ -34,11 +38,19 @@ new RecyclePowerMarker().init();
 import { RecycleResources } from "./garbage-handlers/recycle-resources";
 new RecycleResources().init();
 
-import { RecycleShip } from "./garbage-handlers/recycle-ship";
-new RecycleShip().init();
+import {
+    RecycleShipContainer,
+    RecycleShipMat,
+} from "./garbage-handlers/recycle-ship";
+new RecycleShipContainer().init();
+new RecycleShipMat().init();
 
-import { RecycleStarport } from "./garbage-handlers/recycle-starport";
-new RecycleStarport().init();
+import {
+    RecycleStarportContainer,
+    RecycleStarportMat,
+} from "./garbage-handlers/recycle-starport";
+new RecycleStarportContainer().init();
+new RecycleStarportMat().init();
 
 import { RecycleZeroMarker } from "./garbage-handlers/recycle-zero-marker";
 new RecycleZeroMarker().init();

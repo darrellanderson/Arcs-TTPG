@@ -8,14 +8,10 @@ export class RecycleCardCourt
     extends SimpleCardGarbageHandler
     implements AbstractGlobal
 {
-    constructor() {
-        super();
+    init() {
         this.setCardNsidPrefix("card.court")
             .setMatNsid("mat:base/court")
             .setMatSnapPointTag("card.court.discard");
-    }
-
-    init() {
         GarbageContainer.addHandler(this);
     }
 }
