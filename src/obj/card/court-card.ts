@@ -90,15 +90,18 @@ class CourtCard {
         const agents: GameObject[] = LibAgent.getAgentsOnCard(this._card);
         const playerSlotToAgents: { [key: number]: GameObject[] } =
             LibAgent.getPlayerSlotToAgents(agents);
+        const slots: number[] = Object.keys(playerSlotToAgents)
+            .map((slotStr) => Number.parseInt(slotStr))
+            .sort(); // use a deterministic order
 
         const richText: string[] = [];
-        for (const [slotStr, agents] of Object.entries(playerSlotToAgents)) {
-            const slot = Number.parseInt(slotStr);
-            if (slot < 0 || agents.length === 0) {
+        for (const slot of slots) {
+            const agentCount = playerSlotToAgents[slot].length || 0;
+            if (slot < 0 || agentCount === 0) {
                 continue;
             }
             const colorHex = world.getSlotColor(slot).toHex().substring(0, 6);
-            richText.push(`[color=#${colorHex}]${agents.length}[/color]`);
+            richText.push(`[color=#${colorHex}]${agentCount}[/color]`);
         }
         if (richText.length === 0) {
             this._detachUI();
