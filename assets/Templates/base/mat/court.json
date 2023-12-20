@@ -35,7 +35,7 @@
                         },
                         "Scale": {
                                 "X": 10,
-                                "Y": 42.14,
+                                "Y": 43.64,
                                 "Z": 0.25
                         },
                         "Rotation": {
@@ -59,7 +59,7 @@
         "SnapPointsGlobal": false,
         "SnapPoints": [
                 {
-                        "Y": -17.35,
+                        "Y": -18.1,
                         "X": 0,
                         "Tags": [
                                 "card.court"
@@ -72,7 +72,7 @@
                         "FlipValidity": 0
                 },
                 {
-                        "Y": -10.41,
+                        "Y": -11.16,
                         "X": 0,
                         "Tags": [
                                 "card.court"
@@ -85,7 +85,7 @@
                         "FlipValidity": 0
                 },
                 {
-                        "Y": -3.469999999999999,
+                        "Y": -4.219999999999999,
                         "X": 0,
                         "Tags": [
                                 "card.court"
@@ -98,10 +98,10 @@
                         "FlipValidity": 0
                 },
                 {
-                        "Y": 3.4700000000000024,
+                        "Y": 2.7200000000000024,
                         "X": 0,
                         "Tags": [
-                                "court-card"
+                                "card.court"
                         ],
                         "Z": 0.125,
                         "Range": 3,
@@ -111,7 +111,7 @@
                         "FlipValidity": 0
                 },
                 {
-                        "Y": 10.41,
+                        "Y": 11.16,
                         "X": 0,
                         "Tags": [
                                 "card.court",
@@ -125,7 +125,7 @@
                         "FlipValidity": 0
                 },
                 {
-                        "Y": 17.35,
+                        "Y": 18.1,
                         "X": 0,
                         "Tags": [
                                 "card.court",

@@ -3,8 +3,11 @@ import {
     GameObject,
     ObjectType,
     SnapPoint,
+    refPackageId,
 } from "@tabletop-playground/api";
 import { AbstractSetup, LayoutObjects, Spawn } from "ttpg-darrell";
+
+const packageId: string = refPackageId;
 
 export class SetupCourt extends AbstractSetup {
     private readonly _mat: GameObject;
@@ -34,8 +37,11 @@ export class SetupCourt extends AbstractSetup {
         }
         const snapPoint = snapPoints[0];
         const above = snapPoint.getGlobalPosition().add([0, 0, 10]);
-        const deck = Spawn.spawnOrThrow("card.court:base/*", above);
+        const deck = Spawn.spawnOrThrow("card.court:base/*", above) as Card;
         deck.snapToGround(); // move within snap range
         deck.snap(); // apply snap point rotation
+
+        deck.setScript("obj/card/court-card.js", packageId);
+        deck.setInheritScript(true);
     }
 }
