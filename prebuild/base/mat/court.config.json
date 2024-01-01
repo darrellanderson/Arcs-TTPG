@@ -24,11 +24,11 @@
         }
     ],
     "gap": 0.5,
-    "cols": -1,
+    "cols": 2,
     "postShrink": 2048,
     "alpha": 0.5,
     "metadata": "mat:base/court",
     "output": "base/mat/court",
     "tags": [],
-    "gapAfterColumn": 4
+    "gapAfterRow": 2
 }

@@ -15,7 +15,6 @@ export class SetupCourt extends AbstractSetup {
     constructor() {
         super();
         this._mat = Spawn.spawnOrThrow("mat:base/court", [0, 0, 0]);
-        this._mat.setRotation([0, 90, 0]);
     }
 
     getLayoutObjects(): LayoutObjects {

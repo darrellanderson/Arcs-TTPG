@@ -66,7 +66,7 @@ class CourtCard {
             currentRotation,
             includeGeometry
         );
-        this._ui.position = new Vector(cardExtent.x, 0, 0);
+        this._ui.position = new Vector(-cardExtent.x, 0, -cardExtent.z - 0.1);
         this._ui.rotation = new Rotator(180, 0, 180); // face "up"
 
         this._card.addUI(this._ui);
