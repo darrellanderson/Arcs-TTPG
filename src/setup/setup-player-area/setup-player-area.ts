@@ -34,9 +34,9 @@ const SLOT_AND_COLOR = [
         color: colorFromHex("ffff00"),
     },
     {
-        slot: 6,
-        colorName: "orange",
-        color: colorFromHex("db6d00"),
+        slot: 16,
+        colorName: "red",
+        color: colorFromHex("ff0505"),
     },
     {
         slot: 18,

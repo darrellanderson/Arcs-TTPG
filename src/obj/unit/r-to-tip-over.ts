@@ -13,6 +13,7 @@ refObject.onFlipUpright.add((object: GameObject, player: Player) => {
     });
 });
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 refObject.onPrimaryAction.add((object: GameObject, player: Player) => {
     process.nextTick(() => {
         const rot = object.getRotation();
