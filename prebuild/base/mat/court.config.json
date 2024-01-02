@@ -14,6 +14,11 @@
         },
         {
             "img": "court.back.jpg",
+            "label": "COUNCIL",
+            "tags": ["card.court"]
+        },
+        {
+            "img": "court.back.jpg",
             "label": "DECK",
             "tags": ["card.court", "card.court.deck"]
         },
@@ -24,11 +29,11 @@
         }
     ],
     "gap": 0.5,
-    "cols": 2,
+    "cols": 5,
     "postShrink": 2048,
     "alpha": 0.5,
     "metadata": "mat:base/court",
     "output": "base/mat/court",
     "tags": [],
-    "gapAfterRow": 2
+    "gapAfterRow": 1
 }

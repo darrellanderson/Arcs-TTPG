@@ -976,6 +976,656 @@
                                 "cluster-6",
                                 "out-of-play-marker"
                         ]
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": -37.8321
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": -36.22383469387755
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": -34.6155693877551
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": -33.00730408163265
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": -31.3990387755102
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": -29.79077346938775
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": -28.182508163265304
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": -26.574242857142853
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": -24.9659775510204
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": -23.357712244897954
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": -21.749446938775506
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": -20.141181632653055
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": -18.532916326530607
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": -16.924651020408156
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": -15.316385714285708
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": -13.708120408163257
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": -12.09985510204081
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": -10.491589795918362
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": -8.88332448979591
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": -7.275059183673463
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": -5.666793877551015
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": -4.05852857142856
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": -2.4502632653061127
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": -0.841997959183665
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": 0.7662673469387826
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": 2.3745326530612303
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": 3.982797959183685
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": 5.591063265306133
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": 7.19932857142858
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": 8.807593877551028
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": 10.415859183673483
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": 12.02412448979593
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": 13.632389795918378
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": 15.240655102040826
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": 16.848920408163274
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": 18.45718571428573
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": 20.065451020408176
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": 21.673716326530624
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": 23.28198163265307
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": 24.890246938775526
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": 26.498512244897967
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": 28.106777551020414
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": 29.715042857142876
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": 31.323308163265324
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": 32.93157346938777
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": 34.53983877551022
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": 36.14810408163267
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": 37.756369387755115
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": 39.36463469387756
+                },
+                {
+                        "Z": 0.125,
+                        "Range": 0.9,
+                        "SnapRotation": 2,
+                        "RotationOffset": -90,
+                        "Shape": 1,
+                        "FlipValidity": 0,
+                        "Tags": [
+                                "power-marker"
+                        ],
+                        "X": -21.38,
+                        "Y": 40.97290000000001
                 }
         ],
         "ZoomViewDirection": {

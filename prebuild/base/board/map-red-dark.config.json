@@ -7,6 +7,22 @@
     "output": "base/board/map-red-dark",
     "metadata": "board:base/map",
     "script": "obj/mat/map.js",
+    "snapPointLines": [
+        {
+            "x0": -21.38,
+            "y0": -37.8321,
+            "x1": -21.38,
+            "y1": 40.9729,
+            "count": 50,
+            "Z": 0.125,
+            "Range": 0.9,
+            "SnapRotation": 2,
+            "RotationOffset": -90,
+            "Shape": 1,
+            "FlipValidity": 0,
+            "Tags": ["power-marker"]
+        }
+    ],
     "snapPoints": [
         {
             "X": 18.381,
