@@ -38,7 +38,7 @@
         "BackTexture": "base/card/setup/setup-4p.back.jpg",
         "HiddenTexture": "",
         "BackIndex": "$BACK_INDEX",
-        "HiddenIndex": -3,
+        "HiddenIndex": -1,
         "NumHorizontal": 2,
         "NumVertical": 2,
         "Width": 9,

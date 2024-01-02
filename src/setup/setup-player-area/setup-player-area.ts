@@ -8,6 +8,9 @@ import { HALF_SPACING } from "setup/setup-config";
 import { SetupShipContainer } from "./setup-ship-container";
 import { SetupAgentContainer } from "./setup-agent-container";
 import { SetupStarportContainer } from "./setup-starport-container";
+import { SetupShipMat } from "./setup-ship-mat";
+import { SetupAgentMat } from "./setup-agent-mat";
+import { SetupBuildingMat } from "./setup-building-mat";
 
 // TODO: This belongs in a library...
 const colorFromHex = (hex: string): Color => {
@@ -45,6 +48,8 @@ const SLOT_AND_COLOR = [
     },
 ];
 
+const USE_BOXES: boolean = false;
+
 export class SetupPlayerArea extends AbstractSetup {
     private readonly _layoutObjects: LayoutObjects;
 
@@ -71,15 +76,21 @@ export class SetupPlayerArea extends AbstractSetup {
             .setPrimaryColor(color)
             .getLayoutObjects();
 
-        const shipContainer = new SetupShipContainer()
+        const ships = (
+            USE_BOXES ? new SetupShipContainer() : new SetupShipMat()
+        )
             .setPlayerSlot(slot)
             .setPrimaryColor(color)
             .getLayoutObjects();
-        const agentContainer = new SetupAgentContainer()
+        const agents = (
+            USE_BOXES ? new SetupAgentContainer() : new SetupAgentMat()
+        )
             .setPlayerSlot(slot)
             .setPrimaryColor(color)
             .getLayoutObjects();
-        const startportContainer = new SetupStarportContainer()
+        const startports = (
+            USE_BOXES ? new SetupStarportContainer() : new SetupBuildingMat()
+        )
             .setPlayerSlot(slot)
             .setPrimaryColor(color)
             .getLayoutObjects();
@@ -89,12 +100,18 @@ export class SetupPlayerArea extends AbstractSetup {
             .setPrimaryColor(color)
             .getLayoutObjects();
 
-        const items = new LayoutObjects()
-            .setIsVertical(false)
-            .setChildDistance(HALF_SPACING)
-            .add(startportContainer)
-            .add(shipContainer)
-            .add(agentContainer);
+        const items = new LayoutObjects().setChildDistance(HALF_SPACING);
+
+        if (USE_BOXES) {
+            items.setIsVertical(false).add(startports).add(ships).add(agents);
+        } else {
+            const items2 = new LayoutObjects()
+                .setIsVertical(false)
+                .setChildDistance(HALF_SPACING)
+                .add(ships)
+                .add(agents);
+            items.setIsVertical(true).add(startports).add(items2);
+        }
 
         const row1 = new LayoutObjects()
             .setIsVertical(false)

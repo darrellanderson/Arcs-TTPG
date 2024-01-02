@@ -38,7 +38,7 @@
         "BackTexture": "base/card/action.back.jpg",
         "HiddenTexture": "",
         "BackIndex": "$BACK_INDEX",
-        "HiddenIndex": -3,
+        "HiddenIndex": -1,
         "NumHorizontal": 7,
         "NumVertical": 4,
         "Width": 6.44,

@@ -1,0 +1,51 @@
+{
+    "cardWidth": 6.44,
+    "cardHeight": 9,
+    "depth": 0.25,
+    "inputDir": "base/card/court",
+    "slots": [
+        { "img": "court.back.jpg", "label": "ATTACH", "tags": ["card.court"] },
+        { "img": "court.back.jpg", "label": "ATTACH", "tags": ["card.court"] },
+        { "img": "court.back.jpg", "label": "ATTACH", "tags": ["card.court"] },
+        { "img": "court.back.jpg", "label": "ATTACH", "tags": ["card.court"] },
+        { "img": "court.back.jpg", "label": "ATTACH", "tags": ["card.court"] },
+        {
+            "img": "court.back.jpg",
+            "label": "DECK",
+            "tags": ["card.court", "card.court.deck"]
+        },
+
+        { "img": "court.back.jpg", "label": "COURT", "tags": ["card.court"] },
+        { "img": "court.back.jpg", "label": "COURT", "tags": ["card.court"] },
+        { "img": "court.back.jpg", "label": "COURT", "tags": ["card.court"] },
+        {
+            "img": "court.back.jpg",
+            "label": "3-4P",
+            "tags": ["card.court"]
+        },
+        {
+            "img": "court.back.jpg",
+            "label": "COUNCIL",
+            "tags": ["card.court"]
+        },
+        {
+            "img": "court.back.jpg",
+            "label": "DISCARD",
+            "tags": ["card.court", "card.court.discard"]
+        },
+
+        { "img": "../../mat/agent-court-card.jpg", "label": "", "tags": [] },
+        { "img": "../../mat/agent-court-card.jpg", "label": "", "tags": [] },
+        { "img": "../../mat/agent-court-card.jpg", "label": "", "tags": [] },
+        { "img": "../../mat/agent-court-card.jpg", "label": "", "tags": [] },
+        { "img": "../../mat/agent-court-card.jpg", "label": "", "tags": [] }
+    ],
+    "gap": 0.5,
+    "cols": 6,
+    "postShrink": 2048,
+    "alpha": 0.5,
+    "metadata": "mat:base/court",
+    "output": "base/mat/court-extra",
+    "tags": [],
+    "gapAfterColumn": 4
+}

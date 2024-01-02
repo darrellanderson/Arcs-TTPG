@@ -6,6 +6,7 @@
     "input": "base/board/map-red-dark.jpg",
     "output": "base/board/map-red-dark",
     "metadata": "board:base/map",
+    "script": "obj/mat/map.js",
     "snapPoints": [
         {
             "X": 18.381,

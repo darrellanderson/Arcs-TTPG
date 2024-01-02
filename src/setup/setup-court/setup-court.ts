@@ -5,6 +5,8 @@ import {
     SnapPoint,
     refPackageId,
 } from "@tabletop-playground/api";
+import { SPACING } from "setup/setup-config";
+import { SetupGarbage } from "setup/setup-garbage/setup-garbage";
 import { AbstractSetup, LayoutObjects, Spawn } from "ttpg-darrell";
 
 const packageId: string = refPackageId;
@@ -18,7 +20,11 @@ export class SetupCourt extends AbstractSetup {
     }
 
     getLayoutObjects(): LayoutObjects {
-        const layoutObjects = new LayoutObjects().add(this._mat);
+        const layoutObjects = new LayoutObjects()
+            .setIsVertical(false)
+            .setChildDistance(SPACING)
+            .add(this._mat)
+            .add(new SetupGarbage().getLayoutObjects());
         layoutObjects.afterLayout.add(() => {
             this._afterLayout();
         });
