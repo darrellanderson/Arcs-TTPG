@@ -1,15 +1,15 @@
 import { GameObject, world } from "@tabletop-playground/api";
 import {
-    AbstractGlobal,
     GarbageContainer,
     GarbageHandler,
+    IGlobal,
     NSID,
     SimpleToContainerHandler,
 } from "ttpg-darrell";
 
 export class RecycleAgentContainer
     extends SimpleToContainerHandler
-    implements GarbageHandler, AbstractGlobal
+    implements GarbageHandler, IGlobal
 {
     init(): void {
         this.addRecycleObjectNsid("unit:base/agent")
@@ -19,7 +19,7 @@ export class RecycleAgentContainer
     }
 }
 
-export class RecycleAgentMat implements GarbageHandler, AbstractGlobal {
+export class RecycleAgentMat implements GarbageHandler, IGlobal {
     private _playerSlotToMat: { [key: number]: GameObject } = {};
 
     init(): void {

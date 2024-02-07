@@ -19,7 +19,8 @@
         "paths": {
             "@mock/*": ["./mock/*"],
             "@wrapper/*": ["./wrapper/*"]
-        }
+        },
+        "sourceMap": true
     },
     "include": ["./src/**/*.ts", "./src/**/*.tsx"]
 }

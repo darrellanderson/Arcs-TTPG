@@ -1,7 +1,7 @@
 import { Dice, Player, globalEvents, world } from "@tabletop-playground/api";
-import { AbstractGlobal, NSID } from "ttpg-darrell";
+import { IGlobal, NSID } from "ttpg-darrell";
 
-export class DiceReport implements AbstractGlobal {
+export class DiceReport implements IGlobal {
     init(): void {
         globalEvents.onDiceRolled.add((player: Player, dice: Dice[]) => {
             this._onDiceRolled(player, dice);

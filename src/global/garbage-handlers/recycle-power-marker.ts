@@ -1,12 +1,7 @@
 import { GameObject, world } from "@tabletop-playground/api";
-import {
-    AbstractGlobal,
-    GarbageContainer,
-    GarbageHandler,
-    NSID,
-} from "ttpg-darrell";
+import { GarbageContainer, GarbageHandler, IGlobal, NSID } from "ttpg-darrell";
 
-export class RecyclePowerMarker implements GarbageHandler, AbstractGlobal {
+export class RecyclePowerMarker implements GarbageHandler, IGlobal {
     private _playerSlotToMat: { [key: number]: GameObject } = {};
 
     init(): void {

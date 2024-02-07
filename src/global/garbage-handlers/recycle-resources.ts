@@ -1,12 +1,7 @@
 import { Card, GameObject, world } from "@tabletop-playground/api";
-import {
-    AbstractGlobal,
-    GarbageContainer,
-    GarbageHandler,
-    NSID,
-} from "ttpg-darrell";
+import { GarbageContainer, GarbageHandler, IGlobal, NSID } from "ttpg-darrell";
 
-export class RecycleResources implements GarbageHandler, AbstractGlobal {
+export class RecycleResources implements GarbageHandler, IGlobal {
     private static NSID_TO_SNAP_POINT_TAG: { [key: string]: string } = {
         "token.resource:base/material": "resource.material",
         "token.resource:base/fuel": "resource.fuel",

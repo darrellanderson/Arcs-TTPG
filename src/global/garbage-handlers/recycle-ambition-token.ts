@@ -1,12 +1,7 @@
 import { GameObject, world } from "@tabletop-playground/api";
-import {
-    AbstractGlobal,
-    GarbageContainer,
-    GarbageHandler,
-    NSID,
-} from "ttpg-darrell";
+import { GarbageContainer, GarbageHandler, IGlobal, NSID } from "ttpg-darrell";
 
-export class RecycleAmbitionToken implements GarbageHandler, AbstractGlobal {
+export class RecycleAmbitionToken implements GarbageHandler, IGlobal {
     private static TOKEN_NSIDS = [
         "token.ambition:base/2-0-4-2",
         "token.ambition:base/3-2-6-3",

@@ -1,5 +1,5 @@
 import {
-    AbstractGlobal,
+    IGlobal,
     GarbageContainer,
     GarbageHandler,
     SimpleToSnapPointHandler,
@@ -7,12 +7,12 @@ import {
 
 export class RecycleZeroMarker
     extends SimpleToSnapPointHandler
-    implements GarbageHandler, AbstractGlobal
+    implements GarbageHandler, IGlobal
 {
     init(): void {
-        this.addRecycleObjectNsid("token:base/zero-marker")
-            .setMatNsid("board:base/map")
-            .setSnapPointTag("zero-marker");
+        this.addRecycleObjectNsid("token:base/zero-marker").setSnapPointTag(
+            "zero-marker"
+        );
         GarbageContainer.addHandler(this);
     }
 }

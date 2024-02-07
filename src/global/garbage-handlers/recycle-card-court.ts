@@ -1,17 +1,17 @@
 import {
-    AbstractGlobal,
     GarbageContainer,
+    IGlobal,
     SimpleCardGarbageHandler,
 } from "ttpg-darrell";
 
 export class RecycleCardCourt
     extends SimpleCardGarbageHandler
-    implements AbstractGlobal
+    implements IGlobal
 {
     init() {
         this.setCardNsidPrefix("card.court")
-            .setMatNsid("mat:base/court")
-            .setMatSnapPointTag("card.court.discard");
+            .setSnapPointTag("card.court.discard")
+            .setFaceUp(true);
         GarbageContainer.addHandler(this);
     }
 }

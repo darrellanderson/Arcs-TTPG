@@ -1,12 +1,7 @@
 import { Dice, GameObject, world } from "@tabletop-playground/api";
-import {
-    AbstractGlobal,
-    GarbageContainer,
-    GarbageHandler,
-    NSID,
-} from "ttpg-darrell";
+import { GarbageContainer, GarbageHandler, IGlobal, NSID } from "ttpg-darrell";
 
-export class RecycleDice implements GarbageHandler, AbstractGlobal {
+export class RecycleDice implements GarbageHandler, IGlobal {
     private static NSID_TO_SNAP_POINT_TAG: { [key: string]: string } = {
         "dice:base/assault": "die.assault",
         "dice:base/raid": "die.raid",

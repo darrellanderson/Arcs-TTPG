@@ -25,7 +25,7 @@
 	"Flippable": false,
 	"AutoStraighten": false,
 	"ShouldSnap": false,
-	"ScriptName": "obj/cardholder-player-name.js",
+	"ScriptName": "node_modules/ttpg-darrell/build/cjs/lib/game-object/cardholder-player-name/cardholder-player-name-obj.js",
 	"Blueprint": "",
 	"Models": [
 		{
@@ -44,7 +44,7 @@
 			},
 			"Rotation":
 			{
-				"X": 0,
+				"X": -0,
 				"Y": 0,
 				"Z": 0
 			},
