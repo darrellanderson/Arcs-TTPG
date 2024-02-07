@@ -29,16 +29,17 @@ const colorFromHex = (hex: string): Color => {
     return new Color(r / 255, g / 255, b / 255, 1);
 };
 
-const SLOT_AND_COLOR = [
-    {
-        slot: 13,
-        colorName: "blue",
-        color: colorFromHex("6db6ff"),
-    },
+// In "table" order, clockwise from lower-right.
+export const SLOT_AND_COLOR = [
     {
         slot: 9,
         colorName: "yellow",
         color: colorFromHex("ffff00"),
+    },
+    {
+        slot: 13,
+        colorName: "blue",
+        color: colorFromHex("6db6ff"),
     },
     {
         slot: 16,
@@ -50,7 +51,7 @@ const SLOT_AND_COLOR = [
         colorName: "white",
         color: colorFromHex("ffffff"),
     },
-];
+] as const;
 
 const USE_BOXES: boolean = false;
 

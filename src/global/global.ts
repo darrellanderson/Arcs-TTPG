@@ -66,6 +66,11 @@ iGlobals.push(new RecycleZeroMarker());
 
 // ------------------------------------
 
+import { ArcsTurnOrder } from "./arcs-turn-order/arcs-turn-order";
+iGlobals.push(new ArcsTurnOrder());
+
+// ------------------------------------
+
 GlobalInit.runGlobalInit(iGlobals);
 
 // Export something bogus for import to appear "useful".

@@ -30,8 +30,8 @@ const setupMap = new SetupMap();
 const map = setupMap.getMapGameObject();
 
 // Player areas around map.
-const ll = new SetupPlayerArea(0).getLayoutObjects().flip(false, false);
-const lr = new SetupPlayerArea(1).getLayoutObjects().flip(false, false);
+const lr = new SetupPlayerArea(0).getLayoutObjects().flip(false, false);
+const ll = new SetupPlayerArea(1).getLayoutObjects().flip(false, false);
 const ul = new SetupPlayerArea(2).getLayoutObjects().flip(false, true);
 const ur = new SetupPlayerArea(3).getLayoutObjects().flip(false, true);
 
