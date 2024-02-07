@@ -3,7 +3,6 @@ import {
     GameObject,
     ObjectType,
     SnapPoint,
-    world,
 } from "@tabletop-playground/api";
 import { AbstractSetup, LayoutObjects, NSID, Spawn } from "ttpg-darrell";
 
@@ -55,7 +54,7 @@ export class SetupMap extends AbstractSetup {
         for (let i = nsids.length - 1; i >= 0; i--) {
             const nsid: string = nsids[i];
             const parsed = NSID.parse(nsid);
-            const name0: string | undefined = parsed?.name[0];
+            const name0: string | undefined = parsed?.nameParts[0];
             if (name0 === "1" || name0 === "7") {
                 const numCards = 1;
                 const fromFront = false;

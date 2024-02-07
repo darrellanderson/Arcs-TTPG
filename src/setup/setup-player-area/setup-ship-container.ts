@@ -5,15 +5,20 @@ import {
     ObjectType,
     Vector,
 } from "@tabletop-playground/api";
-import { AbstractSetup, LayoutObjects, Spawn } from "ttpg-darrell";
+import {
+    AbstractSetup,
+    AbstractSetupParams,
+    LayoutObjects,
+    Spawn,
+} from "ttpg-darrell";
 
 export class SetupShipContainer extends AbstractSetup {
     public static readonly SHIP_COUNT: number = 10;
 
     private readonly _container: Container;
 
-    constructor() {
-        super();
+    constructor(params: AbstractSetupParams) {
+        super(params);
         this._container = Spawn.spawnOrThrow(
             "container:base/ship",
             [0, 0, 0]

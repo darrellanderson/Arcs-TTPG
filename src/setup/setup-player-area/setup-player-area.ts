@@ -1,5 +1,9 @@
 import { Color } from "@tabletop-playground/api";
-import { AbstractSetup, LayoutObjects } from "ttpg-darrell";
+import {
+    AbstractSetup,
+    AbstractSetupParams,
+    LayoutObjects,
+} from "ttpg-darrell";
 import { SetupPlayerboard } from "./setup-playerboard";
 import { SetupLeaderMat } from "./setup-leader-mat";
 import { SetupCardHolder } from "./setup-card-holder";
@@ -54,51 +58,37 @@ export class SetupPlayerArea extends AbstractSetup {
     private readonly _layoutObjects: LayoutObjects;
 
     constructor(playerIndex: number) {
-        super();
-
-        const slot: number = SLOT_AND_COLOR[playerIndex].slot;
-        const color: Color = SLOT_AND_COLOR[playerIndex].color;
-        this.setPlayerSlot(slot);
-        this.setPrimaryColor(color);
+        const setupParams: AbstractSetupParams = {
+            playerSlot: SLOT_AND_COLOR[playerIndex].slot,
+            primaryColor: SLOT_AND_COLOR[playerIndex].color,
+        };
+        super(setupParams);
 
         const forwardGap = new LayoutObjects().setOverrideHeight(9);
 
-        const playerboard = new SetupPlayerboard()
-            .setPlayerSlot(slot)
-            .setPrimaryColor(color)
-            .getLayoutObjects();
-        const leaderMat = new SetupLeaderMat()
-            .setPlayerSlot(slot)
-            .setPrimaryColor(color)
-            .getLayoutObjects();
-        const loreMat = new SetupLoreMat()
-            .setPlayerSlot(slot)
-            .setPrimaryColor(color)
-            .getLayoutObjects();
+        const playerboard = new SetupPlayerboard(
+            setupParams
+        ).getLayoutObjects();
+        const leaderMat = new SetupLeaderMat(setupParams).getLayoutObjects();
+        const loreMat = new SetupLoreMat(setupParams).getLayoutObjects();
 
         const ships = (
-            USE_BOXES ? new SetupShipContainer() : new SetupShipMat()
-        )
-            .setPlayerSlot(slot)
-            .setPrimaryColor(color)
-            .getLayoutObjects();
+            USE_BOXES
+                ? new SetupShipContainer(setupParams)
+                : new SetupShipMat(setupParams)
+        ).getLayoutObjects();
         const agents = (
-            USE_BOXES ? new SetupAgentContainer() : new SetupAgentMat()
-        )
-            .setPlayerSlot(slot)
-            .setPrimaryColor(color)
-            .getLayoutObjects();
+            USE_BOXES
+                ? new SetupAgentContainer(setupParams)
+                : new SetupAgentMat(setupParams)
+        ).getLayoutObjects();
         const startports = (
-            USE_BOXES ? new SetupStarportContainer() : new SetupBuildingMat()
-        )
-            .setPlayerSlot(slot)
-            .setPrimaryColor(color)
-            .getLayoutObjects();
+            USE_BOXES
+                ? new SetupStarportContainer(setupParams)
+                : new SetupBuildingMat(setupParams)
+        ).getLayoutObjects();
 
-        const cardHolder = new SetupCardHolder()
-            .setPlayerSlot(slot)
-            .setPrimaryColor(color)
-            .getLayoutObjects();
+        const cardHolder = new SetupCardHolder(setupParams).getLayoutObjects();
 
         const items = new LayoutObjects().setChildDistance(HALF_SPACING);
 

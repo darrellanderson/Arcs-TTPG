@@ -5,13 +5,18 @@ import {
     Rotator,
     Vector,
 } from "@tabletop-playground/api";
-import { AbstractSetup, LayoutObjects, Spawn } from "ttpg-darrell";
+import {
+    AbstractSetup,
+    AbstractSetupParams,
+    LayoutObjects,
+    Spawn,
+} from "ttpg-darrell";
 
 export class SetupBuildingMat extends AbstractSetup {
     private readonly _mat: GameObject;
 
-    constructor() {
-        super();
+    constructor(params: AbstractSetupParams) {
+        super(params);
         this._mat = Spawn.spawnOrThrow("mat:base/building", [0, 0, 0]);
     }
 

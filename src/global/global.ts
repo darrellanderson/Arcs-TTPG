@@ -1,12 +1,20 @@
 console.log("----- GLOBAL -----");
 
+const abstractGlobals: AbstractGlobal[] = [];
+
+import { AbstractGlobal, ErrorHandler, LeaveSeat } from "ttpg-darrell";
+abstractGlobals.push(new LeaveSeat());
+abstractGlobals.push(new ErrorHandler());
+
+// ------------------------------------
+
 import { InjectSpawnNSIDs } from "./inject-spawn-nsids/inject-spawn-nsids";
-new InjectSpawnNSIDs().init();
+abstractGlobals.push(new InjectSpawnNSIDs());
 
 // ------------------------------------
 
 import { DiceReport } from "./dice-report/dice-report";
-new DiceReport().init();
+abstractGlobals.push(new DiceReport());
 
 // ------------------------------------
 
@@ -14,51 +22,50 @@ import {
     RecycleAgentContainer,
     RecycleAgentMat,
 } from "./garbage-handlers/recycle-agent";
-new RecycleAgentContainer().init();
-new RecycleAgentMat().init();
+abstractGlobals.push(new RecycleAgentContainer());
+abstractGlobals.push(new RecycleAgentMat());
 
 import { RecycleAmbitionToken } from "./garbage-handlers/recycle-ambition-token";
-new RecycleAmbitionToken().init();
+abstractGlobals.push(new RecycleAmbitionToken());
 
 import { RecycleCardAction } from "./garbage-handlers/recycle-card-action";
-new RecycleCardAction().init();
+abstractGlobals.push(new RecycleCardAction());
 
 import { RecycleCardCourt } from "./garbage-handlers/recycle-card-court";
-new RecycleCardCourt().init();
+abstractGlobals.push(new RecycleCardCourt());
 
 import { RecycleCity } from "./garbage-handlers/recycle-city";
-new RecycleCity().init();
+abstractGlobals.push(new RecycleCity());
 
 import { RecycleDice } from "./garbage-handlers/recycle-dice";
-new RecycleDice().init();
+abstractGlobals.push(new RecycleDice());
 
 import { RecyclePowerMarker } from "./garbage-handlers/recycle-power-marker";
-new RecyclePowerMarker().init();
+abstractGlobals.push(new RecyclePowerMarker());
 
 import { RecycleResources } from "./garbage-handlers/recycle-resources";
-new RecycleResources().init();
+abstractGlobals.push(new RecycleResources());
 
 import {
     RecycleShipContainer,
     RecycleShipMat,
 } from "./garbage-handlers/recycle-ship";
-new RecycleShipContainer().init();
-new RecycleShipMat().init();
+abstractGlobals.push(new RecycleShipContainer());
+abstractGlobals.push(new RecycleShipMat());
 
 import {
     RecycleStarportContainer,
     RecycleStarportMat,
 } from "./garbage-handlers/recycle-starport";
-new RecycleStarportContainer().init();
-new RecycleStarportMat().init();
+abstractGlobals.push(new RecycleStarportContainer());
+abstractGlobals.push(new RecycleStarportMat());
 
 import { RecycleZeroMarker } from "./garbage-handlers/recycle-zero-marker";
-new RecycleZeroMarker().init();
+abstractGlobals.push(new RecycleZeroMarker());
 
 // ------------------------------------
 
-import { LeaveSeat } from "ttpg-darrell";
-new LeaveSeat().init();
+AbstractGlobal.runAbstractGlobalInit(abstractGlobals);
 
 // Export something bogus for import to appear "useful".
 export {};

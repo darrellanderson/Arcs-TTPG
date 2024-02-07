@@ -5,13 +5,18 @@ import {
     Rotator,
     Vector,
 } from "@tabletop-playground/api";
-import { AbstractSetup, LayoutObjects, Spawn } from "ttpg-darrell";
+import {
+    AbstractSetup,
+    AbstractSetupParams,
+    LayoutObjects,
+    Spawn,
+} from "ttpg-darrell";
 
 export class SetupPlayerboard extends AbstractSetup {
     private readonly _playerboard: GameObject;
 
-    constructor() {
-        super();
+    constructor(params: AbstractSetupParams) {
+        super(params);
         this._playerboard = Spawn.spawnOrThrow(
             "board:base/playerboard",
             [0, 0, 0]
