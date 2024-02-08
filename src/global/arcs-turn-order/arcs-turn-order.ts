@@ -3,11 +3,13 @@ import {
     GameObject,
     Player,
     Vector,
+    globalEvents,
     refPackageId,
 } from "@tabletop-playground/api";
 import { SLOT_AND_COLOR } from "setup/setup-player-area/setup-player-area";
 import {
     EndTurnButton,
+    HotSeatButton,
     Find,
     IGlobal,
     TurnOrder,
@@ -20,7 +22,10 @@ export class ArcsTurnOrder implements IGlobal {
 
     private readonly _turnOrder: TurnOrder;
     private readonly _turnOrderWidget: TurnOrderWidget;
-    private readonly _endTurnButton: EndTurnButton;
+    private _endTurnButton: EndTurnButton;
+    private _hotSeatButton: HotSeatButton;
+
+    private _isHotSeat: boolean = false;
 
     static getInstance(): ArcsTurnOrder {
         if (!this.__instance) {
@@ -53,6 +58,7 @@ export class ArcsTurnOrder implements IGlobal {
             sound: "beep_ramp_up.wav",
             soundPackageId: refPackageId,
         });
+        this._hotSeatButton = new HotSeatButton(this._turnOrder, {});
     }
 
     init(): void {
@@ -91,6 +97,22 @@ export class ArcsTurnOrder implements IGlobal {
                 }
             });
         }
+
+        globalEvents.onChatMessage.add(
+            (sender: Player, message: string): void => {
+                if (message === "!hotseat") {
+                    if (this._isHotSeat) {
+                        this._hotSeatButton.detach();
+                        this._endTurnButton.attachToScreen();
+                        this._isHotSeat = false;
+                    } else {
+                        this._hotSeatButton.attachToScreen();
+                        this._endTurnButton.detach();
+                        this._isHotSeat = true;
+                    }
+                }
+            }
+        );
     }
 
     _seizeInitiative(playerSlot: number): void {
