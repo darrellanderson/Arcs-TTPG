@@ -43,7 +43,10 @@ export class ArcsTurnOrder implements IGlobal {
             margins: { left: 2, right: 2 },
             toggleEliminated: true,
             togglePassed: true,
-            customActions: [{ name: ArcsTurnOrder.SEIZE_INITIATIVE }],
+
+            customActions: [
+                //{ name: ArcsTurnOrder.SEIZE_INITIATIVE }
+            ],
             onCustomAction: (
                 clickingPlayer: Player,
                 identifier: string,
