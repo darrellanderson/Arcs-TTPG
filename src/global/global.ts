@@ -1,11 +1,18 @@
 console.log("----- GLOBAL -----");
 
-import { ErrorHandler, GlobalInit, IGlobal, LeaveSeat } from "ttpg-darrell";
+import {
+    ErrorHandler,
+    GlobalInit,
+    IGlobal,
+    LeaveSeat,
+    OnCardBecameSingletonOrDeck,
+} from "ttpg-darrell";
 
 const iGlobals: IGlobal[] = [];
 
 iGlobals.push(new LeaveSeat());
 iGlobals.push(new ErrorHandler());
+iGlobals.push(new OnCardBecameSingletonOrDeck());
 
 // ------------------------------------
 
@@ -13,6 +20,12 @@ import { InjectSpawnNSIDs } from "./inject-spawn-nsids/inject-spawn-nsids";
 iGlobals.push(new InjectSpawnNSIDs());
 
 // ------------------------------------
+
+import { ArcsTurnOrder } from "./arcs-turn-order/arcs-turn-order";
+iGlobals.push(new ArcsTurnOrder());
+
+import { CourtCardBury } from "./context-menu/court-card-bury/court-card-bury";
+iGlobals.push(new CourtCardBury());
 
 import { DiceReport } from "./dice-report/dice-report";
 iGlobals.push(new DiceReport());
@@ -63,11 +76,6 @@ iGlobals.push(new RecycleStarportMat());
 
 import { RecycleZeroMarker } from "./garbage-handlers/recycle-zero-marker";
 iGlobals.push(new RecycleZeroMarker());
-
-// ------------------------------------
-
-import { ArcsTurnOrder } from "./arcs-turn-order/arcs-turn-order";
-iGlobals.push(new ArcsTurnOrder());
 
 // ------------------------------------
 
