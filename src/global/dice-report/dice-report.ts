@@ -8,8 +8,9 @@ export class DiceReport implements IGlobal {
         });
     }
 
-    _onDiceRolled(player: Player, dice: Dice[]) {
+    _onDiceRolled(player: Player, dice: Dice[]): void {
         const typeToCount: { [key: string]: number } = {};
+        let found: boolean = false;
 
         for (const die of dice) {
             const nsid = NSID.get(die);
@@ -28,8 +29,12 @@ export class DiceReport implements IGlobal {
                 if (v === 0) {
                     continue;
                 }
+                found = true;
                 typeToCount[k] = (typeToCount[k] || 0) + v;
             }
+        }
+        if (!found) {
+            return;
         }
 
         const types = Object.keys(typeToCount).sort();
