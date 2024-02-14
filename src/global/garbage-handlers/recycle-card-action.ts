@@ -11,7 +11,7 @@ export class RecycleCardAction
     init() {
         this.setCardNsidPrefix("card.action")
             .setSnapPointTag("card.action.discard")
-            .setShuffleAfterDiscard(true);
+            .setShuffleAfterDiscard(false);
         GarbageContainer.addHandler(this);
     }
 }
