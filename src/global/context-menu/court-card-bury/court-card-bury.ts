@@ -2,10 +2,9 @@ import { Card, GameObject, Player, SnapPoint } from "@tabletop-playground/api";
 import { AbstractRightClickCard, Find } from "ttpg-darrell";
 
 export class CourtCardBury extends AbstractRightClickCard {
-    public static ACTION_NAME = "* Bury";
+    public static readonly ACTION_NAME = "* Bury";
 
     constructor() {
-        console.log("xxx");
         const cardNsidPrefix: string = "card.court";
         const handler = (
             object: GameObject,

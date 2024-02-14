@@ -4,7 +4,7 @@ import {
     refObject,
     world,
 } from "@tabletop-playground/api";
-import { LayoutObjects } from "ttpg-darrell";
+import { DeletedItemsContainer, LayoutObjects } from "ttpg-darrell";
 import { SetupPlayerArea } from "./setup-player-area/setup-player-area";
 import { SetupMap } from "./setup-map/setup-map";
 import { SetupCourt } from "./setup-court/setup-court";
@@ -14,6 +14,7 @@ import { SetupOther } from "./setup-other/setup-other";
 import { SPACING } from "./setup-config";
 
 console.log("----- SETUP -----");
+refObject.setTags([DeletedItemsContainer.IGNORE_TAG]);
 
 // Purge world.
 for (const obj of world.getAllObjects()) {

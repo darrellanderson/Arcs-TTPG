@@ -13,10 +13,15 @@ const packageId: string = refPackageId;
 
 export class SetupCourt extends AbstractSetup {
     private readonly _mat: GameObject;
+    private readonly _deletedItems: GameObject;
 
     constructor() {
         super();
         this._mat = Spawn.spawnOrThrow("mat:base/court", [0, 0, 0]);
+        this._deletedItems = Spawn.spawnOrThrow(
+            "container:base/deleted-items",
+            [0, 0, 0]
+        );
     }
 
     getLayoutObjects(): LayoutObjects {
@@ -24,7 +29,8 @@ export class SetupCourt extends AbstractSetup {
             .setIsVertical(false)
             .setChildDistance(SPACING)
             .add(this._mat)
-            .add(new SetupGarbage().getLayoutObjects());
+            .add(new SetupGarbage().getLayoutObjects())
+            .add(this._deletedItems);
         layoutObjects.afterLayout.add(() => {
             this._afterLayout();
         });
@@ -33,6 +39,7 @@ export class SetupCourt extends AbstractSetup {
 
     _afterLayout(): void {
         this._mat.setObjectType(ObjectType.Ground);
+        this._deletedItems.setObjectType(ObjectType.Ground);
 
         const snapPoints: SnapPoint[] = this._mat
             .getAllSnapPoints()
