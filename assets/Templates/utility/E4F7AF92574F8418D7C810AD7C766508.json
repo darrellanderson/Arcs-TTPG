@@ -1,8 +1,8 @@
 {
 	"Type": "Container",
-	"GUID": "75D23ABAC84B47F5525975B9C6107CD1",
-	"Name": "Deleted Items",
-	"Metadata": "container:base/deleted-items",
+	"GUID": "E4F7AF92574F8418D7C810AD7C766508",
+	"Name": "Garbage",
+	"Metadata": "container:base/garbage",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
 	"Restitution": 0.3,
@@ -12,9 +12,9 @@
 	"Metallic": 0,
 	"PrimaryColor":
 	{
-		"R": 0,
-		"G": 0,
-		"B": 0
+		"R": 76,
+		"G": 33,
+		"B": 121
 	},
 	"SecondaryColor":
 	{
@@ -25,7 +25,7 @@
 	"Flippable": false,
 	"AutoStraighten": false,
 	"ShouldSnap": false,
-	"ScriptName": "node_modules/ttpg-darrell/build/cjs/lib/game-object/deleted-items-container/deleted-items-container-obj.js",
+	"ScriptName": "obj/container/garbage.js",
 	"Blueprint": "",
 	"Models": [
 		{
