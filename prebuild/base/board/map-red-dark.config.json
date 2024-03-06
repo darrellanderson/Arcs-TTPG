@@ -1,699 +1,269 @@
 {
-    "width": 84.64,
-    "height": 45.23,
-    "depth": 0.25,
-    "preshrink": { "w": 8192, "h": 0 },
-    "input": "base/board/map-red-dark.jpg",
-    "output": "base/board/map-red-dark",
-    "metadata": "board:base/map",
-    "script": "obj/mat/map.js",
-    "snapPointLines": [
-        {
-            "x0": -21.38,
-            "y0": -37.8321,
-            "x1": -21.38,
-            "y1": 40.9729,
-            "count": 50,
-            "Z": 0.125,
-            "Range": 0.9,
-            "SnapRotation": 2,
-            "RotationOffset": -90,
-            "Shape": 1,
-            "FlipValidity": 0,
-            "Tags": ["power-marker"]
-        }
-    ],
-    "snapPoints": [
-        {
-            "X": 18.381,
-            "Y": -36.91,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": -90,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["card.action", "card.action.discard"]
-        },
-        {
-            "X": -10.013,
-            "Y": -37.129,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": -90,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["card.action"]
-        },
-        {
-            "X": 15.797,
-            "Y": 33.114,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 0,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["ambition-marker"]
-        },
-        {
-            "X": 15.808,
-            "Y": 36.385,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 0,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["ambition-marker"]
-        },
-        {
-            "X": 15.822,
-            "Y": 39.64,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 0,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["ambition-marker"]
-        },
-        {
-            "X": -18.84,
-            "Y": 31.923,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 0,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["chapter-marker"]
-        },
-        {
-            "X": -18.879,
-            "Y": 34.153,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 0,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["chapter-marker"]
-        },
-        {
-            "X": -18.847,
-            "Y": 36.365,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 0,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["chapter-marker"]
-        },
-        {
-            "X": -18.849,
-            "Y": 38.582,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 0,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["chapter-marker"]
-        },
-        {
-            "X": -18.852,
-            "Y": 40.75,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 0,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["chapter-marker"]
-        },
-        {
-            "X": -16.088,
-            "Y": -37.008,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["zero-marker"]
-        },
-        {
-            "X": 16.896,
-            "Y": -5.15,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": 18.189,
-            "Y": -2.355,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": 17.164,
-            "Y": 4.146,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": 18.775,
-            "Y": 11.696,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": 16.79,
-            "Y": 14.182,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": 11.6,
-            "Y": 18.158,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": 7.3,
-            "Y": 25.21,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": 0.928,
-            "Y": 20.753,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": -0.438,
-            "Y": 23.262,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": -5,
-            "Y": 22.436,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": -7.953,
-            "Y": 14.142,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": -14.991,
-            "Y": 16.16,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": -16.804,
-            "Y": 13.779,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": -15.9,
-            "Y": 6.495,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": -14.044,
-            "Y": 4.015,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": -17.966,
-            "Y": -2.575,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": -16.211,
-            "Y": -4.96,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": -14.238,
-            "Y": -11.883,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": -13.1,
-            "Y": -24.539,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": -4.419,
-            "Y": -20.182,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": 1.05,
-            "Y": -25.335,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": -0.75,
-            "Y": -27.705,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": 5.75,
-            "Y": -20.24,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": 12.865,
-            "Y": -23.45,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": 14.725,
-            "Y": -21.086,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": 16.828,
-            "Y": -14.215,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": 9.676,
-            "Y": 1.357,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 10,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["path-marker", "cluster-1"]
-        },
-        {
-            "X": 3.431,
-            "Y": 9.215,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 70,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["path-marker", "cluster-2"]
-        },
-        {
-            "X": -4.372,
-            "Y": 7.846,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 130,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["path-marker", "cluster-3"]
-        },
-        {
-            "X": -7.8,
-            "Y": -2,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": -168,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["path-marker", "cluster-4"]
-        },
-        {
-            "X": -1.742,
-            "Y": -9.361,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": -113.2,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["path-marker", "cluster-5"]
-        },
-        {
-            "X": 5.696,
-            "Y": -8.459,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": -55,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["path-marker", "cluster-6"]
-        },
-        {
-            "X": 17.235,
-            "Y": -2.733,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 0,
-            "RotationOffset": -60,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["out-of-play-marker", "cluster-1"]
-        },
-        {
-            "X": 16.51,
-            "Y": 5.195,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 0,
-            "RotationOffset": -60,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["out-of-play-marker", "cluster-1"]
-        },
-        {
-            "X": 17.653,
-            "Y": 12.388,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 0,
-            "RotationOffset": -60,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["cluster-1", "out-of-play-marker"]
-        },
-        {
-            "X": 12.031,
-            "Y": 17.952,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 0,
-            "RotationOffset": -60,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["out-of-play-marker", "cluster-2"]
-        },
-        {
-            "X": 7.259,
-            "Y": 24.177,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 0,
-            "RotationOffset": -60,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["cluster-2", "out-of-play-marker"]
-        },
-        {
-            "X": 0.307,
-            "Y": 21.184,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 0,
-            "RotationOffset": -60,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["cluster-2", "out-of-play-marker"]
-        },
-        {
-            "X": -6.068,
-            "Y": 22.139,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 0,
-            "RotationOffset": -60,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["out-of-play-marker", "cluster-3"]
-        },
-        {
-            "X": -8.81,
-            "Y": 14.357,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 0,
-            "RotationOffset": -60,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["cluster-3", "out-of-play-marker"]
-        },
-        {
-            "X": -15.127,
-            "Y": 14.041,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 0,
-            "RotationOffset": -60,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["out-of-play-marker", "cluster-3"]
-        },
-        {
-            "X": -15.246,
-            "Y": 5.327,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 0,
-            "RotationOffset": -60,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["out-of-play-marker", "cluster-4"]
-        },
-        {
-            "X": -15.551,
-            "Y": -2.937,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 0,
-            "RotationOffset": -60,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["cluster-4", "out-of-play-marker"]
-        },
-        {
-            "X": -14.102,
-            "Y": -10.721,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 0,
-            "RotationOffset": -60,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["out-of-play-marker", "cluster-4"]
-        },
-        {
-            "X": -12.491,
-            "Y": -22.987,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 0,
-            "RotationOffset": -60,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["out-of-play-marker", "cluster-5"]
-        },
-        {
-            "X": -4.24,
-            "Y": -18.912,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 0,
-            "RotationOffset": -60,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["cluster-5", "out-of-play-marker"]
-        },
-        {
-            "X": 1.406,
-            "Y": -25.406,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 0,
-            "RotationOffset": -60,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["cluster-5", "out-of-play-marker"]
-        },
-        {
-            "X": 6.288,
-            "Y": -19.419,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 0,
-            "RotationOffset": -60,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["out-of-play-marker", "cluster-6"]
-        },
-        {
-            "X": 13.463,
-            "Y": -21.083,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 0,
-            "RotationOffset": -60,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["cluster-6", "out-of-play-marker"]
-        },
-        {
-            "X": 16.111,
-            "Y": -12.897,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 0,
-            "RotationOffset": -60,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["cluster-6", "out-of-play-marker"]
-        }
-    ]
+    "rootDir": ".",
+    "assetFilename": "base/board/map-red-dark",
+
+    "templateMetadata": "board:base/map",
+    "templateName": "Map",
+    "scriptName": "obj/mat/map.js",
+
+    "topDownWorldSize": {
+        "width": 84.64,
+        "height": 45.23,
+        "depth": 0.25
+    },
+    "preshrink": {
+        "width": 0,
+        "height": 4096
+    },
+    "srcImage": {
+        "type": "ImageCell",
+        "width": 9283,
+        "height": 4961,
+        "imageFile": "prebuild/base/board/map-red-dark.jpg",
+        "snapPoints": [
+            { "tags": ["score"], "left": 320, "top": 4829 },
+            {
+                "tags": ["score"],
+                "left": 9142,
+                "top": 4829,
+                "createCountToPrev": 50
+            },
+            {
+                "tags": ["card.action", "card.action.discard"],
+                "left": 595,
+                "top": 464,
+                "rotation": -90
+            },
+            {
+                "tags": ["card.action"],
+                "left": 571,
+                "top": 3579,
+                "rotation": -90
+            },
+            {
+                "tags": ["ambition-marker"],
+                "left": 8295,
+                "top": 748,
+                "rotation": 0
+            },
+            {
+                "tags": ["ambition-marker"],
+                "left": 8655,
+                "top": 747,
+                "rotation": 0
+            },
+            {
+                "tags": ["ambition-marker"],
+                "left": 9012,
+                "top": 745,
+                "rotation": 0
+            },
+            {
+                "tags": ["chapter-marker"],
+                "left": 8164,
+                "top": 4547,
+                "rotation": 0
+            },
+            {
+                "tags": ["chapter-marker"],
+                "left": 8409,
+                "top": 4551,
+                "rotation": 0
+            },
+            {
+                "tags": ["chapter-marker"],
+                "left": 8652,
+                "top": 4548,
+                "rotation": 0
+            },
+            {
+                "tags": ["chapter-marker"],
+                "left": 8896,
+                "top": 4548,
+                "rotation": 0
+            },
+            {
+                "tags": ["chapter-marker"],
+                "left": 9135,
+                "top": 4548,
+                "rotation": 0
+            },
+            {
+                "tags": ["zero-marker"],
+                "left": 584,
+                "top": 4245,
+                "rotation": 0
+            },
+            { "tags": ["building"], "left": 4087, "top": 627, "rotation": 0 },
+            { "tags": ["building"], "left": 4395, "top": 485, "rotation": 0 },
+            { "tags": ["building"], "left": 5109, "top": 598, "rotation": 0 },
+            { "tags": ["building"], "left": 5940, "top": 421, "rotation": 0 },
+            { "tags": ["building"], "left": 6213, "top": 639, "rotation": 0 },
+            { "tags": ["building"], "left": 6650, "top": 1208, "rotation": 0 },
+            { "tags": ["building"], "left": 7426, "top": 1680, "rotation": 0 },
+            { "tags": ["building"], "left": 6936, "top": 2379, "rotation": 0 },
+            { "tags": ["building"], "left": 7212, "top": 2529, "rotation": 0 },
+            { "tags": ["building"], "left": 7121, "top": 3029, "rotation": 0 },
+            { "tags": ["building"], "left": 6209, "top": 3353, "rotation": 0 },
+            { "tags": ["building"], "left": 6431, "top": 4125, "rotation": 0 },
+            { "tags": ["building"], "left": 6169, "top": 4324, "rotation": 0 },
+            { "tags": ["building"], "left": 5368, "top": 4224, "rotation": 0 },
+            { "tags": ["building"], "left": 5095, "top": 4021, "rotation": 0 },
+            { "tags": ["building"], "left": 4370, "top": 4451, "rotation": 0 },
+            { "tags": ["building"], "left": 4108, "top": 4259, "rotation": 0 },
+            { "tags": ["building"], "left": 3347, "top": 4042, "rotation": 0 },
+            { "tags": ["building"], "left": 1955, "top": 3917, "rotation": 0 },
+            { "tags": ["building"], "left": 2434, "top": 2965, "rotation": 0 },
+            { "tags": ["building"], "left": 1868, "top": 2365, "rotation": 0 },
+            { "tags": ["building"], "left": 1607, "top": 2563, "rotation": 0 },
+            { "tags": ["building"], "left": 2428, "top": 1850, "rotation": 0 },
+            { "tags": ["building"], "left": 2075, "top": 1069, "rotation": 0 },
+            { "tags": ["building"], "left": 2335, "top": 865, "rotation": 0 },
+            { "tags": ["building"], "left": 3090, "top": 635, "rotation": 0 },
+            {
+                "tags": ["path-marker", "cluster-1"],
+                "left": 4803,
+                "top": 1419,
+                "rotation": 10
+            },
+            {
+                "tags": ["path-marker", "cluster-2"],
+                "left": 5667,
+                "top": 2104,
+                "rotation": 70
+            },
+            {
+                "tags": ["path-marker", "cluster-3"],
+                "left": 5516,
+                "top": 2960,
+                "rotation": 130
+            },
+            {
+                "tags": ["path-marker", "cluster-4"],
+                "left": 4434,
+                "top": 3336,
+                "rotation": -168
+            },
+            {
+                "tags": ["path-marker", "cluster-5"],
+                "left": 3624,
+                "top": 2672,
+                "rotation": -113.2
+            },
+            {
+                "tags": ["path-marker", "cluster-6"],
+                "left": 3723,
+                "top": 1856,
+                "rotation": -55
+            },
+            {
+                "tags": ["out-of-play-marker", "cluster-1"],
+                "left": 4353,
+                "top": 590,
+                "rotation": -60
+            },
+            {
+                "tags": ["out-of-play-marker", "cluster-1"],
+                "left": 5225,
+                "top": 670,
+                "rotation": -60
+            },
+            {
+                "tags": ["cluster-1", "out-of-play-marker"],
+                "left": 6016,
+                "top": 544,
+                "rotation": -60
+            },
+            {
+                "tags": ["out-of-play-marker", "cluster-2"],
+                "left": 6628,
+                "top": 1161,
+                "rotation": -60
+            },
+            {
+                "tags": ["cluster-2", "out-of-play-marker"],
+                "left": 7312,
+                "top": 1684,
+                "rotation": -60
+            },
+            {
+                "tags": ["cluster-2", "out-of-play-marker"],
+                "left": 6983,
+                "top": 2447,
+                "rotation": -60
+            },
+            {
+                "tags": ["out-of-play-marker", "cluster-3"],
+                "left": 7088,
+                "top": 3146,
+                "rotation": -60
+            },
+            {
+                "tags": ["cluster-3", "out-of-play-marker"],
+                "left": 6232,
+                "top": 3447,
+                "rotation": -60
+            },
+            {
+                "tags": ["out-of-play-marker", "cluster-3"],
+                "left": 6198,
+                "top": 4140,
+                "rotation": -60
+            },
+            {
+                "tags": ["out-of-play-marker", "cluster-4"],
+                "left": 5239,
+                "top": 4153,
+                "rotation": -60
+            },
+            {
+                "tags": ["cluster-4", "out-of-play-marker"],
+                "left": 4331,
+                "top": 4186,
+                "rotation": -60
+            },
+            {
+                "tags": ["out-of-play-marker", "cluster-4"],
+                "left": 3475,
+                "top": 4027,
+                "rotation": -60
+            },
+            {
+                "tags": ["out-of-play-marker", "cluster-5"],
+                "left": 2126,
+                "top": 3851,
+                "rotation": -60
+            },
+            {
+                "tags": ["cluster-5", "out-of-play-marker"],
+                "left": 2574,
+                "top": 2946,
+                "rotation": -60
+            },
+            {
+                "tags": ["cluster-5", "out-of-play-marker"],
+                "left": 1860,
+                "top": 2326,
+                "rotation": -60
+            },
+            {
+                "tags": ["out-of-play-marker", "cluster-6"],
+                "left": 2518,
+                "top": 1791,
+                "rotation": -60
+            },
+            {
+                "tags": ["cluster-6", "out-of-play-marker"],
+                "left": 2335,
+                "top": 1004,
+                "rotation": -60
+            },
+            {
+                "tags": ["cluster-6", "out-of-play-marker"],
+                "left": 3235,
+                "top": 713,
+                "rotation": -60
+            }
+        ]
+    }
 }
