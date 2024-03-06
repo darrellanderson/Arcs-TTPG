@@ -1,111 +1,37 @@
 {
-    "width": 27.62,
-    "height": 11.07,
-    "depth": 0.25,
-    "preshrink": { "w": -1, "h": -1 },
-    "input": "base/board/playerboard.jpg",
-    "inputMask": "base/board/playerboard-mask.png",
-    "output": "base/board/playerboard",
-    "metadata": "board:base/playerboard",
-    "snapPoints": [
-        {
-            "X": 3,
-            "Y": -4.837,
-            "Z": 0.125,
-            "Range": 2,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building", "resource"]
-        },
-        {
-            "X": 3,
-            "Y": -1.61,
-            "Z": 0.125,
-            "Range": 2,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building", "resource"]
-        },
-        {
-            "X": 3,
-            "Y": 3.2,
-            "Z": 0.125,
-            "Range": 2,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": 3,
-            "Y": 8.05,
-            "Z": 0.125,
-            "Range": 2,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": 3,
-            "Y": 11.25,
-            "Z": 0.125,
-            "Range": 2,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["building"]
-        },
-        {
-            "X": 3,
-            "Y": -11.2,
-            "Z": 0.125,
-            "Range": 2,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["resource"]
-        },
-        {
-            "X": 3,
-            "Y": -8.054,
-            "Z": 0.125,
-            "Range": 2,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["resource"]
-        },
-        {
-            "X": 3,
-            "Y": 1.6,
-            "Z": 0.125,
-            "Range": 2,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["resource"]
-        },
-        {
-            "X": 3,
-            "Y": 4.75,
-            "Z": 0.125,
-            "Range": 2,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": ["resource"]
-        }
-    ]
+    "rootDir": ".",
+    "assetFilename": "base/board/playerboard",
+
+    "templateMetadata": "board:base/playerboard",
+    "templateName": "Playerboard",
+
+    "topDownWorldSize": {
+        "width": 27.62,
+        "height": 11.07,
+        "depth": 0.25
+    },
+
+    "srcMask": {
+        "type": "ImageCell",
+        "width": 3094,
+        "height": 1240,
+        "imageFile": "prebuild/base/board/playerboard-mask.png"
+    },
+    "srcImage": {
+        "type": "ImageCell",
+        "width": 3094,
+        "height": 1240,
+        "imageFile": "prebuild/base/board/playerboard.jpg",
+        "snapPoints": [
+            { "left": 1005, "top": 290, "tags": ["building", "resource"] },
+            { "left": 1367, "top": 290, "tags": ["building", "resource"] },
+            { "left": 1905, "top": 290, "tags": ["building"] },
+            { "left": 2449, "top": 290, "tags": ["building"] },
+            { "left": 2807, "top": 290, "tags": ["building"] },
+            { "left": 292, "top": 290, "tags": ["resource"] },
+            { "left": 645, "top": 290, "tags": ["resource"] },
+            { "left": 1726, "top": 290, "tags": ["resource"] },
+            { "left": 2079, "top": 290, "tags": ["resource"] }
+        ]
+    }
 }

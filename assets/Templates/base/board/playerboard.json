@@ -1,11 +1,11 @@
 {
 	"Type": "Generic",
-	"GUID": "B13BCF14BEB512425D9E0548671C9076",
-	"Name": "playerboard",
+	"GUID": "D44015F42B49BD8AF665F3194A8ACD5E",
+	"Name": "Playerboard",
 	"Metadata": "board:base/playerboard",
 	"CollisionType": "Regular",
 	"Friction": 0.7,
-	"Restitution": 0.3,
+	"Restitution": 0.1,
 	"Density": 1,
 	"SurfaceType": "Cardboard",
 	"Roughness": 1,
@@ -29,7 +29,7 @@
 	"Blueprint": "",
 	"Models": [
 		{
-			"Model": "base/board/playerboard/playerboard-0x0.obj",
+			"Model": "uv-cube.obj",
 			"Offset":
 			{
 				"X": 0,
@@ -39,12 +39,42 @@
 			"Scale":
 			{
 				"X": 11.07,
-				"Y": 27.62,
+				"Y": 27.620000000000001,
 				"Z": 0.25
 			},
 			"Rotation":
 			{
+				"X": -0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Texture": "base/board/playerboard/playerboard-0x0.jpg",
+			"NormalMap": "",
+			"ExtraMap": "base/board/playerboard/playerboard-0x0-mask.png",
+			"ExtraMap2": "",
+			"IsTransparent": false,
+			"CastShadow": true,
+			"IsTwoSided": false,
+			"UseOverrides": true,
+			"SurfaceType": "Cardboard"
+		},
+		{
+			"Model": "uv-cube.obj",
+			"Offset":
+			{
 				"X": 0,
+				"Y": 0,
+				"Z": 0
+			},
+			"Scale":
+			{
+				"X": 11.07,
+				"Y": 27.620000000000001,
+				"Z": 0.25
+			},
+			"Rotation":
+			{
+				"X": -0,
 				"Y": 0,
 				"Z": 0
 			},
@@ -59,38 +89,15 @@
 			"SurfaceType": "Cardboard"
 		}
 	],
-	"Collision": [
-		{
-			"Model": "utility/unit-cube.obj",
-			"Offset":
-			{
-				"X": 0,
-				"Y": 0,
-				"Z": 0
-			},
-			"Scale":
-			{
-				"X": 11.07,
-				"Y": 27.62,
-				"Z": 0.25
-			},
-			"Rotation":
-			{
-				"X": 0,
-				"Y": 0,
-				"Z": 0
-			},
-			"Type": "Convex"
-		}
-	],
+	"Collision": [],
 	"Lights": [],
 	"SnapPointsGlobal": false,
 	"SnapPoints": [
 		{
-			"X": 3,
-			"Y": -4.837,
+			"X": 2.9460483870967744,
+			"Y": -4.8384098254686485,
 			"Z": 0.125,
-			"Range": 2,
+			"Range": 3,
 			"SnapRotation": 2,
 			"RotationOffset": 0,
 			"Shape": 0,
@@ -101,10 +108,10 @@
 			]
 		},
 		{
-			"X": 3,
-			"Y": -1.61,
+			"X": 2.9460483870967744,
+			"Y": -1.6068519715578535,
 			"Z": 0.125,
-			"Range": 2,
+			"Range": 3,
 			"SnapRotation": 2,
 			"RotationOffset": 0,
 			"Shape": 0,
@@ -115,99 +122,8 @@
 			]
 		},
 		{
-			"X": 3,
-			"Y": 3.2,
-			"Z": 0.125,
-			"Range": 2,
-			"SnapRotation": 2,
-			"RotationOffset": 0,
-			"Shape": 0,
-			"FlipValidity": 0,
-			"Tags": [
-				"building"
-			]
-		},
-		{
-			"X": 3,
-			"Y": 8.05,
-			"Z": 0.125,
-			"Range": 2,
-			"SnapRotation": 2,
-			"RotationOffset": 0,
-			"Shape": 0,
-			"FlipValidity": 0,
-			"Tags": [
-				"building"
-			]
-		},
-		{
-			"X": 3,
-			"Y": 11.25,
-			"Z": 0.125,
-			"Range": 2,
-			"SnapRotation": 2,
-			"RotationOffset": 0,
-			"Shape": 0,
-			"FlipValidity": 0,
-			"Tags": [
-				"building"
-			]
-		},
-		{
-			"X": 3,
-			"Y": -11.2,
-			"Z": 0.125,
-			"Range": 2,
-			"SnapRotation": 2,
-			"RotationOffset": 0,
-			"Shape": 0,
-			"FlipValidity": 0,
-			"Tags": [
-				"resource"
-			]
-		},
-		{
-			"X": 3,
-			"Y": -8.054,
-			"Z": 0.125,
-			"Range": 2,
-			"SnapRotation": 2,
-			"RotationOffset": 0,
-			"Shape": 0,
-			"FlipValidity": 0,
-			"Tags": [
-				"resource"
-			]
-		},
-		{
-			"X": 3,
-			"Y": 1.6,
-			"Z": 0.125,
-			"Range": 2,
-			"SnapRotation": 2,
-			"RotationOffset": 0,
-			"Shape": 0,
-			"FlipValidity": 0,
-			"Tags": [
-				"resource"
-			]
-		},
-		{
-			"X": 3,
-			"Y": 4.75,
-			"Z": 0.125,
-			"Range": 2,
-			"SnapRotation": 2,
-			"RotationOffset": 0,
-			"Shape": 0,
-			"FlipValidity": 0,
-			"Tags": [
-				"resource"
-			]
-		},
-		{
-			"X": -2,
-			"Y": 9.6,
+			"X": 2.9460483870967744,
+			"Y": 3.1958500323206227,
 			"Z": 0.125,
 			"Range": 3,
 			"SnapRotation": 2,
@@ -215,12 +131,12 @@
 			"Shape": 0,
 			"FlipValidity": 0,
 			"Tags": [
-				"captives-center"
+				"building"
 			]
 		},
 		{
-			"X": -2,
-			"Y": 2.5,
+			"X": 2.9460483870967744,
+			"Y": 8.0521137685843573,
 			"Z": 0.125,
 			"Range": 3,
 			"SnapRotation": 2,
@@ -228,7 +144,72 @@
 			"Shape": 0,
 			"FlipValidity": 0,
 			"Tags": [
-				"trophies-center"
+				"building"
+			]
+		},
+		{
+			"X": 2.9460483870967744,
+			"Y": 11.247963800904978,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 2,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"building"
+			]
+		},
+		{
+			"X": 2.9460483870967744,
+			"Y": -11.203329023917259,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 2,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"resource"
+			]
+		},
+		{
+			"X": 2.9460483870967744,
+			"Y": -8.0521137685843556,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 2,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"resource"
+			]
+		},
+		{
+			"X": 2.9460483870967744,
+			"Y": 1.5979250161603105,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 2,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"resource"
+			]
+		},
+		{
+			"X": 2.9460483870967744,
+			"Y": 4.749140271493216,
+			"Z": 0.125,
+			"Range": 3,
+			"SnapRotation": 2,
+			"RotationOffset": 0,
+			"Shape": 0,
+			"FlipValidity": 0,
+			"Tags": [
+				"resource"
 			]
 		}
 	],
