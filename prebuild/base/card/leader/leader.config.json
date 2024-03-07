@@ -1,6 +1,13 @@
 {
-    "inputDir": "base/card/leader/",
-    "inputCards": [
+    "rootDir": ".",
+    "assetFilename": "base/card/leader",
+    "templateName": "Leader",
+    "cardSizePixel": { "width": 292, "height": 500 },
+    "cardSizeWorld": { "width": 6.44, "height": 11 },
+    "applyAllInputDir": "prebuild/base/card/leader",
+    "applyAllTags": ["card.leader"],
+    "back": "leader.back.jpg",
+    "cards": [
         {
             "face": "01-elder.jpg",
             "name": "Elder",
@@ -41,12 +48,5 @@
             "name": "Demagogue",
             "metadata": "card.leader:base/demagogue"
         }
-    ],
-    "sharedBack": "base/card/leader/leader.back.jpg",
-    "cardWidth": 6.44,
-    "cardHeight": 11,
-    "preshrink": 500,
-    "output": "base/card/leader",
-    "name": "Leader",
-    "cardTags": ["card.leader"]
+    ]
 }

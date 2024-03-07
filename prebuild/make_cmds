@@ -5,6 +5,7 @@ yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board
 
 yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-cardsheets/create-cardsheet-run.ts -i prebuild/base/card/action/action.config.json
 yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-cardsheets/create-cardsheet-run.ts -i prebuild/base/card/court/court.config.json
+yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-cardsheets/create-cardsheet-run.ts -i prebuild/base/card/leader/leader.config.json
 
 ../ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/base/card/leader/leader.config.json
 ../ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/base/card/lore/lore.config.json
