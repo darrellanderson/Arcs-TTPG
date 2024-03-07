@@ -1,6 +1,13 @@
 {
-    "inputDir": "base/card/action",
-    "inputCards": [
+    "rootDir": ".",
+    "assetFilename": "base/card/action",
+    "templateName": "Action",
+    "cardSizePixel": { "width": 358, "height": 500 },
+    "cardSizeWorld": { "width": 6.44, "height": 9 },
+    "applyAllInputDir": "prebuild/base/card/action",
+    "applyAllTags": ["card.action"],
+    "back": "action.back.jpg",
+    "cards": [
         {
             "face": "administration/1.jpg",
             "name": "1 (Administration)",
@@ -141,12 +148,5 @@
             "name": "7 (Mobilization)",
             "metadata": "card.action.mobilization:base/7"
         }
-    ],
-    "sharedBack": "base/card/action/action.back.jpg",
-    "cardWidth": 6.44,
-    "cardHeight": 9,
-    "preshrink": 500,
-    "output": "base/card/action",
-    "name": "Action",
-    "cardTags": ["card.action"]
+    ]
 }

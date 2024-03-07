@@ -6,7 +6,9 @@
 #../ttpg-darrell/tooling/generators/create-board.ts -f prebuild/base/board/playerboard.config.json
 ../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board-run.ts -i prebuild/base/board/playerboard.config.json 
 
-../ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/base/card/action/action.config.json
+#../ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/base/card/action/action.config.json
+yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-cardsheets/create-cardsheet-run.ts -i prebuild/base/card/action/action.config.json
+
 ../ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/base/card/court/court.config.json
 ../ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/base/card/leader/leader.config.json
 ../ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/base/card/lore/lore.config.json
@@ -31,4 +33,4 @@
 ../ttpg-darrell/tooling/generators/create-dice.ts -f prebuild/base/dice/skirmish/skirmish.config.json
 
 #../ttpg-darrell/tooling/extract-nsid-to-template-id.ts -i assets/Templates -o ./src/global/inject-spawn-nsids/auto-nsid-to-template-id.json
-../ttpg-darrell/src/lib-ext/nsid/extract-nsid-to-template-id.ts -i assets/Templates -o src/global/inject-spawn-nsids/auto-nsid-to-template-id.json
+yarn ts-node ../ttpg-darrell/src/lib-ext/nsid/extract-nsid-to-template-id.ts -i assets/Templates -o src/global/inject-spawn-nsids/auto-nsid-to-template-id.json

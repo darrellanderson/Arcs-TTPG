@@ -1,7 +1,7 @@
 {
     "board:base/map": "E1417472B157E8CA3B3C56BB57848E1D",
-    "board:base/playerboard": "B13BCF14BEB512425D9E0548671C9076",
-    "card.action:base/*": "BFFD6C5F77CDF1938D9999D786F17A0D",
+    "board:base/playerboard": "D44015F42B49BD8AF665F3194A8ACD5E",
+    "card.action:base/*": "6B96424D2BE47C2266F6C16D9804107C",
     "card.court:base/*": "BFB10116FFC833E5D6FEFC24B37DE817",
     "card.leader:base/*": "5BD791889C0D0A13F44937FC79DA4609",
     "card.leader:leaders-and-lore/*": "79520F82C4D0A417ADDA5F1A2BAFA80A",
