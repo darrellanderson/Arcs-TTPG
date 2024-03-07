@@ -1,0 +1,251 @@
+{
+    "Type": "Card",
+    "GUID": "A4D999D58591B065E7BE95126741DDCE",
+    "Name": "Court",
+    "Metadata": "",
+    "CollisionType": "Regular",
+    "Friction": 0.7,
+    "Restitution": 0,
+    "Density": 0.5,
+    "SurfaceType": "Cardboard",
+    "Roughness": 1,
+    "Metallic": 0,
+    "PrimaryColor": {
+        "R": 255,
+        "G": 255,
+        "B": 255
+    },
+    "SecondaryColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0
+    },
+    "Flippable": true,
+    "AutoStraighten": false,
+    "ShouldSnap": true,
+    "ScriptName": "",
+    "Blueprint": "",
+    "Models": [],
+    "Collision": [],
+    "SnapPointsGlobal": false,
+    "SnapPoints": [],
+    "ZoomViewDirection": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+    },
+    "FrontTexture": "base/card/court/court.face.0.jpg",
+    "BackTexture": "base/card/court/court.back.jpg",
+    "HiddenTexture": "",
+    "BackIndex": -2,
+    "HiddenIndex": -1,
+    "NumHorizontal": 10,
+    "NumVertical": 4,
+    "Width": 6.44,
+    "Height": 0,
+    "Thickness": 0.05,
+    "HiddenInHand": true,
+    "UsedWithCardHolders": true,
+    "CanStack": true,
+    "UsePrimaryColorForSide": false,
+    "FrontTextureOverrideExposed": false,
+    "AllowFlippedInStack": false,
+    "MirrorBack": true,
+    "Model": "Rounded",
+    "Indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+    ],
+    "CardNames": {
+        "0": "Loyal Engineers",
+        "1": "Mining Interest",
+        "2": "Material Cartel",
+        "3": "Admin Union",
+        "4": "Construction Union",
+        "5": "Fuel Cartel",
+        "6": "Loyal Pilots",
+        "7": "Gatekeepers",
+        "8": "Shipping Interest",
+        "9": "Spacing Union",
+        "10": "Arms Union",
+        "11": "Prison Wardens",
+        "12": "Skirmishers",
+        "13": "Court Enforcers",
+        "14": "Loyal Marines",
+        "15": "Lattice Spies",
+        "16": "Farseers",
+        "17": "Secret Order",
+        "18": "Loyal Empaths",
+        "19": "Silver Tongues",
+        "20": "Loyal Keepers",
+        "21": "Sworn Guardians",
+        "22": "Elder Broker",
+        "23": "Relic Fence",
+        "24": "Galactic Bards",
+        "25": "Mass Uprising",
+        "26": "Populist Demands",
+        "27": "Outrage Spreads",
+        "28": "Song of Freedom",
+        "29": "Guild Struggle",
+        "30": "Call to Action"
+    },
+    "CardMetadata": {
+        "0": "card.court.guild:base/loyal-engineers",
+        "1": "card.court.guild:base/mining-interest",
+        "2": "card.court.guild:base/material-cartel",
+        "3": "card.court.guild:base/admin-union",
+        "4": "card.court.guild:base/construction-union",
+        "5": "card.court.guild:base/fuel-cartel",
+        "6": "card.court.guild:base/loyal-pilots",
+        "7": "card.court.guild:base/gatekeepers",
+        "8": "card.court.guild:base/shipping-interest",
+        "9": "card.court.guild:base/spacing-union",
+        "10": "card.court.guild:base/arms-union",
+        "11": "card.court.guild:base/prison-wardens",
+        "12": "card.court.guild:base/skirmishers",
+        "13": "card.court.guild:base/court-enforcers",
+        "14": "card.court.guild:base/loyal-marines",
+        "15": "card.court.guild:base/lattice-spies",
+        "16": "card.court.guild:base/farseers",
+        "17": "card.court.guild:base/18-secret-order",
+        "18": "card.court.guild:base/loyal-empaths",
+        "19": "card.court.guild:base/silver-tongues",
+        "20": "card.court.guild:base/loyal-keepers",
+        "21": "card.court.guild:base/sworn-guardians",
+        "22": "card.court.guild:base/elder-broker",
+        "23": "card.court.guild:base/relic-fence",
+        "24": "card.court.guild:base/galactic-bards",
+        "25": "card.court.vox:base/mass-uprising",
+        "26": "card.court.vox:base/populist-demands",
+        "27": "card.court.vox:base/outrage-spreads",
+        "28": "card.court.vox:base/song-of-freedom",
+        "29": "card.court.vox:base/guild-struggle",
+        "30": "card.court.vox:base/call-to-action"
+    },
+    "CardTags": {
+        "0": [
+            "card.court"
+        ],
+        "1": [
+            "card.court"
+        ],
+        "2": [
+            "card.court"
+        ],
+        "3": [
+            "card.court"
+        ],
+        "4": [
+            "card.court"
+        ],
+        "5": [
+            "card.court"
+        ],
+        "6": [
+            "card.court"
+        ],
+        "7": [
+            "card.court"
+        ],
+        "8": [
+            "card.court"
+        ],
+        "9": [
+            "card.court"
+        ],
+        "10": [
+            "card.court"
+        ],
+        "11": [
+            "card.court"
+        ],
+        "12": [
+            "card.court"
+        ],
+        "13": [
+            "card.court"
+        ],
+        "14": [
+            "card.court"
+        ],
+        "15": [
+            "card.court"
+        ],
+        "16": [
+            "card.court"
+        ],
+        "17": [
+            "card.court"
+        ],
+        "18": [
+            "card.court"
+        ],
+        "19": [
+            "card.court"
+        ],
+        "20": [
+            "card.court"
+        ],
+        "21": [
+            "card.court"
+        ],
+        "22": [
+            "card.court"
+        ],
+        "23": [
+            "card.court"
+        ],
+        "24": [
+            "card.court"
+        ],
+        "25": [
+            "card.court"
+        ],
+        "26": [
+            "card.court"
+        ],
+        "27": [
+            "card.court"
+        ],
+        "28": [
+            "card.court"
+        ],
+        "29": [
+            "card.court"
+        ],
+        "30": [
+            "card.court"
+        ]
+    },
+    "GroundAccessibility": "ZoomAndContext",
+    "height": 9
+}

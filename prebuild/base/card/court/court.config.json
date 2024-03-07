@@ -1,6 +1,13 @@
 {
-    "inputDir": "base/card/court/",
-    "inputCards": [
+    "rootDir": ".",
+    "assetFilename": "base/card/court",
+    "templateName": "Court",
+    "cardSizePixel": { "width": 358, "height": 500 },
+    "cardSizeWorld": { "width": 6.44, "height": 9 },
+    "applyAllInputDir": "prebuild/base/card/court",
+    "applyAllTags": ["card.court"],
+    "back": "court.back.jpg",
+    "cards": [
         {
             "face": "guild/01-loyal-engineers.jpg",
             "name": "Loyal Engineers",
@@ -156,12 +163,5 @@
             "name": "Call to Action",
             "metadata": "card.court.vox:base/call-to-action"
         }
-    ],
-    "sharedBack": "base/card/court/court.back.jpg",
-    "cardWidth": 6.44,
-    "cardHeight": 9,
-    "preshrink": 500,
-    "output": "base/card/court",
-    "name": "Court",
-    "cardTags": ["card.court"]
+    ]
 }

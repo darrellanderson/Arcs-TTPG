@@ -1,15 +1,11 @@
 #!/bin/sh
 
-#../ttpg-darrell/tooling/generators/create-board.ts -f prebuild/base/board/map-red-dark.config.json
-../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board-run.ts -i prebuild/base/board/map-red-dark.config.json
+yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board-run.ts -i prebuild/base/board/map-red-dark.config.json
+yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board-run.ts -i prebuild/base/board/playerboard.config.json 
 
-#../ttpg-darrell/tooling/generators/create-board.ts -f prebuild/base/board/playerboard.config.json
-../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board-run.ts -i prebuild/base/board/playerboard.config.json 
-
-#../ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/base/card/action/action.config.json
 yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-cardsheets/create-cardsheet-run.ts -i prebuild/base/card/action/action.config.json
+yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-cardsheets/create-cardsheet-run.ts -i prebuild/base/card/court/court.config.json
 
-../ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/base/card/court/court.config.json
 ../ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/base/card/leader/leader.config.json
 ../ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/base/card/lore/lore.config.json
 ../ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/base/card/setup/2p/2p.config.json
