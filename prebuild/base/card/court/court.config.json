@@ -2,7 +2,7 @@
     "rootDir": ".",
     "assetFilename": "base/card/court",
     "templateName": "Court",
-    "cardSizePixel": { "width": 358, "height": 500 },
+    "cardSizePixel": { "width": 500, "height": 698 },
     "cardSizeWorld": { "width": 6.44, "height": 9 },
     "applyAllInputDir": "prebuild/base/card/court",
     "applyAllTags": ["card.court"],

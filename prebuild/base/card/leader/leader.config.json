@@ -2,7 +2,7 @@
     "rootDir": ".",
     "assetFilename": "base/card/leader",
     "templateName": "Leader",
-    "cardSizePixel": { "width": 292, "height": 500 },
+    "cardSizePixel": { "width": 500, "height": 856 },
     "cardSizeWorld": { "width": 6.44, "height": 11 },
     "applyAllInputDir": "prebuild/base/card/leader",
     "applyAllTags": ["card.leader"],
