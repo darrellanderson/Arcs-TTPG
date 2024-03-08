@@ -6,7 +6,7 @@
     "cardSizeWorld": { "width": 6.44, "height": 11 },
     "applyAllInputDir": "prebuild/leaders-and-lore/card/leader",
     "applyAllTags": ["card.leader"],
-    "back": "./prebuild/base/card/leader/back.jpg",
+    "back": "./prebuild/base/card/leader/leader.back.jpg",
     "cards": [
         {
             "face": "01-archivist.jpg",
