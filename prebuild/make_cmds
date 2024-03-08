@@ -11,6 +11,10 @@ yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-cardsheets/create-
 yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-cardsheets/create-cardsheet-run.ts -i prebuild/base/card/setup/3p/3p.config.json
 yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-cardsheets/create-cardsheet-run.ts -i prebuild/base/card/setup/4p/4p.config.json
 
+yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-cardsheets/create-cardsheet-run.ts -i  prebuild/leaders-and-lore/card/leader/leader.config.json
+yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-cardsheets/create-cardsheet-run.ts -i  prebuild/leaders-and-lore/card/lore/lore.config.json
+
+
 ../ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/leaders-and-lore/card/leader/leader.config.json
 ../ttpg-darrell/tooling/generators/create-deck.ts -f prebuild/leaders-and-lore/card/lore/lore.config.json
 
