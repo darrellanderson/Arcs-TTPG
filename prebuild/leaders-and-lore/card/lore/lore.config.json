@@ -1,6 +1,13 @@
 {
-    "inputDir": "leaders-and-lore/card/lore/",
-    "inputCards": [
+    "rootDir": ".",
+    "assetFilename": "prebuild/leaders-and-lore/card/lore",
+    "templateName": "Lore",
+    "cardSizePixel": { "width": 500, "height": 698 },
+    "cardSizeWorld": { "width": 6.44, "height": 9 },
+    "applyAllInputDir": "prebuild/leaders-and-lore/card/lore",
+    "applyAllTags": ["card.lore"],
+    "back": "./prebuild/base/card/lore/lore.back.jpg",
+    "cards": [
         {
             "face": "15-predictive-sensors.jpg",
             "name": "Predictive Sensors",
@@ -71,12 +78,5 @@
             "name": "Tycoon's Charm",
             "metadata": "card.lore:leaders-and-lore/tycoons-charm"
         }
-    ],
-    "sharedBack": "base/card/lore/lore.back.jpg",
-    "cardWidth": 6.44,
-    "cardHeight": 9,
-    "preshrink": 500,
-    "output": "leaders-and-lore/card/lore",
-    "name": "Lore",
-    "cardTags": ["card.lore"]
+    ]
 }

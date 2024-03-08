@@ -1,6 +1,13 @@
 {
-    "inputDir": "leaders-and-lore/card/leader/",
-    "inputCards": [
+    "rootDir": ".",
+    "assetFilename": "leaders-and-lore/card/leader",
+    "templateName": "Leader",
+    "cardSizePixel": { "width": 500, "height": 856 },
+    "cardSizeWorld": { "width": 6.44, "height": 11 },
+    "applyAllInputDir": "prebuild/leaders-and-lore/card/leader",
+    "applyAllTags": ["card.leader"],
+    "back": "./prebuild/base/card/leader/back.jpg",
+    "cards": [
         {
             "face": "01-archivist.jpg",
             "name": "Archivist",
@@ -41,12 +48,5 @@
             "name": "Quartermaster",
             "metadata": "card.leader:leaders-and-lore/quartermaster"
         }
-    ],
-    "sharedBack": "base/card/leader/leader.back.jpg",
-    "cardWidth": 6.44,
-    "cardHeight": 11,
-    "preshrink": 500,
-    "output": "leaders-and-lore/card/leader",
-    "name": "Leader",
-    "cardTags": ["card.leader"]
+    ]
 }
