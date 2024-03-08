@@ -1,13 +1,6 @@
 {
-    "rootDir": ".",
-    "assetFilename": "base/card/setup/setup-3p",
-    "templateName": "Setup (3p)",
-    "cardSizePixel": { "width": 500, "height": 698 },
-    "cardSizeWorld": { "width": 6.44, "height": 9 },
-    "applyAllInputDir": "prebuild/base/card/setup/3p",
-    "applyAllTags": ["card.setup"],
-    "back": "3p.back.jpg",
-    "cards": [
+    "inputDir": "base/card/setup/3p",
+    "inputCards": [
         {
             "face": "3p-core-conflict.jpg",
             "name": "Core Conflict (3p)",
@@ -28,5 +21,12 @@
             "name": "Mix Up (3p)",
             "metadata": "card.setup.3p:base/mix-up"
         }
-    ]
+    ],
+    "sharedBack": "base/card/setup/3p/3p.back.jpg",
+    "cardWidth": 9,
+    "cardHeight": 6.44,
+    "preshrink": 500,
+    "output": "base/card/setup/setup-3p",
+    "name": "Setup (3P)",
+    "cardTags": ["card.setup"]
 }

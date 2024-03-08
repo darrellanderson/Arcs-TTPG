@@ -1,13 +1,6 @@
 {
-    "rootDir": ".",
-    "assetFilename": "base/card/setup/setup-2p",
-    "templateName": "Setup (2p)",
-    "cardSizePixel": { "width": 500, "height": 698 },
-    "cardSizeWorld": { "width": 6.44, "height": 9 },
-    "applyAllInputDir": "prebuild/base/card/setup/2p",
-    "applyAllTags": ["card.setup"],
-    "back": "2p.back.jpg",
-    "cards": [
+    "inputDir": "base/card/setup/2p",
+    "inputCards": [
         {
             "face": "2p-frontiers.jpg",
             "name": "Frontiers (2p)",
@@ -28,5 +21,12 @@
             "name": "Mix Up 2 (2p)",
             "metadata": "card.setup.2p:base/mix-up-2"
         }
-    ]
+    ],
+    "sharedBack": "base/card/setup/2p/2p.back.jpg",
+    "cardWidth": 9,
+    "cardHeight": 6.44,
+    "preshrink": 500,
+    "output": "base/card/setup/setup-2p",
+    "name": "Setup (2P)",
+    "cardTags": ["card.setup"]
 }

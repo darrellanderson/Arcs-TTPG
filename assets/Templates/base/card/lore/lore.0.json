@@ -1,0 +1,149 @@
+{
+    "Type": "Card",
+    "GUID": "7881FF45A1DF933D0074BB8634C64FE2",
+    "Name": "Lore",
+    "Metadata": "",
+    "CollisionType": "Regular",
+    "Friction": 0.7,
+    "Restitution": 0,
+    "Density": 0.5,
+    "SurfaceType": "Cardboard",
+    "Roughness": 1,
+    "Metallic": 0,
+    "PrimaryColor": {
+        "R": 255,
+        "G": 255,
+        "B": 255
+    },
+    "SecondaryColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0
+    },
+    "Flippable": true,
+    "AutoStraighten": false,
+    "ShouldSnap": true,
+    "ScriptName": "",
+    "Blueprint": "",
+    "Models": [],
+    "Collision": [],
+    "SnapPointsGlobal": false,
+    "SnapPoints": [],
+    "ZoomViewDirection": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+    },
+    "FrontTexture": "base/card/lore/lore.face.0.jpg",
+    "BackTexture": "base/card/lore/lore.back.jpg",
+    "HiddenTexture": "",
+    "BackIndex": -2,
+    "HiddenIndex": -1,
+    "NumHorizontal": 4,
+    "NumVertical": 4,
+    "Width": 6.44,
+    "Height": 0,
+    "Thickness": 0.05,
+    "HiddenInHand": true,
+    "UsedWithCardHolders": true,
+    "CanStack": true,
+    "UsePrimaryColorForSide": false,
+    "FrontTextureOverrideExposed": false,
+    "AllowFlippedInStack": false,
+    "MirrorBack": true,
+    "Model": "Rounded",
+    "Indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+    ],
+    "CardNames": {
+        "0": "Tool-Priests",
+        "1": "Galactic Rifles",
+        "2": "Sprinter Drives",
+        "3": "Mirror Plating",
+        "4": "Hidden Harbors",
+        "5": "Signal Breaker",
+        "6": "Repair Drones",
+        "7": "Gate Ports",
+        "8": "Cloud Cities",
+        "9": "Living Structures",
+        "10": "Gate Stations",
+        "11": "Railgun Arrays",
+        "12": "Ancient Holdings",
+        "13": "Seeker Torpedoes"
+    },
+    "CardMetadata": {
+        "0": "card.lore:base/tool-priests",
+        "1": "card.lore:base/galactic-rifles",
+        "2": "card.lore:base/sprinter-drives",
+        "3": "card.lore:base/mirror-plating",
+        "4": "card.lore:base/hidden-harbors",
+        "5": "card.lore:base/signal-breaker",
+        "6": "card.lore:base/repair-drones",
+        "7": "card.lore:base/gate-ports",
+        "8": "card.lore:base/cloud-cities",
+        "9": "card.lore:base/living-structures",
+        "10": "card.lore:base/gate-stations",
+        "11": "card.lore:base/railgun-arrays",
+        "12": "card.lore:base/ancient-holdings",
+        "13": "card.lore:base/seeker-torpedoes"
+    },
+    "CardTags": {
+        "0": [
+            "card.lore"
+        ],
+        "1": [
+            "card.lore"
+        ],
+        "2": [
+            "card.lore"
+        ],
+        "3": [
+            "card.lore"
+        ],
+        "4": [
+            "card.lore"
+        ],
+        "5": [
+            "card.lore"
+        ],
+        "6": [
+            "card.lore"
+        ],
+        "7": [
+            "card.lore"
+        ],
+        "8": [
+            "card.lore"
+        ],
+        "9": [
+            "card.lore"
+        ],
+        "10": [
+            "card.lore"
+        ],
+        "11": [
+            "card.lore"
+        ],
+        "12": [
+            "card.lore"
+        ],
+        "13": [
+            "card.lore"
+        ]
+    },
+    "GroundAccessibility": "ZoomAndContext",
+    "height": 9
+}

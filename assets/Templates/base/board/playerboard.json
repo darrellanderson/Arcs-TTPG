@@ -1,224 +1,214 @@
 {
-	"Type": "Generic",
-	"GUID": "D44015F42B49BD8AF665F3194A8ACD5E",
-	"Name": "Playerboard",
-	"Metadata": "board:base/playerboard",
-	"CollisionType": "Regular",
-	"Friction": 0.7,
-	"Restitution": 0.1,
-	"Density": 1,
-	"SurfaceType": "Cardboard",
-	"Roughness": 1,
-	"Metallic": 0,
-	"PrimaryColor":
-	{
-		"R": 255,
-		"G": 255,
-		"B": 255
-	},
-	"SecondaryColor":
-	{
-		"R": 0,
-		"G": 0,
-		"B": 0
-	},
-	"Flippable": false,
-	"AutoStraighten": false,
-	"ShouldSnap": false,
-	"ScriptName": "",
-	"Blueprint": "",
-	"Models": [
-		{
-			"Model": "uv-cube.obj",
-			"Offset":
-			{
-				"X": 0,
-				"Y": 0,
-				"Z": 0
-			},
-			"Scale":
-			{
-				"X": 11.07,
-				"Y": 27.620000000000001,
-				"Z": 0.25
-			},
-			"Rotation":
-			{
-				"X": -0,
-				"Y": 0,
-				"Z": 0
-			},
-			"Texture": "base/board/playerboard/playerboard-0x0.jpg",
-			"NormalMap": "",
-			"ExtraMap": "base/board/playerboard/playerboard-0x0-mask.png",
-			"ExtraMap2": "",
-			"IsTransparent": false,
-			"CastShadow": true,
-			"IsTwoSided": false,
-			"UseOverrides": true,
-			"SurfaceType": "Cardboard"
-		},
-		{
-			"Model": "uv-cube.obj",
-			"Offset":
-			{
-				"X": 0,
-				"Y": 0,
-				"Z": 0
-			},
-			"Scale":
-			{
-				"X": 11.07,
-				"Y": 27.620000000000001,
-				"Z": 0.25
-			},
-			"Rotation":
-			{
-				"X": -0,
-				"Y": 0,
-				"Z": 0
-			},
-			"Texture": "base/board/playerboard/playerboard-0x0.jpg",
-			"NormalMap": "",
-			"ExtraMap": "base/board/playerboard/playerboard-0x0-mask.png",
-			"ExtraMap2": "",
-			"IsTransparent": false,
-			"CastShadow": true,
-			"IsTwoSided": false,
-			"UseOverrides": true,
-			"SurfaceType": "Cardboard"
-		}
-	],
-	"Collision": [],
-	"Lights": [],
-	"SnapPointsGlobal": false,
-	"SnapPoints": [
-		{
-			"X": 2.9460483870967744,
-			"Y": -4.8384098254686485,
-			"Z": 0.125,
-			"Range": 3,
-			"SnapRotation": 2,
-			"RotationOffset": 0,
-			"Shape": 0,
-			"FlipValidity": 0,
-			"Tags": [
-				"building",
-				"resource"
-			]
-		},
-		{
-			"X": 2.9460483870967744,
-			"Y": -1.6068519715578535,
-			"Z": 0.125,
-			"Range": 3,
-			"SnapRotation": 2,
-			"RotationOffset": 0,
-			"Shape": 0,
-			"FlipValidity": 0,
-			"Tags": [
-				"building",
-				"resource"
-			]
-		},
-		{
-			"X": 2.9460483870967744,
-			"Y": 3.1958500323206227,
-			"Z": 0.125,
-			"Range": 3,
-			"SnapRotation": 2,
-			"RotationOffset": 0,
-			"Shape": 0,
-			"FlipValidity": 0,
-			"Tags": [
-				"building"
-			]
-		},
-		{
-			"X": 2.9460483870967744,
-			"Y": 8.0521137685843573,
-			"Z": 0.125,
-			"Range": 3,
-			"SnapRotation": 2,
-			"RotationOffset": 0,
-			"Shape": 0,
-			"FlipValidity": 0,
-			"Tags": [
-				"building"
-			]
-		},
-		{
-			"X": 2.9460483870967744,
-			"Y": 11.247963800904978,
-			"Z": 0.125,
-			"Range": 3,
-			"SnapRotation": 2,
-			"RotationOffset": 0,
-			"Shape": 0,
-			"FlipValidity": 0,
-			"Tags": [
-				"building"
-			]
-		},
-		{
-			"X": 2.9460483870967744,
-			"Y": -11.203329023917259,
-			"Z": 0.125,
-			"Range": 3,
-			"SnapRotation": 2,
-			"RotationOffset": 0,
-			"Shape": 0,
-			"FlipValidity": 0,
-			"Tags": [
-				"resource"
-			]
-		},
-		{
-			"X": 2.9460483870967744,
-			"Y": -8.0521137685843556,
-			"Z": 0.125,
-			"Range": 3,
-			"SnapRotation": 2,
-			"RotationOffset": 0,
-			"Shape": 0,
-			"FlipValidity": 0,
-			"Tags": [
-				"resource"
-			]
-		},
-		{
-			"X": 2.9460483870967744,
-			"Y": 1.5979250161603105,
-			"Z": 0.125,
-			"Range": 3,
-			"SnapRotation": 2,
-			"RotationOffset": 0,
-			"Shape": 0,
-			"FlipValidity": 0,
-			"Tags": [
-				"resource"
-			]
-		},
-		{
-			"X": 2.9460483870967744,
-			"Y": 4.749140271493216,
-			"Z": 0.125,
-			"Range": 3,
-			"SnapRotation": 2,
-			"RotationOffset": 0,
-			"Shape": 0,
-			"FlipValidity": 0,
-			"Tags": [
-				"resource"
-			]
-		}
-	],
-	"ZoomViewDirection":
-	{
-		"X": 0,
-		"Y": 0,
-		"Z": 1
-	},
-	"GroundAccessibility": "Zoom",
-	"Tags": []
+    "Type": "Generic",
+    "GUID": "D44015F42B49BD8AF665F3194A8ACD5E",
+    "Name": "Playerboard",
+    "Metadata": "board:base/playerboard",
+    "CollisionType": "Regular",
+    "Friction": 0.7,
+    "Restitution": 0.1,
+    "Density": 1,
+    "SurfaceType": "Cardboard",
+    "Roughness": 1,
+    "Metallic": 0,
+    "PrimaryColor": {
+        "R": 255,
+        "G": 255,
+        "B": 255
+    },
+    "SecondaryColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0
+    },
+    "Flippable": false,
+    "AutoStraighten": false,
+    "ShouldSnap": false,
+    "ScriptName": "",
+    "Blueprint": "",
+    "Models": [
+        {
+            "Model": "uv-cube.obj",
+            "Offset": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+            },
+            "Scale": {
+                "X": 11.07,
+                "Y": 27.62,
+                "Z": 0.25
+            },
+            "Rotation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+            },
+            "Texture": "base/board/playerboard/playerboard-0x0.jpg",
+            "NormalMap": "",
+            "ExtraMap": "base/board/playerboard/playerboard-0x0-mask.png",
+            "ExtraMap2": "",
+            "IsTransparent": false,
+            "CastShadow": true,
+            "IsTwoSided": false,
+            "UseOverrides": true,
+            "SurfaceType": "Cardboard"
+        },
+        {
+            "Model": "uv-cube.obj",
+            "Offset": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+            },
+            "Scale": {
+                "X": 11.07,
+                "Y": 27.62,
+                "Z": 0.25
+            },
+            "Rotation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+            },
+            "Texture": "base/board/playerboard/playerboard-0x0.jpg",
+            "NormalMap": "",
+            "ExtraMap": "base/board/playerboard/playerboard-0x0-mask.png",
+            "ExtraMap2": "",
+            "IsTransparent": false,
+            "CastShadow": true,
+            "IsTwoSided": false,
+            "UseOverrides": true,
+            "SurfaceType": "Cardboard"
+        }
+    ],
+    "Lights": [],
+    "SnapPointsGlobal": false,
+    "SnapPoints": [
+        {
+            "X": 2.9460483870967744,
+            "Y": -4.8384098254686485,
+            "Z": 0.125,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "building",
+                "resource"
+            ]
+        },
+        {
+            "X": 2.9460483870967744,
+            "Y": -1.6068519715578535,
+            "Z": 0.125,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "building",
+                "resource"
+            ]
+        },
+        {
+            "X": 2.9460483870967744,
+            "Y": 3.1958500323206227,
+            "Z": 0.125,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "building"
+            ]
+        },
+        {
+            "X": 2.9460483870967744,
+            "Y": 8.052113768584357,
+            "Z": 0.125,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "building"
+            ]
+        },
+        {
+            "X": 2.9460483870967744,
+            "Y": 11.247963800904978,
+            "Z": 0.125,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "building"
+            ]
+        },
+        {
+            "X": 2.9460483870967744,
+            "Y": -11.20332902391726,
+            "Z": 0.125,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "resource"
+            ]
+        },
+        {
+            "X": 2.9460483870967744,
+            "Y": -8.052113768584356,
+            "Z": 0.125,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "resource"
+            ]
+        },
+        {
+            "X": 2.9460483870967744,
+            "Y": 1.5979250161603105,
+            "Z": 0.125,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "resource"
+            ]
+        },
+        {
+            "X": 2.9460483870967744,
+            "Y": 4.749140271493216,
+            "Z": 0.125,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "resource"
+            ]
+        }
+    ],
+    "ZoomViewDirection": {
+        "X": 0,
+        "Y": 0,
+        "Z": 1
+    },
+    "GroundAccessibility": "Zoom",
+    "Tags": []
 }

@@ -1,0 +1,89 @@
+{
+    "Type": "Card",
+    "GUID": "F1EBCF2EC0008BB806EB26CF3F66A926",
+    "Name": "Setup (2p)",
+    "Metadata": "",
+    "CollisionType": "Regular",
+    "Friction": 0.7,
+    "Restitution": 0,
+    "Density": 0.5,
+    "SurfaceType": "Cardboard",
+    "Roughness": 1,
+    "Metallic": 0,
+    "PrimaryColor": {
+        "R": 255,
+        "G": 255,
+        "B": 255
+    },
+    "SecondaryColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0
+    },
+    "Flippable": true,
+    "AutoStraighten": false,
+    "ShouldSnap": true,
+    "ScriptName": "",
+    "Blueprint": "",
+    "Models": [],
+    "Collision": [],
+    "SnapPointsGlobal": false,
+    "SnapPoints": [],
+    "ZoomViewDirection": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+    },
+    "FrontTexture": "base/card/setup/setup-2p/setup-2p.face.0.jpg",
+    "BackTexture": "base/card/setup/setup-2p/setup-2p.back.jpg",
+    "HiddenTexture": "",
+    "BackIndex": -2,
+    "HiddenIndex": -1,
+    "NumHorizontal": 1,
+    "NumVertical": 4,
+    "Width": 6.44,
+    "Height": 0,
+    "Thickness": 0.05,
+    "HiddenInHand": true,
+    "UsedWithCardHolders": true,
+    "CanStack": true,
+    "UsePrimaryColorForSide": false,
+    "FrontTextureOverrideExposed": false,
+    "AllowFlippedInStack": false,
+    "MirrorBack": true,
+    "Model": "Rounded",
+    "Indices": [
+        0,
+        1,
+        2,
+        3
+    ],
+    "CardNames": {
+        "0": "Frontiers (2p)",
+        "1": "Homelands (2p)",
+        "2": "Mix Up 1 (2p)",
+        "3": "Mix Up 2 (2p)"
+    },
+    "CardMetadata": {
+        "0": "card.setup.2p:base/frontiers",
+        "1": "card.setup.2p:base/homelands",
+        "2": "card.setup.2p:base/mix-up-1",
+        "3": "card.setup.2p:base/mix-up-2"
+    },
+    "CardTags": {
+        "0": [
+            "card.setup"
+        ],
+        "1": [
+            "card.setup"
+        ],
+        "2": [
+            "card.setup"
+        ],
+        "3": [
+            "card.setup"
+        ]
+    },
+    "GroundAccessibility": "ZoomAndContext",
+    "height": 9
+}

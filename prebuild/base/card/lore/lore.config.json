@@ -1,6 +1,13 @@
 {
-    "inputDir": "base/card/lore/",
-    "inputCards": [
+    "rootDir": ".",
+    "assetFilename": "base/card/lore",
+    "templateName": "Lore",
+    "cardSizePixel": { "width": 500, "height": 698 },
+    "cardSizeWorld": { "width": 6.44, "height": 9 },
+    "applyAllInputDir": "prebuild/base/card/lore",
+    "applyAllTags": ["card.lore"],
+    "back": "lore.back.jpg",
+    "cards": [
         {
             "face": "01-tool-priests.jpg",
             "name": "Tool-Priests",
@@ -71,12 +78,5 @@
             "name": "Seeker Torpedoes",
             "metadata": "card.lore:base/seeker-torpedoes"
         }
-    ],
-    "sharedBack": "base/card/lore/lore.back.jpg",
-    "cardWidth": 6.44,
-    "cardHeight": 9,
-    "preshrink": 500,
-    "output": "base/card/lore",
-    "name": "Lore",
-    "cardTags": ["card.lore"]
+    ]
 }
