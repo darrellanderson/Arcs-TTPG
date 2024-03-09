@@ -13,11 +13,11 @@
 
     "srcImage": {
         "type": "PaddedCell",
-        "padding": 10,
+        "padding": 25,
         "background": "#000000",
         "child": {
             "type": "ColCell",
-            "spacing": 10,
+            "spacing": 25,
             "children": [
                 {
                     "type": "ImageCell",
@@ -33,7 +33,7 @@
                 {
                     "type": "TextCell",
                     "width": 358,
-                    "height": 30,
+                    "height": 25,
                     "text": "ACTION DISCARD",
                     "textColor": "#ffffff",
                     "fontSize": 25
