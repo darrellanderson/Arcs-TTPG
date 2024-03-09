@@ -25,9 +25,9 @@
                     "width": 358,
                     "height": 500,
                     "imageFile": "prebuild/base/card/action/action.back.jpg",
-                    "grayscale": false,
-                    "invert": false,
-                    "alpha": 1,
+                    "grayscale": true,
+                    "invert": true,
+                    "alpha": 0.5,
                     "tint": "#ffffff",
                     "snapPoints": [{ "tags": ["card.action"] }]
                 },
@@ -35,8 +35,9 @@
                     "type": "TextCell",
                     "width": 358,
                     "height": 25,
-                    "text": "ACTION DISCARD",
+                    "text": "Action Discard",
                     "textColor": "#ffffff",
+                    "font": "FM Bolyar Pro",
                     "fontSize": 25
                 }
             ]
