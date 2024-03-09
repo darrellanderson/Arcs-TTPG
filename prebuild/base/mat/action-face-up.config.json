@@ -12,12 +12,13 @@
     },
 
     "srcImage": {
+        "exports": { "padding": 25, "spacing": 25 },
         "type": "PaddedCell",
-        "padding": 25,
+        "padding": "$import",
         "background": "#000000",
         "child": {
             "type": "ColCell",
-            "spacing": 25,
+            "spacing": "$import",
             "children": [
                 {
                     "type": "ImageCell",

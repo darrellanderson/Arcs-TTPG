@@ -17,7 +17,6 @@ yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-cardsheets/create-
 yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board-run.ts -i prebuild/base/mat/action-face-up.config.json
 
 
-../ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/action-face-up.config.json
 ../ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/agent.config.json
 ../ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/building.config.json
 ../ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/court.config.json
