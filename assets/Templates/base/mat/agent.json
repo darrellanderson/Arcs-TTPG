@@ -1,199 +1,198 @@
 {
-        "Type": "Generic",
-        "GUID": "7B8A92026E77D957F93DC0BBE969D23A",
-        "Name": "agent",
-        "Metadata": "mat:base/agent",
-        "CollisionType": "Regular",
-        "Friction": 0.7,
-        "Restitution": 0.3,
-        "Density": 1,
-        "SurfaceType": "Cardboard",
-        "Roughness": 1,
-        "Metallic": 0,
-        "PrimaryColor": {
-                "R": 255,
-                "G": 255,
-                "B": 255
-        },
-        "SecondaryColor": {
-                "R": 0,
-                "G": 0,
-                "B": 0
-        },
-        "Flippable": false,
-        "AutoStraighten": false,
-        "ShouldSnap": false,
-        "ScriptName": "",
-        "Blueprint": "",
-        "Models": [
-                {
-                        "Model": "utility/unit-cube-top-uvs.obj",
-                        "Offset": {
-                                "X": 0,
-                                "Y": 0,
-                                "Z": 0
-                        },
-                        "Scale": {
-                                "X": 5.25,
-                                "Y": 3.52,
-                                "Z": 0.25
-                        },
-                        "Rotation": {
-                                "X": 0,
-                                "Y": 0,
-                                "Z": 0
-                        },
-                        "Texture": "base/mat/agent.jpg",
-                        "NormalMap": "",
-                        "ExtraMap": "",
-                        "ExtraMap2": "",
-                        "IsTransparent": false,
-                        "CastShadow": true,
-                        "IsTwoSided": false,
-                        "UseOverrides": true,
-                        "SurfaceType": "Cardboard"
-                }
-        ],
-        "Collision": [],
-        "Lights": [],
-        "SnapPointsGlobal": false,
-        "SnapPoints": [
-                {
-                        "Y": -0.7550000000000001,
-                        "X": 1.9,
-                        "Tags": [
-                                "agent"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 3,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 0.7550000000000001,
-                        "X": 1.9,
-                        "Tags": [
-                                "agent"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 3,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": -0.7550000000000001,
-                        "X": 0.95,
-                        "Tags": [
-                                "agent"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 3,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 0.7550000000000001,
-                        "X": 0.95,
-                        "Tags": [
-                                "agent"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 3,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": -0.7550000000000001,
-                        "X": 0,
-                        "Tags": [
-                                "agent"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 3,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 0.7550000000000001,
-                        "X": 0,
-                        "Tags": [
-                                "agent"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 3,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": -0.7550000000000001,
-                        "X": -0.9500000000000002,
-                        "Tags": [
-                                "agent"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 3,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 0.7550000000000001,
-                        "X": -0.9500000000000002,
-                        "Tags": [
-                                "agent"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 3,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": -0.7550000000000001,
-                        "X": -1.9000000000000004,
-                        "Tags": [
-                                "agent"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 3,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 0.7550000000000001,
-                        "X": -1.9000000000000004,
-                        "Tags": [
-                                "agent"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 3,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                }
-        ],
-        "ZoomViewDirection": {
+    "Type": "Generic",
+    "GUID": "0563A2543AB44B31805F7E1A54FDA904",
+    "Name": "Agent mat",
+    "Metadata": "mat:base/agent",
+    "CollisionType": "Regular",
+    "Friction": 0.7,
+    "Restitution": 0.1,
+    "Density": 1,
+    "SurfaceType": "Cardboard",
+    "Roughness": 1,
+    "Metallic": 0,
+    "PrimaryColor": {
+        "R": 255,
+        "G": 255,
+        "B": 255
+    },
+    "SecondaryColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0
+    },
+    "Flippable": false,
+    "AutoStraighten": false,
+    "ShouldSnap": false,
+    "ScriptName": "",
+    "Blueprint": "",
+    "Models": [
+        {
+            "Model": "uv-cube.obj",
+            "Offset": {
                 "X": 0,
                 "Y": 0,
-                "Z": 1
+                "Z": 0
+            },
+            "Scale": {
+                "X": 4.949999999999999,
+                "Y": 3.3659999999999997,
+                "Z": 0.1
+            },
+            "Rotation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+            },
+            "Texture": "base/mat/agent/agent-0x0.jpg",
+            "NormalMap": "",
+            "ExtraMap": "",
+            "ExtraMap2": "",
+            "IsTransparent": false,
+            "CastShadow": true,
+            "IsTwoSided": false,
+            "UseOverrides": true,
+            "SurfaceType": "Cardboard"
+        }
+    ],
+    "Lights": [],
+    "SnapPointsGlobal": false,
+    "SnapPoints": [
+        {
+            "X": 1.7999999999999998,
+            "Y": -0.7289999999999999,
+            "Z": 0.05,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "agent"
+            ]
         },
-        "GroundAccessibility": "Nothing",
-        "Tags": []
+        {
+            "X": 1.7999999999999998,
+            "Y": 0.7289999999999996,
+            "Z": 0.05,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "agent"
+            ]
+        },
+        {
+            "X": 0.8999999999999999,
+            "Y": -0.7289999999999999,
+            "Z": 0.05,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "agent"
+            ]
+        },
+        {
+            "X": 0.8999999999999999,
+            "Y": 0.7289999999999996,
+            "Z": 0.05,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "agent"
+            ]
+        },
+        {
+            "X": 0,
+            "Y": -0.7289999999999999,
+            "Z": 0.05,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "agent"
+            ]
+        },
+        {
+            "X": 0,
+            "Y": 0.7289999999999996,
+            "Z": 0.05,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "agent"
+            ]
+        },
+        {
+            "X": -0.8999999999999995,
+            "Y": -0.7289999999999999,
+            "Z": 0.05,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "agent"
+            ]
+        },
+        {
+            "X": -0.8999999999999995,
+            "Y": 0.7289999999999996,
+            "Z": 0.05,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "agent"
+            ]
+        },
+        {
+            "X": -1.7999999999999998,
+            "Y": -0.7289999999999999,
+            "Z": 0.05,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "agent"
+            ]
+        },
+        {
+            "X": -1.7999999999999998,
+            "Y": 0.7289999999999996,
+            "Z": 0.05,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "agent"
+            ]
+        }
+    ],
+    "ZoomViewDirection": {
+        "X": 0,
+        "Y": 0,
+        "Z": 1
+    },
+    "GroundAccessibility": "Zoom",
+    "Tags": []
 }

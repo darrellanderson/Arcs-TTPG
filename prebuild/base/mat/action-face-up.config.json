@@ -12,7 +12,7 @@
     },
 
     "srcImage": {
-        "exports": { "padding": 25, "spacing": 25 },
+        "exports": { "padding": 25, "spacing": 25, "font": "FM Bolyar Pro" },
         "type": "PaddedCell",
         "padding": "$import",
         "background": "#000000",
@@ -37,7 +37,7 @@
                     "height": 25,
                     "text": "Action Discard",
                     "textColor": "#ffffff",
-                    "font": "FM Bolyar Pro",
+                    "font": "$import",
                     "fontSize": 25
                 }
             ]

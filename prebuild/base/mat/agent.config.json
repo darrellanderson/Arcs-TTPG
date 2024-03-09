@@ -1,66 +1,51 @@
 {
-    "cardWidth": 1.01,
-    "cardHeight": 0.45,
-    "depth": 0.25,
-    "inputDir": "base/mat",
-    "slots": [
-        {
-            "img": "agent-footprint.jpg",
-            "label": "",
-            "tags": ["agent"]
+    "rootDir": ".",
+    "assetFilename": "base/mat/agent",
+    "templateMetadata": "mat:base/agent",
+    "templateName": "Agent mat",
+    "topDownWorldSize": {
+        "width": 0.018,
+        "widthScaledByPixels": true,
+        "height": 0.018,
+        "heightScaledByPixels": true,
+        "depth": 0.1
+    },
+    "srcImage": {
+        "exports": {
+            "width": 56,
+            "height": 25,
+            "padding": 25,
+            "spacing": 25,
+            "font": "FM Bolyar Pro",
+            "snapRotation": 3
         },
-        {
-            "img": "agent-footprint.jpg",
-            "label": "",
-            "tags": ["agent"]
-        },
-        {
-            "img": "agent-footprint.jpg",
-            "label": "",
-            "tags": ["agent"]
-        },
-        {
-            "img": "agent-footprint.jpg",
-            "label": "",
-            "tags": ["agent"]
-        },
-        {
-            "img": "agent-footprint.jpg",
-            "label": "",
-            "tags": ["agent"]
-        },
-        {
-            "img": "agent-footprint.jpg",
-            "label": "",
-            "tags": ["agent"]
-        },
-        {
-            "img": "agent-footprint.jpg",
-            "label": "",
-            "tags": ["agent"]
-        },
-        {
-            "img": "agent-footprint.jpg",
-            "label": "",
-            "tags": ["agent"]
-        },
-        {
-            "img": "agent-footprint.jpg",
-            "label": "",
-            "tags": ["agent"]
-        },
-        {
-            "img": "agent-footprint.jpg",
-            "label": "",
-            "tags": ["agent"]
+        "type": "PaddedCell",
+        "padding": "$import",
+        "background": "#000000",
+        "child": {
+            "type": "GridCell",
+            "numCols": 2,
+            "spacing": "$import",
+            "children": [
+                {
+                    "type": "ImageCell",
+                    "width": "$import",
+                    "height": "$import",
+                    "alpha": 0.25,
+                    "imageFile": "prebuild/base/mat/agent-footprint.jpg",
+                    "snapPoints": [{ "tags": ["agent"] }]
+                },
+                { "type": "!copy" },
+                { "type": "!copy" },
+                { "type": "!copy" },
+                { "type": "!copy" },
+
+                { "type": "!copy" },
+                { "type": "!copy" },
+                { "type": "!copy" },
+                { "type": "!copy" },
+                { "type": "!copy" }
+            ]
         }
-    ],
-    "gap": 0.5,
-    "cols": 2,
-    "postShrink": 1024,
-    "alpha": 0.5,
-    "snapRotation": 3,
-    "metadata": "mat:base/agent",
-    "output": "base/mat/agent",
-    "tags": []
+    }
 }
