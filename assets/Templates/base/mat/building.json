@@ -1,134 +1,133 @@
 {
-        "Type": "Generic",
-        "GUID": "78F0AAAFAD12C51C1F0C0396CA2DE5D9",
-        "Name": "building",
-        "Metadata": "mat:base/building",
-        "CollisionType": "Regular",
-        "Friction": 0.7,
-        "Restitution": 0.3,
-        "Density": 1,
-        "SurfaceType": "Cardboard",
-        "Roughness": 1,
-        "Metallic": 0,
-        "PrimaryColor": {
-                "R": 255,
-                "G": 255,
-                "B": 255
-        },
-        "SecondaryColor": {
-                "R": 0,
-                "G": 0,
-                "B": 0
-        },
-        "Flippable": false,
-        "AutoStraighten": false,
-        "ShouldSnap": false,
-        "ScriptName": "",
-        "Blueprint": "",
-        "Models": [
-                {
-                        "Model": "utility/unit-cube-top-uvs.obj",
-                        "Offset": {
-                                "X": 0,
-                                "Y": 0,
-                                "Z": 0
-                        },
-                        "Scale": {
-                                "X": 3.29,
-                                "Y": 15.85,
-                                "Z": 0.25
-                        },
-                        "Rotation": {
-                                "X": 0,
-                                "Y": 0,
-                                "Z": 0
-                        },
-                        "Texture": "base/mat/building.jpg",
-                        "NormalMap": "",
-                        "ExtraMap": "",
-                        "ExtraMap2": "",
-                        "IsTransparent": false,
-                        "CastShadow": true,
-                        "IsTwoSided": false,
-                        "UseOverrides": true,
-                        "SurfaceType": "Cardboard"
-                }
-        ],
-        "Collision": [],
-        "Lights": [],
-        "SnapPointsGlobal": false,
-        "SnapPoints": [
-                {
-                        "Y": -6.14,
-                        "X": -0.22,
-                        "Tags": [
-                                "building"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": -3.0700000000000003,
-                        "X": -0.22,
-                        "Tags": [
-                                "building"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 0,
-                        "X": -0.22,
-                        "Tags": [
-                                "building"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 3.0699999999999994,
-                        "X": -0.22,
-                        "Tags": [
-                                "building"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 6.14,
-                        "X": -0.22,
-                        "Tags": [
-                                "building"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                }
-        ],
-        "ZoomViewDirection": {
+    "Type": "Generic",
+    "GUID": "5D2E47B0F6CB93E3788880EF18722636",
+    "Name": "Building mat",
+    "Metadata": "mat:base/building",
+    "CollisionType": "Regular",
+    "Friction": 0.7,
+    "Restitution": 0.1,
+    "Density": 1,
+    "SurfaceType": "Cardboard",
+    "Roughness": 1,
+    "Metallic": 0,
+    "PrimaryColor": {
+        "R": 255,
+        "G": 255,
+        "B": 255
+    },
+    "SecondaryColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0
+    },
+    "Flippable": false,
+    "AutoStraighten": false,
+    "ShouldSnap": false,
+    "ScriptName": "",
+    "Blueprint": "",
+    "Models": [
+        {
+            "Model": "uv-cube.obj",
+            "Offset": {
                 "X": 0,
                 "Y": 0,
-                "Z": 1
+                "Z": 0
+            },
+            "Scale": {
+                "X": 3.186,
+                "Y": 15.569999999999999,
+                "Z": 0.1
+            },
+            "Rotation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+            },
+            "Texture": "base/mat/building/building-0x0.jpg",
+            "NormalMap": "",
+            "ExtraMap": "",
+            "ExtraMap2": "",
+            "IsTransparent": false,
+            "CastShadow": true,
+            "IsTwoSided": false,
+            "UseOverrides": true,
+            "SurfaceType": "Cardboard"
+        }
+    ],
+    "Lights": [],
+    "SnapPointsGlobal": false,
+    "SnapPoints": [
+        {
+            "X": 0,
+            "Y": -6.047999999999999,
+            "Z": 0.05,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "building"
+            ]
         },
-        "GroundAccessibility": "Nothing",
-        "Tags": []
+        {
+            "X": 0,
+            "Y": -3.024,
+            "Z": 0.05,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "building"
+            ]
+        },
+        {
+            "X": 0,
+            "Y": 0,
+            "Z": 0.05,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "building"
+            ]
+        },
+        {
+            "X": 0,
+            "Y": 3.024,
+            "Z": 0.05,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "building"
+            ]
+        },
+        {
+            "X": 0,
+            "Y": 6.047999999999999,
+            "Z": 0.05,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "building"
+            ]
+        }
+    ],
+    "ZoomViewDirection": {
+        "X": 0,
+        "Y": 0,
+        "Z": 1
+    },
+    "GroundAccessibility": "Zoom",
+    "Tags": []
 }

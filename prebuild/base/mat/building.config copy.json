@@ -1,0 +1,40 @@
+{
+    "cardWidth": 2.57,
+    "cardHeight": 2.29,
+    "depth": 0.25,
+    "inputDir": "base/mat",
+    "slots": [
+        {
+            "img": "building-footprint.jpg",
+            "label": "",
+            "tags": ["building"]
+        },
+        {
+            "img": "building-footprint.jpg",
+            "label": "",
+            "tags": ["building"]
+        },
+        {
+            "img": "building-footprint.jpg",
+            "label": "",
+            "tags": ["building"]
+        },
+        {
+            "img": "building-footprint.jpg",
+            "label": "",
+            "tags": ["building"]
+        },
+        {
+            "img": "building-footprint.jpg",
+            "label": "",
+            "tags": ["building"]
+        }
+    ],
+    "gap": 0.5,
+    "cols": -1,
+    "postShrink": 1024,
+    "metadata": "mat:base/building",
+    "output": "base/mat/building",
+    "snapDeltaX": -0.22,
+    "tags": []
+}
