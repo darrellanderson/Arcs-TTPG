@@ -1,21 +1,44 @@
 {
-    "cardWidth": 6.44,
-    "cardHeight": 9,
-    "depth": 0.25,
-    "inputDir": "base/card/action",
-    "slots": [
-        {
-            "img": "action.back.jpg",
-            "label": "",
-            "tags": ["action-card"],
-            "snapRotation": 4
+    "rootDir": ".",
+    "assetFilename": "base/mat/action",
+    "templateMetadata": "mat:base/action-face-up",
+    "templateName": "Action discard",
+    "topDownWorldSize": {
+        "width": 0.018,
+        "widthScaledByPixels": true,
+        "height": 0.018,
+        "heightScaledByPixels": true,
+        "depth": 0.25
+    },
+
+    "srcImage": {
+        "type": "PaddedCell",
+        "padding": 10,
+        "background": "#000000",
+        "child": {
+            "type": "ColCell",
+            "spacing": 10,
+            "children": [
+                {
+                    "type": "ImageCell",
+                    "width": 358,
+                    "height": 500,
+                    "imageFile": "prebuild/base/card/action/action.back.jpg",
+                    "grayscale": false,
+                    "invert": false,
+                    "alpha": 1,
+                    "tint": "#ffffff",
+                    "snapPoints": [{ "tags": ["card.action"] }]
+                },
+                {
+                    "type": "TextCell",
+                    "width": 358,
+                    "height": 30,
+                    "text": "ACTION DISCARD",
+                    "textColor": "#ffffff",
+                    "fontSize": 25
+                }
+            ]
         }
-    ],
-    "gap": 0.5,
-    "cols": -1,
-    "postShrink": 512,
-    "alpha": 0.5,
-    "metadata": "mat:base/action-face-up",
-    "output": "base/mat/action",
-    "tags": []
+    }
 }
