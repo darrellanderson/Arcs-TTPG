@@ -4,14 +4,13 @@
     "templateMetadata": "mat:base/building",
     "templateName": "Building mat",
     "topDownWorldSize": {
-        "width": 0.018,
-        "widthScaledByPixels": true,
-        "height": 0.018,
-        "heightScaledByPixels": true,
+        "autoWidthHeight": {
+            "pixel": 143,
+            "world": 2.57
+        },
         "depth": 0.25
     },
     "srcImage": {
-        "scale": { "pixel": 143, "world": 2.57 },
         "exports": {
             "width": 143,
             "height": 127,

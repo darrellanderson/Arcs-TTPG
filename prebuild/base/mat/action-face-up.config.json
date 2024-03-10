@@ -4,18 +4,14 @@
     "templateMetadata": "mat:base/action-face-up",
     "templateName": "Action discard",
     "topDownWorldSize": {
-        "width": 0.018,
-        "widthScaledByPixels": true,
-        "height": 0.018,
-        "heightScaledByPixels": true,
+        "autoWidthHeight": {
+            "pixel": 500,
+            "world": 9
+        },
         "depth": 0.25
     },
 
     "srcImage": {
-        "scale": {
-            "pixel": 500,
-            "world": 9
-        },
         "exports": {
             "$scalepadding": 0.5,
             "$scalespacing": 0.5,

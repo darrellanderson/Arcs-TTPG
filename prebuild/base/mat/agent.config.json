@@ -4,19 +4,14 @@
     "templateMetadata": "mat:base/agent",
     "templateName": "Agent mat",
     "topDownWorldSize": {
-        "width": 0.003506,
-        "widthScaledByPixels": true,
-        "height": 0.003506,
-        "heightScaledByPixels": true,
+        "autoWidthHeight": {
+            "pixel": 288,
+            "world": 1.01
+        },
         "depth": 0.25
     },
     "preshrink": 1024,
     "srcImage": {
-        "scale": {
-            "pixel": 288,
-            "world": 1.01
-        },
-
         "exports": {
             "$scalewidth": 1.01,
             "$scaleheight": 0.45,

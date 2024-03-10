@@ -20,8 +20,9 @@ yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board
 yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board-run.ts -i prebuild/base/mat/court.config.json
 yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board-run.ts -i prebuild/base/mat/court-deck-discard.config.json
 yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board-run.ts -i prebuild/base/mat/dice.config.json
+yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board-run.ts -i prebuild/base/mat/leader.config.json
 
-../ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/leader.config.json
+
 ../ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/lore.config.json
 ../ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/resource.config.json
 ../ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/ship.config.json

@@ -4,18 +4,14 @@
     "templateMetadata": "mat:base/court",
     "templateName": "Court mat",
     "topDownWorldSize": {
-        "width": 0.01289,
-        "widthScaledByPixels": true,
-        "height": 0.01289,
-        "heightScaledByPixels": true,
+        "autoWidthHeight": {
+            "pixel": 698,
+            "world": 9
+        },
         "depth": 0.25
     },
     "preshrink": 2048,
     "srcImage": {
-        "scale": {
-            "pixel": 698,
-            "world": 9
-        },
         "exports": {
             "width": 500,
             "height": 698,

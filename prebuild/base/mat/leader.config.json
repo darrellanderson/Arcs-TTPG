@@ -1,19 +1,52 @@
 {
-    "cardWidth": 6.44,
-    "cardHeight": 11,
-    "depth": 0.25,
-    "inputDir": "base/card/leader",
-    "slots": [
-        {
-            "img": "leader.back.jpg",
-            "label": "LEADER",
-            "tags": ["card.leader"]
+    "rootDir": ".",
+    "assetFilename": "base/mat/leader",
+    "templateMetadata": "mat:base/leader",
+    "templateName": "Leader mat",
+    "topDownWorldSize": {
+        "autoWidthHeight": {
+            "pixel": 1416,
+            "world": 11
+        },
+        "depth": 0.25
+    },
+
+    "srcImage": {
+        "exports": {
+            "$scalepadding": 0.5,
+            "$scalespacing": 0.5,
+            "$scalefontSize": 0.5,
+            "width": 826,
+            "font": "FM Bolyar Pro"
+        },
+        "type": "PaddedCell",
+        "padding": "$import",
+        "background": "#000000",
+        "child": {
+            "type": "ColCell",
+            "spacing": "$import",
+            "children": [
+                {
+                    "type": "ImageCell",
+                    "width": "$import",
+                    "height": 1416,
+                    "imageFile": "prebuild/base/card/leader/leader.back.jpg",
+                    "grayscale": true,
+                    "invert": false,
+                    "alpha": 0.2,
+                    "tint": "#ffffff",
+                    "snapPoints": [{ "tags": ["card.leader"] }]
+                },
+                {
+                    "type": "TextCell",
+                    "width": "$import",
+                    "$scaleheight": 0.5,
+                    "text": "Leader",
+                    "textColor": "#ffffff",
+                    "font": "$import",
+                    "fontSize": "$import"
+                }
+            ]
         }
-    ],
-    "gap": 0.5,
-    "cols": -1,
-    "postShrink": 1024,
-    "metadata": "mat:base/leader",
-    "output": "base/mat/leader",
-    "tags": []
+    }
 }

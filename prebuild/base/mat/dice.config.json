@@ -4,18 +4,14 @@
     "templateMetadata": "mat:base/dice",
     "templateName": "Dice mat",
     "topDownWorldSize": {
-        "width": 0.01204,
-        "widthScaledByPixels": true,
-        "height": 0.01204,
-        "heightScaledByPixels": true,
+        "autoWidthHeight": {
+            "pixel": 166,
+            "world": 2
+        },
         "depth": 0.25
     },
     "preshrink": 1024,
     "srcImage": {
-        "scale": {
-            "pixel": 166,
-            "world": 2
-        },
         "exports": {
             "width": 166,
             "height": 166,
