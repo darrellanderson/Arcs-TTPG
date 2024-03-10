@@ -11,13 +11,12 @@
         "depth": 0.1
     },
     "srcImage": {
+        "scale": { "pixel": 143, "world": 2.57 },
         "exports": {
             "width": 143,
             "height": 127,
-            "padding": 25,
-            "spacing": 25,
-            "font": "FM Bolyar Pro",
-            "snapRotation": 3
+            "$scalepadding": 0.5,
+            "$scalespacing": 0.5
         },
         "type": "PaddedCell",
         "padding": "$import",
@@ -30,9 +29,9 @@
                     "type": "ImageCell",
                     "width": "$import",
                     "height": "$import",
-                    "alpha": 0.25,
+                    "alpha": 0.2,
                     "imageFile": "prebuild/base/mat/building-footprint.jpg",
-                    "snapPoints": [{ "tags": ["building"] }]
+                    "snapPoints": [{ "top": 80, "tags": ["building"] }]
                 },
                 { "type": "!copy" },
                 { "type": "!copy" },

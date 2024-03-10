@@ -4,18 +4,24 @@
     "templateMetadata": "mat:base/agent",
     "templateName": "Agent mat",
     "topDownWorldSize": {
-        "width": 0.018,
+        "width": 0.003506,
         "widthScaledByPixels": true,
-        "height": 0.018,
+        "height": 0.003506,
         "heightScaledByPixels": true,
         "depth": 0.1
     },
     "srcImage": {
+        "scale": {
+            "pixel": 288,
+            "world": 1.01
+        },
+
         "exports": {
-            "width": 56,
-            "height": 25,
-            "padding": 25,
-            "spacing": 25,
+            "$scalewidth": 1.01,
+            "$scaleheight": 0.45,
+            "$scalepadding": 0.5,
+            "$scalespacing": 0.5,
+            "$scalefontSize": 0.5,
             "font": "FM Bolyar Pro",
             "snapRotation": 3
         },
@@ -31,7 +37,7 @@
                     "type": "ImageCell",
                     "width": "$import",
                     "height": "$import",
-                    "alpha": 0.25,
+                    "alpha": 0.2,
                     "imageFile": "prebuild/base/mat/agent-footprint.jpg",
                     "snapPoints": [{ "tags": ["agent"] }]
                 },

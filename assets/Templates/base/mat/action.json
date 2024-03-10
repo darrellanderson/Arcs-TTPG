@@ -34,8 +34,8 @@
                 "Z": 0
             },
             "Scale": {
-                "X": 10.799999999999999,
-                "Y": 7.343999999999999,
+                "X": 11.016,
+                "Y": 7.451999999999999,
                 "Z": 0.25
             },
             "Rotation": {
@@ -43,7 +43,7 @@
                 "Y": 0,
                 "Z": 0
             },
-            "Texture": "base/mat/action/action-0x0.jpg",
+            "Texture": "base/mat/action/action.jpg",
             "NormalMap": "",
             "ExtraMap": "",
             "ExtraMap2": "",
@@ -58,7 +58,7 @@
     "SnapPointsGlobal": false,
     "SnapPoints": [
         {
-            "X": 0.4500000000000002,
+            "X": 0.5040000000000004,
             "Y": 0,
             "Z": 0.125,
             "Range": 3,

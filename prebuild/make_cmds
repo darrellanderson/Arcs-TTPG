@@ -17,9 +17,8 @@ yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-cardsheets/create-
 yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board-run.ts -i prebuild/base/mat/action-face-up.config.json
 yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board-run.ts -i prebuild/base/mat/agent.config.json
 yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board-run.ts -i prebuild/base/mat/building.config.json
+yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board-run.ts -i  prebuild/base/mat/court.config.json
 
-
-../ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/court.config.json
 ../ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/dice.config.json
 ../ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/leader.config.json
 ../ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/lore.config.json

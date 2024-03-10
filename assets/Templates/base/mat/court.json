@@ -1,162 +1,133 @@
 {
-        "Type": "Generic",
-        "GUID": "92913936CAEE03128228BCD1C72D295A",
-        "Name": "court",
-        "Metadata": "mat:base/court",
-        "CollisionType": "Regular",
-        "Friction": 0.7,
-        "Restitution": 0.3,
-        "Density": 1,
-        "SurfaceType": "Cardboard",
-        "Roughness": 1,
-        "Metallic": 0,
-        "PrimaryColor": {
-                "R": 255,
-                "G": 255,
-                "B": 255
-        },
-        "SecondaryColor": {
-                "R": 0,
-                "G": 0,
-                "B": 0
-        },
-        "Flippable": false,
-        "AutoStraighten": false,
-        "ShouldSnap": false,
-        "ScriptName": "",
-        "Blueprint": "",
-        "Models": [
-                {
-                        "Model": "utility/unit-cube-top-uvs.obj",
-                        "Offset": {
-                                "X": 0,
-                                "Y": 0,
-                                "Z": 0
-                        },
-                        "Scale": {
-                                "X": 21,
-                                "Y": 35.2,
-                                "Z": 0.25
-                        },
-                        "Rotation": {
-                                "X": 0,
-                                "Y": 0,
-                                "Z": 0
-                        },
-                        "Texture": "base/mat/court.jpg",
-                        "NormalMap": "",
-                        "ExtraMap": "",
-                        "ExtraMap2": "",
-                        "IsTransparent": false,
-                        "CastShadow": true,
-                        "IsTwoSided": false,
-                        "UseOverrides": true,
-                        "SurfaceType": "Cardboard"
-                }
-        ],
-        "Collision": [],
-        "Lights": [],
-        "SnapPointsGlobal": false,
-        "SnapPoints": [
-                {
-                        "Y": -13.88,
-                        "X": 5.5,
-                        "Tags": [
-                                "card.court"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": -6.940000000000001,
-                        "X": 5.5,
-                        "Tags": [
-                                "card.court"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 0,
-                        "X": 5.5,
-                        "Tags": [
-                                "card.court"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 6.940000000000001,
-                        "X": 5.5,
-                        "Tags": [
-                                "card.court"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 13.879999999999999,
-                        "X": 5.5,
-                        "Tags": [
-                                "card.court"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": -13.88,
-                        "X": -5.5,
-                        "Tags": [
-                                "card.court",
-                                "card.court.deck"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": -6.940000000000001,
-                        "X": -5.5,
-                        "Tags": [
-                                "card.court",
-                                "card.court.discard"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                }
-        ],
-        "ZoomViewDirection": {
+    "Type": "Generic",
+    "GUID": "F4926A29C949EF0611B0AB02CC8EFEC9",
+    "Name": "Court mat",
+    "Metadata": "mat:base/court",
+    "CollisionType": "Regular",
+    "Friction": 0.7,
+    "Restitution": 0.1,
+    "Density": 1,
+    "SurfaceType": "Cardboard",
+    "Roughness": 1,
+    "Metallic": 0,
+    "PrimaryColor": {
+        "R": 255,
+        "G": 255,
+        "B": 255
+    },
+    "SecondaryColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0
+    },
+    "Flippable": false,
+    "AutoStraighten": false,
+    "ShouldSnap": false,
+    "ScriptName": "",
+    "Blueprint": "",
+    "Models": [
+        {
+            "Model": "uv-cube.obj",
+            "Offset": {
                 "X": 0,
                 "Y": 0,
-                "Z": 1
+                "Z": 0
+            },
+            "Scale": {
+                "X": 11.00806,
+                "Y": 35.241260000000004,
+                "Z": 0.1
+            },
+            "Rotation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+            },
+            "Texture": "base/mat/court/court.jpg",
+            "NormalMap": "",
+            "ExtraMap": "",
+            "ExtraMap2": "",
+            "IsTransparent": false,
+            "CastShadow": true,
+            "IsTwoSided": false,
+            "UseOverrides": true,
+            "SurfaceType": "Cardboard"
+        }
+    ],
+    "Lights": [],
+    "SnapPointsGlobal": false,
+    "SnapPoints": [
+        {
+            "X": 0.5027099999999995,
+            "Y": -13.895420000000001,
+            "Z": 0.05,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "card.court"
+            ]
         },
-        "GroundAccessibility": "Nothing",
-        "Tags": []
+        {
+            "X": 0.5027099999999995,
+            "Y": -6.947710000000001,
+            "Z": 0.05,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "card.court"
+            ]
+        },
+        {
+            "X": 0.5027099999999995,
+            "Y": 0,
+            "Z": 0.05,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "card.court"
+            ]
+        },
+        {
+            "X": 0.5027099999999995,
+            "Y": 6.947710000000001,
+            "Z": 0.05,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "card.court"
+            ]
+        },
+        {
+            "X": 0.5027099999999995,
+            "Y": 13.895420000000001,
+            "Z": 0.05,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "card.court"
+            ]
+        }
+    ],
+    "ZoomViewDirection": {
+        "X": 0,
+        "Y": 0,
+        "Z": 1
+    },
+    "GroundAccessibility": "Zoom",
+    "Tags": []
 }

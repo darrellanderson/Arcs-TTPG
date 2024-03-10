@@ -12,7 +12,17 @@
     },
 
     "srcImage": {
-        "exports": { "padding": 25, "spacing": 25, "font": "FM Bolyar Pro" },
+        "scale": {
+            "pixel": 500,
+            "world": 9
+        },
+        "exports": {
+            "$scalepadding": 0.5,
+            "$scalespacing": 0.5,
+            "$scalefontSize": 0.5,
+            "width": 358,
+            "font": "FM Bolyar Pro"
+        },
         "type": "PaddedCell",
         "padding": "$import",
         "background": "#000000",
@@ -22,23 +32,23 @@
             "children": [
                 {
                     "type": "ImageCell",
-                    "width": 358,
+                    "width": "$import",
                     "height": 500,
                     "imageFile": "prebuild/base/card/action/action.back.jpg",
                     "grayscale": true,
-                    "invert": true,
-                    "alpha": 0.5,
+                    "invert": false,
+                    "alpha": 0.2,
                     "tint": "#ffffff",
                     "snapPoints": [{ "tags": ["card.action"] }]
                 },
                 {
                     "type": "TextCell",
-                    "width": 358,
-                    "height": 25,
+                    "width": "$import",
+                    "$scaleheight": 0.5,
                     "text": "Action Discard",
                     "textColor": "#ffffff",
                     "font": "$import",
-                    "fontSize": 25
+                    "fontSize": "$import"
                 }
             ]
         }

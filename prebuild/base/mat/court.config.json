@@ -1,39 +1,77 @@
 {
-    "cardWidth": 6.44,
-    "cardHeight": 9,
-    "depth": 0.25,
-    "inputDir": "base/card/court",
-    "slots": [
-        { "img": "court.back.jpg", "label": "COURT", "tags": ["card.court"] },
-        { "img": "court.back.jpg", "label": "COURT", "tags": ["card.court"] },
-        { "img": "court.back.jpg", "label": "COURT", "tags": ["card.court"] },
-        {
-            "img": "court.back.jpg",
-            "label": "3-4P",
-            "tags": ["card.court"]
+    "rootDir": ".",
+    "assetFilename": "base/mat/court",
+    "templateMetadata": "mat:base/court",
+    "templateName": "Court mat",
+    "topDownWorldSize": {
+        "width": 0.01289,
+        "widthScaledByPixels": true,
+        "height": 0.01289,
+        "heightScaledByPixels": true,
+        "depth": 0.1
+    },
+    "srcImage": {
+        "scale": {
+            "pixel": 698,
+            "world": 9
         },
-        {
-            "img": "court.back.jpg",
-            "label": "COUNCIL",
-            "tags": ["card.court"]
+        "exports": {
+            "width": 500,
+            "height": 698,
+            "$scalepadding": 0.5,
+            "$scalespacing": 0.5,
+            "$scalefontSize": 0.5,
+            "font": "FM Bolyar Pro",
+            "textColor": "#ffffff",
+            "text": "Court"
         },
-        {
-            "img": "court.back.jpg",
-            "label": "DECK",
-            "tags": ["card.court", "card.court.deck"]
-        },
-        {
-            "img": "court.back.jpg",
-            "label": "DISCARD",
-            "tags": ["card.court", "card.court.discard"]
+        "type": "PaddedCell",
+        "padding": "$import",
+        "background": "#000000",
+        "child": {
+            "type": "RowCell",
+            "spacing": "$import",
+            "children": [
+                {
+                    "id": "court-entry",
+                    "type": "ColCell",
+                    "spacing": "$import",
+                    "children": [
+                        {
+                            "type": "ImageCell",
+                            "width": "$import",
+                            "height": "$import",
+                            "grayscale": true,
+                            "invert": false,
+                            "alpha": 0.2,
+                            "tint": "#ffffff",
+                            "imageFile": "prebuild/base/card/court/court.back.jpg",
+                            "snapPoints": [{ "tags": ["card.court"] }]
+                        },
+                        {
+                            "type": "TextCell",
+                            "width": "$import",
+                            "$scaleheight": 0.5,
+                            "text": "$import",
+                            "textColor": "$import",
+                            "font": "$import",
+                            "fontSize": "$import"
+                        }
+                    ]
+                },
+                { "type": "?", "cloneId": "court-entry" },
+                { "type": "?", "cloneId": "court-entry" },
+                {
+                    "type": "?",
+                    "cloneId": "court-entry",
+                    "exports": { "text": "3-4p" }
+                },
+                {
+                    "type": "?",
+                    "cloneId": "court-entry",
+                    "exports": { "text": "Council" }
+                }
+            ]
         }
-    ],
-    "gap": 0.5,
-    "cols": 5,
-    "postShrink": 2048,
-    "alpha": 0.5,
-    "metadata": "mat:base/court",
-    "output": "base/mat/court",
-    "tags": [],
-    "gapAfterRow": 1
+    }
 }
