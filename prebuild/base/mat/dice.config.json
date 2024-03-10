@@ -1,105 +1,78 @@
 {
-    "cardWidth": 2,
-    "cardHeight": 2,
-    "depth": 0.25,
-    "inputDir": "base/dice",
-    "slots": [
-        {
-            "img": "assault/assault-3.png",
-            "label": "",
-            "tags": ["die.assault"]
+    "rootDir": ".",
+    "assetFilename": "base/mat/dice",
+    "templateMetadata": "mat:base/dice",
+    "templateName": "Dice mat",
+    "topDownWorldSize": {
+        "width": 0.01204,
+        "widthScaledByPixels": true,
+        "height": 0.01204,
+        "heightScaledByPixels": true,
+        "depth": 0.25
+    },
+    "preshrink": 1024,
+    "srcImage": {
+        "scale": {
+            "pixel": 166,
+            "world": 2
         },
-        {
-            "img": "assault/assault-3.png",
-            "label": "",
-            "tags": ["die.assault"]
+        "exports": {
+            "width": 166,
+            "height": 166,
+            "$scalepadding": 0.5,
+            "$scalespacing": 0.5,
+            "alpha": 0.5
         },
-        {
-            "img": "assault/assault-3.png",
-            "label": "",
-            "tags": ["die.assault"]
-        },
-        {
-            "img": "assault/assault-3.png",
-            "label": "",
-            "tags": ["die.assault"]
-        },
-        {
-            "img": "assault/assault-3.png",
-            "label": "",
-            "tags": ["die.assault"]
-        },
-        {
-            "img": "assault/assault-3.png",
-            "label": "",
-            "tags": ["die.assault"]
-        },
-        {
-            "img": "raid/raid-1.png",
-            "label": "",
-            "tags": ["die.raid"]
-        },
-        {
-            "img": "raid/raid-1.png",
-            "label": "",
-            "tags": ["die.raid"]
-        },
-        {
-            "img": "raid/raid-1.png",
-            "label": "",
-            "tags": ["die.raid"]
-        },
-        {
-            "img": "raid/raid-1.png",
-            "label": "",
-            "tags": ["die.raid"]
-        },
-        {
-            "img": "raid/raid-1.png",
-            "label": "",
-            "tags": ["die.raid"]
-        },
-        {
-            "img": "raid/raid-1.png",
-            "label": "",
-            "tags": ["die.raid"]
-        },
-        {
-            "img": "skirmish/skirmish-5.png",
-            "label": "",
-            "tags": ["die.skirmish"]
-        },
-        {
-            "img": "skirmish/skirmish-5.png",
-            "label": "",
-            "tags": ["die.skirmish"]
-        },
-        {
-            "img": "skirmish/skirmish-5.png",
-            "label": "",
-            "tags": ["die.skirmish"]
-        },
-        {
-            "img": "skirmish/skirmish-5.png",
-            "label": "",
-            "tags": ["die.skirmish"]
-        },
-        {
-            "img": "skirmish/skirmish-5.png",
-            "label": "",
-            "tags": ["die.skirmish"]
-        },
-        {
-            "img": "skirmish/skirmish-5.png",
-            "label": "",
-            "tags": ["die.skirmish"]
+        "type": "PaddedCell",
+        "padding": "$import",
+        "background": "#000000",
+        "child": {
+            "type": "GridCell",
+            "numCols": 5,
+            "spacing": "$import",
+            "children": [
+                {
+                    "id": "assault",
+                    "type": "ImageCell",
+                    "width": "$import",
+                    "height": "$import",
+                    "alpha": "$import",
+                    "imageFile": "prebuild/base/dice/assault/assault-3.png",
+                    "snapPoints": [{ "tags": ["die.assault"] }]
+                },
+                { "type": "?", "cloneId": "assault" },
+                { "type": "?", "cloneId": "assault" },
+                { "type": "?", "cloneId": "assault" },
+                { "type": "?", "cloneId": "assault" },
+
+                {
+                    "id": "raid",
+                    "type": "ImageCell",
+                    "width": "$import",
+                    "height": "$import",
+                    "alpha": "$import",
+                    "imageFile": "prebuild/base/dice/raid/raid-1.png",
+                    "snapPoints": [{ "tags": ["die.raid"] }]
+                },
+                { "type": "?", "cloneId": "raid" },
+                { "type": "?", "cloneId": "raid" },
+                { "type": "?", "cloneId": "raid" },
+                { "type": "?", "cloneId": "raid" },
+
+                {
+                    "id": "skirmish",
+                    "type": "ImageCell",
+                    "width": "$import",
+                    "height": "$import",
+                    "alpha": "$import",
+                    "imageFile": "prebuild/base/dice/skirmish/skirmish-5.png",
+                    "snapPoints": [{ "tags": ["die.skirmish"] }]
+                },
+                { "type": "?", "cloneId": "skirmish" },
+                { "type": "?", "cloneId": "skirmish" },
+                { "type": "?", "cloneId": "skirmish" },
+                { "type": "?", "cloneId": "skirmish" }
+            ]
         }
-    ],
-    "gap": 0.5,
-    "cols": 3,
-    "postShrink": 1024,
-    "alpha": 0.5,
-    "metadata": "mat:base/dice",
-    "output": "base/mat/dice",
-    "tags": []
+    }
 }

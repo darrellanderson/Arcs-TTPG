@@ -1,8 +1,8 @@
 {
     "Type": "Generic",
-    "GUID": "F4926A29C949EF0611B0AB02CC8EFEC9",
-    "Name": "Court mat",
-    "Metadata": "mat:base/court",
+    "GUID": "4274BF819253EF85D368449D6A1C93AB",
+    "Name": "Court deck/discard mat",
+    "Metadata": "mat:base/court-deck-discard",
     "CollisionType": "Regular",
     "Friction": 0.7,
     "Restitution": 0.1,
@@ -34,8 +34,8 @@
                 "Z": 0
             },
             "Scale": {
-                "X": 8.18515,
-                "Y": 26.19248,
+                "X": 10.00264,
+                "Y": 13.09624,
                 "Z": 0.25
             },
             "Rotation": {
@@ -43,7 +43,7 @@
                 "Y": 0,
                 "Z": 0
             },
-            "Texture": "base/mat/court/court.jpg",
+            "Texture": "base/mat/court-deck-discard/court-deck-discard.jpg",
             "NormalMap": "",
             "ExtraMap": "",
             "ExtraMap2": "",
@@ -58,8 +58,8 @@
     "SnapPointsGlobal": false,
     "SnapPoints": [
         {
-            "X": 0.3737949063231847,
-            "Y": -10.327539663496708,
+            "X": 0.45679503512880526,
+            "Y": -3.1597463563115493,
             "Z": 0.125,
             "Range": 3,
             "SnapRotation": 2,
@@ -67,12 +67,13 @@
             "Shape": 0,
             "FlipValidity": 0,
             "Tags": [
-                "card.court"
+                "card.court",
+                "card.court.deck"
             ]
         },
         {
-            "X": 0.3737949063231847,
-            "Y": -5.163769831748353,
+            "X": 0.45679503512880526,
+            "Y": 3.1597463563115484,
             "Z": 0.125,
             "Range": 3,
             "SnapRotation": 2,
@@ -80,46 +81,8 @@
             "Shape": 0,
             "FlipValidity": 0,
             "Tags": [
-                "card.court"
-            ]
-        },
-        {
-            "X": 0.3737949063231847,
-            "Y": 0,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": [
-                "card.court"
-            ]
-        },
-        {
-            "X": 0.3737949063231847,
-            "Y": 5.163769831748356,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": [
-                "card.court"
-            ]
-        },
-        {
-            "X": 0.3737949063231847,
-            "Y": 10.32753966349671,
-            "Z": 0.125,
-            "Range": 3,
-            "SnapRotation": 2,
-            "RotationOffset": 0,
-            "Shape": 0,
-            "FlipValidity": 0,
-            "Tags": [
-                "card.court"
+                "card.court",
+                "card.court.discard"
             ]
         }
     ],

@@ -8,8 +8,9 @@
         "widthScaledByPixels": true,
         "height": 0.003506,
         "heightScaledByPixels": true,
-        "depth": 0.1
+        "depth": 0.25
     },
+    "preshrink": 1024,
     "srcImage": {
         "scale": {
             "pixel": 288,
@@ -34,6 +35,7 @@
             "spacing": "$import",
             "children": [
                 {
+                    "id": "agent",
                     "type": "ImageCell",
                     "width": "$import",
                     "height": "$import",
@@ -41,16 +43,16 @@
                     "imageFile": "prebuild/base/mat/agent-footprint.jpg",
                     "snapPoints": [{ "tags": ["agent"] }]
                 },
-                { "type": "!copy" },
-                { "type": "!copy" },
-                { "type": "!copy" },
-                { "type": "!copy" },
+                { "type": "?", "cloneId": "agent" },
+                { "type": "?", "cloneId": "agent" },
+                { "type": "?", "cloneId": "agent" },
+                { "type": "?", "cloneId": "agent" },
 
-                { "type": "!copy" },
-                { "type": "!copy" },
-                { "type": "!copy" },
-                { "type": "!copy" },
-                { "type": "!copy" }
+                { "type": "?", "cloneId": "agent" },
+                { "type": "?", "cloneId": "agent" },
+                { "type": "?", "cloneId": "agent" },
+                { "type": "?", "cloneId": "agent" },
+                { "type": "?", "cloneId": "agent" }
             ]
         }
     }

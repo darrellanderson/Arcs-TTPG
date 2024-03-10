@@ -1,8 +1,8 @@
 {
     "rootDir": ".",
-    "assetFilename": "base/mat/court",
-    "templateMetadata": "mat:base/court",
-    "templateName": "Court mat",
+    "assetFilename": "base/mat/court-deck-discard",
+    "templateMetadata": "mat:base/court-deck-discard",
+    "templateName": "Court deck/discard mat",
     "topDownWorldSize": {
         "width": 0.01289,
         "widthScaledByPixels": true,
@@ -10,7 +10,7 @@
         "heightScaledByPixels": true,
         "depth": 0.25
     },
-    "preshrink": 2048,
+    "preshrink": 1024,
     "srcImage": {
         "scale": {
             "pixel": 698,
@@ -23,8 +23,7 @@
             "$scalespacing": 0.5,
             "$scalefontSize": 0.5,
             "font": "FM Bolyar Pro",
-            "textColor": "#ffffff",
-            "text": "Court"
+            "textColor": "#ffffff"
         },
         "type": "PaddedCell",
         "padding": "$import",
@@ -47,30 +46,49 @@
                             "alpha": 0.2,
                             "tint": "#ffffff",
                             "imageFile": "prebuild/base/card/court/court.back.jpg",
-                            "snapPoints": [{ "tags": ["card.court"] }]
+                            "snapPoints": [
+                                { "tags": ["card.court", "card.court.deck"] }
+                            ]
                         },
                         {
                             "type": "TextCell",
                             "width": "$import",
                             "$scaleheight": 0.5,
-                            "text": "$import",
+                            "text": "Court Deck",
                             "textColor": "$import",
                             "font": "$import",
                             "fontSize": "$import"
                         }
                     ]
                 },
-                { "type": "?", "cloneId": "court-entry" },
-                { "type": "?", "cloneId": "court-entry" },
                 {
-                    "type": "?",
-                    "cloneId": "court-entry",
-                    "exports": { "text": "3-4p" }
-                },
-                {
-                    "type": "?",
-                    "cloneId": "court-entry",
-                    "exports": { "text": "Council" }
+                    "id": "court-entry",
+                    "type": "ColCell",
+                    "spacing": "$import",
+                    "children": [
+                        {
+                            "type": "ImageCell",
+                            "width": "$import",
+                            "height": "$import",
+                            "grayscale": true,
+                            "invert": false,
+                            "alpha": 0.2,
+                            "tint": "#ffffff",
+                            "imageFile": "prebuild/base/card/court/court.back.jpg",
+                            "snapPoints": [
+                                { "tags": ["card.court", "card.court.discard"] }
+                            ]
+                        },
+                        {
+                            "type": "TextCell",
+                            "width": "$import",
+                            "$scaleheight": 0.5,
+                            "text": "Court Discard",
+                            "textColor": "$import",
+                            "font": "$import",
+                            "fontSize": "$import"
+                        }
+                    ]
                 }
             ]
         }

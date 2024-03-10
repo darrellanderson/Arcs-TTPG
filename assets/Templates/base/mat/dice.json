@@ -1,303 +1,263 @@
 {
-        "Type": "Generic",
-        "GUID": "6414F3F0CDAA7A69875CBFCEF5D91C2B",
-        "Name": "dice",
-        "Metadata": "mat:base/dice",
-        "CollisionType": "Regular",
-        "Friction": 0.7,
-        "Restitution": 0.3,
-        "Density": 1,
-        "SurfaceType": "Cardboard",
-        "Roughness": 1,
-        "Metallic": 0,
-        "PrimaryColor": {
-                "R": 255,
-                "G": 255,
-                "B": 255
-        },
-        "SecondaryColor": {
-                "R": 0,
-                "G": 0,
-                "B": 0
-        },
-        "Flippable": false,
-        "AutoStraighten": false,
-        "ShouldSnap": false,
-        "ScriptName": "",
-        "Blueprint": "",
-        "Models": [
-                {
-                        "Model": "utility/unit-cube-top-uvs.obj",
-                        "Offset": {
-                                "X": 0,
-                                "Y": 0,
-                                "Z": 0
-                        },
-                        "Scale": {
-                                "X": 15.5,
-                                "Y": 8,
-                                "Z": 0.25
-                        },
-                        "Rotation": {
-                                "X": 0,
-                                "Y": 0,
-                                "Z": 0
-                        },
-                        "Texture": "base/mat/dice.jpg",
-                        "NormalMap": "",
-                        "ExtraMap": "",
-                        "ExtraMap2": "",
-                        "IsTransparent": false,
-                        "CastShadow": true,
-                        "IsTwoSided": false,
-                        "UseOverrides": true,
-                        "SurfaceType": "Cardboard"
-                }
-        ],
-        "Collision": [],
-        "Lights": [],
-        "SnapPointsGlobal": false,
-        "SnapPoints": [
-                {
-                        "Y": -2.5,
-                        "X": 6.25,
-                        "Tags": [
-                                "die.assault"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 0,
-                        "X": 6.25,
-                        "Tags": [
-                                "die.assault"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 2.5,
-                        "X": 6.25,
-                        "Tags": [
-                                "die.assault"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": -2.5,
-                        "X": 3.75,
-                        "Tags": [
-                                "die.assault"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 0,
-                        "X": 3.75,
-                        "Tags": [
-                                "die.assault"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 2.5,
-                        "X": 3.75,
-                        "Tags": [
-                                "die.assault"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": -2.5,
-                        "X": 1.25,
-                        "Tags": [
-                                "die.raid"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 0,
-                        "X": 1.25,
-                        "Tags": [
-                                "die.raid"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 2.5,
-                        "X": 1.25,
-                        "Tags": [
-                                "die.raid"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": -2.5,
-                        "X": -1.25,
-                        "Tags": [
-                                "die.raid"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 0,
-                        "X": -1.25,
-                        "Tags": [
-                                "die.raid"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 2.5,
-                        "X": -1.25,
-                        "Tags": [
-                                "die.raid"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": -2.5,
-                        "X": -3.75,
-                        "Tags": [
-                                "die.skirmish"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 0,
-                        "X": -3.75,
-                        "Tags": [
-                                "die.skirmish"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 2.5,
-                        "X": -3.75,
-                        "Tags": [
-                                "die.skirmish"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": -2.5,
-                        "X": -6.25,
-                        "Tags": [
-                                "die.skirmish"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 0,
-                        "X": -6.25,
-                        "Tags": [
-                                "die.skirmish"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                },
-                {
-                        "Y": 2.5,
-                        "X": -6.25,
-                        "Tags": [
-                                "die.skirmish"
-                        ],
-                        "Z": 0.125,
-                        "Range": 3,
-                        "SnapRotation": 2,
-                        "RotationOffset": 0,
-                        "Shape": 0,
-                        "FlipValidity": 0
-                }
-        ],
-        "ZoomViewDirection": {
+    "Type": "Generic",
+    "GUID": "480E2623E2C19D431D23410E9AEEBB81",
+    "Name": "Dice mat",
+    "Metadata": "mat:base/dice",
+    "CollisionType": "Regular",
+    "Friction": 0.7,
+    "Restitution": 0.1,
+    "Density": 1,
+    "SurfaceType": "Cardboard",
+    "Roughness": 1,
+    "Metallic": 0,
+    "PrimaryColor": {
+        "R": 255,
+        "G": 255,
+        "B": 255
+    },
+    "SecondaryColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0
+    },
+    "Flippable": false,
+    "AutoStraighten": false,
+    "ShouldSnap": false,
+    "ScriptName": "",
+    "Blueprint": "",
+    "Models": [
+        {
+            "Model": "uv-cube.obj",
+            "Offset": {
                 "X": 0,
                 "Y": 0,
-                "Z": 1
+                "Z": 0
+            },
+            "Scale": {
+                "X": 7.53704,
+                "Y": 12.23264,
+                "Z": 0.25
+            },
+            "Rotation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+            },
+            "Texture": "base/mat/dice/dice.jpg",
+            "NormalMap": "",
+            "ExtraMap": "",
+            "ExtraMap2": "",
+            "IsTransparent": false,
+            "CastShadow": true,
+            "IsTwoSided": false,
+            "UseOverrides": true,
+            "SurfaceType": "Cardboard"
+        }
+    ],
+    "Lights": [],
+    "SnapPointsGlobal": false,
+    "SnapPoints": [
+        {
+            "X": 2.3539103903903906,
+            "Y": -4.703122218114602,
+            "Z": 0.125,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "die.assault"
+            ]
         },
-        "GroundAccessibility": "Nothing",
-        "Tags": []
+        {
+            "X": 2.3539103903903906,
+            "Y": -2.351561109057301,
+            "Z": 0.125,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "die.assault"
+            ]
+        },
+        {
+            "X": 2.3539103903903906,
+            "Y": 0,
+            "Z": 0.125,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "die.assault"
+            ]
+        },
+        {
+            "X": 2.3539103903903906,
+            "Y": 2.3515611090573003,
+            "Z": 0.125,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "die.assault"
+            ]
+        },
+        {
+            "X": 2.3539103903903906,
+            "Y": 4.703122218114602,
+            "Z": 0.125,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "die.assault"
+            ]
+        },
+        {
+            "X": 0,
+            "Y": -4.703122218114602,
+            "Z": 0.125,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "die.raid"
+            ]
+        },
+        {
+            "X": 0,
+            "Y": -2.351561109057301,
+            "Z": 0.125,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "die.raid"
+            ]
+        },
+        {
+            "X": 0,
+            "Y": 0,
+            "Z": 0.125,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "die.raid"
+            ]
+        },
+        {
+            "X": 0,
+            "Y": 2.3515611090573003,
+            "Z": 0.125,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "die.raid"
+            ]
+        },
+        {
+            "X": 0,
+            "Y": 4.703122218114602,
+            "Z": 0.125,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "die.raid"
+            ]
+        },
+        {
+            "X": -2.3539103903903897,
+            "Y": -4.703122218114602,
+            "Z": 0.125,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "die.skirmish"
+            ]
+        },
+        {
+            "X": -2.3539103903903897,
+            "Y": -2.351561109057301,
+            "Z": 0.125,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "die.skirmish"
+            ]
+        },
+        {
+            "X": -2.3539103903903897,
+            "Y": 0,
+            "Z": 0.125,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "die.skirmish"
+            ]
+        },
+        {
+            "X": -2.3539103903903897,
+            "Y": 2.3515611090573003,
+            "Z": 0.125,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "die.skirmish"
+            ]
+        },
+        {
+            "X": -2.3539103903903897,
+            "Y": 4.703122218114602,
+            "Z": 0.125,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "die.skirmish"
+            ]
+        }
+    ],
+    "ZoomViewDirection": {
+        "X": 0,
+        "Y": 0,
+        "Z": 1
+    },
+    "GroundAccessibility": "Zoom",
+    "Tags": []
 }

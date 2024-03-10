@@ -11,10 +11,7 @@
         "height": 45.23,
         "depth": 0.25
     },
-    "preshrink": {
-        "width": 0,
-        "height": 4096
-    },
+    "preshrink": 4096,
     "srcImage": {
         "type": "ImageCell",
         "width": 9283,

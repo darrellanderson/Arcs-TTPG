@@ -8,7 +8,7 @@
         "widthScaledByPixels": true,
         "height": 0.018,
         "heightScaledByPixels": true,
-        "depth": 0.1
+        "depth": 0.25
     },
     "srcImage": {
         "scale": { "pixel": 143, "world": 2.57 },
@@ -26,6 +26,7 @@
             "spacing": "$import",
             "children": [
                 {
+                    "id": "img",
                     "type": "ImageCell",
                     "width": "$import",
                     "height": "$import",
@@ -33,10 +34,10 @@
                     "imageFile": "prebuild/base/mat/building-footprint.jpg",
                     "snapPoints": [{ "top": 80, "tags": ["building"] }]
                 },
-                { "type": "!copy" },
-                { "type": "!copy" },
-                { "type": "!copy" },
-                { "type": "!copy" }
+                { "type": "?", "cloneId": "img" },
+                { "type": "?", "cloneId": "img" },
+                { "type": "?", "cloneId": "img" },
+                { "type": "?", "cloneId": "img" }
             ]
         }
     }

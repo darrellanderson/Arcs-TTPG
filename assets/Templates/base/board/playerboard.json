@@ -43,9 +43,9 @@
                 "Y": 0,
                 "Z": 0
             },
-            "Texture": "base/board/playerboard/playerboard-0x0.jpg",
+            "Texture": "base/board/playerboard/playerboard.jpg",
             "NormalMap": "",
-            "ExtraMap": "base/board/playerboard/playerboard-0x0-mask.png",
+            "ExtraMap": "base/board/playerboard/playerboard-mask.png",
             "ExtraMap2": "",
             "IsTransparent": false,
             "CastShadow": true,
@@ -70,9 +70,9 @@
                 "Y": 0,
                 "Z": 0
             },
-            "Texture": "base/board/playerboard/playerboard-0x0.jpg",
+            "Texture": "base/board/playerboard/playerboard.jpg",
             "NormalMap": "",
-            "ExtraMap": "base/board/playerboard/playerboard-0x0-mask.png",
+            "ExtraMap": "base/board/playerboard/playerboard-mask.png",
             "ExtraMap2": "",
             "IsTransparent": false,
             "CastShadow": true,
