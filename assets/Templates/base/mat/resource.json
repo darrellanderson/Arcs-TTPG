@@ -80,7 +80,7 @@
             "Shape": 0,
             "FlipValidity": 0,
             "Tags": [
-                "resource.material"
+                "resource.fuel"
             ]
         },
         {
@@ -93,7 +93,7 @@
             "Shape": 0,
             "FlipValidity": 0,
             "Tags": [
-                "resource.material"
+                "resource.weapons"
             ]
         },
         {
@@ -106,7 +106,7 @@
             "Shape": 0,
             "FlipValidity": 0,
             "Tags": [
-                "resource.material"
+                "resource.relics"
             ]
         },
         {
@@ -119,7 +119,7 @@
             "Shape": 0,
             "FlipValidity": 0,
             "Tags": [
-                "resource.material"
+                "resource.psionic"
             ]
         }
     ],
