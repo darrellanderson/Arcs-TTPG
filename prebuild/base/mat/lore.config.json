@@ -1,19 +1,52 @@
 {
-    "cardWidth": 6.44,
-    "cardHeight": 9,
-    "depth": 0.25,
-    "inputDir": "base/card/lore",
-    "slots": [
-        {
-            "img": "lore.back.jpg",
-            "label": "LORE",
-            "tags": ["card.lore"]
+    "rootDir": ".",
+    "assetFilename": "base/mat/lore",
+    "templateMetadata": "mat:base/lore",
+    "templateName": "Lore mat",
+    "topDownWorldSize": {
+        "autoWidthHeight": {
+            "pixel": 500,
+            "world": 9
+        },
+        "depth": 0.25
+    },
+
+    "srcImage": {
+        "exports": {
+            "$scalepadding": 0.5,
+            "$scalespacing": 0.5,
+            "$scalefontSize": 0.5,
+            "width": 358,
+            "font": "FM Bolyar Pro"
+        },
+        "type": "PaddedCell",
+        "padding": "$import",
+        "background": "#000000",
+        "child": {
+            "type": "ColCell",
+            "spacing": "$import",
+            "children": [
+                {
+                    "type": "ImageCell",
+                    "width": "$import",
+                    "height": 500,
+                    "imageFile": "prebuild/base/card/lore/lore.back.jpg",
+                    "grayscale": true,
+                    "invert": false,
+                    "alpha": 0.2,
+                    "tint": "#ffffff",
+                    "snapPoints": [{ "tags": ["card.lore"] }]
+                },
+                {
+                    "type": "TextCell",
+                    "width": "$import",
+                    "$scaleheight": 0.5,
+                    "text": "Lore",
+                    "textColor": "#ffffff",
+                    "font": "$import",
+                    "fontSize": "$import"
+                }
+            ]
         }
-    ],
-    "gap": 0.5,
-    "cols": -1,
-    "postShrink": 1024,
-    "metadata": "mat:base/lore",
-    "output": "base/mat/lore",
-    "tags": []
+    }
 }

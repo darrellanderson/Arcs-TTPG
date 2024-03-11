@@ -1,40 +1,77 @@
 {
-    "cardWidth": 3,
-    "cardHeight": 3,
-    "depth": 0.25,
-    "inputDir": "base/token/resource",
-    "slots": [
-        {
-            "img": "material.jpg",
-            "label": "",
+    "rootDir": ".",
+    "assetFilename": "base/mat/resource",
+    "templateMetadata": "mat:base/resource",
+    "templateName": "Lore mat",
+    "topDownWorldSize": {
+        "autoWidthHeight": {
+            "pixel": 320,
+            "world": 3
+        },
+        "depth": 0.25
+    },
+
+    "srcImage": {
+        "exports": {
+            "$scalepadding": 0.5,
+            "$scalespacing": 0.5,
+            "width": 358,
+            "height": 358,
+            "imageFile": "prebuild/base/token/resource/material.jpg",
             "tags": ["resource.material"]
         },
-        {
-            "img": "fuel.jpg",
-            "label": "",
-            "tags": ["resource.fuel"]
-        },
-        {
-            "img": "weapons.jpg",
-            "label": "",
-            "tags": ["resource.weapons"]
-        },
-        {
-            "img": "relics.jpg",
-            "label": "",
-            "tags": ["resource.relics"]
-        },
-        {
-            "img": "psionic.jpg",
-            "label": "",
-            "tags": ["resource.psionic"]
+        "type": "PaddedCell",
+        "padding": "$import",
+        "background": "#000000",
+        "child": {
+            "type": "RowCell",
+            "spacing": "$import",
+            "children": [
+                {
+                    "id": "resource",
+                    "type": "ImageCell",
+                    "width": "$import",
+                    "height": "$import",
+                    "imageFile": "$import",
+                    "grayscale": true,
+                    "invert": false,
+                    "alpha": 0.2,
+                    "tint": "#ffffff",
+                    "snapPoints": [{ "tags": "$import" }]
+                },
+                {
+                    "type": "?",
+                    "exports": {
+                        "imageFile": "prebuild/base/token/resource/fuel.jpg",
+                        "tags": ["resource.fuel"]
+                    },
+                    "cloneId": "resource"
+                },
+                {
+                    "type": "?",
+                    "exports": {
+                        "imageFile": "prebuild/base/token/resource/weapons.jpg",
+                        "tags": ["resource.weapons"]
+                    },
+                    "cloneId": "resource"
+                },
+                {
+                    "type": "?",
+                    "exports": {
+                        "imageFile": "prebuild/base/token/resource/relics.jpg",
+                        "tags": ["resource.relics"]
+                    },
+                    "cloneId": "resource"
+                },
+                {
+                    "type": "?",
+                    "exports": {
+                        "imageFile": "prebuild/base/token/resource/psionic.jpg",
+                        "tags": ["resource.psionic"]
+                    },
+                    "cloneId": "resource"
+                }
+            ]
         }
-    ],
-    "gap": 0.5,
-    "cols": -1,
-    "postShrink": 1024,
-    "alpha": 0.5,
-    "metadata": "mat:base/resource",
-    "output": "base/mat/resource",
-    "tags": []
+    }
 }

@@ -1,0 +1,91 @@
+{
+    "cardWidth": 2.59,
+    "cardHeight": 0.45,
+    "depth": 0.25,
+    "inputDir": "base/mat",
+    "slots": [
+        {
+            "img": "ship-footprint.jpg",
+            "label": "",
+            "tags": ["ship"]
+        },
+        {
+            "img": "ship-footprint.jpg",
+            "label": "",
+            "tags": ["ship"]
+        },
+        {
+            "img": "ship-footprint.jpg",
+            "label": "",
+            "tags": ["ship"]
+        },
+        {
+            "img": "ship-footprint.jpg",
+            "label": "",
+            "tags": ["ship"]
+        },
+        {
+            "img": "ship-footprint.jpg",
+            "label": "",
+            "tags": ["ship"]
+        },
+        {
+            "img": "ship-footprint.jpg",
+            "label": "",
+            "tags": ["ship"]
+        },
+        {
+            "img": "ship-footprint.jpg",
+            "label": "",
+            "tags": ["ship"]
+        },
+        {
+            "img": "ship-footprint.jpg",
+            "label": "",
+            "tags": ["ship"]
+        },
+        {
+            "img": "ship-footprint.jpg",
+            "label": "",
+            "tags": ["ship"]
+        },
+        {
+            "img": "ship-footprint.jpg",
+            "label": "",
+            "tags": ["ship"]
+        },
+        {
+            "img": "ship-footprint.jpg",
+            "label": "",
+            "tags": ["ship"]
+        },
+        {
+            "img": "ship-footprint.jpg",
+            "label": "",
+            "tags": ["ship"]
+        },
+        {
+            "img": "ship-footprint.jpg",
+            "label": "",
+            "tags": ["ship"]
+        },
+        {
+            "img": "ship-footprint.jpg",
+            "label": "",
+            "tags": ["ship"]
+        },
+        {
+            "img": "ship-footprint.jpg",
+            "label": "",
+            "tags": ["ship"]
+        }
+    ],
+    "gap": 0.5,
+    "cols": 3,
+    "postShrink": 1024,
+    "alpha": 0.5,
+    "snapRotation": 3,
+    "metadata": "mat:base/ship",
+    "output": "base/mat/ship",
+    "tags": []
+}

@@ -21,11 +21,11 @@ yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board
 yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board-run.ts -i prebuild/base/mat/court-deck-discard.config.json
 yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board-run.ts -i prebuild/base/mat/dice.config.json
 yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board-run.ts -i prebuild/base/mat/leader.config.json
+yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board-run.ts -i prebuild/base/mat/lore.config.json
+yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board-run.ts -i prebuild/base/mat/resource.config.json
 
 
-../ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/lore.config.json
-../ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/resource.config.json
-../ttpg-darrell/tooling/generators/create-card-mat.ts -f prebuild/base/mat/ship.config.json
+yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board-run.ts -i prebuild/base/mat/ship.config.json
 
 ../ttpg-darrell/tooling/generators/create-dice.ts -f prebuild/base/dice/assault/assault.config.json
 ../ttpg-darrell/tooling/generators/create-dice.ts -f prebuild/base/dice/raid/raid.config.json
