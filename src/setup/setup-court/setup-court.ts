@@ -1,6 +1,7 @@
 import {
     Card,
     GameObject,
+    HorizontalAlignment,
     ObjectType,
     SnapPoint,
     refPackageId,
@@ -13,11 +14,17 @@ const packageId: string = refPackageId;
 
 export class SetupCourt extends AbstractSetup {
     private readonly _mat: GameObject;
+    private readonly _matDeckDiscard: GameObject;
     private readonly _deletedItems: GameObject;
 
     constructor() {
         super();
         this._mat = Spawn.spawnOrThrow("mat:base/court", [0, 0, 0]);
+        this._matDeckDiscard = Spawn.spawnOrThrow(
+            "mat:base/court-deck-discard",
+            [0, 0, 0]
+        );
+
         this._deletedItems = Spawn.spawnOrThrow(
             "container:base/deleted-items",
             [0, 0, 0]
@@ -25,10 +32,16 @@ export class SetupCourt extends AbstractSetup {
     }
 
     getLayoutObjects(): LayoutObjects {
+        const mats = new LayoutObjects()
+            .setIsVertical(true)
+            .setChildDistance(SPACING)
+            .setHorizontalAlignment(HorizontalAlignment.Left)
+            .add(this._mat)
+            .add(this._matDeckDiscard);
         const layoutObjects = new LayoutObjects()
             .setIsVertical(false)
             .setChildDistance(SPACING)
-            .add(this._mat)
+            .add(mats)
             .add(new SetupGarbage().getLayoutObjects())
             .add(this._deletedItems);
         layoutObjects.afterLayout.add(() => {
@@ -39,9 +52,10 @@ export class SetupCourt extends AbstractSetup {
 
     _afterLayout(): void {
         this._mat.setObjectType(ObjectType.Ground);
+        this._matDeckDiscard.setObjectType(ObjectType.Ground);
         this._deletedItems.setObjectType(ObjectType.Ground);
 
-        const snapPoints: SnapPoint[] = this._mat
+        const snapPoints: SnapPoint[] = this._matDeckDiscard
             .getAllSnapPoints()
             .filter((p) => p.getTags().includes("card.court.deck"));
         if (snapPoints.length !== 1) {

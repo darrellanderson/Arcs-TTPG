@@ -24,7 +24,7 @@
         "background": "#000000",
         "child": {
             "type": "GridCell",
-            "numCols": 5,
+            "numCols": 6,
             "spacing": "$import",
             "children": [
                 {
@@ -36,6 +36,7 @@
                     "imageFile": "prebuild/base/dice/assault/assault-3.png",
                     "snapPoints": [{ "tags": ["die.assault"] }]
                 },
+                { "type": "?", "cloneId": "assault" },
                 { "type": "?", "cloneId": "assault" },
                 { "type": "?", "cloneId": "assault" },
                 { "type": "?", "cloneId": "assault" },
@@ -54,6 +55,7 @@
                 { "type": "?", "cloneId": "raid" },
                 { "type": "?", "cloneId": "raid" },
                 { "type": "?", "cloneId": "raid" },
+                { "type": "?", "cloneId": "raid" },
 
                 {
                     "id": "skirmish",
@@ -64,6 +66,7 @@
                     "imageFile": "prebuild/base/dice/skirmish/skirmish-5.png",
                     "snapPoints": [{ "tags": ["die.skirmish"] }]
                 },
+                { "type": "?", "cloneId": "skirmish" },
                 { "type": "?", "cloneId": "skirmish" },
                 { "type": "?", "cloneId": "skirmish" },
                 { "type": "?", "cloneId": "skirmish" },
