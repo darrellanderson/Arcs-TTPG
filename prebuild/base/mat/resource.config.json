@@ -16,9 +16,7 @@
             "$scalepadding": 0.5,
             "$scalespacing": 0.5,
             "width": 358,
-            "height": 358,
-            "imageFile": "prebuild/base/token/resource/material.jpg",
-            "tags": ["resource.material"]
+            "height": 358
         },
         "type": "PaddedCell",
         "padding": "$import",
@@ -32,44 +30,60 @@
                     "type": "ImageCell",
                     "width": "$import",
                     "height": "$import",
-                    "imageFile": "$import",
+                    "imageFile": "prebuild/base/token/resource/material.jpg",
                     "grayscale": true,
                     "invert": false,
                     "alpha": 0.2,
                     "tint": "#ffffff",
-                    "snapPoints": [{ "tags": "$import" }]
+                    "snapPoints": [{ "tags": ["resource.material"] }]
                 },
                 {
-                    "type": "?",
-                    "exports": {
-                        "imageFile": "prebuild/base/token/resource/fuel.jpg",
-                        "tags": ["resource.fuel"]
-                    },
-                    "cloneId": "resource"
+                    "id": "resource",
+                    "type": "ImageCell",
+                    "width": "$import",
+                    "height": "$import",
+                    "imageFile": "prebuild/base/token/resource/fuel.jpg",
+                    "grayscale": true,
+                    "invert": false,
+                    "alpha": 0.2,
+                    "tint": "#ffffff",
+                    "snapPoints": [{ "tags": ["resource.fuel"] }]
                 },
                 {
-                    "type": "?",
-                    "exports": {
-                        "imageFile": "prebuild/base/token/resource/weapons.jpg",
-                        "tags": ["resource.weapons"]
-                    },
-                    "cloneId": "resource"
+                    "id": "resource",
+                    "type": "ImageCell",
+                    "width": "$import",
+                    "height": "$import",
+                    "imageFile": "prebuild/base/token/resource/weapons.jpg",
+                    "grayscale": true,
+                    "invert": false,
+                    "alpha": 0.2,
+                    "tint": "#ffffff",
+                    "snapPoints": [{ "tags": ["resource.weapons"] }]
                 },
                 {
-                    "type": "?",
-                    "exports": {
-                        "imageFile": "prebuild/base/token/resource/relics.jpg",
-                        "tags": ["resource.relics"]
-                    },
-                    "cloneId": "resource"
+                    "id": "resource",
+                    "type": "ImageCell",
+                    "width": "$import",
+                    "height": "$import",
+                    "imageFile": "prebuild/base/token/resource/relics.jpg",
+                    "grayscale": true,
+                    "invert": false,
+                    "alpha": 0.2,
+                    "tint": "#ffffff",
+                    "snapPoints": [{ "tags": ["resource.relics"] }]
                 },
                 {
-                    "type": "?",
-                    "exports": {
-                        "imageFile": "prebuild/base/token/resource/psionic.jpg",
-                        "tags": ["resource.psionic"]
-                    },
-                    "cloneId": "resource"
+                    "id": "resource",
+                    "type": "ImageCell",
+                    "width": "$import",
+                    "height": "$import",
+                    "imageFile": "prebuild/base/token/resource/psionic.jpg",
+                    "grayscale": true,
+                    "invert": false,
+                    "alpha": 0.2,
+                    "tint": "#ffffff",
+                    "snapPoints": [{ "tags": ["resource.psionic"] }]
                 }
             ]
         }

@@ -1,6 +1,6 @@
 {
     "Type": "Card",
-    "GUID": "A4D999D58591B065E7BE95126741DDCE",
+    "GUID": "BC80D4AC33DFBC535B71DB464E9AF700",
     "Name": "Court",
     "Metadata": "",
     "CollisionType": "Regular",
@@ -34,7 +34,7 @@
         "Y": 0,
         "Z": 0
     },
-    "FrontTexture": "base/card/court/court.face.0.jpg",
+    "FrontTexture": "base/card/court/court.face.jpg",
     "BackTexture": "base/card/court/court.back.jpg",
     "HiddenTexture": "",
     "BackIndex": -2,
@@ -42,7 +42,7 @@
     "NumHorizontal": 7,
     "NumVertical": 5,
     "Width": 6.44,
-    "Height": 0,
+    "Height": 9,
     "Thickness": 0.05,
     "HiddenInHand": true,
     "UsedWithCardHolders": true,
@@ -247,5 +247,5 @@
         ]
     },
     "GroundAccessibility": "ZoomAndContext",
-    "height": 9
+    "Tags": []
 }

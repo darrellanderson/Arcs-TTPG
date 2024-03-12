@@ -1,7 +1,7 @@
 {
     "Type": "Card",
-    "GUID": "253C5A073C2572632FD37C3143365027",
-    "Name": "Leader",
+    "GUID": "1D9096076A2830D8DC69E9D6B7AA91D0",
+    "Name": "Setup (4p)",
     "Metadata": "",
     "CollisionType": "Regular",
     "Friction": 0.7,
@@ -34,15 +34,15 @@
         "Y": 0,
         "Z": 0
     },
-    "FrontTexture": "leaders-and-lore/card/leader/leader.face.0.jpg",
-    "BackTexture": "leaders-and-lore/card/leader/leader.back.jpg",
+    "FrontTexture": "base/card/setup/setup-4p/setup-4p.face.jpg",
+    "BackTexture": "base/card/setup/setup-4p/setup-4p.back.jpg",
     "HiddenTexture": "",
     "BackIndex": -2,
     "HiddenIndex": -1,
-    "NumHorizontal": 2,
+    "NumHorizontal": 1,
     "NumVertical": 4,
     "Width": 6.44,
-    "Height": 0,
+    "Height": 9,
     "Thickness": 0.05,
     "HiddenInHand": true,
     "UsedWithCardHolders": true,
@@ -56,58 +56,34 @@
         0,
         1,
         2,
-        3,
-        4,
-        5,
-        6,
-        7
+        3
     ],
     "CardNames": {
-        "0": "Archivist",
-        "1": "Overseer",
-        "2": "Corsair",
-        "3": "Noble",
-        "4": "Anarchist",
-        "5": "Shaper",
-        "6": "Agitator",
-        "7": "Quartermaster"
+        "0": "Frontiers (4p)",
+        "1": "Mix Up 1 (4p)",
+        "2": "Mix Up 2 (4p)",
+        "3": "Mix Up 3 (4p)"
     },
     "CardMetadata": {
-        "0": "card.leader:leaders-and-lore/archivist",
-        "1": "card.leader:leaders-and-lore/overseer",
-        "2": "card.leader:leaders-and-lore/corsair",
-        "3": "card.leader:leaders-and-lore/noble",
-        "4": "card.leader:leaders-and-lore/anarchist",
-        "5": "card.leader:leaders-and-lore/shaper",
-        "6": "card.leader:leaders-and-lore/agitator",
-        "7": "card.leader:leaders-and-lore/quartermaster"
+        "0": "card.setup.4p:base/frontiers",
+        "1": "card.setup.4p:base/mix-up-1",
+        "2": "card.setup.4p:base/mix-up-2",
+        "3": "card.setup.4p:base/mix-up-3"
     },
     "CardTags": {
         "0": [
-            "card.leader"
+            "card.setup"
         ],
         "1": [
-            "card.leader"
+            "card.setup"
         ],
         "2": [
-            "card.leader"
+            "card.setup"
         ],
         "3": [
-            "card.leader"
-        ],
-        "4": [
-            "card.leader"
-        ],
-        "5": [
-            "card.leader"
-        ],
-        "6": [
-            "card.leader"
-        ],
-        "7": [
-            "card.leader"
+            "card.setup"
         ]
     },
     "GroundAccessibility": "ZoomAndContext",
-    "height": 11
+    "Tags": []
 }

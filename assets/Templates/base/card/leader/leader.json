@@ -1,7 +1,7 @@
 {
     "Type": "Card",
-    "GUID": "F1EBCF2EC0008BB806EB26CF3F66A926",
-    "Name": "Setup (2p)",
+    "GUID": "BA77E8F9808C90B0A778EB22ED2D912C",
+    "Name": "Leader",
     "Metadata": "",
     "CollisionType": "Regular",
     "Friction": 0.7,
@@ -34,15 +34,15 @@
         "Y": 0,
         "Z": 0
     },
-    "FrontTexture": "base/card/setup/setup-2p/setup-2p.face.0.jpg",
-    "BackTexture": "base/card/setup/setup-2p/setup-2p.back.jpg",
+    "FrontTexture": "base/card/leader/leader.face.jpg",
+    "BackTexture": "base/card/leader/leader.back.jpg",
     "HiddenTexture": "",
     "BackIndex": -2,
     "HiddenIndex": -1,
-    "NumHorizontal": 1,
+    "NumHorizontal": 2,
     "NumVertical": 4,
     "Width": 6.44,
-    "Height": 0,
+    "Height": 11,
     "Thickness": 0.05,
     "HiddenInHand": true,
     "UsedWithCardHolders": true,
@@ -56,34 +56,58 @@
         0,
         1,
         2,
-        3
+        3,
+        4,
+        5,
+        6,
+        7
     ],
     "CardNames": {
-        "0": "Frontiers (2p)",
-        "1": "Homelands (2p)",
-        "2": "Mix Up 1 (2p)",
-        "3": "Mix Up 2 (2p)"
+        "0": "Elder",
+        "1": "Mystic",
+        "2": "Fuel Drinker",
+        "3": "Upstart",
+        "4": "Rebel",
+        "5": "Warrior",
+        "6": "Feastbringer",
+        "7": "Demagogue"
     },
     "CardMetadata": {
-        "0": "card.setup.2p:base/frontiers",
-        "1": "card.setup.2p:base/homelands",
-        "2": "card.setup.2p:base/mix-up-1",
-        "3": "card.setup.2p:base/mix-up-2"
+        "0": "card.leader:base/elder",
+        "1": "card.leader:base/mystic",
+        "2": "card.leader:base/fuel-drinker",
+        "3": "card.leader:base/upstart",
+        "4": "card.leader:base/rebel",
+        "5": "card.leader:base/warrior",
+        "6": "card.leader:base/feastbringer",
+        "7": "card.leader:base/demagogue"
     },
     "CardTags": {
         "0": [
-            "card.setup"
+            "card.leader"
         ],
         "1": [
-            "card.setup"
+            "card.leader"
         ],
         "2": [
-            "card.setup"
+            "card.leader"
         ],
         "3": [
-            "card.setup"
+            "card.leader"
+        ],
+        "4": [
+            "card.leader"
+        ],
+        "5": [
+            "card.leader"
+        ],
+        "6": [
+            "card.leader"
+        ],
+        "7": [
+            "card.leader"
         ]
     },
     "GroundAccessibility": "ZoomAndContext",
-    "height": 9
+    "Tags": []
 }

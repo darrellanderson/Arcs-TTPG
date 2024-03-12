@@ -1,7 +1,7 @@
 {
     "Type": "Card",
-    "GUID": "EB8E4E0D4D2F43B010A0179D37B6814A",
-    "Name": "Setup (4p)",
+    "GUID": "9CEB1B9314B0A2E3488AA7A1B77FCD94",
+    "Name": "Setup (2p)",
     "Metadata": "",
     "CollisionType": "Regular",
     "Friction": 0.7,
@@ -34,15 +34,15 @@
         "Y": 0,
         "Z": 0
     },
-    "FrontTexture": "base/card/setup/setup-4p/setup-4p.face.0.jpg",
-    "BackTexture": "base/card/setup/setup-4p/setup-4p.back.jpg",
+    "FrontTexture": "base/card/setup/setup-2p/setup-2p.face.jpg",
+    "BackTexture": "base/card/setup/setup-2p/setup-2p.back.jpg",
     "HiddenTexture": "",
     "BackIndex": -2,
     "HiddenIndex": -1,
     "NumHorizontal": 1,
     "NumVertical": 4,
     "Width": 6.44,
-    "Height": 0,
+    "Height": 9,
     "Thickness": 0.05,
     "HiddenInHand": true,
     "UsedWithCardHolders": true,
@@ -59,16 +59,16 @@
         3
     ],
     "CardNames": {
-        "0": "Frontiers (4p)",
-        "1": "Mix Up 1 (4p)",
-        "2": "Mix Up 2 (4p)",
-        "3": "Mix Up 3 (4p)"
+        "0": "Frontiers (2p)",
+        "1": "Homelands (2p)",
+        "2": "Mix Up 1 (2p)",
+        "3": "Mix Up 2 (2p)"
     },
     "CardMetadata": {
-        "0": "card.setup.4p:base/frontiers",
-        "1": "card.setup.4p:base/mix-up-1",
-        "2": "card.setup.4p:base/mix-up-2",
-        "3": "card.setup.4p:base/mix-up-3"
+        "0": "card.setup.2p:base/frontiers",
+        "1": "card.setup.2p:base/homelands",
+        "2": "card.setup.2p:base/mix-up-1",
+        "3": "card.setup.2p:base/mix-up-2"
     },
     "CardTags": {
         "0": [
@@ -85,5 +85,5 @@
         ]
     },
     "GroundAccessibility": "ZoomAndContext",
-    "height": 9
+    "Tags": []
 }

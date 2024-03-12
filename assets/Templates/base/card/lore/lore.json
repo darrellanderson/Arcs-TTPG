@@ -1,6 +1,6 @@
 {
     "Type": "Card",
-    "GUID": "480D2D09B7C38CC22C95BC569BC0368D",
+    "GUID": "85A5BB6F30A037A2F5F8018B9E378DBB",
     "Name": "Lore",
     "Metadata": "",
     "CollisionType": "Regular",
@@ -34,15 +34,15 @@
         "Y": 0,
         "Z": 0
     },
-    "FrontTexture": "prebuild/leaders-and-lore/card/lore/lore.face.0.jpg",
-    "BackTexture": "prebuild/leaders-and-lore/card/lore/lore.back.jpg",
+    "FrontTexture": "base/card/lore/lore.face.jpg",
+    "BackTexture": "base/card/lore/lore.back.jpg",
     "HiddenTexture": "",
     "BackIndex": -2,
     "HiddenIndex": -1,
     "NumHorizontal": 4,
     "NumVertical": 4,
     "Width": 6.44,
-    "Height": 0,
+    "Height": 9,
     "Thickness": 0.05,
     "HiddenInHand": true,
     "UsedWithCardHolders": true,
@@ -69,36 +69,36 @@
         13
     ],
     "CardNames": {
-        "0": "Predictive Sensors",
-        "1": "Force Beams",
-        "2": "Raider Exosuits",
-        "3": "Survival Overrides",
-        "4": "Empath's Vision",
-        "5": "Empath's Bond",
-        "6": "Keeper's Trust",
-        "7": "Keepers Solidarity",
-        "8": "Warlords Cruelty",
-        "9": "Warlords Terror",
-        "10": "Tyrant's Ego",
-        "11": "Tyrant's Authority",
-        "12": "Tycoon's Ambition",
-        "13": "Tycoon's Charm"
+        "0": "Tool-Priests",
+        "1": "Galactic Rifles",
+        "2": "Sprinter Drives",
+        "3": "Mirror Plating",
+        "4": "Hidden Harbors",
+        "5": "Signal Breaker",
+        "6": "Repair Drones",
+        "7": "Gate Ports",
+        "8": "Cloud Cities",
+        "9": "Living Structures",
+        "10": "Gate Stations",
+        "11": "Railgun Arrays",
+        "12": "Ancient Holdings",
+        "13": "Seeker Torpedoes"
     },
     "CardMetadata": {
-        "0": "card.lore:leaders-and-lore/predictive-sensors",
-        "1": "card.lore:leaders-and-lore/force-beams",
-        "2": "card.lore:leaders-and-lore/raider-exosuits",
-        "3": "card.lore:leaders-and-lore/survival-overrides",
-        "4": "card.lore:leaders-and-lore/empaths-vision",
-        "5": "card.lore:leaders-and-lore/empaths-bond",
-        "6": "card.lore:leaders-and-lore/keepers-trust",
-        "7": "card.lore:leaders-and-lore/keepers-solidarity",
-        "8": "card.lore:leaders-and-lore/warlords-cruelty",
-        "9": "card.lore:leaders-and-lore/warlords-terror",
-        "10": "card.lore:leaders-and-lore/tyrants-ego",
-        "11": "card.lore:leaders-and-lore/tyrants-authority",
-        "12": "card.lore:leaders-and-lore/tycoons-ambition",
-        "13": "card.lore:leaders-and-lore/tycoons-charm"
+        "0": "card.lore:base/tool-priests",
+        "1": "card.lore:base/galactic-rifles",
+        "2": "card.lore:base/sprinter-drives",
+        "3": "card.lore:base/mirror-plating",
+        "4": "card.lore:base/hidden-harbors",
+        "5": "card.lore:base/signal-breaker",
+        "6": "card.lore:base/repair-drones",
+        "7": "card.lore:base/gate-ports",
+        "8": "card.lore:base/cloud-cities",
+        "9": "card.lore:base/living-structures",
+        "10": "card.lore:base/gate-stations",
+        "11": "card.lore:base/railgun-arrays",
+        "12": "card.lore:base/ancient-holdings",
+        "13": "card.lore:base/seeker-torpedoes"
     },
     "CardTags": {
         "0": [
@@ -145,5 +145,5 @@
         ]
     },
     "GroundAccessibility": "ZoomAndContext",
-    "height": 9
+    "Tags": []
 }

@@ -1,6 +1,6 @@
 {
     "Type": "Card",
-    "GUID": "8A6E00CF137DE18DB636D30095361A06",
+    "GUID": "241682F5B144C4639528FC59A06107A5",
     "Name": "Setup (3p)",
     "Metadata": "",
     "CollisionType": "Regular",
@@ -34,7 +34,7 @@
         "Y": 0,
         "Z": 0
     },
-    "FrontTexture": "base/card/setup/setup-3p/setup-3p.face.0.jpg",
+    "FrontTexture": "base/card/setup/setup-3p/setup-3p.face.jpg",
     "BackTexture": "base/card/setup/setup-3p/setup-3p.back.jpg",
     "HiddenTexture": "",
     "BackIndex": -2,
@@ -42,7 +42,7 @@
     "NumHorizontal": 1,
     "NumVertical": 4,
     "Width": 6.44,
-    "Height": 0,
+    "Height": 9,
     "Thickness": 0.05,
     "HiddenInHand": true,
     "UsedWithCardHolders": true,
@@ -85,5 +85,5 @@
         ]
     },
     "GroundAccessibility": "ZoomAndContext",
-    "height": 9
+    "Tags": []
 }

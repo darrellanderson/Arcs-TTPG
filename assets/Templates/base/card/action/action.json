@@ -1,6 +1,6 @@
 {
     "Type": "Card",
-    "GUID": "6B96424D2BE47C2266F6C16D9804107C",
+    "GUID": "7D6A98E7E84177BB3C721CECB9E36931",
     "Name": "Action",
     "Metadata": "",
     "CollisionType": "Regular",
@@ -34,7 +34,7 @@
         "Y": 0,
         "Z": 0
     },
-    "FrontTexture": "base/card/action/action.face.0.jpg",
+    "FrontTexture": "base/card/action/action.face.jpg",
     "BackTexture": "base/card/action/action.back.jpg",
     "HiddenTexture": "",
     "BackIndex": -2,
@@ -42,7 +42,7 @@
     "NumHorizontal": 9,
     "NumVertical": 4,
     "Width": 6.44,
-    "Height": 0,
+    "Height": 9,
     "Thickness": 0.05,
     "HiddenInHand": true,
     "UsedWithCardHolders": true,
@@ -229,5 +229,5 @@
         ]
     },
     "GroundAccessibility": "ZoomAndContext",
-    "height": 9
+    "Tags": []
 }

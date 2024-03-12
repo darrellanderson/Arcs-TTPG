@@ -1,0 +1,96 @@
+{
+    "Type": "Generic",
+    "GUID": "4274BF819253EF85D368449D6A1C93AB",
+    "Name": "Court deck/discard mat",
+    "Metadata": "mat:base/court-deck-discard",
+    "CollisionType": "Regular",
+    "Friction": 0.7,
+    "Restitution": 0.1,
+    "Density": 1,
+    "SurfaceType": "Cardboard",
+    "Roughness": 1,
+    "Metallic": 0,
+    "PrimaryColor": {
+        "R": 255,
+        "G": 255,
+        "B": 255
+    },
+    "SecondaryColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0
+    },
+    "Flippable": false,
+    "AutoStraighten": false,
+    "ShouldSnap": false,
+    "ScriptName": "",
+    "Blueprint": "",
+    "Models": [
+        {
+            "Model": "uv-cube.obj",
+            "Offset": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+            },
+            "Scale": {
+                "X": 11.011461318051577,
+                "Y": 14.402578796561604,
+                "Z": 0.25
+            },
+            "Rotation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+            },
+            "Texture": "base/mat/court-deck-discard/court-deck-discard.jpg",
+            "NormalMap": "",
+            "ExtraMap": "",
+            "ExtraMap2": "",
+            "IsTransparent": false,
+            "CastShadow": true,
+            "IsTwoSided": false,
+            "UseOverrides": true,
+            "SurfaceType": "Cardboard"
+        }
+    ],
+    "Lights": [],
+    "SnapPointsGlobal": false,
+    "SnapPoints": [
+        {
+            "X": 0.5028653295128942,
+            "Y": -3.474928366762178,
+            "Z": 0.125,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "card.court",
+                "card.court.deck"
+            ]
+        },
+        {
+            "X": 0.5028653295128942,
+            "Y": 3.4749283667621773,
+            "Z": 0.125,
+            "Range": 3,
+            "SnapRotation": 2,
+            "RotationOffset": 0,
+            "Shape": 0,
+            "FlipValidity": 0,
+            "Tags": [
+                "card.court",
+                "card.court.discard"
+            ]
+        }
+    ],
+    "ZoomViewDirection": {
+        "X": 0,
+        "Y": 0,
+        "Z": 1
+    },
+    "GroundAccessibility": "Zoom",
+    "Tags": []
+}
