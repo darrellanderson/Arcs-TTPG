@@ -1,8 +1,14 @@
 {
-    "inputDir": "base/dice/assault",
+    "rootDir": ".",
+    "assetFilename": "base/dice/assault",
+    "faceSizePixel": { "width": 166, "height": 166 },
+    "templateName": "Assault",
+    "templateMetadata": "dice:base/assault",
+    "tags": ["die", "die.assault"],
+
     "faces": [
         {
-            "face": "assault-1.png",
+            "image": "prebuild/base/dice/assault/assault-1.png",
             "name": "Assault",
             "metadata": {
                 "self": 0,
@@ -13,7 +19,7 @@
             }
         },
         {
-            "face": "assault-2.png",
+            "image": "prebuild/base/dice/assault/assault-2.png",
             "name": "Assault",
             "metadata": {
                 "self": 1,
@@ -24,7 +30,7 @@
             }
         },
         {
-            "face": "assault-3.png",
+            "image": "prebuild/base/dice/assault/assault-3.png",
             "name": "Assault",
             "metadata": {
                 "self": 0,
@@ -35,7 +41,7 @@
             }
         },
         {
-            "face": "assault-4.png",
+            "image": "prebuild/base/dice/assault/assault-4.png",
             "name": "Assault",
             "metadata": {
                 "self": 1,
@@ -46,7 +52,7 @@
             }
         },
         {
-            "face": "assault-5.png",
+            "image": "prebuild/base/dice/assault/assault-5.png",
             "name": "Assault",
             "metadata": {
                 "self": 0,
@@ -57,7 +63,7 @@
             }
         },
         {
-            "face": "assault-6.png",
+            "image": "prebuild/base/dice/assault/assault-6.png",
             "name": "Assault",
             "metadata": {
                 "self": 1,
@@ -67,9 +73,5 @@
                 "raid": 0
             }
         }
-    ],
-    "metadata": "dice:base/assault",
-    "output": "base/dice/assault",
-    "name": "Assault",
-    "tags": ["die", "die.assault"]
+    ]
 }

@@ -1,91 +1,58 @@
 {
-    "cardWidth": 2.59,
-    "cardHeight": 0.45,
-    "depth": 0.25,
-    "inputDir": "base/mat",
-    "slots": [
-        {
-            "img": "ship-footprint.jpg",
-            "label": "",
-            "tags": ["ship"]
+    "rootDir": ".",
+    "assetFilename": "base/mat/ship",
+    "templateMetadata": "mat:base/ship",
+    "templateName": "Ship mat",
+    "topDownWorldSize": {
+        "autoWidthHeight": {
+            "pixel": 732,
+            "world": 2.59
         },
-        {
-            "img": "ship-footprint.jpg",
-            "label": "",
-            "tags": ["ship"]
+        "depth": 0.25
+    },
+    "preshrink": 1024,
+    "srcImage": {
+        "exports": {
+            "$scalewidth": 2.59,
+            "$scaleheight": 0.45,
+            "$scalepadding": 0.5,
+            "$scalespacing": 0.5,
+            "$scalefontSize": 0.5
         },
-        {
-            "img": "ship-footprint.jpg",
-            "label": "",
-            "tags": ["ship"]
-        },
-        {
-            "img": "ship-footprint.jpg",
-            "label": "",
-            "tags": ["ship"]
-        },
-        {
-            "img": "ship-footprint.jpg",
-            "label": "",
-            "tags": ["ship"]
-        },
-        {
-            "img": "ship-footprint.jpg",
-            "label": "",
-            "tags": ["ship"]
-        },
-        {
-            "img": "ship-footprint.jpg",
-            "label": "",
-            "tags": ["ship"]
-        },
-        {
-            "img": "ship-footprint.jpg",
-            "label": "",
-            "tags": ["ship"]
-        },
-        {
-            "img": "ship-footprint.jpg",
-            "label": "",
-            "tags": ["ship"]
-        },
-        {
-            "img": "ship-footprint.jpg",
-            "label": "",
-            "tags": ["ship"]
-        },
-        {
-            "img": "ship-footprint.jpg",
-            "label": "",
-            "tags": ["ship"]
-        },
-        {
-            "img": "ship-footprint.jpg",
-            "label": "",
-            "tags": ["ship"]
-        },
-        {
-            "img": "ship-footprint.jpg",
-            "label": "",
-            "tags": ["ship"]
-        },
-        {
-            "img": "ship-footprint.jpg",
-            "label": "",
-            "tags": ["ship"]
-        },
-        {
-            "img": "ship-footprint.jpg",
-            "label": "",
-            "tags": ["ship"]
+        "type": "PaddedCell",
+        "padding": "$import",
+        "background": "#000000",
+        "child": {
+            "type": "GridCell",
+            "numCols": 3,
+            "spacing": "$import",
+            "children": [
+                {
+                    "id": "ship",
+                    "type": "ImageCell",
+                    "width": "$import",
+                    "height": "$import",
+                    "alpha": 0.2,
+                    "imageFile": "prebuild/base/mat/ship-footprint.jpg",
+                    "snapPoints": [{ "tags": ["ship"] }]
+                },
+                { "type": "?", "cloneId": "ship" },
+                { "type": "?", "cloneId": "ship" },
+                { "type": "?", "cloneId": "ship" },
+                { "type": "?", "cloneId": "ship" },
+
+                { "type": "?", "cloneId": "ship" },
+                { "type": "?", "cloneId": "ship" },
+                { "type": "?", "cloneId": "ship" },
+                { "type": "?", "cloneId": "ship" },
+                { "type": "?", "cloneId": "ship" },
+
+                { "type": "?", "cloneId": "ship" },
+                { "type": "?", "cloneId": "ship" },
+                { "type": "?", "cloneId": "ship" },
+                { "type": "?", "cloneId": "ship" },
+                { "type": "?", "cloneId": "ship" }
+            ]
         }
-    ],
-    "gap": 0.5,
-    "cols": 3,
-    "postShrink": 1024,
-    "alpha": 0.5,
-    "snapRotation": 3,
-    "metadata": "mat:base/ship",
-    "output": "base/mat/ship",
-    "tags": []
+    }
 }

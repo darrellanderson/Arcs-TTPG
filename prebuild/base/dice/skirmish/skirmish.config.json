@@ -1,8 +1,14 @@
 {
-    "inputDir": "base/dice/skirmish",
+    "rootDir": ".",
+    "assetFilename": "base/dice/skirmish",
+    "faceSizePixel": { "width": 166, "height": 166 },
+    "templateName": "Skirmish",
+    "templateMetadata": "dice:base/skirmish",
+    "tags": ["die", "die.skirmish"],
+
     "faces": [
         {
-            "face": "skirmish-1.png",
+            "image": "prebuild/base/dice/skirmish/skirmish-1.png",
             "name": "Skirmish",
             "metadata": {
                 "self": 0,
@@ -13,7 +19,7 @@
             }
         },
         {
-            "face": "skirmish-2.png",
+            "image": "prebuild/base/dice/skirmish/skirmish-2.png",
             "name": "Skirmish",
             "metadata": {
                 "self": 0,
@@ -24,7 +30,7 @@
             }
         },
         {
-            "face": "skirmish-3.png",
+            "image": "prebuild/base/dice/skirmish/skirmish-3.png",
             "name": "Skirmish",
             "metadata": {
                 "self": 0,
@@ -35,7 +41,7 @@
             }
         },
         {
-            "face": "skirmish-4.png",
+            "image": "prebuild/base/dice/skirmish/skirmish-4.png",
             "name": "Skirmish",
             "metadata": {
                 "self": 0,
@@ -46,7 +52,7 @@
             }
         },
         {
-            "face": "skirmish-5.png",
+            "image": "prebuild/base/dice/skirmish/skirmish-5.png",
             "name": "Skirmish",
             "metadata": {
                 "self": 0,
@@ -57,7 +63,7 @@
             }
         },
         {
-            "face": "skirmish-6.png",
+            "image": "prebuild/base/dice/skirmish/skirmish-6.png",
             "name": "Skirmish",
             "metadata": {
                 "self": 0,
@@ -67,9 +73,5 @@
                 "raid": 0
             }
         }
-    ],
-    "metadata": "dice:base/skirmish",
-    "output": "base/dice/skirmish",
-    "name": "Skirmish",
-    "tags": ["die", "die.skirmish"]
+    ]
 }

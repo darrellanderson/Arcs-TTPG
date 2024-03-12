@@ -23,13 +23,10 @@ yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board
 yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board-run.ts -i prebuild/base/mat/leader.config.json
 yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board-run.ts -i prebuild/base/mat/lore.config.json
 yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board-run.ts -i prebuild/base/mat/resource.config.json
-
-
 yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-board/create-board-run.ts -i prebuild/base/mat/ship.config.json
 
-../ttpg-darrell/tooling/generators/create-dice.ts -f prebuild/base/dice/assault/assault.config.json
-../ttpg-darrell/tooling/generators/create-dice.ts -f prebuild/base/dice/raid/raid.config.json
-../ttpg-darrell/tooling/generators/create-dice.ts -f prebuild/base/dice/skirmish/skirmish.config.json
+yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-d6/create-d6-run.ts -i  prebuild/base/dice/assault/assault.config.json
+yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-d6/create-d6-run.ts -i  prebuild/base/dice/raid/raid.config.json
+yarn ts-node ../ttpg-darrell/src/lib-ext/create-assets/create-d6/create-d6-run.ts -i  prebuild/base/dice/skirmish/skirmish.config.json
 
-#../ttpg-darrell/tooling/extract-nsid-to-template-id.ts -i assets/Templates -o ./src/global/inject-spawn-nsids/auto-nsid-to-template-id.json
 yarn ts-node ../ttpg-darrell/src/lib-ext/nsid/extract-nsid-to-template-id.ts -i assets/Templates -o src/global/inject-spawn-nsids/auto-nsid-to-template-id.json

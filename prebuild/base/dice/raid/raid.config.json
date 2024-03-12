@@ -1,8 +1,14 @@
 {
-    "inputDir": "base/dice/raid",
+    "rootDir": ".",
+    "assetFilename": "base/dice/raid",
+    "faceSizePixel": { "width": 166, "height": 166 },
+    "templateName": "Raid",
+    "templateMetadata": "dice:base/raid",
+    "tags": ["die", "die.raid"],
+
     "faces": [
         {
-            "face": "raid-1.png",
+            "image": "prebuild/base/dice/raid/raid-1.png",
             "name": "Raid",
             "metadata": {
                 "self": 0,
@@ -13,7 +19,7 @@
             }
         },
         {
-            "face": "raid-2.png",
+            "image": "prebuild/base/dice/raid/raid-2.png",
             "name": "Raid",
             "metadata": {
                 "self": 1,
@@ -24,7 +30,7 @@
             }
         },
         {
-            "face": "raid-3.png",
+            "image": "prebuild/base/dice/raid/raid-3.png",
             "name": "Raid",
             "metadata": {
                 "self": 0,
@@ -35,7 +41,7 @@
             }
         },
         {
-            "face": "raid-4.png",
+            "image": "prebuild/base/dice/raid/raid-4.png",
             "name": "Raid",
             "metadata": {
                 "self": 1,
@@ -46,7 +52,7 @@
             }
         },
         {
-            "face": "raid-5.png",
+            "image": "prebuild/base/dice/raid/raid-5.png",
             "name": "Raid",
             "metadata": {
                 "self": 0,
@@ -57,7 +63,7 @@
             }
         },
         {
-            "face": "raid-6.png",
+            "image": "prebuild/base/dice/raid/raid-6.png",
             "name": "Raid",
             "metadata": {
                 "self": 1,
@@ -67,9 +73,5 @@
                 "raid": 0
             }
         }
-    ],
-    "metadata": "dice:base/raid",
-    "output": "base/dice/raid",
-    "name": "Raid",
-    "tags": ["die", "die.raid"]
+    ]
 }
