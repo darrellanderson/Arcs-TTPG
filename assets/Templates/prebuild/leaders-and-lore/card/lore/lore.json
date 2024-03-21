@@ -145,5 +145,7 @@
         ]
     },
     "GroundAccessibility": "ZoomAndContext",
-    "Tags": []
+    "Tags": [
+        "card.lore"
+    ]
 }

@@ -18,9 +18,9 @@
         "height": 4961,
         "imageFile": "prebuild/base/board/map-red-dark.jpg",
         "snapPoints": [
-            { "tags": ["score"], "left": 320, "top": 4829 },
+            { "tags": ["power-marker"], "left": 320, "top": 4829 },
             {
-                "tags": ["score"],
+                "tags": ["power-marker"],
                 "left": 9142,
                 "top": 4829,
                 "createCountToPrev": 50
