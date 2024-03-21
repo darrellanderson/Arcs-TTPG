@@ -8,7 +8,7 @@ import { SetupPlayerboard } from "./setup-playerboard";
 import { SetupLeaderMat } from "./setup-leader-mat";
 import { SetupCardHolder } from "./setup-card-holder";
 import { SetupLoreMat } from "./setup-lore-mat";
-import { HALF_SPACING } from "setup/setup-config";
+import { HALF_SPACING } from "setup/static/setup-config";
 import { SetupShipContainer } from "./setup-ship-container";
 import { SetupAgentContainer } from "./setup-agent-container";
 import { SetupStarportContainer } from "./setup-starport-container";

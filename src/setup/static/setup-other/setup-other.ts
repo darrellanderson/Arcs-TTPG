@@ -1,5 +1,5 @@
 import { world } from "@tabletop-playground/api";
-import { SPACING } from "setup/setup-config";
+import { SPACING } from "setup/static/setup-config";
 import { AbstractSetup, LayoutObjects, Spawn } from "ttpg-darrell";
 
 /**

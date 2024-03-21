@@ -4,6 +4,7 @@ import {
     GameObject,
     RichText,
     Rotator,
+    TextJustification,
     UIElement,
     UIPresentationStyle,
     UIZoomVisibility,
@@ -15,7 +16,7 @@ import { LibAgent } from "lib";
 
 class CourtCard {
     private static readonly SCALE: number = 2;
-    private static readonly FONT_SIZE: number = 10 * CourtCard.SCALE;
+    private static readonly FONT_SIZE: number = 9 * CourtCard.SCALE;
 
     private readonly _card: Card;
     private _ui: UIElement | undefined;
@@ -47,6 +48,8 @@ class CourtCard {
 
         this._richText = new RichText()
             .setFontSize(CourtCard.FONT_SIZE)
+            .setJustification(TextJustification.Center)
+            .setAutoWrap(false)
             .setText(" 1 2 3 4 ");
         const widget = new Border().setChild(this._richText);
 
@@ -55,7 +58,9 @@ class CourtCard {
         this._ui.anchorY = 1;
         this._ui.presentationStyle = UIPresentationStyle.Regular;
         this._ui.scale = 1 / CourtCard.SCALE;
-        this._ui.useWidgetSize = true;
+        this._ui.useWidgetSize = false;
+        this._ui.width = 120;
+        this._ui.height = 40;
         this._ui.widget = widget;
         this._ui.zoomVisibility = UIZoomVisibility.Both;
 
@@ -96,7 +101,7 @@ class CourtCard {
 
         const richText: string[] = [];
         for (const slot of slots) {
-            const agentCount = playerSlotToAgents[slot].length || 0;
+            const agentCount = playerSlotToAgents[slot].length ?? 0;
             if (slot < 0 || agentCount === 0) {
                 continue;
             }

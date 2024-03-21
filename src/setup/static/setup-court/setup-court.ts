@@ -6,8 +6,8 @@ import {
     SnapPoint,
     refPackageId,
 } from "@tabletop-playground/api";
-import { SPACING } from "setup/setup-config";
-import { SetupGarbage } from "setup/setup-garbage/setup-garbage";
+import { SPACING } from "setup/static/setup-config";
+import { SetupGarbage } from "setup/static/setup-garbage/setup-garbage";
 import { AbstractSetup, LayoutObjects, Spawn } from "ttpg-darrell";
 
 const packageId: string = refPackageId;

@@ -6,7 +6,7 @@ import {
     globalEvents,
     refPackageId,
 } from "@tabletop-playground/api";
-import { SLOT_AND_COLOR } from "setup/setup-player-area/setup-player-area";
+import { SLOT_AND_COLOR } from "setup/static/setup-player-area/setup-player-area";
 import {
     EndTurnButton,
     HotSeatButton,
