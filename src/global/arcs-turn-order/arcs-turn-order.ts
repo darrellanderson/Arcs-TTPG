@@ -1,16 +1,8 @@
-import {
-    CardHolder,
-    GameObject,
-    Player,
-    Vector,
-    globalEvents,
-    refPackageId,
-} from "@tabletop-playground/api";
+import { Player, globalEvents, refPackageId } from "@tabletop-playground/api";
 import { SLOT_AND_COLOR } from "setup/static/setup-player-area/setup-player-area";
 import {
     EndTurnButton,
     HotSeatButton,
-    Find,
     IGlobal,
     TurnOrder,
     TurnOrderWidget,
@@ -57,36 +49,6 @@ export class ArcsTurnOrder implements IGlobal {
         const order: number[] = SLOT_AND_COLOR.map((entry) => entry.slot);
         this._turnOrder.setTurnOrder(order, "forward", order[0]);
 
-        const find = new Find();
-        const initiativeMarker: GameObject | undefined = find.findGameObject(
-            "token:base/initiative"
-        );
-        if (initiativeMarker) {
-            console.log("arcs-turn-order attaching to initiative marker");
-            initiativeMarker.onReleased.add(() => {
-                console.log("arcs-turn-order: initiative marker moved");
-                const p0: Vector = initiativeMarker.getPosition();
-
-                let closestSlot: number = -1;
-                let closestDistanceSq: number = Number.MAX_SAFE_INTEGER;
-                for (const slot of order) {
-                    const cardHolder: CardHolder | undefined =
-                        find.findCardHolder("cardholder:base/trh", slot);
-                    if (cardHolder) {
-                        const p1: Vector = cardHolder.getPosition();
-                        const distanceSq = p1.subtract(p0).magnitudeSquared();
-                        if (distanceSq < closestDistanceSq) {
-                            closestSlot = slot;
-                            closestDistanceSq = distanceSq;
-                        }
-                    }
-                }
-                if (closestSlot >= 0) {
-                    this._seizeInitiative(closestSlot);
-                }
-            });
-        }
-
         globalEvents.onChatMessage.add(
             (sender: Player, message: string): void => {
                 if (message === "!hotseat") {
@@ -104,15 +66,7 @@ export class ArcsTurnOrder implements IGlobal {
         );
     }
 
-    _seizeInitiative(playerSlot: number): void {
-        const order: number[] = this._turnOrder.getTurnOrder();
-        const slotIndex: number = order.indexOf(playerSlot);
-        if (slotIndex >= 0) {
-            const newOrder: number[] = [
-                ...order.slice(slotIndex, order.length),
-                ...order.slice(0, slotIndex),
-            ];
-            this._turnOrder.setTurnOrder(newOrder, "forward", newOrder[0]);
-        }
+    getTurnOrder(): TurnOrder {
+        return this._turnOrder;
     }
 }
