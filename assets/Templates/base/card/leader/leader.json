@@ -109,5 +109,7 @@
         ]
     },
     "GroundAccessibility": "ZoomAndContext",
-    "Tags": []
+    "Tags": [
+        "card.leader"
+    ]
 }

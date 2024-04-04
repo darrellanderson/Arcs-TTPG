@@ -1,8 +1,8 @@
 import { AbstractSetup, LayoutObjects } from "ttpg-darrell";
 import { SetupDice } from "./setup-dice";
 import { SetupResources } from "./setup-resources";
-import { SetupGarbage } from "setup/setup-garbage/setup-garbage";
-import { SPACING } from "setup/setup-config";
+import { SetupGarbage } from "setup/static/setup-garbage/setup-garbage";
+import { SPACING } from "setup/static/setup-config";
 import { SetupRollArea } from "./setup-roll-area";
 
 export class SetupResourceArea extends AbstractSetup {

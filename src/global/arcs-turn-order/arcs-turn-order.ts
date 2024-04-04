@@ -6,7 +6,7 @@ import {
     globalEvents,
     refPackageId,
 } from "@tabletop-playground/api";
-import { SLOT_AND_COLOR } from "setup/setup-player-area/setup-player-area";
+import { SLOT_AND_COLOR } from "setup/static/setup-player-area/setup-player-area";
 import {
     EndTurnButton,
     HotSeatButton,
@@ -17,7 +17,6 @@ import {
 } from "ttpg-darrell";
 
 export class ArcsTurnOrder implements IGlobal {
-    public static readonly SEIZE_INITIATIVE: string = "Seize initiative";
     private static __instance: ArcsTurnOrder | undefined;
 
     private readonly _turnOrder: TurnOrder;
@@ -43,19 +42,6 @@ export class ArcsTurnOrder implements IGlobal {
             margins: { left: 2, right: 2 },
             toggleEliminated: true,
             togglePassed: true,
-
-            customActions: [
-                //{ name: ArcsTurnOrder.SEIZE_INITIATIVE }
-            ],
-            onCustomAction: (
-                clickingPlayer: Player,
-                identifier: string,
-                targetPlayerSlot: number
-            ) => {
-                if (identifier === ArcsTurnOrder.SEIZE_INITIATIVE) {
-                    this._seizeInitiative(targetPlayerSlot);
-                }
-            },
         });
         this._endTurnButton = new EndTurnButton(this._turnOrder, {
             sound: "beep_ramp_up.wav",

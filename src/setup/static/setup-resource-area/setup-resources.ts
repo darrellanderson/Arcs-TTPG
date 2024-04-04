@@ -1,4 +1,4 @@
-import { Card, Dice, GameObject, ObjectType } from "@tabletop-playground/api";
+import { Card, GameObject, ObjectType } from "@tabletop-playground/api";
 import { AbstractSetup, LayoutObjects, Spawn } from "ttpg-darrell";
 
 export class SetupResources extends AbstractSetup {

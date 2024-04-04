@@ -18,12 +18,19 @@
         "height": 4961,
         "imageFile": "prebuild/base/board/map-red-dark.jpg",
         "snapPoints": [
-            { "tags": ["score"], "left": 320, "top": 4829 },
+            { "tags": ["power-marker"], "left": 320, "top": 4829 },
             {
-                "tags": ["score"],
+                "tags": ["power-marker"],
                 "left": 9142,
                 "top": 4829,
                 "createCountToPrev": 50
+            },
+            { "tags": ["chapter-marker"], "left": 8146, "top": 4547 },
+            {
+                "tags": ["chapter-marker"],
+                "left": 9115,
+                "top": 4547,
+                "createCountToPrev": 4
             },
             {
                 "tags": ["card.action", "card.action.discard"],
@@ -39,50 +46,20 @@
             },
             {
                 "tags": ["ambition-marker"],
-                "left": 8295,
+                "left": 8271,
                 "top": 748,
                 "rotation": 0
             },
             {
                 "tags": ["ambition-marker"],
-                "left": 8655,
+                "left": 8631,
                 "top": 747,
                 "rotation": 0
             },
             {
                 "tags": ["ambition-marker"],
-                "left": 9012,
+                "left": 8991,
                 "top": 745,
-                "rotation": 0
-            },
-            {
-                "tags": ["chapter-marker"],
-                "left": 8164,
-                "top": 4547,
-                "rotation": 0
-            },
-            {
-                "tags": ["chapter-marker"],
-                "left": 8409,
-                "top": 4551,
-                "rotation": 0
-            },
-            {
-                "tags": ["chapter-marker"],
-                "left": 8652,
-                "top": 4548,
-                "rotation": 0
-            },
-            {
-                "tags": ["chapter-marker"],
-                "left": 8896,
-                "top": 4548,
-                "rotation": 0
-            },
-            {
-                "tags": ["chapter-marker"],
-                "left": 9135,
-                "top": 4548,
                 "rotation": 0
             },
             {
