@@ -62,7 +62,6 @@ export class RollArea {
         if (!gameObject) {
             throw new Error("missing game object");
         }
-        console.log(`RollArea created for "${gameObject.getId()}"`);
 
         this._obj = gameObject;
         this._zone = RollArea._findOrCreateZone(this._obj);
