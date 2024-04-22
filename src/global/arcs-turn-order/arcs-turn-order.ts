@@ -7,6 +7,7 @@ import {
     TurnOrder,
     TurnOrderWidget,
 } from "ttpg-darrell";
+import { ArcsScoreWartGenerator } from "./arcs-score-wart";
 
 export class ArcsTurnOrder implements IGlobal {
     private static __instance: ArcsTurnOrder | undefined;
@@ -28,12 +29,19 @@ export class ArcsTurnOrder implements IGlobal {
     constructor() {
         ArcsTurnOrder.__instance = this;
 
+        const entryHeight: number = 30;
+        const entryWidth: number = 200;
+
         this._turnOrder = new TurnOrder("@arcs/turn-order");
         this._turnOrderWidget = new TurnOrderWidget(this._turnOrder, {
             reserveSlots: 4,
+            entryHeight,
+            entryWidth,
+            nameBox: { width: entryWidth - entryHeight - 10 },
             margins: { left: 2, right: 2 },
             toggleEliminated: true,
             togglePassed: true,
+            wartGenerators: [ArcsScoreWartGenerator],
         });
         this._endTurnButton = new EndTurnButton(this._turnOrder, {
             sound: "beep_ramp_up.wav",
