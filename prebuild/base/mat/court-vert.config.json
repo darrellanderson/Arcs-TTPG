@@ -1,0 +1,74 @@
+{
+    "rootDir": ".",
+    "assetFilename": "base/mat/court-vert",
+    "templateMetadata": "mat:base/court.vert",
+    "templateName": "Court mat",
+    "topDownWorldSize": {
+        "autoWidthHeight": {
+            "pixel": 698,
+            "world": 9
+        },
+        "depth": 0.25
+    },
+    "preshrink": 2048,
+    "srcImage": {
+        "exports": {
+            "width": 500,
+            "height": 698,
+            "$scalepadding": 0.5,
+            "$scalespacing": 0.5,
+            "$scalefontSize": 0.5,
+            "font": "FM Bolyar Pro",
+            "textColor": "#ffffff",
+            "text": "Court"
+        },
+        "type": "PaddedCell",
+        "padding": "$import",
+        "background": "#000000",
+        "child": {
+            "type": "ColCell",
+            "spacing": "$import",
+            "children": [
+                {
+                    "id": "court-back",
+                    "type": "ImageCell",
+                    "width": "$import",
+                    "height": "$import",
+                    "grayscale": true,
+                    "invert": false,
+                    "alpha": 0.2,
+                    "tint": "#ffffff",
+                    "imageFile": "prebuild/base/card/court/court.back.jpg",
+                    "snapPoints": [{ "tags": ["card.court"] }]
+                },
+                { "type": "?", "cloneId": "court-back" },
+                { "type": "?", "cloneId": "court-back" },
+                {
+                    "type": "CanvasCell",
+                    "width": "$import",
+                    "height": "$import",
+                    "children": [{ "type": "?", "cloneId": "court-back" }]
+                },
+                {
+                    "type": "TextCell",
+                    "width": "$import",
+                    "$scaleheight": 0.5,
+                    "text": "$import",
+                    "textColor": "$import",
+                    "font": "$import",
+                    "fontSize": "$import"
+                },
+                {
+                    "type": "TextCell",
+                    "width": "$import",
+                    "$scaleheight": 0.5,
+                    "text": "Council",
+                    "textColor": "$import",
+                    "font": "$import",
+                    "fontSize": "$import"
+                },
+                { "type": "?", "cloneId": "court-back" }
+            ]
+        }
+    }
+}

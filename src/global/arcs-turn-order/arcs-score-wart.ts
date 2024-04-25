@@ -134,6 +134,6 @@ export class ArcsScoreWart extends TurnEntryWart {
         const score: number =
             ArcsScoreWart.__getScoreFromPlayerSlot(playerSlot);
         this._score.setTextColor(fgColor);
-        this._score.setText(score.toString());
+        this._score.setText(score >= 0 ? score.toString() : "-");
     }
 }
