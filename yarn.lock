@@ -1799,9 +1799,9 @@ domexception@^4.0.0:
     webidl-conversions "^7.0.0"
 
 electron-to-chromium@^1.4.668:
-  version "1.4.748"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.748.tgz#aa7d4f2f3eac3a6a863cd1779bd4682b4bb68ed5"
-  integrity sha512-VWqjOlPZn70UZ8FTKUOkUvBLeTQ0xpty66qV0yJcAGY2/CthI4xyW9aEozRVtuwv3Kpf5xTesmJUcPwuJmgP4A==
+  version "1.4.749"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.749.tgz#9869e2e258141da26a2272b58264584c3461279d"
+  integrity sha512-LRMMrM9ITOvue0PoBrvNIraVmuDbJV5QC9ierz/z5VilMdPOVMjOtpICNld3PuXuTZ3CHH/UPxX9gHhAPwi+0Q==
 
 emittery@^0.13.1:
   version "0.13.1"
@@ -3112,10 +3112,10 @@ node-releases@^2.0.14:
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-2.0.14.tgz#2ffb053bceb8b2be8495ece1ab6ce600c4461b0b"
   integrity sha512-y10wOWt8yZpqXmOgRo77WaHEmhYQYGNA6y421PKsKYWEK8aW+cqAphborZDhqfyKrbZEN92CN1X2KbafY2s7Yw==
 
-node@^21.1.0:
-  version "21.7.3"
-  resolved "https://registry.yarnpkg.com/node/-/node-21.7.3.tgz#326ee6e5002bda8853bcb386902982c517d38756"
-  integrity sha512-ouAXROl1nmh9mAZvejCfOnBp7CnRk14CCuBjZSIyDjv3da78m0nImWYlDRrPcgikBl2LHvvYq5BvDWfpfHoMtQ==
+node@^22.0.0:
+  version "22.0.0"
+  resolved "https://registry.yarnpkg.com/node/-/node-22.0.0.tgz#4406059d6478bfa219701a3850b4dae45189eb89"
+  integrity sha512-erpiz5vVgqdPOUo/1+xQLlSeqf95EgVVHkQ/b1eHq1VGEJYJSjgitYoYWtH85U1qF9polkt8TdrNEjtAQ38jEw==
   dependencies:
     node-bin-setup "^1.0.0"
 
