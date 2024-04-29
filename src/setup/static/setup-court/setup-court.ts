@@ -19,7 +19,7 @@ export class SetupCourt extends AbstractSetup {
 
     constructor() {
         super();
-        this._mat = Spawn.spawnOrThrow("mat:base/court", [0, 0, 0]);
+        this._mat = Spawn.spawnOrThrow("mat:base/court.vert", [0, 0, 0]);
         this._matDeckDiscard = Spawn.spawnOrThrow(
             "mat:base/court-deck-discard",
             [0, 0, 0]
@@ -32,18 +32,25 @@ export class SetupCourt extends AbstractSetup {
     }
 
     getLayoutObjects(): LayoutObjects {
-        const mats = new LayoutObjects()
+        const boxes = new LayoutObjects()
+            .setIsVertical(false)
+            .setChildDistance(SPACING)
+            .setHorizontalAlignment(HorizontalAlignment.Left)
+            .add(new SetupGarbage().getLayoutObjects())
+            .add(this._deletedItems);
+
+        const right = new LayoutObjects()
             .setIsVertical(true)
             .setChildDistance(SPACING)
             .setHorizontalAlignment(HorizontalAlignment.Left)
-            .add(this._mat)
-            .add(this._matDeckDiscard);
+            .add(this._matDeckDiscard)
+            .add(boxes);
+
         const layoutObjects = new LayoutObjects()
             .setIsVertical(false)
             .setChildDistance(SPACING)
-            .add(mats)
-            .add(new SetupGarbage().getLayoutObjects())
-            .add(this._deletedItems);
+            .add(this._mat)
+            .add(right);
         layoutObjects.afterLayout.add(() => {
             this._afterLayout();
         });

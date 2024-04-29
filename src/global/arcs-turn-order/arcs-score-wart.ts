@@ -72,7 +72,7 @@ export class ArcsScoreWart extends TurnEntryWart {
         const linePos: Vector = pos.findClosestPointOnSegment(p0, p50);
         const dLine: number = linePos.distance(pos);
         if (dLine > 10) {
-            console.log(`too far from line: ${dLine}`);
+            //console.log(`too far from line: ${dLine}`);
             return -1;
         }
         const d: number = linePos.distance(p0);
@@ -100,7 +100,6 @@ export class ArcsScoreWart extends TurnEntryWart {
 
     constructor(widget: TurnEntryWidget, params: TurnOrderWidgetParams) {
         super();
-        console.log(`ArcsScoreWart.constructor()`);
 
         const entryW: number = params.entryWidth ?? 1;
         const entryH: number = params.entryHeight ?? 1;
@@ -130,7 +129,6 @@ export class ArcsScoreWart extends TurnEntryWart {
 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     update(playerSlot: number, fgColor: Color, bgColor: Color): void {
-        console.log(`ArcsScoreWart.update(${playerSlot})`);
         const score: number =
             ArcsScoreWart.__getScoreFromPlayerSlot(playerSlot);
         this._score.setTextColor(fgColor);

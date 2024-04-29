@@ -2,7 +2,7 @@
     "rootDir": ".",
     "assetFilename": "base/mat/court-vert",
     "templateMetadata": "mat:base/court.vert",
-    "templateName": "Court mat",
+    "templateName": "Court mat (vert)",
     "topDownWorldSize": {
         "autoWidthHeight": {
             "pixel": 698,
@@ -47,7 +47,29 @@
                     "type": "CanvasCell",
                     "width": "$import",
                     "height": "$import",
-                    "children": [{ "type": "?", "cloneId": "court-back" }]
+                    "children": [
+                        { 
+                           "left":0,
+                           "top": 0,
+                           "child": {
+                            "width": "$import",
+                            "height": "$import", 
+                            "type": "?", 
+                            "cloneId": "court-back" 
+                        }},
+                        { 
+                            "left":0,
+                            "top": 0,
+                            "child": {
+                                "width": "$import",
+                                "height": "$import", 
+                                "type": "TextCell", 
+                                "text": "3-4P",
+                                "textColor": "$import",
+                                "font": "$import",
+                                "fontSize": "$import"
+                         }}
+                    ]
                 },
                 {
                     "type": "TextCell",
@@ -57,17 +79,8 @@
                     "textColor": "$import",
                     "font": "$import",
                     "fontSize": "$import"
-                },
-                {
-                    "type": "TextCell",
-                    "width": "$import",
-                    "$scaleheight": 0.5,
-                    "text": "Council",
-                    "textColor": "$import",
-                    "font": "$import",
-                    "fontSize": "$import"
-                },
-                { "type": "?", "cloneId": "court-back" }
+                }
+               
             ]
         }
     }
