@@ -2,6 +2,8 @@ import {
     Border,
     Card,
     GameObject,
+    HorizontalAlignment,
+    LayoutBox,
     RichText,
     Rotator,
     TextJustification,
@@ -9,13 +11,14 @@ import {
     UIPresentationStyle,
     UIZoomVisibility,
     Vector,
+    VerticalAlignment,
     refCard,
     world,
 } from "@tabletop-playground/api";
 import { LibAgent } from "lib";
 
 class CourtCard {
-    private static readonly SCALE: number = 2;
+    private static readonly SCALE: number = 4;
     private static readonly FONT_SIZE: number = 9 * CourtCard.SCALE;
 
     private readonly _card: Card;
@@ -50,28 +53,32 @@ class CourtCard {
             .setFontSize(CourtCard.FONT_SIZE)
             .setJustification(TextJustification.Center)
             .setAutoWrap(false)
-            .setText(" 1 2 3 4 ");
-        const widget = new Border().setChild(this._richText);
+            .setText("0");
+        const border = new Border().setChild(this._richText);
+        const widget = new LayoutBox()
+            .setVerticalAlignment(VerticalAlignment.Center)
+            .setHorizontalAlignment(HorizontalAlignment.Fill)
+            .setChild(border);
 
         this._ui = new UIElement();
-        this._ui.anchorX = 0.5;
-        this._ui.anchorY = 1;
+        this._ui.anchorX = 0;
+        this._ui.anchorY = 0.5;
         this._ui.presentationStyle = UIPresentationStyle.Regular;
         this._ui.scale = 1 / CourtCard.SCALE;
         this._ui.useWidgetSize = false;
-        this._ui.width = 120;
-        this._ui.height = 40;
+        this._ui.width = 20 * CourtCard.SCALE;
+        this._ui.height = 4 * 20 * CourtCard.SCALE;
         this._ui.widget = widget;
         this._ui.zoomVisibility = UIZoomVisibility.Both;
 
-        // Place UI at top of card.
+        // Place UI alongside of card.
         const currentRotation = false;
         const includeGeometry = false;
         const cardExtent: Vector = this._card.getExtent(
             currentRotation,
             includeGeometry
         );
-        this._ui.position = new Vector(-cardExtent.x, 0, -cardExtent.z - 0.1);
+        this._ui.position = new Vector(0, -cardExtent.y - 0.1, -0.05);
         this._ui.rotation = new Rotator(180, 0, 180); // face "up"
 
         this._card.addUI(this._ui);
@@ -114,7 +121,7 @@ class CourtCard {
         }
 
         this._attachUI();
-        this._richText?.setText(" " + richText.join("  ") + " ");
+        this._richText?.setText(richText.join("\n"));
     }
 }
 
